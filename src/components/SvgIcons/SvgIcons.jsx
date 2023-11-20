@@ -1,0 +1,2149 @@
+/* @flow */
+/**
+ * @fileoverview  SvgIcons
+ */
+
+import React from 'react';
+import SvgIcon from '@material-ui/core/SvgIcon';
+
+export const EditIcon = (props) => (
+  <SvgIcon width="19" height="19" viewBox="0 0 19 19" fill="none" {...props}>
+    <g fill="none">
+      <path
+        d="M13.474 3.40783L15.592 5.52483L13.474 3.40783ZM14.836 1.54283L9.109 7.26983C8.81309 7.56533 8.61128 7.94181 8.529 8.35183L8 10.9998L10.648 10.4698C11.058 10.3878 11.434 10.1868 11.73 9.89083L17.457 4.16383C17.6291 3.99173 17.7656 3.78742 17.8588 3.56256C17.9519 3.33771 17.9998 3.09671 17.9998 2.85333C17.9998 2.60994 17.9519 2.36895 17.8588 2.14409C17.7656 1.91923 17.6291 1.71492 17.457 1.54283C17.2849 1.37073 17.0806 1.23421 16.8557 1.14108C16.6309 1.04794 16.3899 1 16.1465 1C15.9031 1 15.6621 1.04794 15.4373 1.14108C15.2124 1.23421 15.0081 1.37073 14.836 1.54283V1.54283Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M16 13V16C16 16.5304 15.7893 17.0391 15.4142 17.4142C15.0391 17.7893 14.5304 18 14 18H3C2.46957 18 1.96086 17.7893 1.58579 17.4142C1.21071 17.0391 1 16.5304 1 16V5C1 4.46957 1.21071 3.96086 1.58579 3.58579C1.96086 3.21071 2.46957 3 3 3H6"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+  </SvgIcon>
+);
+
+export const CallIconSearch = (props) => (
+  <svg
+    width="20"
+    height="20"
+    viewBox="0 0 20 20"
+    fill="none"
+    {...props}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <circle cx="10" cy="10" r="10" fill="#F7F7F8" />
+    <g clipPath="url(#clip0_3384_12642)">
+      <path
+        d="M15.0002 12.46V13.96C15.0008 14.0993 14.9723 14.2371 14.9165 14.3647C14.8607 14.4923 14.7789 14.6068 14.6762 14.701C14.5736 14.7951 14.4525 14.8668 14.3206 14.9114C14.1887 14.956 14.0489 14.9726 13.9102 14.96C12.3716 14.7929 10.8937 14.2671 9.59521 13.425C8.38712 12.6574 7.36288 11.6331 6.59521 10.425C5.7502 9.12065 5.22433 7.63555 5.06021 6.09005C5.04772 5.95178 5.06415 5.81243 5.10846 5.68086C5.15277 5.54929 5.224 5.42839 5.31759 5.32586C5.41119 5.22332 5.52511 5.1414 5.65211 5.08531C5.7791 5.02922 5.91638 5.00018 6.05521 5.00005H7.55521C7.79786 4.99766 8.03311 5.08359 8.21709 5.24181C8.40108 5.40004 8.52125 5.61977 8.55521 5.86005C8.61852 6.34008 8.73594 6.81141 8.90521 7.26505C8.97248 7.44401 8.98704 7.63851 8.94716 7.82549C8.90729 8.01247 8.81464 8.1841 8.68021 8.32005L8.04521 8.95505C8.75699 10.2068 9.79344 11.2433 11.0452 11.955L11.6802 11.32C11.8162 11.1856 11.9878 11.093 12.1748 11.0531C12.3618 11.0132 12.5562 11.0278 12.7352 11.095C13.1888 11.2643 13.6602 11.3817 14.1402 11.445C14.3831 11.4793 14.6049 11.6017 14.7635 11.7888C14.922 11.9759 15.0063 12.2148 15.0002 12.46Z"
+        stroke="#00A676"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_3384_12642">
+        <rect width="12" height="12" fill="white" transform="translate(4 4)" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export const DeleteIcon = (props) => (
+  <SvgIcon width="18" height="22" viewBox="0 0 18 22" fill="none" {...props}>
+    <g fill="none">
+      <path
+        d="M9.00112 0.928223C9.82397 0.928149 10.6155 1.24365 11.2127 1.80974C11.8099 2.37583 12.1672 3.1494 12.2111 3.97108L12.2154 4.14251H16.9297C17.0926 4.14256 17.2494 4.20443 17.3684 4.31563C17.4874 4.42682 17.5598 4.57905 17.5709 4.74155C17.582 4.90405 17.531 5.0647 17.4282 5.19105C17.3254 5.3174 17.1785 5.40002 17.0171 5.42222L16.9297 5.42822H16.022L14.9763 18.3308C14.911 19.1357 14.5452 19.8866 13.9515 20.434C13.3578 20.9815 12.5798 21.2854 11.7723 21.2854H6.22997C5.42241 21.2854 4.64442 20.9815 4.05075 20.434C3.45707 19.8866 3.09122 19.1357 3.02597 18.3308L1.9794 5.42822H1.07254C0.917198 5.42822 0.767109 5.37196 0.650033 5.26985C0.532957 5.16774 0.456815 5.0267 0.435687 4.87279L0.429688 4.78537C0.429694 4.63002 0.485953 4.47993 0.588059 4.36285C0.690166 4.24578 0.831213 4.16964 0.985116 4.14851L1.07254 4.14251H5.78683C5.78683 3.29003 6.12548 2.47246 6.72827 1.86967C7.33107 1.26687 8.14863 0.928223 9.00112 0.928223ZM14.7328 5.42822H3.2694L4.3074 18.2271C4.3466 18.71 4.56615 19.1605 4.92238 19.489C5.27862 19.8174 5.74543 19.9997 6.22997 19.9997H11.7723C12.2568 19.9997 12.7236 19.8174 13.0799 19.489C13.4361 19.1605 13.6556 18.71 13.6948 18.2271L14.732 5.42822H14.7328ZM7.07255 8.64251C7.22789 8.64252 7.37798 8.69877 7.49506 8.80088C7.61213 8.90299 7.68828 9.04403 7.7094 9.19794L7.7154 9.28537V16.1425C7.71535 16.3054 7.65348 16.4622 7.54228 16.5812C7.43109 16.7002 7.27886 16.7726 7.11636 16.7837C6.95386 16.7948 6.79321 16.7438 6.66686 16.641C6.54051 16.5382 6.45789 16.3913 6.43569 16.2299L6.42969 16.1425V9.28537C6.42969 9.11487 6.49742 8.95136 6.61798 8.8308C6.73854 8.71024 6.90205 8.64251 7.07255 8.64251ZM10.9297 8.64251C11.085 8.64252 11.2351 8.69877 11.3522 8.80088C11.4693 8.90299 11.5454 9.04403 11.5665 9.19794L11.5725 9.28537V16.1425C11.5725 16.3054 11.5106 16.4622 11.3994 16.5812C11.2882 16.7002 11.136 16.7726 10.9735 16.7837C10.811 16.7948 10.6504 16.7438 10.524 16.641C10.3977 16.5382 10.315 16.3913 10.2928 16.2299L10.2868 16.1425V9.28537C10.2868 9.11487 10.3546 8.95136 10.4751 8.8308C10.5957 8.71024 10.7592 8.64251 10.9297 8.64251ZM9.00112 2.21394C8.51244 2.21388 8.04196 2.39933 7.68476 2.73282C7.32756 3.06632 7.11028 3.52297 7.07683 4.01051L7.07255 4.14251H10.9297L10.9254 4.01051C10.892 3.52297 10.6747 3.06632 10.3175 2.73282C9.96028 2.39933 9.4898 2.21388 9.00112 2.21394Z"
+        fill="#283049"
+      />
+    </g>
+  </SvgIcon>
+);
+
+export const HomeIcon = (props) => (
+  <SvgIcon width="28" height="28" viewBox="0 0 28 28" fill="none" {...props}>
+    <g fill="none">
+      <path
+        d="M3.5 10.5002L14 2.3335L24.5 10.5002V23.3335C24.5 23.9523 24.2542 24.5458 23.8166 24.9834C23.379 25.421 22.7855 25.6668 22.1667 25.6668H5.83333C5.21449 25.6668 4.621 25.421 4.18342 24.9834C3.74583 24.5458 3.5 23.9523 3.5 23.3335V10.5002Z"
+        fill="#F08B32"
+      />
+      <path
+        d="M10.5 25.6668V19.8335C10.5 17.9005 12.067 16.3335 14 16.3335C15.933 16.3335 17.5 17.9005 17.5 19.8335V25.6668"
+        fill="white"
+      />
+    </g>
+  </SvgIcon>
+);
+
+export const HomeGray = (props) => (
+  <SvgIcon width="28" height="28" viewBox="0 0 28 28" fill="none" {...props}>
+    <g fill="none">
+      <path
+        d="M3.5 10.5002L14 2.3335L24.5 10.5002V23.3335C24.5 23.9523 24.2542 24.5458 23.8166 24.9834C23.379 25.421 22.7855 25.6668 22.1667 25.6668H5.83333C5.21449 25.6668 4.621 25.421 4.18342 24.9834C3.74583 24.5458 3.5 23.9523 3.5 23.3335V10.5002Z"
+        fill="#A0A4AF"
+      />
+      <path
+        d="M10.5 25.6668V19.8335C10.5 17.9005 12.067 16.3335 14 16.3335C15.933 16.3335 17.5 17.9005 17.5 19.8335V25.6668"
+        fill="white"
+      />
+    </g>
+  </SvgIcon>
+);
+
+export const InboxIcon = (props) => (
+  <SvgIcon width="24" height="15" viewBox="0 0 24 15" fill="none" {...props}>
+    <g fill="none">
+      <path
+        d="M7.46988 1.50004C7.35746 1.5002 7.24652 1.52563 7.14526 1.57444C7.044 1.62325 6.95501 1.69421 6.88486 1.78205L2.30974 7.5002H8.99992C9.19884 7.5002 9.38961 7.57922 9.53026 7.71988C9.67092 7.86054 9.74994 8.05131 9.74994 8.25022C9.74994 8.84698 9.987 9.41929 10.409 9.84126C10.8309 10.2632 11.4032 10.5003 12 10.5003C12.5968 10.5003 13.1691 10.2632 13.591 9.84126C14.013 9.41929 14.2501 8.84698 14.2501 8.25022C14.2501 8.05131 14.3291 7.86054 14.4697 7.71988C14.6104 7.57922 14.8012 7.5002 15.0001 7.5002H21.6903L17.1151 1.78205C17.045 1.69421 16.956 1.62325 16.8547 1.57444C16.7535 1.52563 16.6425 1.5002 16.5301 1.50004H7.46988ZM5.71483 0.844523C5.92541 0.581271 6.19246 0.368702 6.49624 0.222526C6.80002 0.0763491 7.13276 0.000300652 7.46988 0H16.5301C16.8672 0.000300652 17.2 0.0763491 17.5038 0.222526C17.8075 0.368702 18.0746 0.581271 18.2852 0.844523L23.8353 7.78221C23.8979 7.86037 23.9443 7.95028 23.9716 8.04663C23.9989 8.14299 24.0066 8.24384 23.9943 8.34323L23.4093 13.0294C23.3413 13.5737 23.0767 14.0744 22.6654 14.4374C22.2541 14.8004 21.7243 15.0006 21.1758 15.0004H2.82425C2.27567 15.0006 1.74591 14.8004 1.33458 14.4374C0.92326 14.0744 0.658713 13.5737 0.590689 13.0294L0.00567329 8.34323C-0.00662143 8.24384 0.0011138 8.14299 0.0284226 8.04663C0.0557315 7.95028 0.102061 7.86037 0.164678 7.78221L5.71483 0.844523Z"
+        fill="#A0A4AF"
+      />
+    </g>
+  </SvgIcon>
+);
+
+export const SupportIcon = (props) => (
+  <SvgIcon width="20" height="21" viewBox="0 0 20 21" fill="none" {...props}>
+    <g fill="none">
+      <path
+        d="M2 16H4V20.081L9.101 16H14C15.103 16 16 15.103 16 14V6C16 4.897 15.103 4 14 4H2C0.897 4 0 4.897 0 6V14C0 15.103 0.897 16 2 16Z"
+        fill="#A0A4AF"
+      />
+      <path
+        d="M18 0H6C4.897 0 4 0.897 4 2H16C17.103 2 18 2.897 18 4V12C19.103 12 20 11.103 20 10V2C20 0.897 19.103 0 18 0Z"
+        fill="#A0A4AF"
+      />
+    </g>
+  </SvgIcon>
+);
+
+export const RupeeIcon = (props) => (
+  <SvgIcon width="28" height="28" viewBox="0 0 28 28" fill="none" {...props}>
+    <g fill="none">
+      <path
+        d="M19.0077 9H16.7977C16.6051 8.27179 16.2647 7.59101 15.7977 7H19.0077C19.273 7 19.5273 6.89464 19.7148 6.70711C19.9024 6.51957 20.0077 6.26522 20.0077 6C20.0077 5.73478 19.9024 5.48043 19.7148 5.29289C19.5273 5.10536 19.273 5 19.0077 5H8.00774C7.74252 5 7.48817 5.10536 7.30063 5.29289C7.1131 5.48043 7.00774 5.73478 7.00774 6C7.00774 6.26522 7.1131 6.51957 7.30063 6.70711C7.48817 6.89464 7.74252 7 8.00774 7H11.5077C12.168 7.00232 12.8141 7.19134 13.3715 7.54523C13.9289 7.89913 14.3748 8.40346 14.6577 9H8.00774C7.74252 9 7.48817 9.10536 7.30063 9.29289C7.1131 9.48043 7.00774 9.73478 7.00774 10C7.00774 10.2652 7.1131 10.5196 7.30063 10.7071C7.48817 10.8946 7.74252 11 8.00774 11H15.0077C14.8879 11.8306 14.4735 12.5905 13.8403 13.1411C13.207 13.6918 12.3969 13.9966 11.5577 14H8.00774C7.96119 13.9953 7.91429 13.9953 7.86774 14C7.80147 13.9897 7.73401 13.9897 7.66774 14C7.59957 14.0232 7.53547 14.057 7.47774 14.1L7.35774 14.17C7.30296 14.2195 7.25579 14.2768 7.21774 14.34C7.18425 14.3843 7.15416 14.4311 7.12774 14.48C7.11884 14.5397 7.11884 14.6003 7.12774 14.66C7.05648 14.7597 7.01488 14.8776 7.00774 15C7.00306 15.0465 7.00306 15.0935 7.00774 15.14C6.99742 15.2063 6.99742 15.2737 7.00774 15.34C7.03095 15.4082 7.06469 15.4723 7.10774 15.53C7.10774 15.53 7.10774 15.61 7.17774 15.65L13.1777 22.65C13.3501 22.8516 13.5955 22.9764 13.86 22.997C14.1244 23.0177 14.3862 22.9324 14.5877 22.76C14.7893 22.5876 14.9141 22.3422 14.9348 22.0778C14.9554 21.8134 14.8701 21.5516 14.6977 21.35L10.1877 16H11.5077C12.8838 16.0057 14.212 15.4954 15.2302 14.5697C16.2484 13.6441 16.8827 12.3704 17.0077 11H19.0077C19.273 11 19.5273 10.8946 19.7148 10.7071C19.9024 10.5196 20.0077 10.2652 20.0077 10C20.0077 9.73478 19.9024 9.48043 19.7148 9.29289C19.5273 9.10536 19.273 9 19.0077 9Z"
+        fill="#A0A4AF"
+      />
+    </g>
+  </SvgIcon>
+);
+
+export const RupeeInvoiceIcon = (props) => (
+  <SvgIcon width="28" height="28" viewBox="0 0 28 28" fill="none" {...props}>
+    <g fill="none">
+      <path
+        d="M19.0077 9H16.7977C16.6051 8.27179 16.2647 7.59101 15.7977 7H19.0077C19.273 7 19.5273 6.89464 19.7148 6.70711C19.9024 6.51957 20.0077 6.26522 20.0077 6C20.0077 5.73478 19.9024 5.48043 19.7148 5.29289C19.5273 5.10536 19.273 5 19.0077 5H8.00774C7.74252 5 7.48817 5.10536 7.30063 5.29289C7.1131 5.48043 7.00774 5.73478 7.00774 6C7.00774 6.26522 7.1131 6.51957 7.30063 6.70711C7.48817 6.89464 7.74252 7 8.00774 7H11.5077C12.168 7.00232 12.8141 7.19134 13.3715 7.54523C13.9289 7.89913 14.3748 8.40346 14.6577 9H8.00774C7.74252 9 7.48817 9.10536 7.30063 9.29289C7.1131 9.48043 7.00774 9.73478 7.00774 10C7.00774 10.2652 7.1131 10.5196 7.30063 10.7071C7.48817 10.8946 7.74252 11 8.00774 11H15.0077C14.8879 11.8306 14.4735 12.5905 13.8403 13.1411C13.207 13.6918 12.3969 13.9966 11.5577 14H8.00774C7.96119 13.9953 7.91429 13.9953 7.86774 14C7.80147 13.9897 7.73401 13.9897 7.66774 14C7.59957 14.0232 7.53547 14.057 7.47774 14.1L7.35774 14.17C7.30296 14.2195 7.25579 14.2768 7.21774 14.34C7.18425 14.3843 7.15416 14.4311 7.12774 14.48C7.11884 14.5397 7.11884 14.6003 7.12774 14.66C7.05648 14.7597 7.01488 14.8776 7.00774 15C7.00306 15.0465 7.00306 15.0935 7.00774 15.14C6.99742 15.2063 6.99742 15.2737 7.00774 15.34C7.03095 15.4082 7.06469 15.4723 7.10774 15.53C7.10774 15.53 7.10774 15.61 7.17774 15.65L13.1777 22.65C13.3501 22.8516 13.5955 22.9764 13.86 22.997C14.1244 23.0177 14.3862 22.9324 14.5877 22.76C14.7893 22.5876 14.9141 22.3422 14.9348 22.0778C14.9554 21.8134 14.8701 21.5516 14.6977 21.35L10.1877 16H11.5077C12.8838 16.0057 14.212 15.4954 15.2302 14.5697C16.2484 13.6441 16.8827 12.3704 17.0077 11H19.0077C19.273 11 19.5273 10.8946 19.7148 10.7071C19.9024 10.5196 20.0077 10.2652 20.0077 10C20.0077 9.73478 19.9024 9.48043 19.7148 9.29289C19.5273 9.10536 19.273 9 19.0077 9Z"
+        fill="#FFF"
+      />
+    </g>
+  </SvgIcon>
+);
+
+export const BankInvoiceIcon = (props) => (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <g clipPath="url(#clip0_1154_6683)">
+      <g clipPath="url(#clip1_1154_6683)">
+        <path
+          d="M9.75 9.75V20.25"
+          stroke="white"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M14.25 9.75V20.25"
+          stroke="white"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M18.75 9.75V20.25"
+          stroke="white"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M5.25 9.75V20.25"
+          stroke="white"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M0.75 23.25H23.25"
+          stroke="white"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M0.75 9.75V5.25L12 0.75L23.25 5.25V9.75H0.75Z"
+          stroke="white"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M12 7.5C12.8284 7.5 13.5 6.82843 13.5 6C13.5 5.17157 12.8284 4.5 12 4.5C11.1716 4.5 10.5 5.17157 10.5 6C10.5 6.82843 11.1716 7.5 12 7.5Z"
+          fill="white"
+        />
+      </g>
+    </g>
+  </svg>
+);
+
+export const SalesPersonInvoiceIcon = (props) => (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <circle cx="12" cy="8" r="5.5" stroke="white" />
+    <path
+      d="M9 8C9 9.65685 10.3431 11 12 11C13.6569 11 15 9.65685 15 8"
+      stroke="white"
+      strokeWidth="0.5"
+    />
+    <path
+      d="M4 23C4 18.0294 7.58172 14 12 14C16.4183 14 20 18.0294 20 23"
+      stroke="white"
+    />
+    <path
+      d="M14 19.3373L11.9027 15L10 19.3373L11.9027 21L14 19.3373Z"
+      stroke="white"
+    />
+  </svg>
+);
+
+export const RupeeOrange = (props) => (
+  <SvgIcon width="28" height="28" viewBox="0 0 28 28" fill="none" {...props}>
+    <g fill="none">
+      <path
+        d="M19.0077 9H16.7977C16.6051 8.27179 16.2647 7.59101 15.7977 7H19.0077C19.273 7 19.5273 6.89464 19.7148 6.70711C19.9024 6.51957 20.0077 6.26522 20.0077 6C20.0077 5.73478 19.9024 5.48043 19.7148 5.29289C19.5273 5.10536 19.273 5 19.0077 5H8.00774C7.74252 5 7.48817 5.10536 7.30063 5.29289C7.1131 5.48043 7.00774 5.73478 7.00774 6C7.00774 6.26522 7.1131 6.51957 7.30063 6.70711C7.48817 6.89464 7.74252 7 8.00774 7H11.5077C12.168 7.00232 12.8141 7.19134 13.3715 7.54523C13.9289 7.89913 14.3748 8.40346 14.6577 9H8.00774C7.74252 9 7.48817 9.10536 7.30063 9.29289C7.1131 9.48043 7.00774 9.73478 7.00774 10C7.00774 10.2652 7.1131 10.5196 7.30063 10.7071C7.48817 10.8946 7.74252 11 8.00774 11H15.0077C14.8879 11.8306 14.4735 12.5905 13.8403 13.1411C13.207 13.6918 12.3969 13.9966 11.5577 14H8.00774C7.96119 13.9953 7.91429 13.9953 7.86774 14C7.80147 13.9897 7.73401 13.9897 7.66774 14C7.59957 14.0232 7.53547 14.057 7.47774 14.1L7.35774 14.17C7.30296 14.2195 7.25579 14.2768 7.21774 14.34C7.18425 14.3843 7.15416 14.4311 7.12774 14.48C7.11884 14.5397 7.11884 14.6003 7.12774 14.66C7.05648 14.7597 7.01488 14.8776 7.00774 15C7.00306 15.0465 7.00306 15.0935 7.00774 15.14C6.99742 15.2063 6.99742 15.2737 7.00774 15.34C7.03095 15.4082 7.06469 15.4723 7.10774 15.53C7.10774 15.53 7.10774 15.61 7.17774 15.65L13.1777 22.65C13.3501 22.8516 13.5955 22.9764 13.86 22.997C14.1244 23.0177 14.3862 22.9324 14.5877 22.76C14.7893 22.5876 14.9141 22.3422 14.9348 22.0778C14.9554 21.8134 14.8701 21.5516 14.6977 21.35L10.1877 16H11.5077C12.8838 16.0057 14.212 15.4954 15.2302 14.5697C16.2484 13.6441 16.8827 12.3704 17.0077 11H19.0077C19.273 11 19.5273 10.8946 19.7148 10.7071C19.9024 10.5196 20.0077 10.2652 20.0077 10C20.0077 9.73478 19.9024 9.48043 19.7148 9.29289C19.5273 9.10536 19.273 9 19.0077 9Z"
+        fill="#F08B32"
+      />
+    </g>
+  </SvgIcon>
+);
+
+export const SearchIcon = (props) => (
+  <SvgIcon width="29" height="29" viewBox="0 0 29 29" fill="none" {...props}>
+    <g fill="none">
+      <path
+        d="M13.2904 21.7502C17.9618 21.7502 21.7487 17.9632 21.7487 13.2918C21.7487 8.62042 17.9618 4.8335 13.2904 4.8335C8.61896 4.8335 4.83203 8.62042 4.83203 13.2918C4.83203 17.9632 8.61896 21.7502 13.2904 21.7502Z"
+        stroke="white"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M24.1654 24.1668L19.332 19.3335"
+        stroke="white"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+  </SvgIcon>
+);
+
+export const SearchIconLight = (props) => (
+  <svg
+    width="20"
+    height="20"
+    viewBox="0 0 20 20"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z"
+      stroke="#C4CDD5"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M17.5 17.5L13.875 13.875"
+      stroke="#C4CDD5"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export const NotificationIcon = (props) => (
+  <SvgIcon width="29" height="29" viewBox="0 0 29 29" fill="none" {...props}>
+    <g fill="none">
+      <path
+        d="M20.1402 10.6335C20.1402 9.09524 19.5461 7.61999 18.4886 6.53228C17.4311 5.44457 15.9968 4.8335 14.5013 4.8335C13.0058 4.8335 11.5715 5.44457 10.514 6.53228C9.45651 7.61999 8.86241 9.09524 8.86241 10.6335C8.86241 17.4002 6.04297 19.3335 6.04297 19.3335H22.9596C22.9596 19.3335 20.1402 17.4002 20.1402 10.6335Z"
+        stroke="white"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M18.125 21.75C17.7566 22.485 17.2278 23.0952 16.5917 23.5193C15.9555 23.9434 15.2342 24.1667 14.5 24.1667C13.7658 24.1667 13.0445 23.9434 12.4083 23.5193C11.7721 23.0952 11.2434 22.485 10.875 21.75"
+        stroke="white"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+  </SvgIcon>
+);
+
+export const BurgerMenuIcon = (props) => (
+  <SvgIcon width="36" height="16" viewBox="0 0 36 16" fill="none" {...props}>
+    <g fill="none">
+      <path
+        d="M0 0H34C35.1046 0 36 0.895431 36 2C36 3.10457 35.1046 4 34 4H0V0Z"
+        fill="white"
+      />
+      <path
+        d="M0 12H23C24.1046 12 25 12.8954 25 14C25 15.1046 24.1046 16 23 16H0V12Z"
+        fill="white"
+      />
+      <path
+        d="M0 6H28C29.1046 6 30 6.89543 30 8C30 9.10457 29.1046 10 28 10H0V6Z"
+        fill="white"
+      />
+    </g>
+  </SvgIcon>
+);
+
+export const ElectricityIcon = (props) => (
+  <SvgIcon width="40" height="40" viewBox="0 0 40 40" fill="none" {...props}>
+    <g fill="none">
+      <circle cx="20" cy="20" r="20" fill="#F2F2F0" />
+      <path
+        d="M20.332 16.6606C20.332 16.4627 20.0754 16.385 19.9656 16.5496L18.5393 18.6891C18.4507 18.822 18.546 19 18.7057 19H19.4654C19.5758 19 19.6654 19.0895 19.6654 19.2V20.3394C19.6654 20.5373 19.922 20.615 20.0318 20.4504L21.4581 18.3109C21.5467 18.178 21.4514 18 21.2917 18H20.532C20.4216 18 20.332 17.9105 20.332 17.8V16.6606Z"
+        fill="#283049"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M24.6353 18.424C24.5353 19.2797 24.1906 20.0903 23.6409 20.7623C23.3203 21.154 22.5053 22.273 22.3319 22.9997H17.6653C17.4919 22.2723 16.6759 21.1533 16.3553 20.7613C15.8074 20.0926 15.4627 19.2809 15.3619 18.4223C15.2626 17.5656 15.4121 16.6984 15.7926 15.9243C16.1767 15.1444 16.7737 14.4892 17.5146 14.0343C18.2619 13.5751 19.1221 13.3323 19.9993 13.333C20.8786 13.333 21.7399 13.5763 22.4839 14.0353C23.2246 14.4903 23.8214 15.1457 24.2053 15.9257C24.5856 16.6999 24.7349 17.5672 24.6353 18.424V18.424ZM21.8596 22.333H18.1373C17.9953 22.0053 17.8056 21.677 17.6289 21.398C17.3964 21.0314 17.1436 20.678 16.8716 20.3397C16.4043 19.7696 16.1103 19.0774 16.0243 18.3453C15.9396 17.6157 16.0669 16.8772 16.3909 16.218C16.7196 15.5511 17.2304 14.9908 17.8643 14.602C18.5065 14.2075 19.2456 13.999 19.9993 13.9997C20.7559 13.9997 21.4959 14.2093 22.1343 14.603C22.7678 14.9919 23.2784 15.5521 23.6069 16.219C23.9308 16.8783 24.0579 17.617 23.9729 18.3467C23.8866 19.0786 23.5923 19.7705 23.1249 20.3403C22.9483 20.5557 22.6486 20.955 22.3679 21.3987C22.1913 21.6777 22.0019 22.0053 21.8599 22.333H21.8596Z"
+        fill="#283049"
+      />
+      <path
+        d="M17.6641 23.9993C17.6641 23.9109 17.6992 23.8262 17.7617 23.7636C17.8242 23.7011 17.909 23.666 17.9974 23.666H21.9974C22.0858 23.666 22.1706 23.7011 22.2331 23.7636C22.2956 23.8262 22.3307 23.9109 22.3307 23.9993C22.3307 24.0878 22.2956 24.1725 22.2331 24.2351C22.1706 24.2976 22.0858 24.3327 21.9974 24.3327H17.9974C17.909 24.3327 17.8242 24.2976 17.7617 24.2351C17.6992 24.1725 17.6641 24.0878 17.6641 23.9993Z"
+        fill="#283049"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M17.6641 25H22.3307V26C22.3307 26.1768 22.2605 26.3464 22.1355 26.4714C22.0104 26.5964 21.8409 26.6667 21.6641 26.6667H18.3307C18.1539 26.6667 17.9843 26.5964 17.8593 26.4714C17.7343 26.3464 17.6641 26.1768 17.6641 26V25ZM18.3307 25.6667H21.6641V26H18.3307V25.6667Z"
+        fill="#283049"
+      />
+    </g>
+  </SvgIcon>
+);
+
+export const InternetIcon = (props) => (
+  <SvgIcon width="40" height="40" viewBox="0 0 40 40" fill="none" {...props}>
+    <g fill="none">
+      <circle cx="20" cy="20" r="20" fill="#F2F2F0" />
+      <path
+        d="M27.3844 18.115C27.4347 18.0662 27.4738 18.007 27.499 17.9416C27.5243 17.8762 27.535 17.8061 27.5305 17.7362C27.5261 17.6662 27.5065 17.5981 27.4732 17.5364C27.4398 17.4748 27.3935 17.4211 27.3374 17.379C25.2054 15.829 22.6363 14.9959 20.0004 15C17.2594 15 14.7234 15.882 12.6634 17.379C12.6073 17.421 12.5609 17.4746 12.5274 17.5362C12.494 17.5979 12.4743 17.666 12.4698 17.736C12.4652 17.8059 12.4759 17.876 12.501 17.9415C12.5262 18.0069 12.5652 18.0661 12.6154 18.115C12.7028 18.2011 12.8179 18.2534 12.9402 18.2625C13.0626 18.2717 13.1842 18.2371 13.2834 18.165C15.2386 16.754 17.5893 15.9963 20.0004 16C22.5074 16 24.8274 16.802 26.7164 18.164C26.9214 18.312 27.2064 18.294 27.3844 18.115V18.115Z"
+        fill="#283049"
+      />
+      <path
+        d="M25.2276 20.271C25.2791 20.2213 25.3189 20.1607 25.3441 20.0937C25.3693 20.0267 25.3792 19.9549 25.3732 19.8835C25.3672 19.8122 25.3453 19.7431 25.3092 19.6812C25.2731 19.6194 25.2237 19.5664 25.1646 19.526C23.627 18.5272 21.8321 17.997 19.9986 18C18.0936 18 16.3186 18.56 14.8326 19.526C14.7731 19.5661 14.7234 19.6191 14.6871 19.6809C14.6508 19.7428 14.6288 19.812 14.6228 19.8834C14.6168 19.9549 14.6268 20.0268 14.6522 20.0939C14.6776 20.161 14.7177 20.2215 14.7696 20.271C14.8548 20.3542 14.9657 20.4059 15.0842 20.4177C15.2027 20.4295 15.3216 20.4007 15.4216 20.336C16.7876 19.4611 18.3764 18.9973 19.9986 19C21.6204 18.9975 23.2088 19.4613 24.5746 20.336C24.7806 20.468 25.0546 20.444 25.2276 20.271V20.271ZM23.0446 22.454C23.2706 22.228 23.2296 21.849 22.9446 21.704C22.0321 21.2397 21.0224 20.9984 19.9986 21C18.9386 21 17.9366 21.254 17.0526 21.704C16.7676 21.849 16.7266 22.228 16.9526 22.454L16.9676 22.469C17.1276 22.629 17.3746 22.659 17.5786 22.559C18.3318 22.1899 19.1598 21.9986 19.9986 22C20.8666 22 21.6886 22.201 22.4186 22.56C22.6216 22.66 22.8686 22.63 23.0286 22.469L23.0446 22.454ZM21.0586 24.44C21.2546 24.244 21.2566 23.92 21.0186 23.78C20.7101 23.5964 20.3576 23.4996 19.9986 23.5C19.6395 23.4996 19.2871 23.5964 18.9786 23.78C18.7406 23.92 18.7426 24.244 18.9386 24.44L19.6446 25.146C19.7383 25.2397 19.8655 25.2924 19.9981 25.2924C20.1307 25.2924 20.2578 25.2397 20.3516 25.146L21.0586 24.439V24.44Z"
+        fill="#283049"
+      />
+    </g>
+  </SvgIcon>
+);
+
+export const PhoneIcon = (props) => (
+  <SvgIcon width="40" height="40" viewBox="0 0 40 40" fill="none" {...props}>
+    <g fill="none">
+      <circle cx="20" cy="20" r="20" fill="#F2F2F0" />
+      <path
+        d="M19.0349 16.16C19.0349 16.1601 19.0347 16.1602 19.0346 16.1601L16.7795 13.557C16.5195 13.257 16.0429 13.2583 15.7409 13.561L13.8862 15.419C13.3342 15.9717 13.1762 16.7923 13.4955 17.4503C15.4033 21.4003 18.5889 24.5904 22.5362 26.5037C23.1935 26.823 24.0135 26.665 24.5655 26.1123L26.4375 24.237C26.7409 23.9337 26.7415 23.4543 26.4389 23.1943L23.8255 20.951C23.5522 20.7163 23.1275 20.747 22.8535 21.0217L21.9442 21.9323C21.8976 21.9811 21.8364 22.0133 21.7698 22.0239C21.7032 22.0345 21.6349 22.0229 21.5755 21.991C20.0891 21.1351 18.8562 19.9005 18.0022 18.413C17.9702 18.3535 17.9586 18.2852 17.9692 18.2184C17.9798 18.1517 18.012 18.0903 18.0609 18.0437L18.9675 17.1363C19.2421 16.8604 19.2722 16.4339 19.0351 16.1599C19.035 16.1598 19.0349 16.1599 19.0349 16.16V16.16Z"
+        stroke="#283049"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+  </SvgIcon>
+);
+
+export const RentIcon = (props) => (
+  <SvgIcon width="40" height="40" viewBox="0 0 40 40" fill="none" {...props}>
+    <g fill="none">
+      <circle cx="20" cy="20" r="20" fill="#F2F2F0" />
+      <path
+        d="M18.6667 26H21.3333M24.6667 26V15.3333C24.6667 14.9797 24.5262 14.6406 24.2761 14.3905C24.0261 14.1405 23.687 14 23.3333 14H16.6667C16.313 14 15.9739 14.1405 15.7239 14.3905C15.4738 14.6406 15.3333 14.9797 15.3333 15.3333V26H24.6667ZM24.6667 26H26H24.6667ZM24.6667 26H21.3333H24.6667ZM15.3333 26H14H15.3333ZM15.3333 26H18.6667H15.3333ZM18 16.6667H18.6667H18ZM18 19.3333H18.6667H18ZM21.3333 16.6667H22H21.3333ZM21.3333 19.3333H22H21.3333ZM18.6667 26V22.6667C18.6667 22.4899 18.7369 22.3203 18.8619 22.1953C18.987 22.0702 19.1565 22 19.3333 22H20.6667C20.8435 22 21.013 22.0702 21.1381 22.1953C21.2631 22.3203 21.3333 22.4899 21.3333 22.6667V26H18.6667Z"
+        stroke="#283049"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+  </SvgIcon>
+);
+
+export const WaterIcon = (props) => (
+  <SvgIcon width="40" height="40" viewBox="0 0 40 40" fill="none" {...props}>
+    <g fill="none">
+      <circle cx="20" cy="20" r="20" fill="#F2F2F0" />
+      <path
+        d="M16 20L19.6668 25.667C18.4291 25.667 17.2421 25.1753 16.3669 24.3001C15.4917 23.4249 15 22.2379 15 21.0002C15 18.9573 16.5809 17.3233 17.971 15.8259L19.5386 14.1381C19.6078 14.0635 19.7258 14.0635 19.795 14.1381L21.3626 15.8259C22.7527 17.3239 24.3336 18.9579 24.3336 21.0002C24.3336 22.2379 23.8419 23.4249 22.9667 24.3001C22.0915 25.1753 20.9045 25.667 19.6668 25.667L-nan -nanL-nan -nanZ"
+        stroke="#283049"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+  </SvgIcon>
+);
+
+export const CalenderIcon = (props) => (
+  <SvgIcon width="24" height="24" viewBox="0 0 24 24" fill="none" {...props}>
+    <g fill="none">
+      <path d="M3 5H21V21H3V5Z" stroke="white" strokeLinejoin="round" />
+      <path d="M21 9H3" stroke="white" strokeLinecap="round" />
+      <path d="M7 5V3" stroke="white" strokeLinecap="round" />
+      <path d="M17 5V3" stroke="white" strokeLinecap="round" />
+    </g>
+  </SvgIcon>
+);
+
+export const InvoiceIcon = (props) => (
+  <SvgIcon width="24" height="24" viewBox="0 0 24 24" fill="none" {...props}>
+    <g fill="none">
+      <path
+        d="M22 5V17C22 17 22 19 20 19C18 19 18 17 18 17V5H2V16C2 16 2 19 5 19C8 19 20 19 20 19"
+        stroke="white"
+        strokeLinecap="round"
+      />
+      <path d="M6 14H7" stroke="white" strokeLinecap="round" />
+      <path d="M11 14H14" stroke="white" strokeLinecap="round" />
+      <path d="M6 10H14" stroke="white" strokeLinecap="round" />
+    </g>
+  </SvgIcon>
+);
+
+export const LocationIcon = (props) => (
+  <SvgIcon width="24" height="24" viewBox="0 0 24 24" fill="none" {...props}>
+    <g fill="none">
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M12 21C12 21 18 14.7 18 9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9C6 14.7 12 21 12 21Z"
+        stroke="white"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M12 10C12.5523 10 13 9.55228 13 9C13 8.44772 12.5523 8 12 8C11.4477 8 11 8.44772 11 9C11 9.55228 11.4477 10 12 10Z"
+        stroke="white"
+      />
+    </g>
+  </SvgIcon>
+);
+
+export const ClipboardIcon = (props) => (
+  <SvgIcon width="24" height="24" viewBox="0 0 24 24" fill="none" {...props}>
+    <g fill="none">
+      <path
+        d="M15 3L18 3V3C18.5523 3 19 3.44772 19 4V4L19 20V20C19 20.5523 18.5523 21 18 21L6 21V21C5.44772 21 5 20.5523 5 20L5 4V4C5 3.44772 5.44772 3 6 3L9 3"
+        stroke="white"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <rect
+        x="15"
+        y="2"
+        width="2"
+        height="6"
+        rx="1"
+        transform="rotate(90 15 2)"
+        stroke="white"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+  </SvgIcon>
+);
+
+export const TransportIcon = (props) => (
+  <SvgIcon
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <g fill="none">
+      <path d="M4 17H2V7H15V17H8" stroke="white" strokeLinecap="round" />
+      <path
+        d="M20 17H22V12.5556L20 9H15V17H16"
+        stroke="white"
+        strokeLinecap="round"
+      />
+      <circle cx="6" cy="17" r="2" stroke="white" />
+      <circle cx="18" cy="17" r="2" stroke="white" />
+    </g>
+  </SvgIcon>
+);
+
+export const MapIcon = (props) => (
+  <SvgIcon
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <g fill="none">
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M3 5L9 3V19L3 21V5Z"
+        stroke="white"
+        strokeLinejoin="round"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M15 5L21 3V19L15 21V5Z"
+        stroke="white"
+        strokeLinejoin="round"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M15 5L9 3V19L15 21V5Z"
+        stroke="white"
+        strokeLinejoin="round"
+      />
+    </g>
+  </SvgIcon>
+);
+
+export const BikeIcon = (props) => (
+  <SvgIcon
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <g fill="none">
+      <circle cx="14" cy="6" r="1" stroke="white" strokeLinecap="round" />
+      <path
+        d="M12 18V14L9 12L12 9L14 11L16 12"
+        stroke="white"
+        strokeLinecap="round"
+      />
+      <circle cx="6" cy="17" r="3" stroke="white" />
+      <circle cx="18" cy="17" r="3" stroke="white" />
+    </g>
+  </SvgIcon>
+);
+
+export const RightArrowRounded = (props) => (
+  <SvgIcon width="56" height="56" viewBox="0 0 56 56" fill="none" {...props}>
+    <g fill="none">
+      <circle cx="28" cy="28" r="28" fill="#F2F2F0" />
+      <path
+        d="M25 34L31 27.5L25 21"
+        stroke="#F08B32"
+        strokeWidth="2"
+        strokeLinejoin="round"
+      />
+    </g>
+  </SvgIcon>
+);
+
+export const DropdownIcon = (props) => (
+  <SvgIcon width="11" height="6" viewBox="0 0 11 6" fill="none" {...props}>
+    <path
+      d="M1 1L5.5 5L10 1"
+      stroke="#F08B32"
+      fill="none"
+      strokeWidth="2"
+      strokeLinejoin="round"
+    />
+  </SvgIcon>
+);
+
+export const CheckCircle = (props) => (
+  <SvgIcon width="24" height="24" viewBox="0 0 24 24" fill="none" {...props}>
+    <g fill="none">
+      <path d="M7 13L10 16L17 9" stroke="#00A676" strokeLinecap="round" />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+        stroke="#00A676"
+      />
+    </g>
+  </SvgIcon>
+);
+
+export const HaveBill = (props) => (
+  <SvgIcon width="24" height="24" viewBox="0 0 24 24" fill="none" {...props}>
+    <g fill="none">
+      <path
+        d="M22 5V17C22 17 22 19 20 19C18 19 18 17 18 17V5H2V16C2 16 2 19 5 19C8 19 20 19 20 19"
+        stroke="black"
+        strokeLinecap="round"
+      />
+      <path d="M6 14H7" stroke="black" strokeLinecap="round" />
+      <path d="M11 14H14" stroke="black" strokeLinecap="round" />
+      <path d="M6 10H14" stroke="black" strokeLinecap="round" />
+    </g>
+  </SvgIcon>
+);
+
+export const DontHaveBill = (props) => (
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <rect width="24" height="24" fill="url(#pattern0)" />
+    <defs>
+      <pattern
+        id="pattern0"
+        patternContentUnits="objectBoundingBox"
+        width="1"
+        height="1"
+      >
+        <use xlinkHref="#image0_6088_4086" transform="scale(0.00195312)" />
+      </pattern>
+      <image
+        id="image0_6088_4086"
+        width="512"
+        height="512"
+        xlinkHref="data:image/png;base64,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"
+      />
+    </defs>
+  </svg>
+);
+
+export const ContactIcon = (props) => (
+  <SvgIcon width="30" height="30" viewBox="0 0 30 30" fill="none" {...props}>
+    <g fill="none">
+      <path d="M10 3.75V26.25" stroke="#A0A4AF" strokeLinecap="round" />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M25 3.75V26.25H7C5.89543 26.25 5 25.3546 5 24.25V5.75C5 4.64543 5.89543 3.75 7 3.75H25Z"
+        stroke="#A0A4AF"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M10 21.2497C10 18.7497 14.1667 19.1663 15.8333 17.4997C16.6667 16.6663 14.1667 16.6663 14.1667 12.4997C14.1667 9.72217 15.2775 8.33301 17.5 8.33301C19.7225 8.33301 20.8333 9.72217 20.8333 12.4997C20.8333 16.6663 18.3333 16.6663 19.1667 17.4997C20.8333 19.1663 25 18.7497 25 21.2497"
+        stroke="#A0A4AF"
+        strokeLinecap="round"
+      />
+    </g>
+  </SvgIcon>
+);
+
+export const PeopleIcon = (props) => (
+  <SvgIcon
+    width="34"
+    height="28"
+    viewBox="0 0 34 28"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M1.41663 21C1.41663 18.375 5.66663 18.375 7.79163 16.625C8.85413 15.75 5.66663 15.75 5.66663 11.375C5.66663 8.45863 7.08294 7 9.91663 7C12.7503 7 14.1666 8.45863 14.1666 11.375C14.1666 15.75 10.9791 15.75 12.0416 16.625C14.1666 18.375 18.4166 18.375 18.4166 21"
+      stroke="#A0A4AF"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+    />
+    <path
+      d="M16.9926 18.9503C17.7958 18.4944 18.8385 18.1662 19.8363 17.7704C20.6164 17.461 21.3691 17.1103 21.9583 16.625C23.0208 15.75 19.8333 15.75 19.8333 11.375C19.8333 8.45863 21.2497 7 24.0833 7C26.917 7 28.3333 8.45863 28.3333 11.375C28.3333 15.75 25.1458 15.75 26.2083 16.625C28.3333 18.375 32.5833 18.375 32.5833 21"
+      stroke="#A0A4AF"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+    />
+  </SvgIcon>
+);
+
+export const PeopleOrange = (props) => (
+  <SvgIcon
+    width="34"
+    height="28"
+    viewBox="0 0 34 28"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M1.41663 21C1.41663 18.375 5.66663 18.375 7.79163 16.625C8.85413 15.75 5.66663 15.75 5.66663 11.375C5.66663 8.45863 7.08294 7 9.91663 7C12.7503 7 14.1666 8.45863 14.1666 11.375C14.1666 15.75 10.9791 15.75 12.0416 16.625C14.1666 18.375 18.4166 18.375 18.4166 21"
+      stroke="#F08B32"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      fill="#F08B32"
+    />
+    <path
+      d="M16.9926 18.9503C17.7958 18.4944 18.8385 18.1662 19.8363 17.7704C20.6164 17.461 21.3691 17.1103 21.9583 16.625C23.0208 15.75 19.8333 15.75 19.8333 11.375C19.8333 8.45863 21.2497 7 24.0833 7C26.917 7 28.3333 8.45863 28.3333 11.375C28.3333 15.75 25.1458 15.75 26.2083 16.625C28.3333 18.375 32.5833 18.375 32.5833 21"
+      stroke="#F08B32"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      fill="#F08B32"
+    />
+  </SvgIcon>
+);
+
+export const BankingIcon = (props) => (
+  <SvgIcon
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M17.3536 4.35355L4.35355 17.3536L3.64645 16.6464L16.6464 3.64645L17.3536 4.35355Z"
+      fill="#A0A4AF"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M13.9764 2.13356C13.8017 1.95882 13.5082 1.95882 13.3335 2.13356L2.13349 13.3336C1.95876 13.5083 1.95876 13.8017 2.13349 13.9764L10.0235 21.8664C10.1982 22.0412 10.4917 22.0412 10.6664 21.8664L21.8664 10.6664C22.038 10.4949 22.0452 10.2093 21.8636 10.0208L13.9764 2.13356ZM12.6264 1.42645C13.1917 0.861187 14.1182 0.861187 14.6835 1.42645L22.5782 9.32116C23.1347 9.89266 23.1413 10.8057 22.5735 11.3736L11.3735 22.5736C10.8082 23.1388 9.88165 23.1388 9.31639 22.5736L1.42639 14.6836C0.861126 14.1183 0.861126 13.1917 1.42639 12.6264L12.6264 1.42645Z"
+      fill="#A0A4AF"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M17.3536 4.35355L4.35355 17.3536L3.64645 16.6464L16.6464 3.64645L17.3536 4.35355Z"
+      stroke="#A0A4AF"
+      strokeMiterlimit="10"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M13.9764 2.13356C13.8017 1.95882 13.5082 1.95882 13.3335 2.13356L2.13349 13.3336C1.95876 13.5083 1.95876 13.8017 2.13349 13.9764L10.0235 21.8664C10.1982 22.0412 10.4917 22.0412 10.6664 21.8664L21.8664 10.6664C22.038 10.4949 22.0452 10.2093 21.8636 10.0208L13.9764 2.13356ZM12.6264 1.42645C13.1917 0.861187 14.1182 0.861187 14.6835 1.42645L22.5782 9.32116C23.1347 9.89266 23.1413 10.8057 22.5735 11.3736L11.3735 22.5736C10.8082 23.1388 9.88165 23.1388 9.31639 22.5736L1.42639 14.6836C0.861126 14.1183 0.861126 13.1917 1.42639 12.6264L12.6264 1.42645Z"
+      stroke="#A0A4AF"
+      strokeMiterlimit="10"
+    />
+  </SvgIcon>
+);
+
+export const BankingOrange = (props) => (
+  <SvgIcon
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M17.3536 4.35355L4.35355 17.3536L3.64645 16.6464L16.6464 3.64645L17.3536 4.35355Z"
+      fill="#F08B32"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M13.9764 2.13356C13.8017 1.95882 13.5082 1.95882 13.3335 2.13356L2.13349 13.3336C1.95876 13.5083 1.95876 13.8017 2.13349 13.9764L10.0235 21.8664C10.1982 22.0412 10.4917 22.0412 10.6664 21.8664L21.8664 10.6664C22.038 10.4949 22.0452 10.2093 21.8636 10.0208L13.9764 2.13356ZM12.6264 1.42645C13.1917 0.861187 14.1182 0.861187 14.6835 1.42645L22.5782 9.32116C23.1347 9.89266 23.1413 10.8057 22.5735 11.3736L11.3735 22.5736C10.8082 23.1388 9.88165 23.1388 9.31639 22.5736L1.42639 14.6836C0.861126 14.1183 0.861126 13.1917 1.42639 12.6264L12.6264 1.42645Z"
+      fill="#F08B32"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M17.3536 4.35355L4.35355 17.3536L3.64645 16.6464L16.6464 3.64645L17.3536 4.35355Z"
+      stroke="#F08B32"
+      strokeMiterlimit="10"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M13.9764 2.13356C13.8017 1.95882 13.5082 1.95882 13.3335 2.13356L2.13349 13.3336C1.95876 13.5083 1.95876 13.8017 2.13349 13.9764L10.0235 21.8664C10.1982 22.0412 10.4917 22.0412 10.6664 21.8664L21.8664 10.6664C22.038 10.4949 22.0452 10.2093 21.8636 10.0208L13.9764 2.13356ZM12.6264 1.42645C13.1917 0.861187 14.1182 0.861187 14.6835 1.42645L22.5782 9.32116C23.1347 9.89266 23.1413 10.8057 22.5735 11.3736L11.3735 22.5736C10.8082 23.1388 9.88165 23.1388 9.31639 22.5736L1.42639 14.6836C0.861126 14.1183 0.861126 13.1917 1.42639 12.6264L12.6264 1.42645Z"
+      stroke="#F08B32"
+      strokeMiterlimit="10"
+    />
+  </SvgIcon>
+);
+
+export const SuperIcon = (props) => (
+  <SvgIcon
+    width="35"
+    height="29"
+    viewBox="0 0 35 29"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M30.625 24.7917L30.625 25.2917C30.9011 25.2917 31.125 25.0678 31.125 24.7917H30.625ZM30.625 5.83334H31.125C31.125 5.5572 30.9011 5.33334 30.625 5.33334V5.83334ZM18.9583 24.7917L18.9583 24.2917C18.8596 24.2917 18.7631 24.3209 18.681 24.3757L18.9583 24.7917ZM10.2083 30.625H9.70833C9.70833 30.8094 9.80983 30.9788 9.9724 31.0658C10.135 31.1529 10.3323 31.1433 10.4857 31.041L10.2083 30.625ZM10.2083 24.7917H10.7083C10.7083 24.5155 10.4845 24.2917 10.2083 24.2917V24.7917ZM4.375 24.7917H3.875C3.875 25.0678 4.09886 25.2917 4.375 25.2917V24.7917ZM4.375 5.83334V5.33334C4.09886 5.33334 3.875 5.5572 3.875 5.83334H4.375ZM31.125 24.7917V5.83334H30.125V24.7917H31.125ZM18.9583 25.2917L30.625 25.2917L30.625 24.2917L18.9583 24.2917L18.9583 25.2917ZM10.4857 31.041L19.2357 25.2077L18.681 24.3757L9.93098 30.209L10.4857 31.041ZM9.70833 24.7917V30.625H10.7083V24.7917H9.70833ZM4.375 25.2917H10.2083V24.2917H4.375V25.2917ZM3.875 5.83334V24.7917H4.875V5.83334H3.875ZM30.625 5.33334H4.375V6.33334H30.625V5.33334Z"
+      fill="white"
+    />
+    <path
+      d="M8.71394 18.072C8.38194 18.072 8.05994 18.028 7.74794 17.94C7.43994 17.848 7.19194 17.73 7.00394 17.586L7.33394 16.854C7.51394 16.986 7.72794 17.092 7.97594 17.172C8.22394 17.252 8.47194 17.292 8.71994 17.292C8.99594 17.292 9.19994 17.252 9.33194 17.172C9.46394 17.088 9.52994 16.978 9.52994 16.842C9.52994 16.742 9.48994 16.66 9.40994 16.596C9.33394 16.528 9.23394 16.474 9.10994 16.434C8.98994 16.394 8.82594 16.35 8.61794 16.302C8.29794 16.226 8.03594 16.15 7.83194 16.074C7.62794 15.998 7.45194 15.876 7.30394 15.708C7.15994 15.54 7.08794 15.316 7.08794 15.036C7.08794 14.792 7.15394 14.572 7.28594 14.376C7.41794 14.176 7.61594 14.018 7.87994 13.902C8.14794 13.786 8.47394 13.728 8.85794 13.728C9.12594 13.728 9.38794 13.76 9.64394 13.824C9.89994 13.888 10.1239 13.98 10.3159 14.1L10.0159 14.838C9.62794 14.618 9.23994 14.508 8.85194 14.508C8.57994 14.508 8.37794 14.552 8.24594 14.64C8.11794 14.728 8.05394 14.844 8.05394 14.988C8.05394 15.132 8.12794 15.24 8.27594 15.312C8.42794 15.38 8.65794 15.448 8.96594 15.516C9.28594 15.592 9.54794 15.668 9.75194 15.744C9.95594 15.82 10.1299 15.94 10.2739 16.104C10.4219 16.268 10.4959 16.49 10.4959 16.77C10.4959 17.01 10.4279 17.23 10.2919 17.43C10.1599 17.626 9.95994 17.782 9.69194 17.898C9.42394 18.014 9.09794 18.072 8.71394 18.072ZM13.0261 18.072C12.4261 18.072 11.9581 17.906 11.6221 17.574C11.2901 17.242 11.1241 16.768 11.1241 16.152V13.8H12.0961V16.116C12.0961 16.868 12.4081 17.244 13.0321 17.244C13.3361 17.244 13.5681 17.154 13.7281 16.974C13.8881 16.79 13.9681 16.504 13.9681 16.116V13.8H14.9281V16.152C14.9281 16.768 14.7601 17.242 14.4241 17.574C14.0921 17.906 13.6261 18.072 13.0261 18.072ZM17.7066 13.8C18.0786 13.8 18.4006 13.862 18.6726 13.986C18.9486 14.11 19.1606 14.286 19.3086 14.514C19.4566 14.742 19.5306 15.012 19.5306 15.324C19.5306 15.632 19.4566 15.902 19.3086 16.134C19.1606 16.362 18.9486 16.538 18.6726 16.662C18.4006 16.782 18.0786 16.842 17.7066 16.842H16.8606V18H15.8886V13.8H17.7066ZM17.6526 16.05C17.9446 16.05 18.1666 15.988 18.3186 15.864C18.4706 15.736 18.5466 15.556 18.5466 15.324C18.5466 15.088 18.4706 14.908 18.3186 14.784C18.1666 14.656 17.9446 14.592 17.6526 14.592H16.8606V16.05H17.6526ZM23.4766 17.22V18H20.2246V13.8H23.3986V14.58H21.1906V15.492H23.1406V16.248H21.1906V17.22H23.4766ZM26.926 18L26.116 16.83H26.068H25.222V18H24.25V13.8H26.068C26.44 13.8 26.762 13.862 27.034 13.986C27.31 14.11 27.522 14.286 27.67 14.514C27.818 14.742 27.892 15.012 27.892 15.324C27.892 15.636 27.816 15.906 27.664 16.134C27.516 16.358 27.304 16.53 27.028 16.65L27.97 18H26.926ZM26.908 15.324C26.908 15.088 26.832 14.908 26.68 14.784C26.528 14.656 26.306 14.592 26.014 14.592H25.222V16.056H26.014C26.306 16.056 26.528 15.992 26.68 15.864C26.832 15.736 26.908 15.556 26.908 15.324Z"
+      fill="white"
+    />
+  </SvgIcon>
+);
+
+export const SuccessIcon = (props) => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 41 40"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M11.9584 21.6667L17.0834 26.6667L29.0417 15"
+      stroke="#14BD91"
+      strokeWidth="2"
+      strokeLinecap="round"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M20.5 36.6667C29.9348 36.6667 37.5833 29.2048 37.5833 20C37.5833 10.7953 29.9348 3.33337 20.5 3.33337C11.0651 3.33337 3.41663 10.7953 3.41663 20C3.41663 29.2048 11.0651 36.6667 20.5 36.6667Z"
+      stroke="#14BD91"
+      strokeWidth="2"
+    />
+  </SvgIcon>
+);
+export const TryAgainIcon = (props) => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 41 40"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M20.5 13.3334V21.6667"
+      stroke="#F08B32"
+      strokeWidth="2"
+      strokeLinecap="round"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M20.5 28.3333C21.4434 28.3333 22.2083 27.5871 22.2083 26.6667C22.2083 25.7462 21.4434 25 20.5 25C19.5565 25 18.7916 25.7462 18.7916 26.6667C18.7916 27.5871 19.5565 28.3333 20.5 28.3333Z"
+      fill="#F08B32"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M20.5 36.6667C29.9348 36.6667 37.5833 29.2048 37.5833 20C37.5833 10.7953 29.9348 3.33337 20.5 3.33337C11.0651 3.33337 3.41663 10.7953 3.41663 20C3.41663 29.2048 11.0651 36.6667 20.5 36.6667Z"
+      stroke="#F08B32"
+      strokeWidth="2"
+    />
+  </SvgIcon>
+);
+export const DeclinedIcon = (props) => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 41 40"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M20.5 13.3334V21.6667"
+      stroke="#F08B32"
+      strokeWidth="2"
+      strokeLinecap="round"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M20.5 28.3333C21.4434 28.3333 22.2083 27.5871 22.2083 26.6667C22.2083 25.7462 21.4434 25 20.5 25C19.5565 25 18.7916 25.7462 18.7916 26.6667C18.7916 27.5871 19.5565 28.3333 20.5 28.3333Z"
+      fill="#F08B32"
+    />
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M20.5 36.6667C29.9348 36.6667 37.5833 29.2048 37.5833 20C37.5833 10.7953 29.9348 3.33337 20.5 3.33337C11.0651 3.33337 3.41663 10.7953 3.41663 20C3.41663 29.2048 11.0651 36.6667 20.5 36.6667Z"
+      stroke="#F08B32"
+      strokeWidth="2"
+    />
+  </SvgIcon>
+);
+
+export const Co = (props) => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 41 40"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <svg
+      width="28"
+      height="35"
+      viewBox="0 0 24 24"
+      fill="white"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M21 3V11C21 16.5228 16.5228 21 11 21H3L3 3L21 3Z"
+        stroke="#283049"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M9 21C9 21 13 21 13 17V14C13 13.4477 13.4477 13 14 13H17C17 13 21 13 21 9"
+        stroke="#283049"
+        strokeWidth="1.5"
+      />
+    </svg>
+  </SvgIcon>
+);
+
+export const DashboardWeb = (props) => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 43 28"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 21 21"
+      fill="white"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="0.75"
+        y="0.75"
+        width="7.40903"
+        height="7.40903"
+        rx="1.25"
+        stroke="#283049"
+        strokeWidth="1.5"
+      />
+      <rect
+        x="12.8418"
+        y="0.75"
+        width="7.40903"
+        height="7.40903"
+        rx="1.25"
+        stroke="#283049"
+        strokeWidth="1.5"
+      />
+      <rect
+        x="0.75"
+        y="12.8398"
+        width="7.40903"
+        height="7.40903"
+        rx="1.25"
+        stroke="#283049"
+        strokeWidth="1.5"
+      />
+      <rect
+        x="12.8418"
+        y="12.8398"
+        width="7.40903"
+        height="7.40903"
+        rx="1.25"
+        stroke="#283049"
+        strokeWidth="1.5"
+      />
+    </svg>
+
+    {/* <svg width="37" height="38" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg">
+<rect width="10.1818" height="10.1818" rx="2" fill="white"/>
+<rect x="13.8184" width="10.1818" height="10.1818" rx="2" fill="white"/>
+<rect y="13.8184" width="10.1818" height="10.1818" rx="2" fill="white"/>
+<rect x="13.8184" y="13.8184" width="10.1818" height="10.1818" rx="2" fill="white"/>
+</svg> */}
+  </SvgIcon>
+);
+
+export const RecievablesWeb = (props) => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 43 28"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 24 24"
+      fill="white"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M12 20C12 20 12 6 12 6C12 6 9.99998 4 7.99998 4C5.99998 4 2.99998 6 2.99998 6C2.99998 6 2.99998 20 2.99998 20C2.99998 20 5.99997 18 7.99998 18C9.99999 18 12 20 12 20Z"
+        stroke="#283049"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M12 20C12 20 12 6 12 6C12 6 14 4 16 4C18 4 21 6 21 6C21 6 21 20 21 20C21 20 18 18 16 18C14 18 12 20 12 20Z"
+        stroke="#283049"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </SvgIcon>
+);
+export const ComplianceWeb = (props) => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 43 28"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 16 19"
+      fill="white"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M15 11.7368C15 14.1228 12.6667 16.2105 8 18C3.33333 16.2105 1 14.1228 1 11.7368C1 9.35088 1 6.36842 1 2.78947C4.13611 1.59649 6.46945 1 8 1C9.53055 1 11.8639 1.59649 15 2.78947C15 6.36842 15 9.35088 15 11.7368Z"
+        stroke="#283049"
+        strokeWidth="1.5"
+      />
+    </svg>
+  </SvgIcon>
+);
+export const ExpenseBillsWeb = (props) => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 43 28"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 25 25"
+      fill="white"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M11.9697 9.28033L13.6806 10.9912L10.7951 13.8767L7.79043 10.871L7.2601 10.3405L6.72968 10.8709L1.35876 16.2418C0.954777 15.0386 0.748377 13.7752 0.75001 12.501V12.5C0.75001 6.01046 6.01047 0.75 12.5 0.75C18.9895 0.75 24.25 6.01046 24.25 12.5C24.25 18.9895 18.9895 24.25 12.5 24.25H12.4995C10.6408 24.2512 8.80842 23.8109 7.15325 22.9652C5.68722 22.2162 4.39736 21.1681 3.36557 19.8913L7.25885 15.9981L10.2648 19.0029L10.795 19.533L11.3253 19.0029L16.5088 13.8205L18.2198 15.5305L19.5 16.8099V15V8.75V8H18.75H12.5H10.6893L11.9697 9.28033Z"
+        stroke="#283049"
+        strokeWidth="1.5"
+      />
+    </svg>
+  </SvgIcon>
+);
+
+// new mobile sidepanel ui
+
+export const SignOut = () => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 43 28"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    // {...props}
+  >
+    <svg
+      width="28"
+      height="28"
+      viewBox="0 0 18 19"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M4.375 11.125H2.625C2.13281 11.125 1.75 10.7422 1.75 10.25V3.25C1.75 2.78516 2.13281 2.375 2.625 2.375H4.375C4.83984 2.375 5.25 1.99219 5.25 1.5C5.25 1.03516 4.83984 0.625 4.375 0.625H2.625C1.14844 0.625 0 1.80078 0 3.25V10.25C0 11.7266 1.14844 12.875 2.625 12.875H4.375C4.83984 12.875 5.25 12.4922 5.25 12C5.25 11.5352 4.83984 11.125 4.375 11.125ZM13.7266 6.14844L10.2266 2.64844C9.89844 2.29297 9.32422 2.29297 8.99609 2.64844C8.64062 2.97656 8.64062 3.55078 8.99609 3.87891L10.9922 5.875H5.25C4.75781 5.875 4.375 6.28516 4.375 6.75C4.375 7.24219 4.75781 7.625 5.25 7.625H10.9922L8.99609 9.64844C8.64062 9.97656 8.64062 10.5508 8.99609 10.8789C9.32422 11.2344 9.89844 11.2344 10.2266 10.8789L13.7266 7.37891C14.082 7.05078 14.082 6.47656 13.7266 6.14844Z"
+        fill="#666666"
+      />
+    </svg>
+  </SvgIcon>
+);
+
+export const AddandManageActive = () => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 43 28"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    // {...props}
+  >
+    <svg
+      width="17"
+      height="16"
+      viewBox="0 0 17 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M14.7696 8C14.7696 11.2262 12.0007 14 8.38482 14C4.76899 14 2 11.2262 2 8C2 4.7738 4.76899 2 8.38482 2C12.0007 2 14.7696 4.7738 14.7696 8Z"
+        fill="white"
+        stroke="#17E383"
+        strokeWidth="4"
+      />
+    </svg>
+  </SvgIcon>
+);
+
+export const DownloadBanking = () => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 43 28"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    // {...props}
+  >
+    <svg
+      width="28"
+      height="28"
+      viewBox="0 0 18 19"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9 2.5V13.3333"
+        stroke="white"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <path
+        d="M5.25 10L9 14.1667L12.75 10"
+        stroke="white"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <path
+        d="M15 17.5003H3"
+        stroke="white"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+    </svg>
+  </SvgIcon>
+);
+// export const FundingWeb = (props) => (
+//   <SvgIcon
+//     width="30"
+//     height="30"
+//     viewBox="0 0 43 28"
+//     fill="white"
+//     xmlns="http://www.w3.org/2000/svg"
+//     {...props}
+//   >
+//     <svg
+//       width="30"
+//       height="30"
+//       viewBox="0 0 22 22"
+//       fill="white"
+//       xmlns="http://www.w3.org/2000/svg"
+//     >
+//       <path
+//         d="M10.0518 4.55021V6.60022V6.75022H9.90176H8.80189C8.11242 6.75022 7.45119 7.02415 6.96366 7.51174C6.47613 7.99933 6.20223 8.66066 6.20223 9.35023C6.20223 10.0398 6.47613 10.7011 6.96366 11.1887C7.45119 11.6763 8.11242 11.9502 8.80189 11.9502H13.2014H13.2147L13.2146 11.9508L13.3136 11.9596L13.3272 11.9608L13.3271 11.9614C13.4992 11.9926 13.6534 12.0871 13.7593 12.2263C13.8653 12.3655 13.9152 12.5393 13.8994 12.7135C13.8836 12.8877 13.8032 13.0497 13.6739 13.1675C13.5447 13.2854 13.376 13.3506 13.2011 13.3502M10.0518 4.55021L7.30209 13.2002V13.3502M10.0518 4.55021H11.9515V6.60022V6.75022H12.1015H14.7012V8.65023L10.0518 4.55021ZM13.2011 13.3502L13.2014 13.2002V13.3502H13.2011ZM13.2011 13.3502H7.30209M7.30209 13.3502H7.15209V15.2503H7.30209M7.30209 13.3502V15.2503M7.30209 15.2503V15.4003H9.75176H9.90176V15.5503V17.4503H10.0518M7.30209 15.2503H9.90176H10.0518V15.4003V17.4503M10.0518 17.4503V17.6003H11.9515V17.4503M10.0518 17.4503H11.9515M11.9515 17.4503H12.1015M11.9515 17.4503V15.4003V15.2503H12.1015H13.2014C13.8908 15.2503 14.5521 14.9763 15.0396 14.4887C15.5271 14.0011 15.801 13.3398 15.801 12.6502C15.801 11.9607 15.5271 11.2993 15.0396 10.8118C14.5521 10.3242 13.8908 10.0502 13.2014 10.0502H8.80189H8.78856L8.78861 10.0496L8.68962 10.0408L8.67607 10.0396L8.67618 10.039C8.50406 10.0079 8.34986 9.91338 8.24392 9.77419C8.13799 9.635 8.08801 9.46119 8.10381 9.28698C8.11961 9.11278 8.20006 8.9508 8.32931 8.83295C8.45856 8.71509 8.62726 8.64991 8.80217 8.65023L8.80189 8.80023L12.1015 17.4503M12.1015 17.4503V15.5503V15.4003V17.4503ZM4.04058 2.63291H4.09419L4.13566 2.59892C8.39688 -0.893592 14.6946 -0.650477 18.6727 3.32817C22.9091 7.56511 22.9091 14.4354 18.6727 18.6723C14.4363 22.9092 7.56694 22.9092 3.33055 18.6723L3.33048 18.6722C2.03042 17.3738 1.08165 15.7662 0.573268 14.0004C0.0649949 12.235 0.0135935 10.3693 0.42388 8.5786L0.471852 8.38356L2.30777 8.86776C1.81828 10.8636 2.03017 12.9689 2.91058 14.829C3.81239 16.7344 5.35772 18.2603 7.27425 19.1377C9.19077 20.0151 11.3555 20.1878 13.3868 19.6254C15.4182 19.0629 17.1859 17.8013 18.3783 16.0631C19.5707 14.3248 20.1114 12.2213 19.905 10.1234C19.6986 8.02552 18.7584 6.0678 17.2501 4.59528C15.7418 3.12276 13.7622 2.22996 11.6602 2.07423C9.55814 1.9185 7.46861 2.50983 5.75983 3.74401L5.75981 3.74399L5.75756 3.74568L5.51449 3.92828L5.37633 4.03207L5.49851 4.15427L6.42571 5.08159L1.86824 6.13283L2.91936 1.57479L3.9334 2.58897L3.97734 2.63291H4.03947H4.04058Z"
+//         fill="#283049"
+//         stroke="white"
+//         strokeWidth="0.3"
+//       />
+//     </svg>
+//   </SvgIcon>
+// );
+
+export const FundingWeb = (props) => (
+  <SvgIcon
+    width="30"
+    height="30"
+    viewBox="0 0 43 28"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 22 22"
+      fill="white"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M10.0518 4.55021V6.60022V6.75022H9.90176H8.80189C8.11242 6.75022 7.45119 7.02415 6.96366 7.51174C6.47613 7.99933 6.20223 8.66066 6.20223 9.35023C6.20223 10.0398 6.47613 10.7011 6.96366 11.1887C7.45119 11.6763 8.11242 11.9502 8.80189 11.9502H13.2014H13.2147L13.2146 11.9508L13.3136 11.9596L13.3272 11.9608L13.3271 11.9614C13.4992 11.9926 13.6534 12.0871 13.7593 12.2263C13.8653 12.3655 13.9152 12.5393 13.8994 12.7135C13.8836 12.8877 13.8032 13.0497 13.6739 13.1675C13.5447 13.2854 13.376 13.3506 13.2011 13.3502M10.0518 4.55021L7.30209 13.2002V13.3502M10.0518 4.55021H11.9515V6.60022V6.75022H12.1015H14.7012V8.65023L10.0518 4.55021ZM13.2011 13.3502L13.2014 13.2002V13.3502H13.2011ZM13.2011 13.3502H7.30209M7.30209 13.3502H7.15209V15.2503H7.30209M7.30209 13.3502V15.2503M7.30209 15.2503V15.4003H9.75176H9.90176V15.5503V17.4503H10.0518M7.30209 15.2503H9.90176H10.0518V15.4003V17.4503M10.0518 17.4503V17.6003H11.9515V17.4503M10.0518 17.4503H11.9515M11.9515 17.4503H12.1015M11.9515 17.4503V15.4003V15.2503H12.1015H13.2014C13.8908 15.2503 14.5521 14.9763 15.0396 14.4887C15.5271 14.0011 15.801 13.3398 15.801 12.6502C15.801 11.9607 15.5271 11.2993 15.0396 10.8118C14.5521 10.3242 13.8908 10.0502 13.2014 10.0502H8.80189H8.78856L8.78861 10.0496L8.68962 10.0408L8.67607 10.0396L8.67618 10.039C8.50406 10.0079 8.34986 9.91338 8.24392 9.77419C8.13799 9.635 8.08801 9.46119 8.10381 9.28698C8.11961 9.11278 8.20006 8.9508 8.32931 8.83295C8.45856 8.71509 8.62726 8.64991 8.80217 8.65023L8.80189 8.80023L12.1015 17.4503M12.1015 17.4503V15.5503V15.4003V17.4503ZM4.04058 2.63291H4.09419L4.13566 2.59892C8.39688 -0.893592 14.6946 -0.650477 18.6727 3.32817C22.9091 7.56511 22.9091 14.4354 18.6727 18.6723C14.4363 22.9092 7.56694 22.9092 3.33055 18.6723L3.33048 18.6722C2.03042 17.3738 1.08165 15.7662 0.573268 14.0004C0.0649949 12.235 0.0135935 10.3693 0.42388 8.5786L0.471852 8.38356L2.30777 8.86776C1.81828 10.8636 2.03017 12.9689 2.91058 14.829C3.81239 16.7344 5.35772 18.2603 7.27425 19.1377C9.19077 20.0151 11.3555 20.1878 13.3868 19.6254C15.4182 19.0629 17.1859 17.8013 18.3783 16.0631C19.5707 14.3248 20.1114 12.2213 19.905 10.1234C19.6986 8.02552 18.7584 6.0678 17.2501 4.59528C15.7418 3.12276 13.7622 2.22996 11.6602 2.07423C9.55814 1.9185 7.46861 2.50983 5.75983 3.74401L5.75981 3.74399L5.75756 3.74568L5.51449 3.92828L5.37633 4.03207L5.49851 4.15427L6.42571 5.08159L1.86824 6.13283L2.91936 1.57479L3.9334 2.58897L3.97734 2.63291H4.03947H4.04058Z"
+        fill="#283049"
+        stroke="white"
+        strokeWidth="0.3"
+      />
+    </svg>
+  </SvgIcon>
+);
+export const PeopleWeb = (props) => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 43 28"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 24 24"
+      fill="white"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1 18C1 15.75 4 15.75 5.5 14.25C6.25 13.5 4 13.5 4 9.75C4 7.25025 4.99975 6 7 6C9.00025 6 10 7.25025 10 9.75C10 13.5 7.75 13.5 8.5 14.25C10 15.75 13 15.75 13 18"
+        stroke="#283049"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+      <path
+        d="M11.9948 16.2431C12.5618 15.8523 13.2978 15.571 14.0021 15.2318C14.5528 14.9665 15.0841 14.6659 15.5 14.25C16.25 13.5 14 13.5 14 9.75C14 7.25025 14.9998 6 17 6C19.0003 6 20 7.25025 20 9.75C20 13.5 17.75 13.5 18.5 14.25C20 15.75 23 15.75 23 18"
+        stroke="#283049"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+    </svg>
+  </SvgIcon>
+);
+export const ProfileWeb = (props) => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 43 28"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 18 21"
+      fill="white"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9.00001 9.85C6.32142 9.85 4.15001 7.67858 4.15001 5C4.15001 2.32142 6.32142 0.15 9.00001 0.15C11.6786 0.15 13.85 2.32142 13.85 5C13.85 7.67858 11.6786 9.85 9.00001 9.85ZM9.00001 8.15C10.7397 8.15 12.15 6.7397 12.15 5C12.15 3.2603 10.7397 1.85 9.00001 1.85C7.26031 1.85 5.85001 3.2603 5.85001 5C5.85001 6.7397 7.26031 8.15 9.00001 8.15ZM1.84979 20.019C1.83931 20.4883 1.45035 20.8603 0.981025 20.8498C0.5117 20.8393 0.139735 20.4503 0.150217 19.981C0.222516 16.7439 1.02276 14.5461 2.49173 13.1546C3.96156 11.7623 6.12964 11.15 8.99995 11.15C12.008 11.15 14.2466 11.768 15.7168 13.1672C17.1847 14.5641 17.9175 16.7699 17.845 20.019C17.8345 20.4883 17.4455 20.8603 16.9762 20.8498C16.5069 20.8393 16.1349 20.4503 16.1454 19.981C16.2067 17.2365 15.6771 15.4372 14.4752 14.3311C13.2771 13.2287 11.4474 12.85 8.99995 12.85C6.67876 12.85 4.91046 13.2345 3.71058 14.3442C2.50905 15.4553 1.91138 17.2616 1.84979 20.019Z"
+        fill="#283049"
+        stroke="white"
+        strokeWidth="0.3"
+      />
+    </svg>
+  </SvgIcon>
+);
+
+export const ReportWeb = (props) => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 43 28"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6.19153 17.9852L1.41815 6.40146C1.18721 5.84103 1.44843 5.18582 2.0016 4.938L7.44833 2.49785C7.70874 2.38119 8.00125 2.37186 8.26385 2.47185L11.5546 3.72483C11.8277 3.82884 12.0457 4.04242 12.1588 4.31686L15.9835 13.5983C16.2145 14.1588 15.9532 14.814 15.4001 15.0618L7.61129 18.5512C7.05812 18.799 6.42247 18.5456 6.19153 17.9852Z"
+        fill="white"
+        stroke="#283049"
+        strokeWidth="1.09752"
+      />
+      <path
+        d="M6.21094 17.5722V2.4264C6.21094 1.69903 6.80059 1.10938 7.52797 1.10938H14.6244C14.9698 1.10938 15.3013 1.24505 15.5476 1.48717L18.6063 4.49379C18.8582 4.7414 19 5.07981 19 5.43302V17.5722C19 18.2996 18.4104 18.8892 17.683 18.8892H7.52797C6.80059 18.8892 6.21094 18.2996 6.21094 17.5722Z"
+        fill="white"
+        stroke="#283049"
+        strokeWidth="1.31703"
+      />
+      <rect
+        x="9.04688"
+        y="5.55469"
+        width="4.26303"
+        height="1.48166"
+        rx="0.740828"
+        fill="#283049"
+      />
+      <rect
+        x="9.04688"
+        y="8.51758"
+        width="7.10505"
+        height="1.48166"
+        rx="0.740828"
+        fill="#283049"
+      />
+      <rect
+        x="9.04688"
+        y="11.4805"
+        width="7.10505"
+        height="1.48166"
+        rx="0.740828"
+        fill="#283049"
+      />
+      <rect
+        x="9.05469"
+        y="14.4453"
+        width="7.10505"
+        height="1.48166"
+        rx="0.740828"
+        fill="#283049"
+      />
+    </svg>
+  </SvgIcon>
+);
+
+export const PayrollWeb = (props) => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 43 28"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 16 21"
+      fill="white"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M5 5.75H11M1 1.95C1 1.69804 1.10536 1.45641 1.29289 1.27825C1.48043 1.10009 1.73478 1 2 1H14C14.2652 1 14.5196 1.10009 14.7071 1.27825C14.8946 1.45641 15 1.69804 15 1.95V20L11.5 17.625L8 20L4.5 17.625L1 20V1.95ZM5 9.55H11H5ZM5 13.35H11H5Z"
+        stroke="#283049"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </SvgIcon>
+);
+
+export const SettingsWeb = (props) => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 43 28"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 20 21"
+      fill="white"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M14.6734 3.41383L14.6734 3.41383L15.6826 3.03574C16.332 2.79247 17.0545 3.05152 17.4014 3.65223L19.0443 6.49776C19.3911 7.09853 19.2542 7.85369 18.7188 8.29454L17.8868 8.97945C17.245 9.50763 17.2438 10.4913 17.8867 11.0205L18.7188 11.7055C19.2542 12.1463 19.3911 12.9015 19.0443 13.5022L17.4014 16.3478C17.0545 16.9485 16.3322 17.2076 15.6826 16.9643L14.6734 16.5862C14.6734 16.5862 14.6734 16.5862 14.6734 16.5862C13.895 16.2945 13.0426 16.7855 12.9057 17.6067L12.7286 18.6697C12.6146 19.3539 12.0289 19.85 11.3353 19.85H8.04957C7.35595 19.85 6.77032 19.3539 6.65628 18.6696L6.47909 17.6067C6.34246 16.7869 5.49138 16.2939 4.71148 16.5861L3.70236 16.9642C3.70235 16.9642 3.70234 16.9642 3.70233 16.9642C3.05271 17.2075 2.33038 16.9484 1.98354 16.3477L0.340645 13.5022C-0.00616523 12.9015 0.130652 12.1463 0.666162 11.7054L1.49818 11.0205C2.13984 10.4923 2.14118 9.50873 1.49819 8.97943L0.666197 8.29451C0.130657 7.85361 -0.00612916 7.09841 0.340683 6.49774L0.211111 6.42293L0.340684 6.49773L1.98353 3.65224C1.98353 3.65224 1.98353 3.65223 1.98354 3.65223C2.33043 3.05154 3.05292 2.79248 3.70234 3.03574L4.71151 3.41386L4.71153 3.41387C5.48976 3.70537 6.34222 3.21479 6.47913 2.3933L6.65632 1.33029L6.65632 1.33028C6.77032 0.646093 7.35594 0.15 8.04961 0.15H11.3354C12.029 0.15 12.6146 0.646088 12.7286 1.33024L12.9058 2.39329C13.0424 3.21328 13.8937 3.70588 14.6734 3.41383ZM16.1255 15.782L16.2445 15.8266L16.308 15.7165L17.9508 12.8709L18.0144 12.7609L17.9163 12.6801L17.0842 11.9952C15.8297 10.9624 15.8273 9.03947 17.0843 8.00471L16.9889 7.88891L17.0843 8.00471L17.9153 7.32056C17.9165 7.31957 17.9178 7.31853 17.919 7.31744L17.9234 7.31359L17.9256 7.31149L17.9267 7.31039L17.9273 7.30983L17.9275 7.30955L17.9277 7.30941L17.9278 7.30934L17.9278 7.3093L17.8213 7.20363L17.9278 7.30926L18.0086 7.22788L17.9512 7.12861L16.308 4.28346L16.2444 4.17344L16.1255 4.21801L15.1163 4.59609C13.5946 5.16608 11.9281 4.20688 11.6604 2.60085L11.4833 1.53784L11.4624 1.4125H11.3353H8.04957H7.9225L7.90161 1.53784L7.72446 2.60085C7.45734 4.20367 5.79336 5.16723 4.2686 4.5961C4.2686 4.5961 4.2686 4.59609 4.26859 4.59609L3.25946 4.21801L3.14047 4.17343L3.07693 4.28348L1.43404 7.12902L1.37051 7.23907L1.46861 7.31983L2.3006 8.00475C3.55509 9.03749 3.55765 10.9604 2.3006 11.9952L1.46861 12.6802L1.37051 12.7609L1.43404 12.871L3.07689 15.7165L3.14043 15.8266L3.25942 15.782L4.2686 15.4039C5.79043 14.8338 7.45684 15.7933 7.72446 17.3992L7.90165 18.4622L7.92254 18.5875H8.04961H11.3354H11.4624L11.4833 18.4622L11.6605 17.3992C11.9276 15.7963 13.5916 14.8327 15.1163 15.4039L16.1255 15.782ZM5.98828 10C5.98828 7.95765 7.65011 6.29582 9.69246 6.29582C11.7348 6.29582 13.3966 7.95765 13.3966 10C13.3966 12.0424 11.7348 13.7042 9.69246 13.7042C7.65011 13.7042 5.98828 12.0424 5.98828 10ZM7.25078 10C7.25078 11.3465 8.34599 12.4417 9.69246 12.4417C11.0389 12.4417 12.1341 11.3465 12.1341 10C12.1341 8.65352 11.0389 7.55832 9.69246 7.55832C8.34599 7.55832 7.25078 8.65352 7.25078 10Z"
+        fill="white"
+        stroke="#283049"
+        strokeWidth="0.8"
+      />
+
+      {/* <path
+        d="M14.6383 3.32018L14.6208 3.27336L14.6383 3.32018L15.6475 2.9421C16.3427 2.68168 17.1167 2.95918 17.488 3.60223L19.1309 6.44777C19.5021 7.09086 19.3555 7.89982 18.7823 8.37175L17.9503 9.05667C17.3571 9.54489 17.356 10.4541 17.9503 10.9433L18.7823 11.6283C19.3555 12.1002 19.5021 12.9092 19.1309 13.5522L17.488 16.3978C17.1167 17.0408 16.3429 17.3184 15.6475 17.0579L14.6383 16.6799C13.9188 16.4102 13.1309 16.8641 13.0044 17.6232L12.8272 18.6862C12.7052 19.4186 12.0778 19.95 11.3353 19.95H8.04957C7.30706 19.95 6.67972 19.4186 6.55764 18.6861L6.38045 17.6231C6.25415 16.8654 5.46744 16.4097 4.74656 16.6798L3.73743 17.0579C3.04203 17.3183 2.26823 17.0407 1.89693 16.3977L0.254043 13.5522C-0.117212 12.9092 0.0293573 12.1002 0.602597 11.6282L1.43463 10.9433C2.02776 10.455 2.02896 9.54588 1.43463 9.05663L0.602638 8.37171C0.0293591 7.89975 -0.117174 7.09075 0.254081 6.44773L1.89693 3.60223C1.89693 3.60223 1.89693 3.60223 1.89693 3.60223C2.26827 2.95921 3.04222 2.68169 3.73742 2.9421C3.73742 2.9421 3.73742 2.9421 3.73742 2.9421L4.7466 3.32022L4.7466 3.32022C5.46599 3.58968 6.25394 3.13618 6.38049 2.37685L6.55768 1.31385C6.67972 0.581432 7.30706 0.05 8.04961 0.05H11.3354C12.0779 0.05 12.7052 0.58143 12.8272 1.3138L13.0044 2.37685C13.1307 3.13482 13.9176 3.59014 14.6383 3.32018ZM16.1606 15.6883L16.2002 15.7032L16.2214 15.6665L17.8642 12.8209L17.8854 12.7843L17.8527 12.7573L17.0207 12.0724C15.7176 10.9997 15.7151 9.00232 17.0207 7.92751L16.9889 7.88891L17.0207 7.92751L17.8527 7.24259L17.8538 7.24163L17.8553 7.2403L17.8561 7.23959L17.8565 7.23922L17.8566 7.23903L17.8567 7.23894L17.8568 7.23889L17.8568 7.23887L17.8568 7.23885L17.8213 7.20363L17.8568 7.23884L17.8837 7.21171L17.8646 7.17863L16.2214 4.33347L16.2002 4.2968L16.1605 4.31165L15.1514 4.68974C13.5708 5.28177 11.8398 4.2855 11.5618 2.61729L11.3846 1.55428L11.3777 1.5125H11.3353H8.04957H8.00721L8.00025 1.55428L7.8231 2.61729C7.54565 4.28211 5.81729 5.28298 4.23352 4.68974C4.23352 4.68974 4.23352 4.68974 4.23351 4.68974L3.22438 4.31166L3.18471 4.29679L3.16353 4.33348L1.52064 7.17902L1.49947 7.2157L1.53217 7.24263L2.36416 7.92755C3.66717 9.00023 3.66987 10.9976 2.36416 12.0725L1.53217 12.7574L1.49947 12.7843L1.52064 12.821L3.1635 15.6665L3.18467 15.7032L3.22434 15.6883L4.23352 15.3103C5.81421 14.7181 7.54512 15.7147 7.8231 17.3827L8.00029 18.4457L8.00725 18.4875H8.04961H11.3354H11.3777L11.3847 18.4457L11.5618 17.3827C11.8393 15.7179 13.5677 14.717 15.1514 15.3103L16.1606 15.6883ZM5.88828 10C5.88828 7.90242 7.59488 6.19582 9.69246 6.19582C11.79 6.19582 13.4966 7.90242 13.4966 10C13.4966 12.0976 11.79 13.8042 9.69246 13.8042C7.59488 13.8042 5.88828 12.0976 5.88828 10ZM7.35078 10C7.35078 11.2912 8.40121 12.3417 9.69246 12.3417C10.9837 12.3417 12.0341 11.2912 12.0341 10C12.0341 8.70875 10.9837 7.65832 9.69246 7.65832C8.40121 7.65832 7.35078 8.70875 7.35078 10Z"
+        fill="#283049"
+        stroke="white"
+        strokeWidth="0.1"
+      /> */}
+    </svg>
+  </SvgIcon>
+);
+
+export const LogoutWeb = (props) => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 43 28"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 29 28"
+      fill="white"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M13.3236 0.666626C16.6337 0.666626 19.3333 3.31996 19.3333 6.58663V12.9733H11.1938C10.6104 12.9733 10.1492 13.4266 10.1492 14C10.1492 14.56 10.6104 15.0266 11.1938 15.0266H19.3333V21.4C19.3333 24.6666 16.6337 27.3333 13.2965 27.3333H6.68988C3.36624 27.3333 0.666626 24.68 0.666626 21.4133V6.59996C0.666626 3.31996 3.3798 0.666626 6.70345 0.666626H13.3236ZM22.7202 9.40023C23.1202 8.98689 23.7736 8.98689 24.1736 9.38689L28.0669 13.2669C28.2669 13.4669 28.3736 13.7202 28.3736 14.0002C28.3736 14.2669 28.2669 14.5336 28.0669 14.7202L24.1736 18.6002C23.9736 18.8002 23.7069 18.9069 23.4536 18.9069C23.1869 18.9069 22.9202 18.8002 22.7202 18.6002C22.3202 18.2002 22.3202 17.5469 22.7202 17.1469L24.8536 15.0269H19.3336V12.9736H24.8536L22.7202 10.8536C22.3202 10.4536 22.3202 9.80023 22.7202 9.40023Z"
+        fill="#FF4842"
+      />
+    </svg>
+  </SvgIcon>
+);
+export const LogoutWebNew = (props) => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 43 28"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M6 14H3.33333C2.97971 14 2.64057 13.8595 2.39052 13.6095C2.14048 13.3594 2 13.0203 2 12.6667V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H6"
+        stroke="#FF0000"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M10.667 11.3332L14.0003 7.99984L10.667 4.6665"
+        stroke="#FF0000"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M14 8H6"
+        stroke="#FF0000"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </SvgIcon>
+);
+
+export const LockIcon = (props) => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 43 28"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12.6667 7.3335H3.33333C2.59695 7.3335 2 7.93045 2 8.66683V13.3335C2 14.0699 2.59695 14.6668 3.33333 14.6668H12.6667C13.403 14.6668 14 14.0699 14 13.3335V8.66683C14 7.93045 13.403 7.3335 12.6667 7.3335Z"
+        fill="#ECECEC"
+        stroke="black"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M4.66699 7.3335V4.66683C4.66699 3.78277 5.01818 2.93493 5.6433 2.30981C6.26842 1.68469 7.11627 1.3335 8.00033 1.3335C8.88438 1.3335 9.73223 1.68469 10.3573 2.30981C10.9825 2.93493 11.3337 3.78277 11.3337 4.66683V7.3335"
+        stroke="black"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </SvgIcon>
+);
+
+export const ProfileIcon = (props) => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 43 28"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 17 17"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M8.33333 15.6667C12.3834 15.6667 15.6667 12.3834 15.6667 8.33333C15.6667 4.28325 12.3834 1 8.33333 1C4.28325 1 1 4.28325 1 8.33333C1 12.3834 4.28325 15.6667 8.33333 15.6667Z"
+        fill="#ECECEC"
+        stroke="#212121"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M3.5 14.658C3.22386 14.658 3 14.4341 3 14.158L3.36369 13.661C3.36369 12.7637 3.84434 11.9354 4.62329 11.4904L6.33301 10.667C5.88867 10.3373 5.5 9.44224 5.5 8.5V7.16667C5.5 5.41786 6.41786 4 8.16667 4C9.91548 4 11.3333 5.41786 11.3333 7.16667V8.5C11.3333 9.30926 11.0297 10.0476 10.5302 10.6075L12.0727 11.4901C12.8518 11.9351 13.3327 12.7636 13.3327 13.661V14.1576C13.3327 14.4338 13.1089 14.6576 12.8327 14.6576C8.83247 17.4501 4.94414 15.8214 3.5 14.658Z"
+        fill="white"
+      />
+      <path
+        d="M8.33333 15.6667C12.3834 15.6667 15.6667 12.3834 15.6667 8.33333C15.6667 4.28325 12.3834 1 8.33333 1C4.28325 1 1 4.28325 1 8.33333C1 12.3834 4.28325 15.6667 8.33333 15.6667Z"
+        stroke="#212121"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M13.0002 13.9906V13.494C13.0002 12.776 12.6155 12.1133 11.9922 11.7573L9.84619 10.5293"
+        stroke="#212121"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M6.81808 10.5278L4.67475 11.7572C4.05141 12.1132 3.66675 12.7758 3.66675 13.4938V13.9905"
+        stroke="#212121"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M8.33341 11.0002C6.86075 11.0002 5.66675 9.80616 5.66675 8.3335V7.00016C5.66675 5.5275 6.86075 4.3335 8.33341 4.3335C9.80608 4.3335 11.0001 5.5275 11.0001 7.00016V8.3335C11.0001 9.80616 9.80608 11.0002 8.33341 11.0002Z"
+        stroke="#212121"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </SvgIcon>
+);
+
+export const NewOrgIcon = (props) => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 43 28"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <svg
+      width="32"
+      height="32"
+      viewBox="0 0 18 18"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M17.0005 1.00049H1.00049V17.0005H17.0005V1.00049Z"
+        stroke="#F08B32"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M9.00098 5V13"
+        stroke="#F08B32"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M13 9.00098H5"
+        stroke="#F08B32"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </SvgIcon>
+);
+
+export const SearchIconModule = (props) => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 43 28"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+        stroke="#283049"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M20.9999 21L16.6499 16.65"
+        stroke="#283049"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </SvgIcon>
+);
+
+export const XCircle = (props) => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 43 28"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 20 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9.99984 18.3333C14.6022 18.3333 18.3332 14.6024 18.3332 10C18.3332 5.39763 14.6022 1.66667 9.99984 1.66667C5.39746 1.66667 1.6665 5.39763 1.6665 10C1.6665 14.6024 5.39746 18.3333 9.99984 18.3333Z"
+        stroke="#A0A4AD"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M12.5 7.5L7.5 12.5"
+        stroke="#A0A4AD"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M7.5 7.5L12.5 12.5"
+        stroke="#A0A4AD"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </SvgIcon>
+);
+
+export const PaymentsWeb = (props) => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 43 28"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 12 17"
+      fill="white"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      {' '}
+      <path
+        d="M4.0831 9.96377H3.01824L2.9639 9.89931L2.88744 9.96377V10.0638H2.97174L6.97259 14.8098C7.12874 14.9924 7.20597 15.2295 7.18728 15.469C7.1686 15.7085 7.05553 15.9308 6.87295 16.087C6.69037 16.2431 6.45325 16.3203 6.21373 16.3016C5.97421 16.283 5.75193 16.1699 5.59578 15.9873L0.160995 9.64674C0.0975891 9.61051 0.097589 9.53804 0.097589 9.53804L4.0831 9.96377ZM4.0831 9.96377C5.32952 9.96893 6.53261 9.50667 7.4549 8.66822M4.0831 9.96377L7.4549 8.66822M7.4549 8.66822C8.37719 7.82978 8.95168 6.67606 9.06498 5.43478L7.4549 8.66822ZM8.77809 3.64876L8.79777 3.72319H8.87476H10.8766C11.0903 3.72319 11.2952 3.80808 11.4464 3.9592C11.5975 4.11032 11.6824 4.31527 11.6824 4.52899C11.6824 4.7427 11.5975 4.94765 11.4464 5.09877C11.2952 5.24989 11.0903 5.33478 10.8766 5.33478H9.06498H8.97369L8.96539 5.42569C8.85436 6.64206 8.29141 7.77261 7.38763 8.59423C6.48385 9.41584 5.30492 9.86883 4.08351 9.86377H4.0831H2.88744H2.67235L2.81099 10.0282L6.89613 14.8742L6.89659 14.8748C7.0355 15.0372 7.10421 15.2482 7.08758 15.4612C7.07096 15.6743 6.97038 15.872 6.80795 16.011C6.64553 16.1499 6.43458 16.2186 6.22151 16.202C6.00843 16.1853 5.81069 16.0847 5.67177 15.9223L5.6717 15.9222L0.236921 9.58166L0.225648 9.56851L0.210609 9.55991C0.205655 9.55708 0.202411 9.55294 0.199901 9.54577C0.198627 9.54213 0.197977 9.53876 0.197686 9.53659C0.197644 9.53628 0.197612 9.53601 0.197589 9.5358L0.197589 9.50486L0.177757 9.47827C0.146749 9.43668 0.122086 9.39074 0.104558 9.34196C0.098086 9.2949 0.0985063 9.24713 0.105819 9.20017L0.107788 9.18752L0.106508 9.17478C0.102939 9.13927 0.102939 9.10349 0.106508 9.06797L0.106596 9.06798L0.10684 9.06379C0.112207 8.97177 0.143489 8.88314 0.197074 8.80813L0.220576 8.77523L0.214611 8.73524C0.208853 8.69665 0.208115 8.65749 0.212398 8.61875C0.231756 8.58461 0.25334 8.55176 0.277013 8.52043L0.277459 8.52077L0.282917 8.51169C0.310596 8.46568 0.34453 8.42375 0.383734 8.38711L0.48312 8.32913L0.483442 8.32968L0.492509 8.32292C0.534095 8.29191 0.580035 8.26725 0.628824 8.24972C0.67588 8.24325 0.723645 8.24367 0.77061 8.25098L0.783259 8.25295L0.795996 8.25167C0.83151 8.2481 0.867292 8.2481 0.902805 8.25167L0.902755 8.25217H0.912806H4.12839L4.12879 8.25217C4.91291 8.24901 5.6698 7.96422 6.2615 7.44969C6.85321 6.93516 7.24035 6.22515 7.35236 5.44907L7.36885 5.33478H7.25338H0.912806C0.699096 5.33478 0.494138 5.24989 0.343022 5.09877C0.191906 4.94765 0.107009 4.7427 0.107009 4.52899C0.107009 4.31527 0.191906 4.11032 0.343022 3.9592C0.494138 3.80808 0.699096 3.72319 0.912806 3.72319H6.93636H7.09447L7.02671 3.58033C6.76232 3.02295 6.34567 2.55171 5.82487 2.22104C5.30406 1.89038 4.70035 1.71376 4.08345 1.71159H4.0831H0.912806C0.699096 1.71159 0.494138 1.6267 0.343022 1.47558C0.191906 1.32447 0.107009 1.11951 0.107009 0.905797C0.107009 0.692086 0.191906 0.487129 0.343022 0.336012C0.494138 0.184896 0.699096 0.1 0.912806 0.1H10.8766C11.0903 0.1 11.2952 0.184896 11.4464 0.336012C11.5975 0.487129 11.6824 0.692086 11.6824 0.905797C11.6824 1.11951 11.5975 1.32447 11.4464 1.47558C11.2952 1.6267 11.0903 1.71159 10.8766 1.71159H7.96896H7.76249L7.8905 1.87359C8.30501 2.39816 8.60714 3.00241 8.77809 3.64876Z"
+        fill="white"
+        stroke="#283049"
+        strokeWidth="0.8"
+      />
+    </svg>
+  </SvgIcon>
+);
+export const UpArrow = ({ color }) => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 41 40"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    // {...props}
+  >
+    <svg
+      width="37"
+      height="38"
+      viewBox="0 0 13 8"
+      color="red"
+      fill={color}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12 7L6.5 2L1 7"
+        stroke="white"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+    </svg>
+  </SvgIcon>
+);
+
+export const BackBanking = () => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 41 40"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    // {...props}
+  >
+    <svg
+      width="24"
+      height="25"
+      viewBox="0 0 24 25"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M5.25 11.75H20.25C20.4489 11.75 20.6397 11.829 20.7803 11.9697C20.921 12.1103 21 12.3011 21 12.5C21 12.6989 20.921 12.8897 20.7803 13.0303C20.6397 13.171 20.4489 13.25 20.25 13.25H5.25C5.05109 13.25 4.86032 13.171 4.71967 13.0303C4.57902 12.8897 4.5 12.6989 4.5 12.5C4.5 12.3011 4.57902 12.1103 4.71967 11.9697C4.86032 11.829 5.05109 11.75 5.25 11.75Z"
+        fill="#283049"
+      />
+      <path
+        d="M5.56184 12.499L11.7823 18.718C11.9232 18.8588 12.0023 19.0498 12.0023 19.249C12.0023 19.4482 11.9232 19.6392 11.7823 19.78C11.6415 19.9208 11.4505 19.9999 11.2513 19.9999C11.0522 19.9999 10.8612 19.9208 10.7203 19.78L3.97034 13.03C3.9005 12.9603 3.84508 12.8776 3.80727 12.7864C3.76946 12.6953 3.75 12.5976 3.75 12.499C3.75 12.4003 3.76946 12.3027 3.80727 12.2115C3.84508 12.1204 3.9005 12.0377 3.97034 11.968L10.7203 5.21799C10.8612 5.07716 11.0522 4.99805 11.2513 4.99805C11.4505 4.99805 11.6415 5.07716 11.7823 5.21799C11.9232 5.35882 12.0023 5.54983 12.0023 5.74899C12.0023 5.94816 11.9232 6.13916 11.7823 6.27999L5.56184 12.499Z"
+        fill="#283049"
+      />
+    </svg>
+  </SvgIcon>
+);
+export const Selectfounders = () => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 41 40"
+    fill="white"
+    style={{ fontSize: '4em' }}
+    xmlns="http://www.w3.org/2000/svg"
+    // {...props}
+  >
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M7 13L10 16L17 9" stroke="black" strokeLinecap="round" />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+        stroke="black"
+      />
+    </svg>{' '}
+  </SvgIcon>
+);
+
+export const BankingDownoad = () => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 41 40"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    // {...props}
+  >
+    <svg
+      width="18"
+      height="24"
+      viewBox="0 0 18 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1.12661 21.75H16.8766C17.0953 21.7496 17.3061 21.8311 17.4677 21.9784C17.6293 22.1257 17.7299 22.3282 17.7496 22.5459C17.7694 22.7637 17.7069 22.981 17.5745 23.155C17.442 23.3289 17.2493 23.447 17.0341 23.486L16.8766 23.5H1.12661C0.907957 23.5004 0.697075 23.4189 0.535492 23.2716C0.37391 23.1243 0.273337 22.9218 0.253581 22.7041C0.233824 22.4863 0.296315 22.269 0.428747 22.095C0.561179 21.9211 0.753955 21.803 0.969113 21.764L1.12661 21.75H16.8766H1.12661ZM8.84411 0.764L9.00161 0.75C9.20641 0.749932 9.40474 0.8217 9.56207 0.952806C9.71939 1.08391 9.82575 1.26605 9.86261 1.4675L9.87661 1.625V17.011L14.5701 12.3193C14.7149 12.1743 14.9059 12.0848 15.11 12.0662C15.314 12.0477 15.5181 12.1013 15.6866 12.2177L15.8091 12.3193C15.9538 12.4642 16.043 12.6554 16.0612 12.8594C16.0795 13.0635 16.0255 13.2674 15.9089 13.4357L15.8074 13.5565L9.62111 19.7445C9.47611 19.8892 9.28495 19.9784 9.08093 19.9966C8.87691 20.0149 8.67296 19.9609 8.50461 19.8442L8.38211 19.7445L2.19586 13.5565C2.04084 13.4022 1.94925 13.1954 1.93913 12.9769C1.92902 12.7583 2.00112 12.544 2.14122 12.376C2.28132 12.208 2.47927 12.0986 2.69604 12.0693C2.91282 12.04 3.1327 12.093 3.31236 12.2177L3.43311 12.3193L8.12661 17.011V1.625C8.12654 1.42021 8.19831 1.22187 8.32942 1.06455C8.46052 0.907219 8.64266 0.800863 8.84411 0.764L9.00161 0.75L8.84411 0.764Z"
+        fill="#6E6E6E"
+      />
+    </svg>
+  </SvgIcon>
+);
+
+export const BankingWeb = (props) => (
+  <SvgIcon
+    width="41"
+    height="40"
+    viewBox="0 0 41 40"
+    fill="white"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <svg
+      width="28"
+      height="35"
+      viewBox="0 0 24 24"
+      fill="white"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="2"
+        y="5"
+        width="20"
+        height="14"
+        rx="2"
+        stroke="#283049"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M2 14H22"
+        stroke="#283049"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
+    </svg>
+  </SvgIcon>
+);
+
+export const UnavailablePage = (props) => (
+  <svg
+    width="790"
+    height="509"
+    viewBox="0 0 790 509"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M698.38 403.059L747.393 508.999L752.916 508.982L710.534 396.179L698.38 403.059Z"
+      fill="#DCA86E"
+    />
+    <path
+      d="M647.682 405.324L598.669 509L593.146 508.982L635.528 402.971L647.682 405.324Z"
+      fill="#DCA86E"
+    />
+    <path
+      d="M495.997 488.637C478.858 484.073 468.86 487.426 468.86 487.426L498.231 508.096L523.144 486.295L513.537 473.898L495.997 488.637Z"
+      fill="url(#paint0_linear_7427_22468)"
+    />
+    <path
+      d="M667.354 366.048C667.354 366.048 612.294 394.269 592.842 402.713C573.389 411.155 507.21 477.428 507.21 477.428C507.21 477.428 515.683 494.681 519.919 491.651C557.287 464.934 591.711 441.029 613.834 432.688C657.639 416.171 669.848 412.579 681.068 399.576C681.068 399.576 674.487 383.948 667.354 366.048Z"
+      fill="#2167BE"
+    />
+    <path
+      d="M561.072 493.123C544.555 499.586 538.48 508.205 538.48 508.205L574.387 507.486L581.567 475.171L566.488 470.863L561.072 493.123Z"
+      fill="url(#paint1_linear_7427_22468)"
+    />
+    <path
+      d="M668.69 358.884C668.69 358.884 617.474 364.408 598.804 374.461C580.132 384.517 565.27 476.715 565.27 476.715C565.27 476.715 579.772 484.587 581.568 479.698C596.051 440.26 612.118 409.372 612.118 409.372C630.52 406.01 673.144 426.753 703.951 396.408C703.951 396.408 677.308 376.118 668.69 358.884Z"
+      fill="#277FD9"
+    />
+    <path
+      d="M756.944 296.629C756.944 296.629 753.246 302.752 750.914 310.423L729.847 308.476C729.847 308.476 740.725 291.996 739.891 282.002L756.944 296.629Z"
+      fill="#FEC4AD"
+    />
+    <path
+      d="M752.414 262.581C751.218 262.265 746.716 261.024 745.805 261.395C744.542 261.911 746.011 263.567 745.12 264.578C743.682 266.216 740.801 266.25 738.944 267.245C736.693 268.45 734.978 270.034 733.949 271.843C732.233 274.858 738.48 281.586 739.458 286.629C741.505 297.177 754.838 298.737 765.671 295.508C769.543 294.354 773.104 290.871 775.216 287.492C777.698 283.524 776.299 276.886 774.22 272.932C772.973 270.562 770.503 268.517 768.348 267.03C766.394 265.683 765.854 260.083 763.502 259.686C763.502 259.686 755.108 263.295 752.414 262.581Z"
+      fill="#FEC4AD"
+    />
+    <path
+      d="M759.861 251.002C758.541 252.12 757.911 252.908 757.869 254.756C757.683 262.891 764.962 270.465 770.471 275.588C772.09 277.096 770.043 276.936 767.745 276.778C766.531 276.695 765.244 276.61 764.395 276.772C762.794 277.078 758.645 281.462 757.753 282.124C759.09 283.788 760.342 283.621 761.764 283.453C762.797 283.331 763.924 283.21 765.236 283.794C768.115 285.077 766.289 288.742 763.607 289.174C759.452 289.846 757.761 287.104 757.761 287.104C755.857 288.139 755.55 294.31 754.056 295.924C756.12 297.057 768.163 299.174 770.989 299.141C777.022 299.068 780.721 295.73 782.662 290.897C782.684 290.918 782.296 289.128 785.352 286.251C795.459 276.736 784.65 258.122 773.635 254.88C768.001 253.222 764.399 254.969 762.378 249.37C762.523 249.771 760.101 250.799 759.861 251.002Z"
+      fill="url(#paint2_linear_7427_22468)"
+    />
+    <path
+      d="M756.262 299.906C760.679 349.171 703.951 396.406 703.951 396.406C703.951 396.406 666.911 397.801 668.69 358.882C668.69 358.882 671.573 351.805 694.504 331.024C709.824 317.14 720.586 296.42 731.367 296.832C760.81 297.959 756.262 299.906 756.262 299.906Z"
+      fill="#FF5E69"
+    />
+    <path
+      d="M698.367 394.598C652.838 411.867 618.676 399.126 618.676 399.126V404.833C618.676 404.833 650.684 422.441 696.513 407.656C756.458 388.319 761.527 299.326 761.527 299.326L756.319 296.685C756.319 296.685 743.899 377.328 698.367 394.598Z"
+      fill="url(#paint3_linear_7427_22468)"
+    />
+    <path
+      d="M750.782 349.121C750.782 349.121 756.236 368.023 756.539 377.445C756.843 386.867 752.816 418.853 752.816 418.853L761.494 419.951C761.494 419.951 769.205 381.828 769.387 369.385C769.566 356.944 762.392 336.786 762.392 336.786L750.782 349.121Z"
+      fill="#F8D2A1"
+    />
+    <path
+      d="M750.24 349.919C756.54 377.445 753.928 414.335 753.928 414.335L763.345 414.937C773.667 393.342 772.701 345.498 767.242 325.368C764.035 313.541 762.145 301.617 754.143 299.778C749.141 298.628 738.849 302.29 737.471 307.234C734.48 317.963 747.149 336.416 750.24 349.919Z"
+      fill="#FF5E69"
+    />
+    <path
+      d="M748.934 423.609C746.855 427.566 745.915 430.467 747.138 431.467C747.983 432.154 749.341 428.312 750.983 426.941C751.465 428.543 751.529 431.532 750.506 434.05C749.346 436.903 749.449 439.343 751.616 439.552C753.783 439.763 757.309 439.619 758.095 437.822C758.877 436.026 760.659 428.533 761.624 426.039C762.586 423.545 761.309 420.68 761.676 419.253C762.043 417.824 755.273 415.434 755.273 415.434C754.902 416.007 752.817 418.853 752.817 418.853C752.817 418.853 751.058 420.957 750.454 421.341C749.847 421.722 748.934 423.609 748.934 423.609Z"
+      fill="#F8D2A1"
+    />
+    <path
+      d="M718.341 8.22711e-06V65.626"
+      stroke="#D4DBE2"
+      strokeMiterlimit="10"
+    />
+    <path
+      d="M729.963 90.8634C729.474 97.2024 723.939 101.942 717.601 101.455C711.264 100.964 706.521 95.4305 707.01 89.0929C707.499 82.7539 713.034 78.0123 719.372 78.5016C725.709 78.9908 730.452 84.5244 729.963 90.8634Z"
+      fill="#FFBA01"
+    />
+    <path
+      d="M772.687 94.8633H663.995L711.564 60.2478H725.118L772.687 94.8633Z"
+      fill="#D2DCEB"
+    />
+    <path
+      d="M69.8857 8.22711e-06V65.626"
+      stroke="#D4DBE2"
+      strokeMiterlimit="10"
+    />
+    <path
+      d="M81.5064 90.8634C81.0172 97.2024 75.4836 101.942 69.1446 101.455C62.8071 100.964 58.0655 95.4305 58.5547 89.0929C59.0439 82.7539 64.5775 78.0123 70.9165 78.5016C77.2541 78.9908 81.9956 84.5244 81.5064 90.8634Z"
+      fill="#FFBA01"
+    />
+    <path
+      d="M124.233 94.8633H15.5386L63.108 60.2478H76.6631L124.233 94.8633Z"
+      fill="#D2DCEB"
+    />
+    <path
+      d="M293.063 280.146C293.063 280.146 295.357 274.533 299.523 269.53C303.689 264.529 309.899 256.202 309.899 256.202C309.899 256.202 306.87 262.129 302.758 268.826C298.646 275.523 293.063 280.146 293.063 280.146Z"
+      fill="#50CC85"
+    />
+    <path
+      d="M297.371 270.384C297.371 270.384 301.983 266.76 304.753 259.09C307.522 251.419 310.046 245.58 310.046 245.58C310.046 245.58 304.064 254.137 301.492 260.069C298.921 266.001 297.371 270.384 297.371 270.384Z"
+      fill="#50CC85"
+    />
+    <path
+      d="M293.373 279.059C293.373 279.059 295.787 270.285 296.26 263.283C296.734 256.28 296.68 251.881 296.68 251.881C296.68 251.881 293.637 264.588 292.72 269.984C291.803 275.38 293.373 279.059 293.373 279.059Z"
+      fill="#50CC85"
+    />
+    <path
+      d="M291.309 284.883C291.309 284.883 292.082 275.847 289.54 267.763C287.001 259.68 286.863 254.55 286.863 254.55C286.863 254.55 285.644 263.011 287.091 270.308C288.539 277.603 291.309 284.883 291.309 284.883Z"
+      fill="#50CC85"
+    />
+    <path
+      d="M292.057 282.886C292.057 282.886 298.475 277.405 301.719 276.115C304.963 274.826 309.481 271.069 309.481 271.069C309.481 271.069 303.904 278.207 300.791 279.623C297.678 281.037 292.057 282.886 292.057 282.886Z"
+      fill="#50CC85"
+    />
+    <path
+      d="M289.842 290.556C289.842 290.556 290.464 285.622 287.595 278.63C284.727 271.639 284.064 268.182 284.064 268.182C284.064 268.182 283.894 277.674 285.78 281.236C287.667 284.797 289.842 290.556 289.842 290.556Z"
+      fill="#50CC85"
+    />
+    <path
+      d="M290.442 286.963C290.442 286.963 294.13 284.502 297.686 284.003C301.242 283.503 302.191 283.02 302.191 283.02C302.191 283.02 300.392 286.306 296.007 286.86C291.622 287.414 290.442 286.963 290.442 286.963Z"
+      fill="#50CC85"
+    />
+    <path
+      d="M288.028 295.265C288.825 292.163 289.852 287.368 290.91 284.163C293.244 277.09 298.799 267.976 298.799 267.976C295.405 275.501 292.929 279.731 291.223 286.221C290.546 288.792 289.378 292.361 288.746 294.694C288.644 295.333 288.133 295.87 288.028 295.265Z"
+      fill="#50CC85"
+    />
+    <path
+      d="M289.666 282.673C289.666 282.673 289.302 276.237 286.845 269.768C284.387 263.299 281.025 252.781 281.025 252.781C281.025 252.781 282.02 259.787 283.837 267.941C285.654 276.095 289.666 282.673 289.666 282.673Z"
+      fill="#77E6A6"
+    />
+    <path
+      d="M288.713 271.373C288.713 271.373 285.33 266.135 285.2 257.467C285.069 248.8 284.551 242.055 284.551 242.055C284.551 242.055 287.606 252.727 288.138 259.579C288.671 266.432 288.713 271.373 288.713 271.373Z"
+      fill="#77E6A6"
+    />
+    <path
+      d="M289.73 281.473C289.73 281.473 290.34 271.82 292.286 264.617C294.233 257.413 295.806 253.012 295.806 253.012C295.806 253.012 294.47 266.837 293.526 272.578C292.582 278.32 289.73 281.473 289.73 281.473Z"
+      fill="#77E6A6"
+    />
+    <path
+      d="M289.791 288.043C289.791 288.043 292.14 278.693 297.49 271.447C302.839 264.199 304.753 259.091 304.753 259.091C304.753 259.091 303.051 268.018 299.073 274.85C295.093 281.682 289.791 288.043 289.791 288.043Z"
+      fill="#77E6A6"
+    />
+    <path
+      d="M289.729 285.777C289.729 285.777 285.174 278.047 282.359 275.629C279.543 273.211 276.304 267.871 276.304 267.871C276.304 267.871 279.439 276.976 282.079 279.474C284.717 281.974 289.729 285.777 289.729 285.777Z"
+      fill="#77E6A6"
+    />
+    <path
+      d="M289.302 294.253C289.302 294.253 290.385 289.077 295.686 283.043C300.985 277.008 302.849 273.762 302.849 273.762C302.849 273.762 299.738 283.362 296.607 286.29C293.48 289.216 289.302 294.253 289.302 294.253Z"
+      fill="#77E6A6"
+    />
+    <path
+      d="M289.943 290.432C289.943 290.432 287.087 286.682 283.685 284.951C280.283 283.219 279.498 282.405 279.498 282.405C279.498 282.405 280.168 286.33 284.384 288.404C288.601 290.478 289.943 290.432 289.943 290.432Z"
+      fill="#77E6A6"
+    />
+    <path
+      d="M289.496 299.612C289.769 296.219 290.395 291.043 290.44 287.456C290.542 279.539 288.11 268.457 288.11 268.457C288.917 277.194 289.943 282.304 289.414 289.416C289.204 292.235 289.144 296.226 288.971 298.79C288.855 299.467 289.183 300.183 289.496 299.612Z"
+      fill="#50CC85"
+    />
+    <path
+      d="M284.787 284.007C284.787 284.007 282.493 278.393 278.327 273.392C274.161 268.391 267.95 260.064 267.95 260.064C267.95 260.064 270.979 265.991 275.092 272.688C279.204 279.385 284.787 284.007 284.787 284.007Z"
+      fill="#50CC85"
+    />
+    <path
+      d="M280.479 274.247C280.479 274.247 275.867 270.622 273.097 262.953C270.327 255.282 267.802 249.442 267.802 249.442C267.802 249.442 273.786 257.999 276.358 263.931C278.929 269.863 280.479 274.247 280.479 274.247Z"
+      fill="#50CC85"
+    />
+    <path
+      d="M284.476 282.921C284.476 282.921 282.063 274.148 281.588 267.145C281.116 260.141 281.168 255.744 281.168 255.744C281.168 255.744 284.21 268.45 285.128 273.846C286.047 279.243 284.476 282.921 284.476 282.921Z"
+      fill="#50CC85"
+    />
+    <path
+      d="M286.541 288.746C286.541 288.746 285.768 279.71 288.308 271.626C290.848 263.544 290.985 258.413 290.985 258.413C290.985 258.413 292.206 266.874 290.759 274.171C289.31 281.466 286.541 288.746 286.541 288.746Z"
+      fill="#50CC85"
+    />
+    <path
+      d="M285.793 286.749C285.793 286.749 279.374 281.267 276.13 279.977C272.887 278.688 268.369 274.931 268.369 274.931C268.369 274.931 273.946 282.07 277.059 283.485C280.17 284.899 285.793 286.749 285.793 286.749Z"
+      fill="#50CC85"
+    />
+    <path
+      d="M288.007 294.418C288.007 294.418 287.385 289.484 290.253 282.494C293.121 275.503 293.785 272.045 293.785 272.045C293.785 272.045 293.955 281.536 292.068 285.098C290.181 288.66 288.007 294.418 288.007 294.418Z"
+      fill="#50CC85"
+    />
+    <path
+      d="M287.407 290.825C287.407 290.825 283.719 288.364 280.163 287.864C276.607 287.366 275.659 286.882 275.659 286.882C275.659 286.882 277.457 290.168 281.843 290.722C286.228 291.276 287.407 290.825 287.407 290.825Z"
+      fill="#50CC85"
+    />
+    <path
+      d="M289.82 299.126C289.024 296.024 287.996 291.229 286.939 288.025C284.604 280.951 279.05 271.839 279.05 271.839C282.443 279.362 284.92 283.592 286.625 290.082C287.302 292.653 288.47 296.222 289.103 298.555C289.204 299.193 289.716 299.73 289.82 299.126Z"
+      fill="#50CC85"
+    />
+    <path
+      d="M297.97 320.79H280.568L275.191 290.139H303.974L297.97 320.79Z"
+      fill="#D2DCEB"
+    />
+    <path
+      d="M496.783 329.209L525.482 508.649L531.005 508.633L508.299 329.173L496.783 329.209Z"
+      fill="#DCA86E"
+    />
+    <path
+      d="M298.948 329.293L261.572 508.911L254.129 508.929L283.434 329.329L298.948 329.293Z"
+      fill="#DCA86E"
+    />
+    <path
+      d="M548.899 332.542H240.114V318.722H548.899V332.542Z"
+      fill="#DCA86E"
+    />
+    <path
+      d="M563.703 327.896H225.308V318.724H563.703V327.896Z"
+      fill="#F3BA7A"
+    />
+    <path
+      d="M469.072 313.885H457.062L445.052 237.256H454.183L469.072 313.885Z"
+      fill="#A6AEBA"
+    />
+    <path
+      d="M465.624 313.885H418.749L406.74 237.256H453.615L465.624 313.885Z"
+      fill="#D2DCEB"
+    />
+    <path d="M469.072 312.148H418.12V317.865H469.072V312.148Z" fill="#D2DCEB" />
+    <path
+      d="M533.317 312.148H469.072V317.865H533.317V312.148Z"
+      fill="#A6AEBA"
+    />
+    <path
+      d="M439.881 279.297C441.237 285.163 440.283 291.498 437.747 293.447C435.213 295.397 432.06 292.221 430.702 286.355C429.347 280.489 430.3 274.154 432.834 272.205C435.369 270.255 438.524 273.431 439.881 279.297Z"
+      fill="#A6AEBA"
+    />
+    <path
+      d="M366.964 317.597H360.315C357.567 317.597 355.231 315.596 354.809 312.881L352.153 295.772H375.125L372.469 312.881C372.048 315.596 369.711 317.597 366.964 317.597Z"
+      fill="#A6AEBA"
+    />
+    <path
+      d="M372.874 311.855C377.069 311.989 378.392 308.772 378.891 306.013C379.22 304.184 378.959 302.746 378.118 301.741C377.308 300.771 375.945 300.215 374.374 300.215C371.895 300.215 369.877 302.898 369.877 306.198C369.877 308.973 372.132 311.196 372.874 311.855ZM373.124 313.951C372.881 313.951 372.64 313.942 372.389 313.922L372.079 313.898L371.831 313.708C371.664 313.582 367.785 310.546 367.785 306.198C367.785 301.747 370.741 298.123 374.374 298.123C376.565 298.123 378.516 298.952 379.724 300.397C380.588 301.431 381.504 303.31 380.95 306.383C380.076 311.229 377.241 313.951 373.124 313.951Z"
+      fill="#A6AEBA"
+    />
+    <path
+      d="M349.864 319.1H378.979L383.622 313.958H345.221L349.864 319.1Z"
+      fill="#D2DCEB"
+    />
+    <path d="M139.315 508.591H0V207.247H139.315V508.591Z" fill="#B6BFCC" />
+    <path
+      d="M123.278 252.012H16.0381V220.414H123.278V252.012Z"
+      fill="#D2DCEB"
+    />
+    <path
+      d="M82.4838 240.044H56.8324C56.1731 240.044 55.6392 239.51 55.6392 238.851V233.577C55.6392 232.918 56.1731 232.384 56.8324 232.384H82.4838C83.1415 232.384 83.677 232.918 83.677 233.577V238.851C83.677 239.51 83.1415 240.044 82.4838 240.044Z"
+      fill="white"
+    />
+    <path
+      d="M123.278 292.222H16.0381V260.624H123.278V292.222Z"
+      fill="#D2DCEB"
+    />
+    <path
+      d="M82.4838 280.253H56.8324C56.1731 280.253 55.6392 279.719 55.6392 279.06V273.786C55.6392 273.128 56.1731 272.592 56.8324 272.592H82.4838C83.1415 272.592 83.677 273.128 83.677 273.786V279.06C83.677 279.719 83.1415 280.253 82.4838 280.253Z"
+      fill="white"
+    />
+    <path
+      d="M123.278 332.433H16.0381V300.836H123.278V332.433Z"
+      fill="#D2DCEB"
+    />
+    <path
+      d="M82.4838 320.466H56.8324C56.1731 320.466 55.6392 319.932 55.6392 319.273V314C55.6392 313.341 56.1731 312.807 56.8324 312.807H82.4838C83.1415 312.807 83.677 313.341 83.677 314V319.273C83.677 319.932 83.1415 320.466 82.4838 320.466Z"
+      fill="white"
+    />
+    <path
+      d="M123.278 496.384H16.0381V341.502H123.278V496.384Z"
+      fill="#D2DCEB"
+    />
+    <path
+      d="M82.4838 361.129H56.8324C56.1731 361.129 55.6392 360.596 55.6392 359.936V354.663C55.6392 354.004 56.1731 353.47 56.8324 353.47H82.4838C83.1415 353.47 83.677 354.004 83.677 354.663V359.936C83.677 360.596 83.1415 361.129 82.4838 361.129Z"
+      fill="white"
+    />
+    <defs>
+      <linearGradient
+        id="paint0_linear_7427_22468"
+        x1="479.911"
+        y1="472.375"
+        x2="514.644"
+        y2="497.874"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#343A44" />
+        <stop offset="0.473931" stopColor="#142138" />
+        <stop offset="1" stopColor="#142138" />
+      </linearGradient>
+      <linearGradient
+        id="paint1_linear_7427_22468"
+        x1="538.481"
+        y1="489.533"
+        x2="581.568"
+        y2="489.533"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#343A44" />
+        <stop offset="0.473931" stopColor="#142138" />
+        <stop offset="1" stopColor="#142138" />
+      </linearGradient>
+      <linearGradient
+        id="paint2_linear_7427_22468"
+        x1="781.793"
+        y1="293.847"
+        x2="751.088"
+        y2="258.653"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#343A44" />
+        <stop offset="0.473931" stopColor="#142138" />
+        <stop offset="1" stopColor="#142138" />
+      </linearGradient>
+      <linearGradient
+        id="paint3_linear_7427_22468"
+        x1="618.677"
+        y1="355.126"
+        x2="761.528"
+        y2="355.126"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stopColor="#343A44" />
+        <stop offset="0.473931" stopColor="#142138" />
+        <stop offset="1" stopColor="#142138" />
+      </linearGradient>
+    </defs>
+  </svg>
+);

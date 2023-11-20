@@ -1,0 +1,37 @@
+.marginHead{
+    width: 100%;
+    align-items: center;
+}
+.marginGrid{
+    margin-top: 52px;
+    padding-top: 24px;
+        padding-left: 29px;
+    padding-right: 29px;
+    background: #FFFFFF;
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.11)
+}
+.card{
+    width: 328px;
+    align-items: center;
+    background: #FFFFFF;
+}
+.paymentDescription{  
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(40, 48, 73);
+
+}
+.goBack{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-decoration-line: underline;
+    padding-bottom: 55px;
+    color: rgba(40, 48, 73, 0.7);
+}

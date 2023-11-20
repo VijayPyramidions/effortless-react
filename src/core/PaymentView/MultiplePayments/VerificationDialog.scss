@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    margin: 15vh auto auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 30px;
+    height: 60%;
+
+    .topSection {
+        display: grid;
+        gap: 20px;
+        text-align: center;
+        .title {
+            font-weight: 500;
+            font-size: 24px;
+            color: var(--colorTitle);
+        }
+        .description {
+            text-align: center;
+            font-weight: 400;
+            font-size: 16px;
+            color: var(--colorInputLabel);
+            .highlight {
+                font-size: 500;
+                color: var(--colorTitle);
+            }
+        }
+    }
+
+    .bottomSection {
+        display: grid;
+        gap: 20px;
+        text-align: center;
+        .question {
+            font-weight: 300;
+            font-size: 16px;
+            color: var(--colorInputLabel);
+        }
+        .resendLink {
+            font-weight: 500;
+            font-size: 16px;
+            color: var(--colorTitle);
+            text-decoration: underline;
+        }
+    }
+
+    .actionContainer {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+        .submitButton,
+        .submitButton:hover {
+            border-radius: 18px;
+            padding: 7px 20px;
+            text-align: center;
+            text-transform: none !important;
+            font-size: 14px;
+            font-weight: 500;
+            box-shadow: none;
+            background-color: var(--colorPrimaryButton) !important;
+            color: var(--colorWhite);
+            width: 50%;
+        }
+    }
+}

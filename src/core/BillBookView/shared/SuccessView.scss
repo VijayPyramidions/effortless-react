@@ -1,0 +1,63 @@
+.successViewContainerNew {
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 2% !important;
+  /* padding: 60px 20px !important; */
+  background-color: #ffffff !important;
+  border-radius: 20px !important;
+  align-items: center !important;
+  margin: 0px !important;
+  min-height: 70vh;
+  justify-content: center;
+  .tickImg {
+    height: 25vh;
+  }
+  .title {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--colorTitle);
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .description {
+    font-weight: 300;
+    font-size: 13px;
+    color: var(--colorInputLabel);
+    text-align: center;
+  }
+  .actionContainer {
+    margin-top: 30px;
+    display: grid;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    .outlineButton,
+    .actionButton,
+    .actionButton:hover {
+      border-radius: 18px;
+      padding: 6px 20px;
+      text-align: center;
+      text-transform: none !important;
+      font-size: 14px;
+      font-weight: 500;
+      box-shadow: none;
+    }
+    .outlineButton {
+      border-color: var(--colorPrimaryButton);
+      color: var(--colorPrimaryButton);
+    }
+    .actionButton,
+    .actionButton:hover {
+      background-color: var(--colorPrimaryButton) !important;
+      color: var(--colorWhite);
+    }
+    .linkDashboard {
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: underline;
+      text-align: center;
+      color: rgba(40, 48, 72, 0.7);
+      cursor: pointer;
+    }
+  }
+}

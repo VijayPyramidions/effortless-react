@@ -1,0 +1,77 @@
+.salesPerson{
+    .firstCont{
+        padding: 20px 20px 0;
+    .headerP {
+        font-weight: 400;
+        font-size: 16px;
+        color: #283049;
+    
+        padding-bottom: 4px;
+  position: relative;
+  &::before {
+    content: '';
+    width: 15px;
+    height: 2px;
+    background: #f08b32;
+    border-radius: 4px;
+    bottom: 0;
+    left: 0px;
+    position: absolute;
+  }
+      }
+
+      .searchFilterFull {
+        background: rgba(237, 237, 237, 0.15);
+        border: 0.7px solid rgba(153, 158, 165, 0.39);
+        box-sizing: border-box;
+        border-radius: 8px;
+        color: #6e6e6e;
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        .searchFilterInputBig {
+          padding: 10px 20px;
+          width: calc(100% - 40px);
+          border-radius: 8px;
+        }
+        .searchFilterIcon {
+            margin: 0 10px !important;
+          }
+          svg {
+            width: 18px;
+            height: 18px;
+            color: #6e6e6e;
+          }
+        input {
+          border: none;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 22px;
+          color: #6e6e6e;
+          font-family: Lexend;
+          font-style: normal;
+      
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+
+    .centerScrollCont{
+        overflow-y: auto;
+        overflow-x: hidden;
+        height: 78vh;
+
+        .salesListDiv{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 15px;
+            width: calc(100% - 30px);
+            border-bottom: 1px solid #D8D8D8;
+
+        }
+    }
+}

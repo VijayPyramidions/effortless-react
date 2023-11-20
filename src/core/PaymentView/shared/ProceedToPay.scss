@@ -1,0 +1,529 @@
+.proceedToPay {
+  padding: 15px 15px 20px 15px;
+  @media screen and (max-width: 480px) {
+    padding: 24px;
+  }
+}
+.heading {
+  font-size: 1.5rem !important;
+  color: #f08b32;
+}
+.billcontentrow {
+  display: flex;
+  align-items: center;
+  span {
+    font-size: 11px;
+    padding-left: 10px;
+  }
+}
+.proceedpay_title {
+  h6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--colorPrimaryButton);
+    margin: 0 0 23px 0;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.374px;
+  }
+}
+.makePaymentContainer {
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+.headerContainer {
+  position: relative;
+  .headerLabel {
+    font-weight: 400;
+    color: var(--colorTitle);
+    font-size: 16px;
+  }
+
+  .headerUnderline {
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    margin-top: 10px;
+    margin-left: 2px;
+    background-color: var(--colorPrimaryButton);
+  }
+}
+.billcontentrowinput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  span {
+    font-size: 11px;
+    padding-left: 10px;
+  }
+  input {
+    position: absolute;
+    top: 50%;
+    right: 6%;
+    transform: translate(-50%, -50%);
+    height: 16px;
+    width: 16px;
+  }
+}
+
+.connected_row {
+  .body {
+    background: #f5f5f3;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    padding: 13px 15px;
+  }
+  p {
+    color: #6e6e6e !important;
+  }
+  .error {
+    color: #bf2929 !important;
+    max-width: 85%;
+    font-size: 13px;
+  }
+  .inputStack {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: -1rem;
+  }
+}
+
+.payment_methods {
+  .MakePayment_body {
+    background: #f5f5f3;
+    padding: 11px;
+    border-radius: 5px;
+  }
+}
+.flowStackDesktop {
+  position: relative;
+  height: 70vh;
+  overflow: auto;
+  margin: 1rem 0rem;
+}
+.flowStack {
+  overflow: auto;
+  height: 50vh;
+  margin-top: 1rem;
+
+  @media screen and (max-width: 370px) {
+    height: calc(100vh - 408px);
+  }
+  @media screen and (max-width: 380px) {
+    height: calc(100vh - 397px);
+  }
+  @media screen and (max-width: 425px) {
+    height: calc(100vh - 422px);
+  }
+}
+.connected_heading {
+  .headerContainer {
+    margin: 20px 0px;
+  }
+}
+.connected_row {
+  .headerLabel {
+    font-weight: 500;
+  }
+}
+
+.connected_row {
+  .billName {
+    font-size: 11px;
+    padding-left: 10px;
+  }
+}
+
+.payNow {
+  margin: 16px 0 0 0;
+}
+
+.dialog {
+  .videPlayer {
+    box-sizing: border-box;
+    padding: 4px;
+    background: #ffffff;
+    border-radius: 8px;
+  }
+
+  & div[role='dialog'] {
+    background-color: transparent;
+  }
+  .paymentModal {
+    // width: 500px;
+    position: relative;
+    p {
+      margin: 0;
+    }
+
+    // & div:not(:last-child) {
+    //   margin-bottom: 6px;
+    // }
+
+    .firstModalSection,
+    .secondModalSection,
+    .thirdModalSection {
+      padding: 20px 40px;
+      background-color: white;
+    }
+    .firstModalSection,
+    .secondModalSection {
+      margin-bottom: 6px;
+    }
+    .virtualAccountTitle {
+      font-size: 12px;
+      color: #f08b32;
+      text-align: center;
+      letter-spacing: 1px;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+    .modalSectionTitle {
+      font-size: 22px;
+      text-align: center;
+      margin-bottom: 20px;
+      @media screen and (max-width: 490px) {
+        font-size: 18px;
+      }
+    }
+    .modalSectionSubTitle {
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .modalSectionSubTitleOtp {
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #6e6e6e;
+      span {
+        color: #283049;
+        font-size: 13px;
+      }
+    }
+
+    .transactionPassBtnContainer {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .transactionPassBtn {
+      background-color: #f08b32;
+
+      border-radius: 50px;
+      padding: 15px 30px;
+      margin: 0 auto;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.8px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      color: #fff;
+      font-family: 'Lexend', sans-serif !important;
+      line-height: 18px;
+    }
+
+    .paymentModalLabel {
+      display: flex;
+      flex-flow: column nowrap;
+      border: 0.7px solid rgba(153, 158, 165, 0.39);
+      background-color: rgba(237, 237, 237, 0.15);
+      border-radius: 8px;
+      padding: 10px;
+      font-size: 10px;
+      font-weight: 300;
+      color: #2e3a59;
+      margin-bottom: 5px;
+      position: relative;
+      input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 18px;
+      }
+      &.hasError {
+        border: 1px solid var(--colorError);
+      }
+    }
+
+    .forgetPass,
+    .resentOtp {
+      color: #6e6e6e;
+      font-size: 12px;
+      font-weight: 400;
+      text-align: right;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .forgetPass {
+      // margin-bottom: 20px;
+      text-transform: capitalize;
+    }
+    .playbtn {
+      color: #3049bf;
+      text-align: center;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 32px;
+
+      justify-content: end;
+      cursor: pointer;
+      // @media screen and (max-width: 480px) {
+      //   margin-left: 100px;
+      // }
+    }
+
+    .forgetwrap {
+      text-align: right;
+    }
+    .resentOtp {
+      text-align: center;
+    }
+
+    .paymentModalButton {
+      border: none;
+      outline: none;
+      cursor: pointer;
+      color: white;
+      background-color: #f08b32;
+      width: 100%;
+      border-radius: 50px;
+      padding: 10px 20px;
+      letter-spacing: 0.8px;
+    }
+    .errorMessageModal {
+      font-size: 11px;
+      color: #bf2929;
+      margin-top: 5px;
+      margin-bottom: 12px;
+    }
+
+    .collapsedTransaction {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        margin: 0;
+      }
+    }
+    .collapsedTokenTransaction {
+      text-align: center;
+      position: relative;
+
+      .modalSectionTokenTitle {
+        color: #283049;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 8px;
+        @media screen and (max-width: 490px) {
+          font-size: 16px;
+        }
+      }
+
+      .iciciToken {
+        color: #283049;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2px;
+      }
+
+      .downarrbtn {
+        position: absolute;
+        bottom: -25px;
+        background: #fff;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        display: grid;
+        place-content: center;
+        left: 50%;
+
+        .arrowicon {
+          color: #283049;
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+    .collapsedOtp {
+      p {
+        margin: 0;
+      }
+    }
+    .completedTransaction {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: white;
+      width: 84%;
+      height: 91%;
+      padding: 20px 40px;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      p {
+        margin: 0;
+      }
+
+      .paymentSuccess {
+        color: #28304982;
+        font-size: 12px;
+        margin-bottom: 40px;
+      }
+
+      button {
+        margin-bottom: 15px;
+      }
+
+      .urlToPaymentDashboard {
+        color: #283049b2;
+        font-size: 13px;
+        text-decoration: underline;
+        cursor: pointer;
+        margin-bottom: 0;
+        border: none;
+        outline: none;
+        background-color: transparent;
+      }
+    }
+
+    .completedTransaction > div:nth-child(1) {
+      width: 100% !important;
+      > div:nth-child(1) {
+        min-height: 90% !important;
+      }
+    }
+
+    .thirdModalSection {
+      & button:disabled {
+        background-color: #f08b3275;
+        cursor: unset;
+      }
+    }
+  }
+}
+
+.checkedRadio {
+  &:hover,
+  &:focus {
+    -webkit-appearance: auto !important;
+  }
+}
+
+.paymmentMobile {
+  .title {
+    color: #283049;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+
+    &::before {
+      content: '';
+      border-radius: 4px;
+      background: #f08b32;
+      width: 12px;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  .desc {
+    color: #283049;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  .banksLists {
+    height: calc(100vh - 244px);
+    overflow: auto;
+  }
+  .connectbanktitle {
+    color: #00a676;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+
+  .listItem {
+    padding: 8px 0;
+    border-bottom: 0.5px solid #d9d9d9;
+    margin-bottom: 12px;
+
+    .balLablel {
+      color: #a0a4af;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      font-family: 'Lexend', sans-serif !important;
+      margin: 0;
+
+      &.otherLabel {
+        color: #6e6e6e;
+      }
+    }
+    .accbal {
+      color: #f08b32;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      &.otherbal {
+        color: #6e6e6e;
+      }
+    }
+  }
+
+  .otherBanktitle {
+    color: #283049;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.374px;
+    margin: 12px 0px;
+  }
+}

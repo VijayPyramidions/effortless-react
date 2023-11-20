@@ -1,0 +1,97 @@
+.vehiclehistorycontainer {
+  padding: 24px 0;
+
+  .historytitle {
+    color: #283049;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    padding-left: 32px;
+    padding-bottom: 4px;
+    margin-bottom: 16px;
+
+    &::before {
+      content: '';
+      bottom: 0;
+      width: 17.317px;
+      height: 2px;
+      position: absolute;
+      flex-shrink: 0;
+      border-radius: 4px;
+      background: #f08b32;
+    }
+  }
+
+  .mileageamoutwrapper {
+    .amountexired,
+    .amountprogress {
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      margin-bottom: 10px;
+      font-weight: 400;
+      line-height: 16px;
+    }
+    .amountexired {
+      color: #283049;
+    }
+
+    .amountprogress {
+      color: #2f9682;
+    }
+
+    .vehicleicon {
+      margin-right: 8px;
+      width: 16px;
+      height: 16px;
+    }
+
+    .dureation {
+      color: #283049;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: normal;
+    }
+  }
+
+  .cycleexpired,
+  .cycleprogress {
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 14px;
+    margin-top: 10px;
+  }
+
+  .cycleprogress {
+    color: #000;
+  }
+
+  .cycleexpired {
+    color: #f00;
+  }
+
+  .listitembtn {
+    &:hover {
+      background: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .vehiclehistorycontainer {
+    padding: 20px 0;
+
+    .historytitle {
+      font-size: 16px;
+      line-height: normal;
+      padding-left: 20px;
+      &::before {
+        width: 10px;
+      }
+    }
+  }
+}

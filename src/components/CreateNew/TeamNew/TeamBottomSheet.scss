@@ -1,0 +1,191 @@
+.memberAddSheet {
+  background: #fff;
+  .topHeader {
+    display: flex;
+    justify-content: space-between;
+    .headerContainer {
+      padding: 4px 0 24px;
+
+      .headerLabelForEdit {
+        margin: 0;
+        color: #283049;
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: #283049;
+        font-size: 16px;
+        position: relative;
+        padding-bottom: 4px;
+        text-transform: capitalize;
+
+        &::before {
+          content: '';
+          position: absolute;
+          width: 10px;
+          height: 2px;
+          bottom: 0px;
+          background: #f08b32;
+          border-radius: 6px;
+        }
+      }
+
+      .headerUnderlineDesktop {
+        display: none;
+      }
+    }
+  }
+  .inputContain {
+    // margin-bottom: 16px;
+  }
+  .lastButton {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+
+    .outlinedButton {
+      background: #fff !important;
+      color: #f08b32 !important;
+      border-radius: 8px !important;
+      border: 1px solid #f08b32 !important;
+      height: 40px !important;
+      font-weight: 500 !important;
+      font-size: 16px !important;
+      line-height: 18px !important;
+      text-transform: capitalize !important;
+      padding: 10px 30px;
+      font-family: 'Lexend', sans-serif !important;
+    }
+    .containedButton {
+      height: 40px !important;
+      background: #f08b32 !important;
+      border-radius: 8px !important;
+      font-weight: 500 !important;
+      font-size: 16px !important;
+      line-height: 18px !important;
+      color: #ffffff !important;
+      text-transform: capitalize !important;
+      font-family: 'Lexend', sans-serif !important;
+      min-width: 33% !important;
+    }
+  }
+  .deactivateButton {
+    height: 40px !important;
+    background: #d60000 !important;
+    border-radius: 8px !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    line-height: 18px !important;
+    color: #ffffff !important;
+    text-transform: capitalize !important;
+    font-family: 'Lexend', sans-serif !important;
+    margin: 20px 0 !important;
+    width: 100%;
+  }
+
+  .bankDetail {
+    color: #000;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 0 16px;
+  }
+
+  .greyBorder {
+    width: calc(100% - 2px);
+    padding: 0 !important;
+    background: #ededed26;
+  }
+  .greyBorderBank {
+    width: 100%;
+    padding: 0 !important;
+    background: #ededed26;
+  }
+}
+
+.businessAddress {
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #a0a4af;
+  border-radius: 8px;
+}
+
+.employeemodulecard {
+  border-radius: 8px;
+  border: 1px solid rgba(153, 158, 165, 0.4);
+  background: rgba(237, 237, 237, 0.15);
+  padding: 12px 12px 16px;
+}
+
+.menutext {
+  // color: #283049 !important;
+  font-family: 'Lexend', sans-serif !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  line-height: normal !important;
+  border-bottom: 1px solid rgba(199, 199, 199, 0.5) !important;
+  padding: 8px 16px !important;
+  display: flex;
+  gap: 8px;
+  &:last-child {
+    border-bottom: none !important;
+  }
+}
+.disableClass {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.departmentfiled {
+  border-radius: 8px;
+  border: 1px solid rgba(153, 158, 165, 0.39);
+  background: rgba(237, 237, 237, 0.15);
+  padding: 8px 6px 4px 10px;
+  height: 44px;
+  cursor: pointer;
+  .label {
+    flex-direction: row;
+    justify-content: space-between;
+    .labeltext {
+      color: rgb(110, 110, 110);
+      font-size: 8px;
+      font-weight: 400;
+      font-family: 'Lexend', sans-serif !important;
+      span {
+        color: #d8010c;
+        margin-left: 2px;
+      }
+    }
+    .iconfield {
+      color: #000;
+      font-size: 18px;
+    }
+  }
+  .departmentvalue {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: 'Lexend', sans-serif !important;
+    white-space: nowrap;
+  }
+}
+.helperText {
+  color: #d8010c;
+  font-size: 6.8px !important;
+  font-family: 'Lexend', sans-serif !important;
+  margin: -14px 0 -8px 10px !important;
+  font-weight: 500 !important;
+}
+
+.teamview {
+  height: calc(100vh - 80px) !important;
+}
+
+.teamedit {
+  height: calc(100vh - 220px) !important;
+}
+
+.teamnew {
+  height: calc(100vh - 158px) !important;
+}

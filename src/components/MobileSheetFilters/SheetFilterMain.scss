@@ -1,0 +1,82 @@
+.entitysheet {
+  p {
+    margin: 0 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+  }
+  .headertext {
+    color: #283049;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    padding-bottom: 2px;
+    text-transform: capitalize;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      bottom: 0;
+      background: #f08b32;
+      border-radius: 6px;
+    }
+  }
+}
+
+.datesheet {
+  p {
+    margin: 0 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+  }
+  .headertext {
+    color: #283049;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    padding-bottom: 2px;
+    text-transform: capitalize;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      bottom: 0;
+      background: #f08b32;
+      border-radius: 6px;
+    }
+  }
+  .mobiledate {
+    width: calc(100% - 20px);
+    padding: 10px 10px 0;
+    border-radius: 6px;
+    border: 1px solid #0000001a;
+    background: #00000005;
+    .mobiledatelabel {
+      font-size: 11px;
+      color: rgb(160, 164, 175) !important;
+      font-weight: 400;
+      margin: 0;
+    }
+    .mobiledatefield {
+      margin: 5px;
+      font-size: 14px;
+      color: rgb(40, 48, 73);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .mobiledateinput {
+        pointer-events: none;
+        width: 90%;
+        border: none;
+        background: rgb(250, 250, 250);
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.dialog {
+    .MuiPaper-root {
+        border-radius: 16px;
+    }
+}
+.dialog .dialogContent {
+    padding-bottom: 20px !important;
+    padding-top: 10px;
+}
+.title {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--colorTitle);
+    padding: 16px 24px 0 !important;
+}
+.description {
+    font-weight: 300 !important;
+    margin-bottom: 20px !important;
+    font-size: 14px !important;
+    color: var(--colorInputLabel);
+}
+
+.MuiDialogContent-root {
+    padding: 0 !important;
+}
+
+.actionContainer {
+    display: flex;
+    justify-content: space-between !important;
+    gap: 12px;
+    align-items: center;
+    margin: 0 0 20px !important;
+    padding: 8px 24px !important;
+    
+    .outlineButton,
+    .submitButton,
+    .submitButton:hover {
+        border-radius: 18px;
+        padding: 6px 20px;
+        text-align: center;
+        text-transform: none !important;
+        font-size: 14px;
+        font-weight: 600;
+        width: 100%;
+        box-shadow: none;
+    }
+    .outlineButton {
+        flex: 1;
+    }
+    .submitButton,
+    .submitButton:hover {
+        background-color: var(--colorPrimaryButton) !important;
+        color: var(--colorWhite);
+        flex: 3;
+    }
+}

@@ -1,0 +1,284 @@
+.tablist {
+    padding-left: 12px;;
+  
+    .tabButtons {
+      padding: 12px;
+      min-height: 10px;
+      text-transform: capitalize;
+      font-family: 'Lexend', sans-serif !important;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      color: #6e6e6e;
+      flex-direction: row;
+    }
+  
+    .searchtabcount,
+    .searchtabactive {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 0.249333px;
+      min-height: 18px;
+      min-width: 18px;
+      border-radius: 10px;
+      margin-left: 8px;
+      transition: all 0.2s;
+    }
+  
+    .searchtabcount {
+      background: #e2e2e2;
+      color: #6e6e6e;
+    }
+  
+    .searchtabactive {
+      color: #ffffff;
+      background: #f08b32;
+    }
+  }
+   
+  .searchTabDetails{
+    p{
+        margin: 0;
+        font-family: 'Lexend';
+        font-style: normal;
+    }
+    .header{
+        background: rgba(160, 164, 175, 0.2);
+    width: calc(100% - 48px);
+    padding: 5px 24px;
+    display: flex;
+    justify-content: space-between;
+    .headerText{
+font-weight: 400;
+font-size: 12px;
+color: #000000;
+text-transform: capitalize;
+    }
+    .viewText{
+        font-weight: 300;
+        font-size: 12px;
+        color: #3049BF;
+        cursor: pointer;
+    }
+    }
+    .bodyContPeople{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        .topCont{
+        padding: 16px 24px;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        .fistCont{
+            display: flex;
+            gap: 12px;
+            cursor: pointer;
+            width: 90%;
+            .searchAvatar{
+                width: 42px;
+                height: 42px;
+            }
+            .searchHeadText{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                .searchTitle{
+                    font-weight: 500;
+                    font-size: 14px;
+                    color: #283049;
+                }
+                .searchAmount{
+                    font-weight: 300;
+                    font-size: 13px;
+                    color: #6E6E6E;
+                }
+            }
+        }
+        .callIcon{
+            margin-left: auto;
+            cursor: pointer;
+        }
+    }
+    .bottomCont{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 0 24px 16px;
+        .bottomBox{
+            background: rgba(182, 180, 186, 0.1);
+            border-radius: 4px;
+            padding: 2px 8px 4px;
+            cursor: pointer;
+            white-space: nowrap;
+            .bottomText{
+                font-weight: 400;
+                font-size: 12px;
+                color: #84818A;
+            }
+        }
+    }
+}
+
+    .bodyContInvoice{
+        padding: 12px 24px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        .eachCont{
+            .topTextCont{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center; 
+                .topfirstTextCont{
+                        display: flex;
+                        align-items: center;
+                        gap: 18px;
+                    .topId{
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 16px;
+                        color: #2F4DD7;
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+                
+                .topAmonut{
+                    font-weight: 600;
+                    font-size: 13px;
+                    color: #283049;
+                }
+            }
+            .bottomTextCont{
+                padding: 8px;
+                padding-left: 28px;
+                display: flex;
+                align-items: start; 
+                gap: 4px;
+                .bottomDate{
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: #283049;
+                }
+                .bottomInfo{
+                    font-weight: 300;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: #283049;
+                }
+            }
+            .bottomTextContBill{
+                padding: 8px;
+                padding-left: 28px;
+                display: flex;
+                align-items: start; 
+                gap: 4px;
+                .bottomInfo{
+                    font-weight: 300;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: #283049;
+                    .bottomDate{
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 16px;
+                        color: #283049;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .bottomTextContRecurring{
+                padding: 8px;
+                padding-left: 28px;
+                display: flex;
+                align-items: start; 
+                gap: 4px;
+                .bottomDate{
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: #283049;
+                    display: flex;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+
+  }
+
+  .searchNoData{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 24px;
+    .noDataText{
+        font-family: 'Lexend' !important;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 30px;
+color: #000000;
+    }
+}
+
+.recentSearch{
+    padding: 20px;
+    width: calc(100% - 40px);
+    p{
+        font-family: 'Lexend';
+        font-style: normal;
+        margin: 0;
+    }
+    .topCont{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .header{
+            font-weight: 400;
+            font-size: 16px;
+            color: #000000;
+        }
+        .clear{
+            font-weight: 400;
+            font-size: 11px;
+            color: #FF0000;
+            cursor: pointer;
+        }
+    }
+    .secondCont{
+        // padding: 20px;
+        // width: calc(100% - 40px);
+        display: flex;
+        align-items: baseline;
+        cursor: pointer;
+        padding: 20px 0;
+        width: 100%;
+        justify-content: flex-start;
+        gap: 20px;
+        overflow: auto;
+        .innerCont{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            .avatarSearch{
+                width: 40px;
+                height: 40px;
+            }
+            .textSearch{
+                font-weight: 400;
+                font-size: 10px;
+                color: #000000;
+                max-width: 100px;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,1182 @@
+.mainStack {
+  height: 100%;
+  width: 100%;
+  height: 100%;
+  .card1 {
+    //   background: #ffffff;
+    //   border: 0.7px solid rgba(153, 158, 165, 0.39);
+    border-radius: 8px;
+    box-sizing: border-box;
+    //   height: 170px;
+    margin: 1rem;
+    padding: 0rem 0rem 1rem 0rem;
+  }
+  .card2 {
+    //   background: #ffffff;
+    //   border: 0.7px solid rgba(153, 158, 165, 0.39);
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: 70%;
+    margin: 1rem;
+  }
+  .TermsHead1 {
+    background: #ffffff;
+    border: 0.7px solid rgba(153, 158, 165, 0.39);
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: 348px;
+    margin: 1rem;
+  }
+  .stack1 {
+    margin: 1rem;
+    text-transform: capitalize;
+    height: 100%;
+    .heading {
+      font-weight: 500;
+      font-size: 16px;
+      color: #283049;
+    }
+  }
+  .contentStack {
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .text {
+    font-weight: 300;
+    font-size: 12px;
+    color: #283049;
+  }
+
+  .TermsCond {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #2f9682;
+    text-transform: capitalize;
+  }
+  .stack {
+    height: 38vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .input {
+    border: red;
+  }
+}
+.search {
+  display: flex;
+  align-items: center;
+  background-color: rgb(84, 210, 219);
+  opacity: 0.5;
+}
+.searchIcon {
+  position: absolute;
+  z-index: 999;
+  margin: 10px;
+  color: #5a5a5a;
+}
+.headerMainStack {
+  margin: 3rem;
+  .headerStack {
+    justify-content: space-between;
+    .header {
+      color: #2e3a59 !important;
+      font-size: 15px !important;
+      font-weight: 600 !important;
+      text-transform: uppercase;
+      // margin-left: 1rem !important;
+    }
+    .headerIcon {
+      color: #2e3a59 !important;
+      margin-right: 1rem !important;
+    }
+  }
+}
+
+.headerStackMobile {
+  margin: 1rem;
+  .headerStack {
+    justify-content: space-between;
+    .header {
+      color: #2e3a59 !important;
+      font-size: 15px !important;
+      font-weight: 600 !important;
+      text-transform: uppercase;
+      // margin-left: 1rem !important;
+    }
+    .headerIcon {
+      color: #2e3a59 !important;
+      margin-right: 1rem !important;
+    }
+  }
+}
+
+.filledBtn {
+  border-radius: 20px !important;
+  background-color: #f08b32 !important;
+  width: 203px !important;
+  margin-top: 2rem !important;
+  .filledBtnText {
+    text-transform: capitalize;
+    color: white;
+    font-size: 14px !important;
+  }
+}
+.filledBtn1 {
+  border-radius: 20px !important;
+  background-color: #f08b32 !important;
+  width: 203px !important;
+  margin-top: 2rem !important;
+  padding: 10px !important;
+  .filledBtnText1 {
+    text-transform: capitalize;
+    color: white;
+    font-size: 13px !important;
+  }
+}
+.unfilledBtn {
+  border-radius: 20px !important;
+  border: 1px solid #f08b32 !important;
+  background-color: white !important;
+  width: 203px !important;
+  margin-top: 2rem !important;
+  .unfilledBtnText {
+    text-transform: capitalize;
+    color: #f08b32;
+    font-size: 14px !important;
+  }
+}
+
+.textfieldMini {
+  border: 1px solid #999ea5 !important;
+  margin-bottom: 0px;
+}
+.checkboxStack {
+  width: 100% !important;
+  border: 1px solid #999ea5 !important;
+  border-radius: 10px;
+  .checkboxStack1 {
+    margin: 1rem !important;
+  }
+}
+.list {
+  align-items: center;
+}
+.deactivate {
+  margin: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  .deactivateHeading1 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: #283049;
+  }
+  .deactivateHeading2 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #6e6e6e;
+  }
+  .deactivateHeading3 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    color: #6e6e6e;
+  }
+  .deactivateBtnStack {
+    margin-top: -1rem;
+    justify-content: space-evenly;
+    .cancelBtn {
+      border: none;
+      background-color: white !important;
+      width: 115px !important;
+      margin-top: 2rem !important;
+      .cancelBtnText {
+        color: black;
+      }
+    }
+
+    .terminateBtn {
+      border-radius: 20px !important;
+      border: 1px solid #f08b32 !important;
+      background-color: white !important;
+      width: 115px !important;
+      margin-top: 2rem !important;
+      .terminateBtnText {
+        text-transform: capitalize;
+        color: #f08b32;
+        font-size: 14px !important;
+      }
+    }
+  }
+}
+.nameStack {
+  width: 100%;
+  justify-content: space-between;
+}
+.desktop {
+  background-color: white;
+  width: 93%;
+  // height: 80vh;
+  .desktopSubStack {
+    margin: 1rem 2rem;
+    .searchIcon {
+      position: absolute;
+      z-index: 999;
+      margin: 10px;
+      color: #bdbdbd;
+    }
+    .personIcon {
+      color: #f08b32;
+    }
+    .heading {
+      font-weight: 400;
+      font-size: 18px;
+      color: #f08b32;
+    }
+    .subHeading {
+      font-weight: 500;
+      font-size: 16px;
+      color: #283049;
+      margin: 20px 0px;
+    }
+
+    .listStack {
+      overflow: auto;
+      height: 55vh;
+      margin-top: 10px;
+      .avatarStack {
+        margin: 10px 0px;
+        align-items: center;
+        cursor: pointer;
+        .name {
+          font-weight: 300;
+          font-size: 16px;
+          color: #283049;
+        }
+      }
+    }
+  }
+}
+.list {
+  background-color: white;
+  height: 100%;
+}
+.listHere {
+  height: 90%;
+  overflow: scroll;
+  /* margin: 1rem 0rem; */
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  .avatarStack {
+    margin: 10px 0px;
+    align-items: center !important;
+    .name {
+      font-weight: 300;
+      font-size: 16px;
+      color: #283049;
+    }
+  }
+}
+
+// New CSS for Teamn Settings Roles  Start //
+
+.rolescontainer {
+  margin-right: 12px;
+
+  .tabs {
+    flex-direction: row;
+    align-items: center;
+  }
+  .tab1,
+  .tab2,
+  .tab3 {
+    font-family: 'Lexend', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 21px;
+    color: #283049;
+    margin-right: 8px;
+    text-transform: capitalize;
+  }
+  .tab1 {
+    padding: 20px 40px;
+    border-radius: 18px 5px 0px 0px;
+  }
+  .tab2 {
+    padding: 20px 40px;
+    border-radius: 5px 5px 0px 0px;
+  }
+  .createuserbtn {
+    margin-left: auto;
+    margin-right: 4px;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 26px;
+    font-family: 'Lexend', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #f08b32;
+    padding-left: 14px;
+    padding-right: 14px;
+    text-transform: capitalize;
+    height: 45px;
+    &:hover {
+      background: #ffffff;
+    }
+  }
+
+  .creatrolebtn {
+    margin-left: auto;
+    margin-right: 4px;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 26px;
+    font-family: 'Lexend', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #f08b32;
+    padding-left: 14px;
+    padding-right: 14px;
+    text-transform: capitalize;
+    height: 43px;
+    display: flex;
+    text-decoration: none;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+  }
+  .uploaddepbtn {
+    border-radius: 26px;
+    border: 1px solid #f08b32;
+    background: #f08b32;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+    font-family: 'Lexend', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-transform: capitalize;
+    height: 43px;
+    &:hover {
+      background: #f08b3250;
+    }
+    &:disabled {
+      color: #fff;
+      opacity: 0.5;
+    }
+  }
+  .departmentable {
+    max-height: calc(100vh - 272px) !important;
+  }
+  .tablecontainer {
+    border: none;
+    background: none;
+    box-shadow: none;
+    max-height: calc(100vh - 222px);
+
+    .bordernone {
+      border-bottom: none;
+    }
+    .table {
+      border-collapse: separate;
+      border-spacing: 0px 12px;
+      margin-top: -16px;
+    }
+
+    .tablerow {
+      background: #ffffff;
+      border-radius: 5px;
+    }
+
+    .tablehead {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+      color: #989898;
+      padding: 22.5px 16px;
+
+      &:first-child {
+        padding-left: 46px;
+      }
+    }
+    .tablecell {
+      padding: 11.5px 16px;
+      font-family: 'Lexend', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14.9988px;
+      line-height: 22px;
+      color: #283049;
+
+      &.tab_500 {
+        font-weight: 500 !important;
+      }
+
+      .roleviewbtn {
+        font-family: 'Lexend', sans-serif;
+        font-style: normal;
+        text-transform: capitalize;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #f08b32;
+      }
+
+      .btngroup {
+        background: #fafafa;
+        border-radius: 4px;
+
+        .editbtn,
+        .clonebtn,
+        .deletebtn,
+        .disabledit,
+        .disabledelete {
+          border: 1px solid #e5e5e5 !important;
+          font-family: 'Lexend', sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 18px;
+          text-transform: capitalize;
+          padding: 3px 15px;
+        }
+        .editbtn {
+          color: #f08b32;
+        }
+        .clonebtn {
+          color: #283049;
+        }
+        .deletebtn {
+          color: #ff0000;
+        }
+
+        .disabledit {
+          color: rgba(240, 139, 50, 0.5);
+        }
+        .disabledelete {
+          color: rgba(255, 0, 0, 0.5);
+        }
+      }
+    }
+    .initalwrapp {
+      flex-direction: row;
+      align-items: center;
+      margin-left: 31px;
+
+      .inital {
+        background: #00a676;
+        margin-right: 24px;
+        width: 40px;
+        height: 40px;
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: #ffffff;
+      }
+    }
+    .chipview {
+      color: #191919;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 200;
+      line-height: normal;
+      border-radius: 24px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background: #fff;
+      padding: 4px 8px;
+      width: fit-content;
+      text-transform: capitalize;
+      white-space: nowrap;
+    }
+    .pluscont {
+      border-radius: 2px;
+      background: #f1f1f1;
+      width: 20px;
+      height: 20px;
+      color: #283049;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      padding: 3px 3px 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+// View Roles Modal Start //
+.viewrolescontainer {
+  margin-top: 40px;
+  padding: 0 40px;
+
+  .header {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 31px;
+    color: #283049;
+    position: relative;
+    padding-bottom: 4px;
+    margin-bottom: 25px;
+    &::before {
+      content: '';
+      width: 18px;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: #f08b32;
+      border-radius: 4px;
+      margin-top: 4px;
+    }
+  }
+
+  .rolesinputcontainer {
+    position: relative;
+    margin-bottom: 31px;
+
+    .inputwrp {
+      background: rgba(237, 237, 237, 0.15);
+      border: 0.7px solid #999ea5;
+      border-radius: 8px;
+      padding: 8px 13px 11px 16px;
+    }
+    .editiconwrp {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 3px;
+
+      .roletxt {
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 19px;
+        color: #6e6e6e;
+      }
+
+      .editicon {
+        padding: 0;
+        &:hover {
+          background: none;
+        }
+      }
+    }
+
+    .rolesvalue {
+      font-family: 'Rubik', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14.9988px;
+      line-height: 22px;
+      color: #283049;
+    }
+
+    .roleslistwrp {
+      background: #ffffff;
+      border: 1px solid #dbdbdb;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+      border-radius: 6px;
+      position: absolute;
+      z-index: 10001;
+      width: 100%;
+      top: 75px;
+      padding: 4.5px 0;
+      animation: MuenuList 400ms ease-in-out forwards;
+      transform-origin: top center;
+
+      @keyframes MuenuList {
+        0% {
+          transform: rotateX(-90deg);
+        }
+        70% {
+          transform: rotateX(20deg);
+        }
+        100% {
+          transform: rotateX(0deg);
+        }
+      }
+    }
+    .listbtn {
+      padding: 8px 16px !important;
+      &:hover {
+        background: #fafafa !important;
+      }
+      .listtext {
+        span {
+          font-family: 'Lexend', sans-serif !important;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 16px;
+          color: #414141;
+        }
+      }
+    }
+
+    // .listsanim {
+    //   animation: rotateMenu 400ms ease-in-out forwards;
+
+    //   @keyframes rotateMenu {
+    //     0% {
+    //       transform: rotateX(-90deg);
+    //     }
+    //     70% {
+    //       transform: rotateX(20deg);
+    //     }
+    //     100% {
+    //       transform: rotateX(0deg);
+    //     }
+    //   }
+    // }
+  }
+
+  .permissionwrp {
+    .listheader {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 31px;
+      color: #f08b32;
+      margin-bottom: 24px;
+    }
+
+    .listitemwrp {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+
+      .listtext {
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+        color: rgba(0, 0, 0, 0.5);
+      }
+      .listcheck {
+        cursor: default;
+        margin-right: -13px;
+        align-items: center;
+      }
+    }
+  }
+
+  .editpermbtnwrp {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0 20px;
+    .editpermbtn {
+      width: 223px;
+      padding: 10px 0px;
+      background: #f08b32;
+      border: 1px solid #f08b32;
+      border-radius: 26px;
+      font-family: 'Lexend', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #ffffff;
+      text-transform: capitalize;
+    }
+  }
+}
+// View Roles Modal End //
+
+// TeamsRoles Start //
+
+.teamrolescontainer {
+  background: #ffffff;
+  margin: 0 16px 0 7px;
+  border-radius: 2px;
+  padding: 24px;
+  margin-top: 28px;
+
+  .rolertitlewrp {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 33px;
+
+    .backicon {
+      font-size: 16px;
+      color: #283049;
+    }
+
+    .rolestitle {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 30px;
+      color: #283049;
+      position: relative;
+      padding-bottom: 4px;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 43px;
+        height: 3px;
+        bottom: 0;
+        background: #f08b32;
+        border-radius: 30px;
+      }
+    }
+  }
+
+  .inputwrp {
+    flex: 1;
+
+    .rolelabel {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 25px;
+      color: #283049;
+      margin-right: 40px;
+
+      &.rolemt {
+        margin-top: -23px;
+      }
+    }
+
+    .nameinputwrp {
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 20px;
+
+      .roleinput {
+        // border: 1px solid #e5e5e5;
+        // border-radius: 4px;
+        // padding: 10px 12px;
+        // width: 275px;
+
+        input {
+          font-family: 'Lexend', sans-serif !important;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 20px;
+          color: #a0a4af;
+          padding: 0;
+        }
+        &::after {
+          display: none;
+        }
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    .selectFieldDiv {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      // justify-content: space-between;
+    }
+  }
+  .savebtnwrp {
+    flex: 1;
+    align-items: end;
+    .savebtn {
+      // width: 223px;
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      color: #ffffff;
+      padding: 9.5px 45.5px;
+      background: #f08b32;
+      border: 1px solid #f08b32;
+      border-radius: 26px;
+      text-transform: capitalize;
+      margin-right: 21px;
+    }
+  }
+}
+// TeamsRoles End //
+
+// Accordian Roles Table Start //
+.accordion {
+  border: 1px solid #e5e5e5;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+  margin: 0 0 24px 0 !important;
+
+  &::before {
+    display: none;
+  }
+
+  .accheader {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400 !important ;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    color: #283049;
+  }
+  .accdetails {
+    padding: 0;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 0px;
+      height: 0px;
+    }
+  }
+
+  .theadcell {
+    font-family: 'Lexend', sans-serif !important;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #283049;
+
+    &:first-child {
+      padding: 16px 164px 16px 16px;
+    }
+    &:nth-child(2) {
+      padding: 16px 8px;
+    }
+    &:nth-child(3) {
+      padding: 16px 31px;
+    }
+    &:nth-child(4) {
+      padding: 16px 25px;
+    }
+    &:nth-child(5) {
+      padding: 16px 34px;
+    }
+    &:nth-child(6) {
+      padding: 16px 17px;
+    }
+    &:nth-child(7) {
+      padding: 16px 25px;
+    }
+    &:nth-child(8) {
+      padding: 16px 26px;
+    }
+  }
+
+  .tbodycell {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #283049;
+
+    span {
+      padding: 0;
+    }
+    &:first-child {
+      padding: 12px 0 12px 16px;
+    }
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5),
+    &:nth-child(6),
+    &:nth-child(7),
+    &:nth-child(8) {
+      padding: 14px 40px;
+    }
+
+    .checkbx {
+      color: #f08b32;
+    }
+  }
+}
+
+.deleteRole {
+  padding: 20px;
+  .deleteRoleHead {
+    font-family: 'Lexend' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ff0000;
+  }
+  .deleteRoleText {
+    font-family: 'Lexend' !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #283049;
+  }
+  .deleteFooter {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.secondary {
+  background: #ffffff !important;
+  border: 1px solid #f08b32 !important;
+  border-radius: 18px !important;
+  color: #f08b32 !important;
+  // padding: 10px 20px !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+}
+.primary {
+  background: #f08b32 !important;
+  border-radius: 18px !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  // padding: 10px 20px !important;
+  &:not(.disable):hover {
+    background: #f08b32 !important;
+    box-shadow: none !important;
+  }
+}
+
+// Accordian Roles Table End //
+
+// New CSS for Teamn Settings Roles  End //
+
+.department_main {
+  .topbox {
+    padding: 16px;
+    border-radius: 4px;
+    background: #fff;
+    margin-bottom: 12px;
+  }
+  .enabletext {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .descriptiontext {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.addnewdepartment {
+  p {
+    margin: 0 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+  }
+  .headertext {
+    color: #283049;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    padding-bottom: 2px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 2px;
+      bottom: 0;
+      background: #f08b32;
+      border-radius: 6px;
+    }
+  }
+
+  .labeltext {
+    color: #283049;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .primaryButton,
+  .primaryButton:hover,
+  .secondaryButton,
+  .secondaryButton:hover {
+    border-radius: 20px !important;
+    font-family: 'Lexend', sans-serif !important;
+    text-align: center;
+    text-transform: none !important;
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 160px;
+  }
+
+  .primaryButton,
+  .primaryButton:hover {
+    background: #f08b32;
+    flex: 1;
+    color: #fff;
+    padding: 8px 59px;
+  }
+  .opensheetfieldroot {
+    border: 1px solid #ececec;
+    height: 20px;
+    padding: 12px 6px 12px 12px;
+    background: #fff;
+    border-radius: 8px;
+    flex-grow: 1;
+    cursor: pointer;
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      overflow: auto;
+      white-space: nowrap;
+    }
+  }
+  .labeltextformobile {
+    color: #283049;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .selectedmanager {
+    border-radius: 2px;
+    background: rgba(132, 129, 138, 0.1);
+    display: flex;
+    padding: 2px 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: #2e2c34;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    white-space: nowrap;
+  }
+}
+
+.department_mobile {
+  max-height: 40vh;
+  overflow: auto;
+}
+.menutext {
+  // color: #283049 !important;
+  font-family: 'Lexend', sans-serif !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  line-height: normal !important;
+  border-bottom: 1px solid rgba(199, 199, 199, 0.5) !important;
+  padding: 8px 16px !important;
+  display: flex;
+  gap: 8px;
+  &:last-child {
+    border-bottom: none !important;
+  }
+}
+
+.deleteddialog {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .deletehead {
+    color: #f00;
+    margin: 0 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: normal;
+    position: relative;
+    text-transform: capitalize;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 26px;
+      height: 2px;
+      bottom: -4px;
+      background: #f00;
+      border-radius: 4px;
+    }
+  }
+  .descriptiontext {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .primaryButton,
+  .primaryButton:hover {
+    border-radius: 20px;
+    background: #f08b32;
+    color: #fff;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+    &:disabled {
+      opacity: 0.5 !important;
+    }
+  }
+  .secondarybutton,
+  .secondarybutton:hover {
+    border-radius: 20px;
+    background: #fff;
+    color: #f08b32;
+    border: 1px solid #f08b32;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+    border-radius: 20px;
+    gap: 4px;
+  }
+}

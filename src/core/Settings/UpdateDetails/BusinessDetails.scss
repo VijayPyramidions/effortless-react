@@ -1,0 +1,779 @@
+.businessDetailsContainer {
+  display: flex;
+  flex: 1;
+  align-self: start;
+  flex-direction: column;
+  background: #ffffff;
+  padding: 0px 20px;
+  height: 100%;
+  overflow: auto;
+  .firstRow {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    // justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .busiName {
+      width: 70%;
+    }
+    .imageWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 70px;
+      background-color: #efefed;
+      border-radius: 10px;
+      .image {
+        height: 50%;
+        width: 50%;
+        object-fit: cover;
+        overflow: hidden;
+      }
+    }
+    .spreading {
+      flex: 1;
+    }
+  }
+}
+.businessDetailsContainerDesktop {
+  display: flex;
+  flex: 1;
+  align-self: start;
+  flex-direction: column;
+  background: #ffffff;
+  padding: 20px;
+  width: 89%;
+  .imageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66px;
+    height: 53px;
+    background-color: #efefed;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    img {
+      height: 75%;
+      width: 75%;
+      // object-fit: cover;
+      overflow: hidden;
+    }
+  }
+  .updateBtn {
+    width: 350px;
+    height: 45px;
+    background: #f08b32;
+    box-shadow: 0px 15.0367px 21.481px rgba(0, 0, 0, 0.1);
+    border-radius: 38.6658px;
+    cursor: pointer;
+
+    &:hover {
+      background: #f08b32;
+    }
+    .updateBtnText {
+      font-weight: 500;
+      font-size: 28;
+      text-align: center;
+      color: #ffffff;
+      text-transform: capitalize;
+    }
+  }
+  .firstRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .busiNameDesktop {
+      width: 90%;
+    }
+    .busiName {
+      width: 70%;
+    }
+
+    .spreading {
+      flex: 1;
+    }
+  }
+}
+.spacer {
+  margin: 10px;
+}
+.detailsCardContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: rgba(237, 237, 237, 0.15);
+  border: 1px solid #999ea563;
+  border-radius: 10px;
+  .headerWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    .labelDesktop {
+      color: #6e6e6e;
+      font-size: 15px;
+    }
+    .label {
+      color: #6e6e6e;
+    }
+    .imageWrapperi {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20px;
+      width: 20px;
+      .image {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .imageWrapperip {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20px;
+      width: 20px;
+      background-color: #ffffff;
+      padding: 5px;
+      border-radius: 50px;
+      .image {
+        height: 70%;
+        width: 70%;
+      }
+    }
+  }
+  .value {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+  }
+  .valueDesktop {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    font-size: 10px;
+  }
+}
+.detailsCardContainerDesktop {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 5px 5px 10px;
+  background-color: rgba(237, 237, 237, 0.15);
+  border: 1px solid #999ea563;
+  border-radius: 8px;
+  min-height: 45px;
+  .headerWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    .label {
+      color: #6e6e6e;
+      font-size: 15px;
+    }
+
+    .imageWrapperi {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20px;
+      width: 20px;
+      .image {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .imageWrapperip {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20px;
+      width: 20px;
+      background-color: #ffffff;
+      padding: 5px;
+      border-radius: 50px;
+      .image {
+        height: 70%;
+        width: 70%;
+      }
+    }
+  }
+
+  .value {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    font-size: 10px;
+  }
+}
+.textfieldMain {
+  // width: 335px !important ;
+  border: 1px solid #999ea5 !important ;
+  margin-bottom: 0px;
+}
+.textfieldMini {
+  width: 160px !important ;
+  border: 1px solid #999ea5 !important ;
+  margin-bottom: 0px;
+}
+.heading {
+  font-weight: 400;
+  font-size: 17.2416px;
+  align-items: center;
+  color: rgb(110, 110, 110) !important;
+}
+.addStack {
+  // display: flex;
+  flex-flow: row wrap;
+  .addressStack {
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    border: 1px solid #dbdbd6;
+    justify-items: center;
+    width: 30%;
+    padding: 0.5rem;
+    margin: 0rem 0.7rem 1rem 0rem;
+    height: 210px;
+    .stack1 {
+      justify-content: space-between;
+      width: 100%;
+
+      .icon {
+        width: 20px;
+        color: #a0a4af;
+        cursor: pointer !important;
+      }
+    }
+    .text {
+      padding: 1.5rem 0rem;
+      font-weight: 400;
+      font-size: 15px;
+      .subtext {
+        color: red;
+      }
+    }
+    .GSTNStack {
+      padding: 1rem 0rem 0.5rem 0rem;
+
+      .GSTNtext {
+        font-weight: 400;
+        font-size: 15.2416px !important;
+        align-items: center;
+        color: #6e6e6e;
+      }
+      .GSTNNo {
+        font-weight: 400;
+        font-size: 15.2416px !important;
+        align-items: center;
+        color:#000000;
+      }
+    }
+  }
+}
+.bankStack {
+  // display: flex;
+  flex-flow: row wrap;
+  .addressStack {
+    display: flex;
+    flex-direction: column;
+    background-color: #fafafa;
+    border: 1px solid #dbdbd6;
+    justify-items: center;
+    width: 30%;
+    padding: 0.5rem;
+    margin: 0rem 0.7rem 1rem 0rem;
+    height: 230px;
+    .stack1 {
+      justify-content: space-between;
+      width: 100%;
+      .heading {
+        font-weight: 400;
+        font-size: 17.2416px;
+        align-items: center;
+        color: #6e6e6e;
+      }
+      .icon {
+        width: 20px;
+        color: #a0a4af;
+        cursor: pointer !important;
+      }
+    }
+    .textStack {
+      align-items: center;
+      .text {
+        padding: 1rem 0rem;
+        font-size: 13px;
+      }
+
+      .subtext {
+        font-size: 78%;
+        color: #575757;
+      }
+    }
+    .text {
+      padding: 1rem 0rem;
+      // font-size: 13px;
+    }
+
+    .subtext {
+      font-size: 90%;
+      color: #575757;
+    }
+    .GSTNStack {
+      padding: 0.5rem 0rem 0.5rem 0rem;
+
+      .GSTNtext {
+        font-weight: 400;
+        font-size: 17.2416px;
+        align-items: center;
+        color: #6e6e6e;
+      }
+      .GSTNNo {
+      }
+    }
+  }
+}
+.newaddBtn {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #f08b32;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 233px;
+  height: 38px;
+  border: 1px solid #f08b32;
+  border-radius: 18px;
+  text-transform: capitalize;
+  cursor: pointer;
+  background-color: white;
+}
+.createStack {
+  width: 100%;
+  align-items: center;
+  .create {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 270px;
+    height: 38px;
+    border: 1px solid #f08b32;
+    border-radius: 18px;
+    background-color: #f08b32;
+    cursor: pointer;
+  }
+  .delete {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 270px;
+    height: 38px;
+    border: 1px solid #d96161;
+    border-radius: 18px;
+    background-color: #d96161;
+    cursor: pointer;
+  }
+}
+.addressPaper {
+  background-color: #fafafa !important;
+  border: 1px solid #dbdbd6 !important;
+  // justify-items: center;
+  // width: 30%;
+  // padding: 0.5rem;
+  // margin: 0rem 0.7rem 1rem 0rem;
+  // height: 210px;
+  box-shadow: none !important;
+  .addressCard {
+    padding: 16px 16px 0px 16px !important;
+  }
+  .locationStack {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .textStack {
+    margin: 2rem 0rem;
+    height: 6rem;
+    overflow: auto;
+    .textDetails {
+      // width: 336px;
+      // height: 148px;
+      // left: 21px;
+      // top: 58.12px;
+      // line-height: 31px;
+
+      // font-style: normal;
+      // font-weight: 400;
+      // font-size: 15px;
+      // display: flex;
+      // align-items: center;
+      // color: #000000;
+
+      font-weight: 600 !important;
+      font-size: 13px !important;
+      text-transform: capitalize;
+    }
+  }
+  .textStackBank {
+    margin: 2rem 0rem;
+    height: 9rem;
+    overflow: auto;
+    .textBank {
+      font-weight: 600 !important;
+      font-size: 13px !important;
+      text-transform: capitalize;
+      .subtext {
+        font-size: 90%;
+        color: #575757;
+        padding-left: 1rem;
+      }
+    }
+  }
+  .icon {
+    width: 20px;
+    color: #a0a4af;
+    cursor: pointer !important;
+  }
+  .GSTNStack {
+    padding: 0.5rem 0rem 0.5rem 1rem;
+
+    .GSTNtext {
+      font-weight: 400;
+      font-size: 16px;
+      align-items: center;
+      color: #6e6e6e;
+    }
+
+    .GSTNNo {
+      font-weight: 500;
+      font-size: 16px;
+      align-items: center;
+      color: #131313;
+      padding-left: 30px;
+    }
+  }
+}
+.typeFont {
+  font-size: 14px !important;
+}
+.DeleteStack {
+  margin: 2rem 1rem 1rem 1rem;
+  // border-radius: 18px;
+  .heading {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: #283049;
+  }
+  .content {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #6e6e6e;
+  }
+  .btnStack {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px 10px 0px;
+    .cancel {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+      color: #283049;
+      opacity: 0.9;
+      cursor: pointer;
+      padding-left: 1rem;
+    }
+    .delete {
+      width: 130px;
+      height: 36px;
+      border: 1px solid #ee5634;
+      border-radius: 18px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+      color: #ee5634;
+      cursor: pointer;
+      justify-content: center;
+    }
+  }
+}
+.contactIconForLogo {
+  width: 80px;
+}
+.defaultDiv {
+  display: flex;
+}
+.noGst,.noIfsc {
+  display: flex;
+  align-items: center;
+}
+.noIfsc{
+  margin: 0px 0px 15px !important;
+}
+.label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+}
+.iconDesign{
+  margin-top: 30px !important;
+  margin-right: 20px !important;
+}
+.iconStyle{
+  color: #ee5634 !important;
+}
+
+.newBusiness{
+  padding: 10px 0px;
+  .firstCont{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    .logoDiv{
+      width: 60px;
+    height: 60px;
+    display: flex;
+    background: #FFF;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #EDEDED;
+    .logo{
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+    }
+    .editTxt{
+      font-family: 'Lexend';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+color: #f08b32;
+    }
+  }
+  hr{
+    border-top: 1px solid #ECECEC;
+  }
+  .titleTxt{
+    font-family: 'Lexend' !important;
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+margin: 8px 0 16px 0;
+color: #6E6E6E;
+  }
+  .bottomP{
+    margin-bottom: 17px;
+  .bottomTxt{
+    font-family: 'Lexend' !important;
+    margin: 8px 0;
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+color: #283049;
+  }}
+  .finalCont{
+    margin: 8px 0;
+    .deactivate{
+      font-family: 'Lexend' !important;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+color: #FF0000;
+text-align: right;
+    }
+  }
+}
+.uploadTxt{
+  font-family: 'Lexend';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+color: #3049BF;
+}
+
+.newBusinessEdit{
+  .logoUpload{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    .contactIconForLogo {
+      width: 80px;
+    }
+    .imageWrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 70px;
+      background-color: #efefed;
+      border-radius: 10px;
+      .image {
+        height: 50%;
+        width: 50%;
+        object-fit: cover;
+        overflow: hidden;
+      }
+    }
+  }
+  .addressCSS{
+    margin-top: 20px;
+    border-top: 0.7px solid #999ea563;
+    border-left: 0.7px solid #999ea563;
+    border-right: 0.7px solid #999ea563;
+    border-radius: 4px;
+    .headCont{
+      display: flex;
+      justify-content: space-between;
+      padding: 12px;
+      align-items: center;
+      p{
+        font-family: 'Lexend' !important;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  margin: 0;
+  color: #6E6E6E;
+      }
+    }
+    .addrCont{
+      border-bottom: 0.7px solid #999ea563;
+      padding: 0 12px;
+      .addrTitleCont{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .addrTitleTxt{
+          font-family: 'Lexend' !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      margin: 0;
+      color: #283049;
+        }
+      }
+      .entireAddr{
+        font-family: 'Lexend' !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    color: #283049;
+    margin: 8px 0 12px 0;
+      }
+    }
+  }
+  
+  .bankCSS{
+    border-top: 0.7px solid #999ea563;
+    border-left: 0.7px solid #999ea563;
+    border-right: 0.7px solid #999ea563;
+    border-radius: 4px;
+    margin-top: 20px;
+    .headCont{
+      display: flex;
+      justify-content: space-between;
+      padding: 12px;
+      align-items: center;
+      p{
+        font-family: 'Lexend' !important;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  margin: 0;
+  color: #6E6E6E;
+      }
+    }
+    .addrCont{
+      border-bottom: 0.7px solid #999ea563;
+      padding: 0 12px;
+      .addrTitleCont{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .addrTitleTxt{
+          font-family: 'Lexend' !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      margin: 0;
+      color: #283049;
+        }
+      }
+      
+      .entireAddr{
+        font-family: 'Lexend' !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    color: #283049;
+    margin: 0 0 12px 0;
+      }
+    }
+  }
+}
+.containedButton {
+  height: 40px !important;
+  background: #f08b32 !important;
+  border-radius: 18px !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  color: #ffffff !important;
+  text-transform: capitalize !important;
+}
+.outlinedButton{
+  background: #fff !important;
+  color: #f08b32 !important;
+  border-radius: 26px !important;
+  border: 1px solid #f08b32 !important;
+  height: 40px !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  text-transform: capitalize !important;
+}
+.deleteOutlinedButton {
+  background: #fff !important;
+    color: #FF0000 !important;
+    border-radius: 26px !important;
+    border: 1px solid #FF0000!important;
+    height: 40px !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+    text-transform: capitalize !important;
+}
+
+.addrTitleDiv{
+  display: flex;
+    align-items: center;
+    flex-flow: row;
+}

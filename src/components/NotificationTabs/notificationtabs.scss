@@ -1,0 +1,128 @@
+.tablist {
+  padding-left: 12px;
+
+  .tabButtons {
+    padding: 12px;
+    min-height: 10px;
+    text-transform: capitalize;
+    font-family: 'Lexend', sans-serif !important;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #6e6e6e;
+    flex-direction: row;
+  }
+
+  .notifiactioncount,
+  .notifiactionactive {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.249333px;
+    padding: 4px;
+    min-height: 15px;
+    min-width: 15px;
+    border-radius: 4px;
+    margin-left: 8px;
+    transition: all 0.2s;
+  }
+
+  .notifiactioncount {
+    background: #e2e2e2;
+    color: #6e6e6e;
+  }
+
+  .notifiactionactive {
+    color: #ffffff;
+    background: #f08b32;
+  }
+}
+
+.notificationcard {
+  padding: 16px 24px;
+  border-bottom: 1px solid rgba(110, 110, 110, 0.1);
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .notifytitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #283049;
+    margin-bottom: 8px;
+  }
+
+  .notifydesc {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 19px;
+    color: #283049;
+    margin-bottom: 8px;
+  }
+
+  .notifylinks {
+    flex-direction: row;
+    align-items: center;
+
+    .actionbtn {
+      border: 1px solid #f08b32;
+      border-radius: 26px;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 18px;
+      color: #f08b32;
+      padding: 8px 10px;
+      text-transform: capitalize;
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      margin-right: 16px;
+      min-width: 70px;
+      text-align: center;
+    }
+
+    .organization {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      background: rgba(132, 129, 138, 0.1);
+      border-radius: 4px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: #2e2c34;
+      padding: 4px 8px;
+      text-transform: capitalize;
+      cursor: default;
+    }
+  }
+
+  .notifytime {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 19px;
+    color: rgba(110, 110, 110, 0.8);
+  }
+}
+
+.searchNoData {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 24px;
+
+  .noDataText {
+    font-family: 'Lexend' !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+  }
+}

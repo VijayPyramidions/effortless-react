@@ -1,0 +1,17 @@
+.notificationContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+  .imageContainer {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background-color: #f08b32;
+    border-radius: 50px;
+    align-self: flex-start;
+    justify-content: center;
+    align-items: center;
+  }
+}

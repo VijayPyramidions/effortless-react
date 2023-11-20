@@ -1,0 +1,256 @@
+.deliveryToCustomerContainer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+
+  .header {
+    margin: 20px;
+
+    .valueHeader {
+      font-size: 20px;
+    }
+
+    .headerUnderline {
+      width: 10px;
+      height: 2px;
+      margin-top: 4px;
+      margin-left: 2px;
+      background-color: var(--colorPrimaryButton);
+    }
+  }
+ 
+  .card {
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 2%;
+    border-radius: 23px;
+    width: 86%;
+
+    .key {
+      border: 1px solid #a0a4af;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 20px;
+
+      .inputContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .inputLable {
+          margin-bottom: 10px;
+          font-size: 10px;
+          color: #2e3a59;
+        }
+
+        .inputField {
+          flex: 1;
+          border: none;
+          outline: none;
+          font-size: 14px;
+        }
+      }
+
+      .textareaContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .textareaLable {
+          margin-bottom: 10px;
+          color: #2e3a59;
+          font-size: 10px;
+        }
+
+        .textareaField {
+          flex: 1;
+          border: none;
+          outline: none;
+          resize: none;
+          font-size: 14px;
+          line-height: 18px;
+        }
+      }
+    }
+
+    .checkBoxContainer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 20px;
+
+    
+
+      .lable {
+        flex: 1;
+        font-size: 13px;
+        font-weight: 300;
+        color: #979797;
+      }
+    }
+
+    .buttonContainer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: 20px 0px;
+
+      .primary {
+        background: #f08b32;
+        border-radius: 18px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 10px 30px;
+
+        &:not(.disable):hover {
+          background: #f08b32 !important;
+          box-shadow: none !important;
+        }
+      }
+    }
+
+    .trixEditor {
+      border: 1px solid #bbb;
+      border-radius: 3px;
+      margin: 0;
+      padding: 0.4em 0.6em;
+      max-height: 54vh;
+      outline: none;
+      line-height: 30px;
+      overflow-wrap: break-word;
+      overflow: auto;
+    }
+    trix-toolbar { overflow: auto; }
+
+    .gridDeliver {
+      margin: 10px 0;
+      position: relative;
+    }
+
+    .addIcon {
+      position: absolute;
+      top: 50%;
+      right: 0%;
+      transform: translate(-50%, -50%);
+    }
+
+    .bodyDeliver {
+      padding: 5px;
+      border: 1px solid #bbb;
+      border-radius: 8px;
+    }
+
+    .disableDeliver{
+      pointer-events: none;
+    }
+
+    .paraDeliver {
+      color: #a3a7b2;
+      font-size: 10px;
+      margin: 0;
+      padding: 5px 0;
+      font-family: 'Lexend', sans-serif !important;
+      font-weight: 400;
+    }
+
+    .spanDeliver {
+      color: red;
+    }
+  }
+}
+
+.addCustomerContainer {
+  padding: 0 25px 25px;
+  display: flex;
+
+  .submitButton {
+    border-radius: 16px;
+    background-color: var(--colorPrimaryButton);
+    margin: 15px 0;
+    color: var(--colorWhite);
+    height: 50px;
+  }
+}
+
+.CreateCustomerDialogContainer {
+  padding: 24px;
+}
+
+.addCustomerFooter {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 25px 0;
+
+  .secondary {
+    background: #ffffff;
+    text-transform: capitalize;
+    border: 1px solid #f08b32;
+    border-radius: 20px;
+    width: 113px;
+    height: 38px;
+    color: #f08b32;
+
+    .secondaryText {
+      font-size: 13px;
+      font-weight: 400;
+      color: #f08b32;
+    }
+  }
+
+  .primary {
+    width: 180px;
+    height: 38px;
+    text-transform: capitalize;
+    background-color: #f08b32;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+    white-space: nowrap;
+    box-shadow: none !important;
+
+    &:active {
+      background-color: #f08b32;
+    }
+
+    &:hover {
+      background-color: #f08b32;
+    }
+
+    &:visited {
+      background-color: #f08b32;
+    }
+
+    &:not(:hover) {
+      background-color: #f08b32;
+    }
+
+    .primaryText {
+      font-size: 13px;
+      font-weight: 400;
+      color: white;
+    }
+  }
+
+  .submitBtn {
+    padding: 10px 20px;
+  }
+}
+
+.valueHeader {
+  font-size: 16px;
+  line-height: 41px;
+  letter-spacing: 0.374px;
+  margin: 0px 0px 10px;
+  color: #283049;
+
+  &:first-letter {
+    border-bottom: 2px solid #f08b32;
+  }
+}

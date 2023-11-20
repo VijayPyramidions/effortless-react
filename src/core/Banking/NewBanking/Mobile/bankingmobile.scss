@@ -1,0 +1,1552 @@
+.banking_mob_container {
+  padding: 20px;
+  background: #ffffff;
+  height: 94%;
+  overflow: auto;
+  flex: 1;
+  animation: fadeInUp 1s;
+
+  .virtualemptylogo {
+    margin-bottom: 20px;
+    width: 106px;
+    height: 134px;
+  }
+
+  .efcard_container {
+    background-image: url('../../../../assets/efcardbg.svg');
+    min-height: 148px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    padding: 24px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .brandtxtwrp {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      min-height: 24px;
+
+      .brandlogo {
+        width: 132px;
+      }
+      .acctext {
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #ffffff;
+      }
+    }
+
+    .accinfowrp {
+      .accname {
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 8px;
+        color: #ffffff;
+        min-height: 16px;
+      }
+
+      .accbal {
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 16px;
+        color: #ffffff;
+        margin-bottom: 26px;
+        min-height: 16px;
+      }
+    }
+
+    .loadwidthdrawbtnwrp {
+      flex-direction: row;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 59px;
+      width: 100%;
+      background: #000960;
+      border-radius: 0 0 12px 12px;
+
+      .widthrawbtn,
+      .loadmoneybtn {
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #ffffff;
+        flex: 1;
+        text-transform: capitalize;
+        border-radius: 0;
+      }
+
+      .widthrawbtn {
+        border-right: 1px solid #ffffff;
+      }
+    }
+  }
+
+  .virtual_acc_create {
+    background: #ffffff;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    align-items: center;
+    padding: 20px 12px;
+    margin-bottom: 20px;
+
+    .title {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 25px;
+      color: #283049;
+      margin-bottom: 12px;
+    }
+
+    .description {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 14px;
+      line-height: 20px;
+      color: #5e5e5e;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+
+    .creataccbtn {
+      background: #f08b32;
+      border-radius: 28px;
+      padding: 13px 34.5px;
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: #ffffff;
+      margin-top: 8px;
+      text-transform: capitalize;
+    }
+  }
+
+  .accountTypeHeader {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+
+    .accheader {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.374px;
+      color: #283049;
+      padding-bottom: 4px;
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 10px;
+        height: 2px;
+        background: #f08b32;
+        border-radius: 4px;
+        bottom: 0;
+        left: 2px;
+        position: absolute;
+      }
+    }
+    .connectbtn {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      text-transform: capitalize;
+      color: #f08b32;
+      svg {
+        width: 20px;
+        height: 18px;
+      }
+    }
+  }
+
+  .accitem,
+  .accamount {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .accitem {
+    color: #2e3a59;
+  }
+
+  .accamount {
+    color: #2f9682;
+    margin-right: 6px;
+  }
+
+  .accordionList,
+  .accordionListItem {
+    padding: 0;
+  }
+
+  .accordionListItemButton {
+    padding: 12px;
+    border-bottom: 1px solid #f2f2f0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .listaccountAmount {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #f08b32;
+    margin-right: 11px;
+  }
+
+  // .accordionbanklogo {
+  //   height: 32px;
+  //   width: 32px;
+  // }
+
+  .accordionbanklogo {
+    // background-image: url('../../../../assets/BankLogo/banklogo.png');
+    width: 28px;
+    height: 28px;
+    background-repeat: no-repeat;
+    margin-right: 6px;
+
+    // &[aria-label*='icic'] {
+    //   background-position: -930px -0px;
+    //   width: 34px;
+    //   height: 34px;
+    // }
+
+    // &[aria-label*='hdfc'] {
+    //   background-position: -32px 0px;
+    // }
+
+    // &[aria-label*='sbin'] {
+    //   background-position: -64px 0px;
+    //   width: 34px;
+    //   height: 34px;
+    // }
+
+    // &[aria-label*='barb'] {
+    //   background-position: -514px 0px;
+    // }
+
+    // &[aria-label*='bkid'] {
+    //   background-position: -97px 0px;
+    //   width: 33px;
+    // }
+
+    // &[aria-label*='idib'] {
+    //   background-position: -964px 0px;
+    //   width: 34px;
+    //   height: 34px;
+    // }
+
+    // &[aria-label*='indb'] {
+    //   background-position: -130px 0px;
+    // }
+
+    // &[aria-label*='cnrb'] {
+    //   background-position: -194px 0px;
+    // }
+
+    // &[aria-label*='ioba'] {
+    //   background-position: -226px 0px;
+    // }
+
+    // &[aria-label*='cbin'] {
+    //   background-position: -290px 0px;
+    // }
+
+    // &[aria-label*='karb'] {
+    //   background-position: -322px 0px;
+    // }
+
+    // &[aria-label*='punb'] {
+    //   background-position: -354px 0px;
+    // }
+
+    // &[aria-label*='ucba'] {
+    //   background-position: -386px 0px;
+    // }
+  }
+  .accordionIconButton {
+    padding: 4px;
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .nodatacontainer {
+    background: #ffffff;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .nodatabanklogo {
+      width: 32px;
+      height: 32px;
+      margin-bottom: 16px;
+    }
+    .nodatatext {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+      color: #283049;
+      margin-bottom: 16px;
+    }
+
+    .createbankaccbtn {
+      border: 1px solid #f08b32;
+      border-radius: 28px;
+      padding: 13px 23.5px;
+
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: #f08b32;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.cashAccountMobile {
+  padding: 20px;
+  .emptyBar {
+    background: rgba(196, 196, 196, 0.51);
+    border-radius: 7px;
+    width: 50px;
+    height: 4px;
+    margin: 0 auto 5px auto;
+    margin-bottom: 16px;
+  }
+
+  .caheaderwrp {
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+
+    .caheadertitle {
+      color: #2e3a59;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      position: relative;
+      padding-bottom: 4px;
+      &::before {
+        content: '';
+        border-radius: 4px;
+        background: #f08b32;
+        width: 9px;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+
+  .casubtitle {
+    color: #a0a4af;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    margin-bottom: 16px;
+  }
+
+  .cainputlabel {
+    color: #a0a4af;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Lexend', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 4px;
+  }
+
+  .cainput {
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    background: #fff;
+    padding: 10px 12px;
+    color: #283049;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 24px;
+  }
+
+  .casavebtn {
+    border-radius: 20px;
+    background: #f08b32;
+    padding: 8px 32px;
+    color: #fff;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize !important;
+
+    &:focus-within {
+      background: #f08b32 !important;
+    }
+  }
+}
+
+// Bottom Modal Start //
+
+.bottommodalcontainer {
+  padding: 20px;
+
+  .emptyBar {
+    background: rgba(196, 196, 196, 0.51);
+    border-radius: 7px;
+    width: 50px;
+    height: 4px;
+    margin: 0 auto 5px auto;
+  }
+
+  .headerWrp {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+
+    .accpreftitle {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 16px;
+      color: #2e3a59;
+    }
+
+    .closeicon {
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  .listitem {
+    padding: 0;
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 12px;
+
+    &:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+
+    .listtext {
+      span {
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 16px;
+        color: #414141;
+      }
+    }
+  }
+
+  .ListButtons {
+    padding-left: 20px !important;
+  }
+
+  .conectaccbtns {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #283049;
+    justify-content: flex-start;
+    text-transform: capitalize;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 12px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .headertext {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: #283049;
+    padding-bottom: 4px;
+    position: relative;
+    margin-bottom: 12px;
+
+    &::before {
+      content: '';
+      width: 9px;
+      height: 2px;
+      background: #f08b32;
+      border-radius: 4px;
+      position: absolute;
+      bottom: 0;
+      left: 2px;
+    }
+  }
+
+  .desc {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.374px;
+    color: #a0a4af;
+    margin-bottom: 12px;
+    max-width: 255px;
+  }
+
+  .searchwrp {
+    flex-direction: row;
+    align-items: center;
+    background: #fafafa;
+    padding: 12px 20px;
+    margin: 0 -20px 20px -20px;
+
+    .searchinput {
+      border: none;
+      outline: none;
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      color: #6e6e6e;
+      background: transparent;
+      margin-left: 8px;
+      flex: 1;
+    }
+  }
+
+  .searchwrp_select {
+    flex-direction: row;
+    align-items: center;
+    background: #fafafa;
+    border-radius: 8px;
+    padding: 12px 20px;
+
+    .searchinput {
+      border: none;
+      outline: none;
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      color: #6e6e6e;
+      background: transparent;
+      margin-left: 8px;
+      flex: 1;
+    }
+  }
+
+  .bankaccbusiness,
+  .bankaccpersonal {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    border-radius: 4px;
+    padding: 4px 8px;
+  }
+
+  .bankaccbusiness {
+    background: rgba(255, 160, 67, 0.1);
+    color: #ffa043;
+  }
+
+  .bankaccpersonal {
+    background: rgba(32, 201, 172, 0.1);
+    color: #20c9ac;
+  }
+
+  .addaccitem {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 540;
+    font-size: 13px;
+    line-height: 16px;
+    color: #f08b32;
+    margin-left: 4px;
+  }
+
+  .submit_btn {
+    background: #f08b32;
+    border-radius: 18px;
+    padding: 10px 0;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+
+    &:hover {
+      background: #f08b32;
+    }
+
+    &.opacitybtn {
+      opacity: 0.7 !important;
+      color: #ffffff;
+
+      &:disabled {
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .addpromoter_btn {
+    border-radius: 18px;
+    border: 1px solid #f08b32;
+    border-radius: 35px;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #f08b32;
+    text-transform: capitalize;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    margin-top: 16px;
+  }
+
+  .confno {
+    border: 1px solid #f08b32;
+    border-radius: 18px;
+    padding: 10px 72.5px;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 4500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #f08b32;
+    text-transform: capitalize;
+
+    &:hover {
+      background: #ffffff;
+    }
+  }
+  .confyes {
+    background: #f08b32;
+    border: 1px solid #f08b32;
+    border-radius: 18px;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    padding: 10px 70.5px;
+    text-transform: capitalize;
+    &:hover {
+      background: #f08b32;
+    }
+  }
+
+  .trandetailcontainer {
+    flex-direction: row;
+    align-content: center;
+    margin-bottom: 16px;
+    overflow: hidden;
+
+    .label {
+      min-width: 82px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      color: #6e6e6e;
+    }
+    .space {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      color: #6e6e6e;
+      margin: 0 20px 0 16px;
+    }
+
+    .date {
+      font-size: 12px;
+      line-height: 15px;
+      color: #283049;
+    }
+    .docno {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 16px;
+      color: #3049bf;
+    }
+    .desc {
+      text-align: left;
+      span {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        color: #000000;
+        &:last-child {
+          color: #808080;
+        }
+      }
+    }
+
+    .purposeparty {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      color: #6e6e6e;
+    }
+    .inflow,
+    .outflow {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+    }
+    .inflow {
+      color: #00a676;
+    }
+    .outflow {
+      color: #ff0000;
+    }
+
+    .balance {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: #283049;
+    }
+
+    .active,
+    .disable,
+    .fetching {
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      margin-right: 4px;
+
+      .dinconnectinline,
+      .activeinline,
+      .pauseinline,
+      .disableinline,
+      .fetchinginline {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+      }
+    }
+
+    .active {
+      background: #f8fbf8;
+      .activeinline {
+        background: #4aa44d;
+      }
+    }
+
+    .disable {
+      background: rgba(132, 129, 138, 0.1);
+      .disableinline {
+        background: #84818a;
+      }
+    }
+    .fetching {
+      background: rgba(85, 66, 246, 0.1);
+      .fetchinginline {
+        background: #5542f6;
+      }
+    }
+
+    .actstatus,
+    .diablestatus,
+    .fetchingstatus {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 300 !important;
+      font-size: 13px !important;
+      line-height: 16px !important;
+      margin-right: 8px !important;
+    }
+
+    .actstatus {
+      color: #4aa44d;
+    }
+
+    .diablestatus {
+      color: #84818a;
+    }
+
+    .fetchingstatus {
+      color: #5542f6;
+    }
+  }
+
+  .catetorizebtn {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal !important;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    background: #f08b32;
+    border-radius: 20px;
+    padding: 8px 20px;
+    text-transform: capitalize;
+    margin-top: 8px;
+    max-width: 193px;
+
+    &:disabled {
+      opacity: 0.6;
+      color: #ffffff;
+      cursor: not-allowed;
+    }
+  }
+}
+
+// Bottom Modal End //
+
+// Load Money & Withdraw Money Start //
+
+.moneyContainer {
+  background: #ffffff;
+  height: 100%;
+  align-items: center;
+  flex: 1;
+  animation: fadeInUp 1s;
+
+  .actiontext {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #283049;
+    margin-bottom: 12px;
+  }
+
+  .amountinputwtp {
+    flex-direction: row;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 8px 13px;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #283049;
+    max-width: 120px;
+
+    .amountinput {
+      border: none;
+      outline: none;
+      padding-left: 9px;
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+      overflow: hidden;
+      color: #283049;
+      width: 110px;
+    }
+  }
+
+  .amtsubmitbtn {
+    position: fixed;
+    bottom: 24px;
+    right: 32px;
+    background: #ffffff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+
+    .amticon {
+      color: #3049bf;
+      height: 24px;
+      width: 24px;
+    }
+  }
+}
+// Load Money & Withdraw Money End //
+
+// Bank Statement Start //
+
+.mobilestcontainer {
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.06);
+  flex: 1;
+  padding: 20px 20px 0;
+  overflow: auto;
+  animation: fadeInUp 1s;
+
+  .accountcalendarwrp {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .dropdownbtn {
+    background: #ffffff;
+    border: 1px solid rgba(153, 158, 165, 0.4);
+    border-radius: 4px;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: #283049;
+    padding: 8px;
+    min-width: 167px;
+    flex: 1;
+
+    &:disabled {
+      color: #283049 !important;
+    }
+    &:hover {
+      background: #ffffff;
+    }
+
+    span {
+      color: #6e6e6e;
+      margin-left: auto;
+
+      svg {
+        margin-left: 17px;
+        transition: all 0.2s !important;
+      }
+    }
+  }
+
+  .dropdownbtn.dateicon {
+    position: relative;
+    width: 179px;
+
+    &::before {
+      content: '';
+      width: 40px;
+      height: 36px;
+      background: #f6f6f7;
+      position: absolute;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      left: 0;
+    }
+
+    span {
+      &:first-child {
+        margin-left: 1px !important;
+        margin-right: 22px !important;
+      }
+    }
+  }
+  .dropdownbtn[aria-expanded*='true'] {
+    span {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .synciconwrp {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .lastsync {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 15px;
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    .tranmovesubmit {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      color: #ffffff;
+      text-transform: capitalize;
+      padding: 8px;
+      background: #f08b32;
+      border-radius: 4px;
+    }
+  }
+
+  .movetranwrp {
+    flex-direction: row;
+    align-items: center;
+
+    .seltrancoounrt {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 15px;
+      color: #00a676;
+    }
+
+    .closeiconbtn {
+      svg {
+        color: #000000;
+      }
+    }
+  }
+
+  .btngroup {
+    background: #f6f6f7;
+
+    .actionbtn {
+      border: none !important;
+      padding: 8px 16px;
+      // &:first-child {
+      //   border-right: 1px solid rgba(0, 0, 0, 0.1) !important;
+      // }
+    }
+
+    .actionbtnicon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .tabwrp {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 2px;
+    margin-bottom: 20px;
+
+    .tabs {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      color: #6e6e6e;
+      text-transform: capitalize;
+
+      &:disabled {
+        opacity: 0.5;
+      }
+      &.active {
+        color: #f08b32;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .amountscontainer {
+    margin-bottom: 22px;
+  }
+
+  .amountwrp {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .amounttitle {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.17em;
+      text-transform: uppercase;
+
+      &.openbal {
+        color: #4aa44d;
+      }
+      &.closebal {
+        color: #fa8080;
+      }
+      &.totalinbal {
+        color: #836ddd;
+      }
+      &.totaloutbal {
+        color: #7bc8ff;
+      }
+    }
+
+    .amount {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+      color: #323232;
+    }
+  }
+
+  .transactioncontainer {
+    height: calc(100% - 359px);
+    overflow: auto;
+    // padding-bottom: 10px;
+
+    .transacdate {
+      background: rgba(123, 200, 255, 0.1);
+      border-radius: 4px;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      padding: 4px 8px;
+      color: #283049;
+      // position: sticky;
+      // top: 0;
+      // z-index: 1000;
+    }
+
+    .datesticky {
+      position: sticky;
+      top: 0;
+      background: #ffffff;
+      padding: 12px 0 0 0;
+    }
+
+    .transacsubcontainer {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 12px 0;
+      margin-bottom: 8px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .transacdescwrp {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .transacdesc {
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      color: #000000;
+      max-width: 290px;
+    }
+
+    .transacdescamtpos,
+    .transacdescamtneg {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    .transacdescamtpos {
+      color: #00a676;
+    }
+    .transacdescamtneg {
+      color: #ff0000;
+    }
+
+    .transacsubdescwrp {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      .transacsubdesc {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        max-width: 260px;
+        word-break: break-word;
+
+        @media screen and (min-width: 320px) {
+          max-width: 175px;
+        }
+        @media screen and (min-width: 375px) {
+          max-width: 230px;
+        }
+        @media screen and (min-width: 425px) {
+          max-width: 260px;
+        }
+      }
+      .transacbal {
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 14px;
+        color: #212121;
+      }
+    }
+  }
+}
+
+// Bank Statement End //
+
+// Borrowings Start //
+
+.bankloancontainer {
+  background: #ffffff;
+  padding: 20px 0 20px 20px;
+  width: calc(100vw - 20px);
+
+  .bncon {
+    animation: fadeInUp 1s;
+  }
+
+  .loanheader {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #283049;
+    margin-bottom: 16px;
+    text-transform: capitalize;
+
+    &.upppercase {
+      text-transform: uppercase;
+    }
+  }
+
+  .scrollcontainer {
+    flex-flow: row nowrap;
+    overflow: auto;
+    gap: 10px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+
+    // .scrollcontent {
+    //   display: inline-block;
+    //   width: 100%;
+    //   // }
+    //   // .loanmaincontainer {
+    //   flex-direction: row;
+    //   gap: 10px;
+
+    .loancontainer {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 12px;
+      min-width: 326px;
+
+      .loanwrp {
+        flex-direction: row;
+        justify-content: space-between;
+        &:first-child {
+          margin-bottom: 20px;
+        }
+
+        .loanlabel {
+          font-weight: 300;
+          font-size: 12px;
+          line-height: 16px;
+          color: #464646;
+          margin-bottom: 12px;
+        }
+
+        .loanvalue {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          color: #283049;
+
+          &.alright {
+            text-align: right;
+          }
+        }
+      }
+    }
+    // }
+  }
+}
+
+.loanDetailContainer {
+  background: #ffffff;
+  padding: 20px 20px 0;
+  width: 100%;
+  overflow: auto;
+
+  .loanhead {
+    animation: fadeInUp 1s;
+  }
+
+  .lenderdetailwrp {
+    flex-direction: row;
+    margin-bottom: 16px;
+
+    .label {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      color: #464646;
+      min-width: 90px;
+      margin-right: 20px;
+    }
+    .value {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 16px;
+      color: #000000;
+    }
+  }
+
+  .loanratescontainer {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 24px 24px -16px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding: 12px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeInUp 1s;
+  }
+
+  .itemwrp {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+
+    .label {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #464646;
+    }
+    .value {
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+      color: #323232;
+    }
+  }
+
+  .accroot {
+    border-radius: unset !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background: none;
+    &::before {
+      display: none !important;
+    }
+  }
+
+  .acclabel {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: #283049;
+    min-width: 43px;
+    margin-right: 6px;
+  }
+
+  .duedate {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: #737373;
+  }
+
+  .emiamount {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #283049;
+    margin-right: 8px;
+  }
+
+  .unpaid,
+  .active {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-right: 4px;
+
+    .unpaidinline,
+    .activeinline {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+  }
+
+  .unpaid {
+    background: rgba(252, 52, 0, 0.1);
+    .unpaidinline {
+      background: #fc3400;
+    }
+  }
+
+  .active {
+    background: rgba(32, 201, 172, 0.1);
+    .activeinline {
+      background: #20c9ac;
+    }
+  }
+  .unpaidstatus {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: #fc3400;
+  }
+  .activestatus {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: #20c9ac;
+  }
+
+  .ballabel {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 16px;
+    color: #737373;
+    margin-right: 8px;
+  }
+
+  .balamount {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: right;
+    color: #283049;
+    width: 68px;
+  }
+
+  .loanlistcontainer {
+    overflow: auto;
+    height: calc(100vh - 353px);
+    animation: fadeInUp 1s;
+  }
+}
+
+.prom_other_container {
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.06);
+  padding: 20px 20px 0;
+  flex: 1;
+  overflow: auto;
+
+  .animicontainer {
+    animation: fadeInUp_ 1s;
+  }
+
+  .loanlistwrp {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 12px;
+    animation: fadeInUp 1s;
+
+    .loanitemwrp {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      &:first-child {
+        margin-bottom: 12px;
+      }
+    }
+
+    .loanlabel {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 16px;
+      color: #737373;
+      margin-bottom: 8px;
+    }
+    .loanvalue {
+      font-weight: 400;
+      color: #283049;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  @keyframes fadeInUp_ {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 1%, 0);
+      transform: translate3d(0, 1%, 0);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+// Borrowings End //
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3%, 0);
+    transform: translate3d(0, 3%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}

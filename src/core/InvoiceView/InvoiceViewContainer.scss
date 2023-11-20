@@ -1,0 +1,528 @@
+@import '../../theme.scss';
+
+.invoiceViewContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+  animation: fadeInUp;
+  animation-duration: 1s;
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 5%, 0);
+      transform: translate3d(0, 5%, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+.invoiceViewContainerDesk {
+  display: flex;
+  margin: 10px 0 20px 0;
+  width: 100%;
+  overflow: auto;
+  animation: fadeInUp;
+  animation-duration: 1s;
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 5%, 0);
+      transform: translate3d(0, 5%, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+.invoiceOptions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 15px;
+  height: 95%;
+  overflow: auto;
+}
+.invoiceOptionsLeftDesk {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 420px;
+  padding: 25px;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(48, 73, 191, 0.05);
+  border-radius: 16px;
+
+  .itemHead {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // overflow: auto;
+    height: auto;
+  }
+
+  .itemHeadTitle {
+    font-family: Lexend !important;
+    font-style: normal;
+    font-weight: 400;
+    // font-size: 25px;
+    @include fontSize(25px, 31px);
+    line-height: 44px;
+    /* identical to box height */
+
+    color: #283049;
+    margin: 0;
+  }
+  .itemHeadDate {
+    width: 300px;
+    height: 88px;
+
+    background: #ffffff;
+    border: 1.5px solid #e1e1e1;
+    border-radius: 8px;
+  }
+
+  // .itemList {
+  //   // padding: 0 10px;
+
+  // }
+
+  .itemDesk {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+
+  .itemValueDesk {
+    font-family: Lexend !important;
+    font-style: normal;
+    font-weight: 300;
+    // font-size: 18.2413px;
+    @include fontSize(18.2413px, 24.2413px);
+    line-height: 128.91%;
+    color: #273049;
+    cursor: pointer;
+  }
+
+  .itemDataDesk {
+    font-family: Lexend !important;
+    font-style: normal;
+    font-weight: 500;
+    // font-size: 18.2413px;
+    @include fontSize(18.2413px, 24.2413px);
+    line-height: 128.91%;
+  }
+}
+.invoiceOptionsRightDesk {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  padding: 25px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+  margin-left: 5%;
+  height: 420px;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(48, 73, 191, 0.05);
+  border-radius: 16px;
+
+  .itemHead {
+    font-family: Lexend !important;
+    font-style: normal;
+    font-weight: 400;
+    // font-size: 18.2413px;
+    @include fontSize(16.2413px, 18.2413px);
+    line-height: 31px;
+
+    color: #283049;
+  }
+
+  .itemHeadTitle {
+    font-family: Lexend !important;
+    font-style: normal;
+    font-weight: 400;
+    // font-size: 35px;
+    @include fontSize(35px, 41px);
+    line-height: 44px;
+    /* identical to box height */
+
+    color: #283049;
+  }
+
+  .itemList {
+    // padding: 0 10px;
+    overflow: auto;
+  }
+
+  .itemDesk {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 5px;
+  }
+  .itemLeft {
+    width: 50%;
+  }
+  .itemRight {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    .itemButton {
+      border-radius: 20px;
+      padding: 4px 10px;
+      text-align: center;
+      background-color: var(--colorPrimaryButton);
+      color: var(--colorWhite);
+      width: 158px !important;
+      height: 40.42px;
+      width: auto;
+      border: none;
+      min-width: 50%;
+      font-family: Lexend !important;
+      font-style: normal;
+      font-weight: 400;
+      // font-size: 9.48548px;
+      @include fontSize(7.48548px, 9.48548px);
+      line-height: 16px;
+      cursor: pointer;
+    }
+  }
+
+  .itemValueDeskAction {
+    font-family: Lexend !important;
+    font-style: normal;
+    font-weight: 700;
+    // font-size: 13.985px;
+    @include fontSize(10.985px, 13.985px);
+    line-height: 24px;
+  }
+
+  .itemDataDeskAction {
+    font-family: Lexend !important;
+    font-style: normal;
+    font-weight: 400;
+    // font-size: 13.985px;
+    @include fontSize(10.985px, 13.985px);
+    line-height: 24px;
+
+    color: #283049;
+  }
+}
+
+.itemWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 100px;
+  justify-content: space-evenly;
+
+  background-color: var(--colorWhite);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+  &:nth-child(2) {
+    border-radius: 18px 18px 0px 0px;
+  }
+  &:nth-last-of-type(2) {
+    border-radius: 0px 0px 18px 18px;
+  }
+
+  .iconContainer {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .iconWrapper {
+      background-color: var(--colorGreyBg);
+      padding: 22px 24px;
+      border-radius: 50%;
+
+      .icons {
+        // font-size: 22px;
+        @include fontSize(22px, 28px);
+      }
+    }
+  }
+
+  .arrowIcon {
+    color: var(--colorMain);
+    // font-size: 16px;
+    @include fontSize(16px, 22px);
+    width: 10%;
+  }
+
+  .itemInfo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    .title {
+      // font-size: 12px;
+      @include fontSize(12px, 18px);
+      color: var(--colorDark);
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    .desc {
+      // font-size: 11px;
+      @include fontSize(11px, 17px);
+      color: var(--colorGrey);
+    }
+  }
+}
+
+.newItemWrapper {
+  background: linear-gradient(80.8deg, #319c87 0%, #00c69f 147.17%);
+  border: 1px solid rgba(103, 103, 103, 0.1);
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 100px;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+  .iconContainer {
+    width: 70px;
+    height: 70px;
+    svg {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  .arrowIcon {
+    color: var(--colorMain);
+    // font-size: 16px;
+    @include fontSize(16px, 22px);
+    width: 10%;
+  }
+
+  .itemInfo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    .title {
+      font-style: normal;
+      font-weight: 600;
+      // font-size: 16px;
+      @include fontSize(16px, 22px);
+      line-height: 20px;
+      color: var(--colorWhite);
+      margin-bottom: 5px;
+    }
+
+    .desc {
+      font-style: normal;
+      font-weight: 300;
+      // font-size: 14px;
+      @include fontSize(14px, 20px);
+      line-height: 18px;
+      color: var(--colorWhite);
+    }
+  }
+}
+
+.byCustomer {
+  font-family: Lexend !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  // font-size: 18.2413px !important;
+  @include fontSize(18.2413px, 24.2413px);
+  line-height: 31px !important;
+}
+
+.tableHead {
+  font-family: Lexend !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  // font-size: 14.593px !important;
+  @include fontSize(14.593px, 20.593px);
+  line-height: 25px !important;
+  /* identical to box height */
+
+  color: #6b6f7b !important;
+}
+
+.tableValue {
+  font-family: Lexend !important;
+  font-style: normal !important;
+  // font-size: 14.593px !important;
+  @include fontSize(14.593px, 20.593px);
+  line-height: 25px !important;
+  /* identical to box height */
+
+  color: #313a4e !important;
+}
+.tableBaseName{
+  @include fontSize(13px, 15px);
+}
+.tableDescription{
+  @include fontSize(15px, 17px);
+}
+.forHref {
+  color: #000000;
+  text-decoration: none;
+}
+.tableHeadLaks {
+  margin: 0;
+  font-family: Lexend !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  @include fontSize(13.593px, 19.593px);
+  line-height: 18px !important;
+  color: #6b6f7b !important;
+}
+.dialog {
+  padding: 0;
+  .mainDiv {
+    display: flex;
+    flex-direction: column;
+    // background: #fff;
+    // margin: auto;
+    // width: 80%;
+    .topDiv {
+      display: flex;
+      flex-direction: row;
+      padding: 0px 20px 0px 20px;
+      justify-content: space-between;
+      .mainContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 15px 25px 15px;
+        .titleContainer {
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 140%;
+          /* identical to box height, or 34px */
+
+          color: #333333;
+          margin-bottom: 5px;
+        }
+        .mainInnerContainer {
+          padding: 5px 0;
+          .subDiv {
+            display: flex;
+            flex-direction: column;
+            .invoiceId {
+              font-family: Lexend;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              margin-bottom: 5px;
+
+              letter-spacing: 0.005em;
+
+              color: #00a676;
+            }
+            .narration {
+              font-family: Lexend;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              margin: 0;
+
+              letter-spacing: 0.025em;
+
+              color: #333333;
+            }
+          }
+          .subDivTwo {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            .dateAmont {
+              margin-bottom: 0;
+              font-family: Lato;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 13px;
+              line-height: 140%;
+              /* or 18px */
+
+              letter-spacing: 0.005em;
+
+              color: #333333;
+            }
+            .span {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .image {
+                width: 15px;
+                height: 10px;
+                margin: 13px 5px 0 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .orangeBottom {
+      height: 91px;
+      background: #f08b32;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .line {
+        transform: rotate(180deg);
+        height: 60px;
+        margin: 0 5px;
+        background: #fff;
+        width: 1px;
+      }
+      .bottomDiv {
+        width: 100%;
+        padding: 0px 15px 25px 15px;
+        .total {
+          font-family: Lexend;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 140%;
+          /* or 22px */
+
+          letter-spacing: 0.005em;
+
+          color: #f7f7f7;
+          margin: 0;
+        }
+        .amount {
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 140%;
+          /* identical to box height, or 28px */
+
+          color: #ffffff;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+.customlink:hover {
+  color: #00a676;
+  text-decoration-color: #00a676;
+}
+.invoiceType{
+  font-family: 'Lexend' !important;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: #283049;
+}

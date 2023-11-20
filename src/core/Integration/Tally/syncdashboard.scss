@@ -1,0 +1,316 @@
+.syncdashboardcontainer {
+  animation: fadeInUp 1s;
+
+  .synccardcontainer {
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 16px 16px -8px rgba(0, 0, 0, 0.06),
+      0px 6px 4px -4px rgba(0, 0, 0, 0.06),
+      0px 40px 34px -16px rgba(0, 0, 0, 0.08), 0px 0px 0px 2px #f08b32;
+    margin: 0 4px 24px 4px;
+    padding: 32px;
+    flex-direction: row;
+    gap: 32px;
+
+    .syncimg {
+      justify-content: center;
+      .syncavatar {
+        width: 164.998px;
+        height: 171.001px;
+        flex-shrink: 0;
+        border-radius: unset;
+      }
+    }
+
+    .syncdesccontainer {
+      gap: 12px;
+      justify-content: center;
+
+      .synctitle {
+        color: #000;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 24px;
+        font-weight: 200;
+        line-height: 28px;
+      }
+
+      .syncsubtitle {
+        color: #f08b32;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px;
+      }
+
+      .syncdesc {
+        color: rgba(0, 0, 0, 0.75);
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 16px;
+      }
+
+      .tallystatuswrp {
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+
+        .tallystatus {
+          flex-direction: row;
+          align-items: center;
+          gap: 8px;
+
+          .indicator {
+            width: 12px;
+            height: 12px;
+            flex-shrink: 0;
+            background: #2f9682;
+            border-radius: 50%;
+
+            &.inactive {
+              background: #f00;
+            }
+          }
+
+          .statusdesc {
+            color: #2f9682;
+            font-family: 'Lexend', sans-serif !important;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: normal;
+
+            &.inactive {
+              color: #f00;
+            }
+          }
+        }
+
+        .syncbtn {
+          border-radius: 6px !important;
+          background: #2f9682 !important;
+          padding: 8px 20px !important;
+          color: #fff !important;
+          font-family: 'Work Sans', sans-serif !important;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 16px;
+          text-transform: capitalize !important;
+
+          &:disabled {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    .syncprocesscontainer {
+      gap: 12px;
+      justify-content: center;
+
+      .syncheader {
+        flex-direction: row;
+        gap: 16px;
+        align-items: center;
+
+        .processtitle {
+          color: #2f9682;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 28px;
+
+          &.failed {
+            color: #f00;
+          }
+        }
+
+        .viewlog {
+          color: #3049bf;
+          font-family: 'Inter', sans-serif !important;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 16px;
+          text-decoration-line: underline;
+          text-decoration: underline;
+          cursor: pointer;
+          text-transform: capitalize;
+        }
+      }
+
+      .processdesc {
+        color: rgba(0, 0, 0, 0.75);
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 16px;
+      }
+
+      .syncslistcontainer {
+        gap: 24px;
+        .synclistwrp {
+          flex-direction: row;
+          gap: 20px 52px;
+          max-width: 460px;
+          flex-wrap: wrap;
+
+          .synclist {
+            flex-direction: row;
+            gap: 8px;
+
+            .synclistimg {
+              width: 16px;
+              height: 16px;
+              padding: 2px 0.5px;
+            }
+
+            .synclisttitle {
+              color: #283049;
+              font-family: 'Lexend', sans-serif !important;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: normal;
+              min-width: 99px;
+            }
+
+            .syncstatusindicator {
+              margin-left: 8px;
+            }
+
+            // &:last-child {
+            //   .synclisttitle {
+            //     min-width: 140px;
+            //   }
+            // }
+          }
+        }
+      }
+
+      .resyncbtn {
+        border-radius: 6px;
+        background: #2f9682;
+        padding: 8px 20px;
+        color: #fff;
+        font-family: 'Work Sans', sans-serif !important;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        text-transform: capitalize;
+        max-width: 90px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .synclogcontainer {
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+    box-shadow: 0px 16px 16px -8px rgba(0, 0, 0, 0.06),
+      0px 6px 4px -4px rgba(0, 0, 0, 0.06),
+      0px 40px 34px -16px rgba(0, 0, 0, 0.08);
+    margin-bottom: 24px;
+    overflow: hidden;
+
+    .synclogtitle {
+      color: #283049;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px;
+      padding: 20px 20px 12px 20px;
+      overflow: auto;
+    }
+  }
+
+  .efftallysync {
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+    margin-bottom: 24px;
+    overflow: hidden;
+    .efftallytitle {
+      color: #283049;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px;
+    }
+
+    .synctime {
+      color: #000;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 16px;
+      margin-left: 8px;
+    }
+  }
+}
+
+.synchistorydetail {
+  .historytite {
+    color: #000;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: 20px 20px 4px 20px;
+    margin-bottom: 16px;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 18px;
+      height: 1.5px;
+      flex-shrink: 0;
+      background: #f08b32;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  .historysubtitle {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 20px;
+    margin-bottom: 16px;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 5%, 0);
+    transform: translate3d(0, 5%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.syncSpan {
+  float: right;
+  .syncSpanBtn {
+    color: #3049bf;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+    font-family: 'Lexend', sans-serif !important;
+  }
+}

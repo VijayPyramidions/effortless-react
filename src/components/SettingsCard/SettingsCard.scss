@@ -1,0 +1,31 @@
+.settingsCardContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .iconWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    border-radius: 100px;
+    border: 1px #999ea5 solid;
+    padding: 10px;
+    margin-right: 20px;
+    .icon {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .lable {
+    flex: 1;
+    color: #283049;
+    font-size: 16px;
+  }
+  .arrowWrapper {
+  }
+}
+.divider {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

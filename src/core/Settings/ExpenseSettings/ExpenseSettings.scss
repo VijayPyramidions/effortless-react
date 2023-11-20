@@ -1,0 +1,41 @@
+.expSettingsDesktop {
+    display: flex;
+    flex-direction: column;
+    margin: 32px !important;
+    flex: 1;
+
+    .card {
+      background-color: #ffffff;
+      padding: 16px 20px 16px 20px;
+      border-radius: 10px;
+    }
+}
+
+.descriptiontext {
+    color: #93969D;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: .5rem 0rem;
+}
+
+
+.expSettingMobile {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    flex: 1;
+  
+    .card {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      font-family: Lexend;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+}

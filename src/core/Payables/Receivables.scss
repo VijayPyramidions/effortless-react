@@ -1,0 +1,62 @@
+.receivables {
+  width: 100%;
+  background: white;
+  .menuContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    gap: 20px;
+    .menu {
+      flex: 1;
+      padding: 8px;
+      font-size: 13px;
+      color: var(--colorTitle);
+      border-radius: 8px;
+      border: 0.8px solid var(--colorDashboardMenuBorder);
+      text-align: center;
+      &.selected {
+        background-color: var(--colorDashboardMenuSelected);
+      }
+    }
+  }
+  .selectedMenuPage {
+    background-color: white;
+  }
+}
+receivables {
+  width: 100%;
+  background: white;
+  .menuContainer2 {
+    width: 538px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    gap: 20px;
+    .menu {
+      flex: 1;
+      padding: 8px;
+      font-size: 13px;
+      color: var(--colorTitle);
+      border-radius: 8px;
+      border: 0.8px solid var(--colorDashboardMenuBorder);
+      text-align: center;
+      &.selected {
+        background-color: var(--colorDashboardMenuSelected);
+      }
+    }
+  }
+  .selectedMenuPage {
+    background-color: white;
+  }
+}
+.displayNone {
+  display: none;
+}
+
+// webview
+.ageingCheck {
+  position: absolute;
+  margin-left: 80%;
+  margin-top: 4%;
+}
+

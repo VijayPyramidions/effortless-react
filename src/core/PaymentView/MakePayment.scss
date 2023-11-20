@@ -1,0 +1,641 @@
+.text {
+  padding: 0 0 10px 0;
+  text-transform: capitalize;
+  font-weight: 300 !important;
+  animation: fadeInUp 1s;
+}
+
+.anime {
+  animation: fadeInUp 1s;
+}
+.makePaymentContainer {
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.makePaymentContainerDesktop {
+  width: 100%;
+  height: calc(100vh - 128px);
+  margin: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  animation: fadeInUp 1s;
+  // position: relative;
+}
+
+.makePaymentContainerMainDesktop {
+  margin: 1rem;
+  height: 100%;
+  .tabContainerDesktop {
+    height: 100%;
+    .outstanding {
+      height: 100%;
+      animation: fadeInUp 1s;
+
+      .billsDesktop {
+        height: calc(100% - 180px);
+        // animation: fadeInUp 1s;
+      }
+    }
+  }
+}
+.headerContainerDesktop {
+  display: none;
+}
+.headerContainer {
+  position: relative;
+
+  .headerLabel {
+    font-weight: 400;
+    color: var(--colorTitle);
+    font-size: 16px;
+    padding: 18px 0px 0px 0px;
+  }
+  @media (max-width: 768px) {
+    .headerLabel {
+      padding: 0;
+    }
+  }
+  .headerUnderline {
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    margin-top: 4px;
+    margin-left: 2px;
+    background-color: var(--colorPrimaryButton);
+  }
+}
+
+.tabContainerDesktop {
+  width: 100%;
+  .tabsWrapperDesktop {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    .tabsStyle {
+      margin-bottom: 20px;
+    }
+    .activeTab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--colorPrimaryButton);
+      width: 50%;
+      min-width: 50%;
+      font-size: 15;
+      line-height: 19px;
+      letter-spacing: 0.374px;
+      border-bottom: 3px solid;
+    }
+    .deactiveTab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(40, 48, 73, 0.7);
+      width: 50%;
+      min-width: 50%;
+      font-size: 15;
+      line-height: 19px;
+      letter-spacing: 0.374px;
+      border-bottom: 2px solid;
+    }
+  }
+  .tabsWrapper {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0 0;
+    .tabsStyle {
+      margin-bottom: 20px;
+    }
+    .activeTab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--colorPrimaryButton);
+      width: 50%;
+      min-width: 50%;
+      font-size: 15;
+      line-height: 19px;
+      letter-spacing: 0.374px;
+      border-bottom: 3px solid;
+    }
+    .deactiveTab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(40, 48, 73, 0.7);
+      width: 50%;
+      min-width: 50%;
+      font-size: 15;
+      line-height: 19px;
+      letter-spacing: 0.374px;
+      border-bottom: 2px solid;
+    }
+  }
+}
+.tabContainer {
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  .tabsWrapper {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 0 0;
+    .tabsStyle {
+      margin-bottom: 20px;
+    }
+    .activeTab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--colorPrimaryButton);
+      width: 50%;
+      min-width: 50%;
+      font-size: 15;
+      line-height: 19px;
+      letter-spacing: 0.374px;
+      border-bottom: 3px solid;
+    }
+    .deactiveTab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(40, 48, 73, 0.7);
+      width: 50%;
+      min-width: 50%;
+      font-size: 15;
+      line-height: 19px;
+      letter-spacing: 0.374px;
+      border-bottom: 2px solid;
+    }
+  }
+}
+.outstanding {
+  input {
+    ::placeholder {
+      color: #000000 !important;
+      opacity: 1 !important;
+    }
+  }
+  .billsDesktop {
+    margin: 20px 0 0 0;
+    background-color: white;
+    height: 48vh;
+    overflow: scroll;
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    .billItemDesktop {
+      height: 44px;
+      background: var(--colorGreyBg);
+      border-radius: 10px;
+      margin: 0 0 14px 0;
+      padding: 0 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      animation: fadeInUp 1s;
+
+      .body {
+        flex: 1;
+      }
+      .billName {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 18px;
+        color: #000000;
+        text-transform: capitalize;
+      }
+      .totalBill {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        color: #000000;
+      }
+      .billAmount {
+        color: var(--colorPrimaryButton);
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+  }
+  .bills {
+    margin: 25px 0 0 0;
+    background-color: white;
+    border-radius: 16px;
+    height: calc(89vh - 480px);
+    overflow: scroll;
+    padding: 12px 15px;
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    .biilItem {
+      // height: 64px;
+      background: var(--colorGreyBg);
+      border-radius: 16px;
+      margin: 0 0 14px 0;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media screen and (max-width: 480px) {
+        padding: 12px !important;
+      }
+
+      &:last-child {
+        margin: 0 !important;
+      }
+      .body {
+        flex: 1;
+      }
+      .billName {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        color: #000000;
+        margin-bottom: 12px;
+        text-transform: capitalize;
+      }
+      .totalBill {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        color: #000000;
+      }
+      .billAmount {
+        color: var(--colorPrimaryButton);
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+  }
+}
+.payNow {
+  margin: 10px 0 0 0;
+  width: 90vw;
+  // position: absolute;
+  // bottom: -110px;
+}
+.payNowDesk {
+  background-color: #00a676;
+  height: 70px;
+  position: relative;
+  bottom: -13px !important;
+  animation: fadeInUp 1s;
+}
+.payNowDesktop {
+  display: none;
+}
+.list {
+  overflow: scroll;
+  margin: 18px 0 0 0;
+  // height: 420px;
+  height: 80vh;
+}
+.categoryOptions {
+  // height: 75px;
+  border-bottom: 1px solid rgba(196, 196, 196, 1);
+  &:not(:last-child) {
+    margin: 0 0 8px 0;
+  }
+}
+.categoryOptionsDesktop {
+  height: 75px;
+  // border-radius: 10px;
+  width: 100%;
+  background-color: rgba(245, 245, 243, 0.8);
+  &:not(:last-child) {
+    margin: 0 0 10px 0;
+  }
+}
+.drawer {
+  margin: 20px 0 0 20px;
+}
+
+.billBodyDesktop {
+  margin: 0px 8px 0px 4px;
+  // background-color: rgba(245, 245, 243, 0.8);
+  // border-radius: 13px;
+  // display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .billName {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 1%;
+    text-transform: capitalize;
+  }
+  .overdue {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ff0000;
+  }
+  .totalAmount {
+    margin-right: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    color: var(--colorPrimaryButton);
+    right: 20px;
+  }
+  .checkedDesktop {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    .checkedText {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      color: #6e6e6e;
+      text-align: left;
+      text-transform: capitalize;
+    }
+    .customPlaceholder {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      margin-right: 12px;
+      ::-webkit-input-placeholder {
+        color: #000000;
+      }
+    }
+    input {
+      text-align: left;
+    }
+    .error {
+      border-color: red !important;
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: var(--colorPrimaryButton);
+      text-align: right;
+      margin: 5px 0 0 0;
+    }
+  }
+}
+
+.billItem {
+  animation: fadeInUp 1s;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  display: flex;
+  position: relative;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+  .billName {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 4%;
+    text-transform: capitalize;
+  }
+  .overdue {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ff0000;
+  }
+  .totalAmount {
+    margin-right: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    color: var(--colorPrimaryButton);
+    right: 20px;
+  }
+  .checked {
+    .customPlaceholder {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      margin-right: 12px;
+      ::-webkit-input-placeholder {
+        color: #000000;
+      }
+    }
+    input {
+      text-align: right;
+    }
+    .error {
+      border-color: red !important;
+    }
+    p {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: var(--colorPrimaryButton);
+      text-align: right;
+      margin: 5px 0 0 0;
+    }
+  }
+}
+.action {
+  width: 100%;
+  text-align: center;
+  // margin: 22px 0;
+  position: absolute;
+  bottom: 20px;
+}
+.actionDesktop {
+  width: 100%;
+  text-align: center;
+  margin: 22px 0;
+  position: absolute;
+  bottom: 0;
+}
+.submitButton {
+  width: 85vw;
+  border-radius: 18px !important;
+
+  color: var(--colorWhite) !important;
+  padding: 6px 20px !important;
+  text-align: center !important;
+  text-transform: none !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  box-shadow: none !important;
+}
+.submitButtonDesktop {
+  width: 50%;
+  border-radius: 18px !important;
+  color: var(--colorWhite) !important;
+  padding: 6px 20px !important;
+  text-align: center !important;
+  text-transform: none !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  box-shadow: none !important;
+}
+.active {
+  background-color: var(--colorPrimaryButton) !important;
+}
+.disabled {
+  background: rgba(240, 139, 50, 0.56) !important;
+}
+.selectedParty {
+  background: #ffffff;
+  // margin: 42px 0 0 0;
+  height: calc(100vh - 395px);
+  overflow: auto;
+  animation: fadeInUp 1s;
+
+  .selectedBill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    // padding: 0 0 0 20px;
+    .selectedBillName {
+      font-style: normal;
+      flex: 1;
+      margin: 0;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      color: var(--colorPaymentTotalValue);
+      text-align: left;
+    }
+    .selectedTotalAmount {
+      flex: 1;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      color: var(--colorPrimaryButton);
+      text-align: right;
+      margin: 0 20px 0 0;
+    }
+  }
+}
+
+.makePaymentContainerMainMobile {
+  height: 100%;
+  // display: flex;
+  // flex-flow: column;
+  animation: fadeInUp 1s;
+  &.anime {
+    animation: none;
+  }
+  .tabContainer {
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    height: 100%;
+  }
+  .selectedParty {
+    height: calc(100% - 390px);
+    /* min-height: calc(100% - 100px); */
+    position: relative;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+  .outstanding {
+    height: calc(100% - 370px);
+    overflow-y: scroll;
+    .bills {
+      height: calc(100vh - 475px);
+    }
+  }
+}
+
+.infoTextDiv {
+  background: #fff5eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .infoText {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #f08b32;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    img {
+      margin: 0 17px 0 0;
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 5%, 0);
+    transform: translate3d(0, 5%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.skel {
+  width: 220px;
+  height: 18;
+  @media screen and (max-width: 380px) {
+    width: 130px;
+  }
+}
+
+.clearAllbtn {
+  font-style: 16px !important;
+  color: #f08b32 !important;
+  text-transform: capitalize !important;
+  padding: 4px !important;
+  &:hover {
+    background: none !important;
+  }
+}

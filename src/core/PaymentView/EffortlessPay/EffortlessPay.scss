@@ -1,0 +1,131 @@
+.effortlessPayContainer{
+    background-color: #401e01;
+    height: 100%;
+}
+.effortlessPayHeader{
+    padding: 10px 0 15px;
+    margin-left: 20px;
+}
+.paymentContainer{
+    display: flex;
+    margin: 40px 0 0 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.shortName{
+    color: #401e01;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #cfb6e3;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.payingName{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.5px;
+    margin-top: 15px;
+}
+.amount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 30px;
+    line-height: 37.5px;
+    font-weight: 400;
+}
+.reason{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 40px;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.45);
+    background-color: #331801;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+.nextContainer{
+    margin: 70px 45px 0 0;
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+.next{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.categoryOptions {
+    margin: 0 20px;
+    border-bottom: 1px solid var(--colorDivider);
+    padding: 16px 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+.selectedBank {
+    margin: 0 20px;
+    padding: 16px 0;
+    font-size: 16px;
+    font-weight: 400;
+    .bankDetail{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            margin: 0 15px 0 0;
+        }
+    }
+    p{
+        font-size: 13px;
+        margin: 7px 0 0 0;
+        line-height: 18px;
+        font-weight: 400;
+        color:#6E6E6E;
+    }
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+.changeButton{
+    width: 94%;
+    display: inline-flex;
+    justify-content: flex-end;
+    color:#6E6E6E;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.line{
+    border-bottom: 2px solid #6E6E6E;
+}
+.successPayment{
+    height: 400px;
+}
+.link{
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+    color: #283049B2;
+    border-bottom: 2px solid #283049B2;
+}

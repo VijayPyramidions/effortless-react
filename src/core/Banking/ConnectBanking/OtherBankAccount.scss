@@ -1,0 +1,323 @@
+.mainBox {
+  padding: 10px;
+  .card {
+    padding: 15px;
+    border-radius: 12px;
+    .ImgBox {
+      height: 50px;
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .accountTitle {
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      margin-left: 13px;
+      line-height: 30px;
+      color: #283049;
+    }
+    .contentHead {
+      margin-top: 10px;
+      align-items: center;
+      .imgIcon {
+        width: 10px;
+        height: 10px;
+      }
+      .imgTitle {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 25px;
+        color: #283049;
+      }
+    }
+    .btnHead {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      .btn {
+        width: auto;
+        height: 20px;
+        background: #ffffff;
+        border: 1px solid #f08b32;
+        border-radius: 18px;
+        color: #f08b32;
+        padding: 10px;
+        font-size: 10px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+.cards {
+  padding: 20px;
+  border-radius: 12px !important;
+  .inputHead {
+    margin-top: 30px;
+    .checkbox {
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 22px;
+      color: #283049;
+    }
+  }
+  .btnstack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    .outlineBtn {
+      width: auto;
+      height: 25px;
+      background: #ffffff;
+      border: 1px solid #f08b32;
+      border-radius: 18px;
+      color: #f08b32;
+      padding: 10px;
+      font-size: 10px;
+      text-transform: capitalize;
+    }
+    .containedBtn {
+      width: 150px;
+      height: 25px;
+      color: #ffffff;
+      background-color: #f08b32;
+      border-radius: 18px;
+      padding: 10px;
+      font-size: 10px;
+      text-transform: capitalize;
+    }
+  }
+  .terms {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 18px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #283049;
+    .condition {
+      color: #f08b32;
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      cursor: pointer;
+    }
+  }
+}
+
+.mainBoxess {
+  background-color: #ffffff;
+  padding: 10px;
+  .inputHead {
+    margin-top: 30px;
+    .checkbox {
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 22px;
+      color: #283049;
+    }
+  }
+  .btnstack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    .outlineBtn {
+      width: auto;
+      height: 25px;
+      background: #ffffff;
+      border: 1px solid #f08b32;
+      border-radius: 18px;
+      color: #f08b32;
+      padding: 10px;
+      font-size: 10px;
+      text-transform: capitalize;
+    }
+    .containedBtn {
+      width: 150px;
+      height: 25px;
+      color: #ffffff;
+      background-color: #f08b32;
+      border-radius: 18px;
+      padding: 10px;
+      font-size: 10px;
+      text-transform: capitalize;
+    }
+  }
+  .terms {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 18px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #283049;
+    .condition {
+      color: #f08b32;
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      cursor: pointer;
+    }
+  }
+}
+.connectedBankingInfoDesktop {
+  // display: flex;
+  flex-flow: row nowrap;
+  background: #FFFFFF;
+  border: 2px solid #F08B32;
+  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 40px 34px -16px rgba(0, 0, 0, 0.08), 0px 6px 4px -4px rgba(0, 0, 0, 0.06), 0px 16px 16px -8px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  padding: 22px 40px;
+  margin-bottom: 6%;
+
+  .imgDiv {
+    width: 150px;
+    height: 150px;
+    margin: 0px 10% 0 0;
+
+    img {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+    }
+  }
+
+  .infoDiv {
+    position: relative;
+    width: 100%;
+
+    h3 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 30px;
+      letter-spacing: 0.498407px;
+      color: #F08B32;
+      margin: 0 0 14px 0;
+    }
+
+    ol {
+      padding: 0px 0 0 20px;
+      margin: 0;
+      li {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 30px;
+        color: #283049
+      }
+
+    }
+    img{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}
+
+.connectedBankingInfoMobile {
+  flex-flow: column nowrap;
+  background: #FFFFFF;
+  border: 2px solid #F08B32;
+  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 40px 34px -16px rgba(0, 0, 0, 0.08), 0px 6px 4px -4px rgba(0, 0, 0, 0.06), 0px 16px 16px -8px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 6%;
+  margin-top: 19px;
+  margin-left: 24px;
+  margin-right: 24px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+
+  .imgDiv {
+    width: 112px;
+    height: 112px;
+    // margin: 0px 10% 0 0;
+
+    img {
+      width: 112px;
+      height: 112px;
+      object-fit: contain;
+    }
+  }
+
+  .infoDiv {
+    // position: relative;
+    width: 100%;
+
+    h3 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      // letter-spacing: 0.498407px;
+      color: #F08B32;
+      margin: 0 0 12px 0;
+    }
+
+    ol {
+      padding: 0px 0 0 20px;
+      margin: 0;
+
+      li {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #5E5E5E;
+      }
+
+    }
+
+    img {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+  }
+
+  .btnHead {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    .btn {
+      font-weight: 500;
+      font-size: 15.1887px;
+      line-height: 20px;
+      height: 42px;
+      padding: 11px 55px;
+      width: auto;
+      background: #ffffff;
+      border: 1px solid #f08b32;
+      border-radius: 18px;
+      color: #f08b32;
+      text-transform: capitalize;
+      font-family: 'Lexend';
+    }
+  }
+
+}

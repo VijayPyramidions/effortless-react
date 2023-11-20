@@ -1,0 +1,334 @@
+.syncMappingContainer {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  animation: fadeInUp 1s;
+
+  .headerContainer {
+    padding: 18px 20px;
+    flex-flow: row nowrap;
+    align-items: center;
+    .headerText {
+      color: #283049;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px;
+    }
+    .headerBtnContainer {
+      margin-left: auto;
+      flex-flow: row nowrap;
+      height: 32px;
+      .submitSuperAccBtn {
+        display: inline-flex;
+        padding: 8px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 20px;
+        border: 1px solid #f08b32;
+        color: #f08b32;
+        text-align: center;
+        font-family: Lexend;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        margin-right: 16px;
+        text-transform: capitalize;
+      }
+      .uploadBtn {
+        display: inline-flex;
+        padding: 8px 16px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border-radius: 20px;
+        background: #f3f3f3;
+        cursor: pointer;
+      }
+      .uploadBtnTxt {
+        color: #283049;
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+      }
+    }
+  }
+  .tabwrapper {
+    flex-direction: row !important;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 20px 16px 20px;
+
+    .tabtitle {
+      color: #283049;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: normal;
+
+      text-transform: capitalize;
+    }
+
+    .tabbtnwrapper {
+      flex-direction: row !important;
+      gap: 12px;
+      border-radius: 6px;
+      border: 1px solid #e2e2e4;
+      background: #f3f3f3;
+      padding: 4px 12px;
+
+      .tabbtn {
+        border-radius: 6px !important;
+        padding: 6px 20px !important;
+        color: #283049;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 13px !important;
+        font-weight: 300 !important;
+        line-height: normal !important;
+        text-transform: capitalize;
+        width: auto;
+
+        &.active {
+          background: #fff;
+          box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.05);
+          color: #333;
+          font-weight: 500 !important;
+        }
+      }
+    }
+  }
+  .select {
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 10px 4px 10px 8px;
+    flex-direction: row;
+
+    &.disabled {
+      background: rgba(0, 0, 0, 0.05);
+      pointer-events: none;
+    }
+
+    &.error {
+      border-color: #f00;
+    }
+
+    .input {
+      border: none;
+      outline: none;
+      background: transparent;
+      color: #283049;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      pointer-events: none;
+      flex: 1;
+    }
+
+    .icon {
+      width: 16px;
+      height: 16px;
+      color: #6e6e6e;
+    }
+  }
+
+  .contactPopover {
+    .contactselect {
+      min-width: 425px;
+
+      .searchwrp {
+        flex-direction: row !important;
+        gap: 8px;
+        padding: 10px 16px;
+        border-radius: 4px 4px 0px 0px;
+        border: 1px solid #f08b32;
+        background: #fff;
+        box-shadow: 0px 2px 4px 0px rgba(240, 139, 50, 0.15),
+          0px 2px 0px 0px rgba(240, 139, 50, 0.08);
+        margin-bottom: 8px;
+
+        .searchicon {
+          width: 16px;
+          height: 16px;
+        }
+
+        .searchinput {
+          flex: 1;
+          border: none;
+          outline: none;
+          color: #414141;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+
+          &::placeholder {
+            color: #7e7c7c;
+          }
+        }
+      }
+
+      .contactlist {
+        margin: 0;
+        max-height: 280px;
+        overflow: auto;
+
+        .listitem {
+          padding: 0;
+          margin: 0;
+          margin-bottom: 4px;
+
+          .relationship {
+            padding: 4px 8px;
+            border-radius: 4px;
+
+            span {
+              font-feature-settings: 'clig' off, 'liga' off;
+              font-family: 'Lexend', sans-serif !important;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 18px;
+              text-transform: capitalize;
+            }
+
+            &.customer {
+              background: rgba(32, 201, 172, 0.1);
+
+              span {
+                color: #20c9ac;
+              }
+            }
+
+            &.vendor {
+              background: rgba(0, 165, 255, 0.1);
+
+              span {
+                color: #00a5ff;
+              }
+            }
+
+            &.lender {
+              background: rgba(255, 160, 67, 0.1);
+              span {
+                color: #ffa043;
+              }
+            }
+
+            &.promoter {
+              background: rgba(252, 52, 0, 0.1);
+
+              span {
+                color: #fc3400;
+              }
+            }
+
+            &.employee {
+              background: rgba(132, 129, 138, 0.1);
+              span {
+                color: #2e2c34;
+              }
+            }
+
+            &.bank {
+              background: rgba(182, 180, 186, 0.1);
+              span {
+                color: #84818a;
+              }
+            }
+          }
+
+          .listbtn {
+            padding: 0;
+            margin: 0;
+            gap: 10px;
+            padding: 6px 8px;
+
+            .listitemavatar {
+              padding: 0;
+              margin: 0;
+              min-width: unset !important;
+              .listavatar {
+                width: 20px;
+                height: 20px;
+                flex-shrink: 0;
+                background: #a8aebe;
+                color: #ffffff;
+                font-family: 'Lexend', sans-serif !important;
+                font-size: 14px;
+              }
+
+              .listtext {
+                padding: 0;
+                margin: 0;
+                span {
+                  color: #414141;
+                  font-family: 'Lexend', sans-serif !important;
+                  font-size: 13px;
+                  font-style: normal;
+                  font-weight: 300;
+                  line-height: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .draft,
+  .submitted,
+  .paid,
+  .partiallypaid,
+  .request,
+  .declined,
+  .cancelled,
+  .approved {
+    padding: 4px 8px;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 300 !important;
+    border-radius: 4px;
+    line-height: 18px !important;
+    text-transform: capitalize;
+  }
+
+  .draft {
+    color: #2e2c34;
+    background: rgba(132, 129, 138, 0.1);
+  }
+
+  .submitted {
+    color: #ffa043;
+    background: rgba(255, 160, 67, 0.1);
+  }
+
+  .tableContainer {
+    padding: 0;
+    height: calc(100vh - 310px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 5%, 0);
+    transform: translate3d(0, 5%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}

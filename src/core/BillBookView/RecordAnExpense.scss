@@ -1,0 +1,426 @@
+.recordAnExpenseContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    width: 100%;
+
+    .centerButton {
+        border-radius: 16px;
+        background-color: var(--colorPrimaryButton);
+        margin: 1px 1px;
+        color: var(--colorWhite);
+        height: 50px;
+        padding: 25px 35% 25px 35%;
+        font-weight: 400;
+        text-transform: none !important;
+    }
+    .submitButton {
+        border-radius: 16px;
+        background-color: var(--colorPrimaryButton);
+        margin: 15px 5px;
+        color: var(--colorWhite);
+        height: 50px;
+        padding: 25px 20% 25px 20%;
+        font-weight: 400;
+        text-transform: none !important;
+    }
+    .outlineButton {
+        border-radius: 16px;
+        border-color: var(--colorPrimaryButton);
+        margin: 15px 0;
+        color: var(--colorPrimaryButton);
+        height: 40px;
+        padding: 25px 20% 25px 20%;
+        text-transform: none !important;
+    }
+    .bigWidth{
+        width: 150px;
+    }
+    .fontSize10{
+        font-size: 10px;
+    }
+    .fontSize11{
+        font-size: 11px;
+    }
+    .fontSize12{
+        font-size: 12px;
+    }
+    .minWidth30{
+        min-width: 30%;
+    }
+    .minWidth45{
+        min-width: 45%;
+    }
+    .minWidth10{
+        min-width: 10%;
+    }
+    .minWidth20{
+        min-width: 20%;
+    }
+    .centerOrText{
+        text-align: center;
+        min-width: 10%;
+    }
+    .minWidth50{
+        min-width: 50%;
+    }
+    .uploadBill{
+        min-width: 80%;
+        font-weight: 400;
+        align-self: center;
+    }
+    .uploadBillIcon{
+        min-width: 20%;
+    }
+    .fontWeightBold{
+        font-weight: 400;
+        text-align: center;
+    }
+    .alignSelfCenter{
+        text-align: center;
+    }
+    .fieldsHeadingLine{
+        width: 3%;
+        height: 3%;
+        background-color: var(--colorPrimaryButton);
+        margin: 0% 0% 0% 2%;
+    }
+    .headingLineColor{
+        background-color: var(--colorPrimaryButton);
+        border: 0px;
+    }
+
+}
+
+.fieldWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0px;
+
+    .fieldLabel {
+        display: flex;
+        font-size: 16px;
+        width: 100%;
+        font-weight: 500;
+        border-bottom: 1px solid var(--colorDarkLight);
+        margin-bottom: 10px;
+        height: 35px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .fieldsHeading{
+        width: 100%;
+        font-weight: 400;
+    }
+    .fieldHeadingRow {
+        width: 100%;
+        padding: 2%;
+    }
+    .fields {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 2px 0;
+        background-color: var(--colorWhite);
+        border-radius: 15px;
+
+        .fieldRow {
+            width: 100%;
+            padding: 15px;
+        }
+        .fieldColumnRow1 {
+            width: 100%;
+            padding: 1%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border-style: dashed;
+            border-color: lightgrey;
+            margin: 5%;
+            border-radius: 5%;
+        }
+        .fieldCenterRow {
+            width: 100%;
+            padding: 15px;
+            display: flex;
+            flex-direction: row;
+        }
+        .fieldColumnRow {
+            width: 100%;
+            padding: 1%;
+            display: flex;
+            flex-direction: row;
+            background-color: #EEEEEE;
+            margin: 5%;
+            border-radius: 3%;
+        }
+        .greenBorder{
+            border-color: green;
+            color: black;
+        }
+        .greyBorder{
+            border-color: lightgrey;
+            color: black;
+        }
+        .icons {
+            font-size: 50px;
+            color: var(--colorGrey);
+            padding-right: 5px;
+        }
+        .uploadIcons {
+            font-size: 30px;
+            color: var(--colorGrey);
+            padding-right: 5px;
+        }
+    }
+
+    .addIcon {
+        color: var(--colorMain);
+    }
+}
+
+
+.addCustomerContainer {
+    padding: 25px;
+    display: flex;
+
+    .submitButton {
+        border-radius: 16px;
+        background-color: var(--colorPrimaryButton);
+        margin: 15px 0;
+        color: var(--colorWhite);
+        height: 50px;
+    }
+}
+
+.infoTitle {
+    color: var(--colorGrey);
+}
+
+.itemTypeContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.billDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--colorPrimaryButton);
+
+    .title {
+        font-size: 16px;
+        font-weight: 500;
+        margin: 5px 0 20px;
+    }
+
+    .billItems {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+        font-size: 14px;
+        font-weight: 500;
+        border-top: 1px solid var(--colorGrey);
+
+        &.totalItems {
+            color: var(--colorMain);
+        }
+    }
+    
+
+}
+
+.grandTotal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    font-size: 18px;
+    color: var(--colorMain);
+    font-weight: 500;
+    height: 70px;
+    margin: 10px 0 0;
+
+    .value {
+        margin-right: 5px;
+    }
+}
+
+.productContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .productItem {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        .productTitle {
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .deleteIcon {
+            display: flex;
+            justify-content: flex-end;
+            font-size: 30px;
+            color: var(--colorGrey);
+        }
+    }
+}
+
+
+.supplyContainer {
+    display: flex;
+    align-items: center;
+}
+
+.draftInvoiceContainer{
+    margin: 15px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+
+    .draftItem {
+        margin: 10px;
+        background-color: var(--colorWhite);
+        max-width: 80%;
+    }
+
+    .invoiceTitle {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .deleteIcon {
+        color: var(--colorGrey);
+    }
+
+    .arrowIcon {
+        color: var(--colorMain);
+        margin: 0 5px;
+    }
+
+    .draftInfo {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+.summaryContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--colorPrimaryButton);    
+    margin: 20px;
+
+    .summaryInfo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 500;
+        padding: 15px 0;
+
+        .label {
+            margin-right: 10px;
+        }
+
+        .value {
+            color: var(--colorPrimaryButton);
+        }
+    }
+
+    .submitButton {
+        border-radius: 16px;
+        background-color: var(--colorPrimaryButton);
+        margin: 15px 0;
+        color: var(--colorWhite);
+        height: 50px;
+    }
+}
+
+.invoiceSubmitMessage {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--colorPrimaryButton);    
+    margin: 20px;
+
+    .message {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 16px;
+        padding: 15px 0;
+    }
+}
+
+.confirmMessageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--colorPrimaryButton);    
+    margin: 20px;
+    text-align: center;
+
+    .confirm {
+        font-size: 28px;
+        font-weight: 500;
+    }
+
+    .wellDoneImg {
+        width: 200px;
+        height: 200px;
+        margin: 10px 0;
+    }
+
+    .message {
+        margin: 5px 0;
+    }
+    
+}
+
+.approveInvoiceContainer {
+    padding: 25px;
+    display: flex;
+
+    .approveInvoiceForm {
+        width: 100%;
+    }
+
+    .submitButton {
+        border-radius: 16px;
+        background-color: var(--colorPrimaryButton);
+        margin: 15px 0;
+        color: var(--colorWhite);
+        height: 50px;
+    }
+}
+
+.errorContainer {
+    color: var(--colorError);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+
+    .errorText {
+        margin: 0 5px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

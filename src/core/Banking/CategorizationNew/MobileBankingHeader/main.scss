@@ -1,0 +1,57 @@
+.bankingmobilecatgorizationheader{
+    display: flex;
+    flex-direction: column;
+    margin: 16px 20px;
+    gap: 12px;
+    p{
+        margin: 0;
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        color: #fff;
+    }
+    .topcontent{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .bottomcontent{
+        display: flex;
+    }
+    .headertexttag{
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 4px;
+    }
+    .bottomtexttag{
+        font-size: 14px;
+        font-weight: 600;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+    }
+    .bottomnarrationtexttag{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .tdscovertag{
+        font-weight: 400;
+        font-size: 12px;
+        width: 44px;
+        height: 22px;
+        border-radius: 4px;
+        border: 1px solid rgba(167, 171, 175, 0.39);
+        color: #FFF;
+        background: #fbfbfb00;
+    
+        &:focus-visible {
+          outline: 0;
+        }
+      }
+    .contentwithimage{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 42px;
+    }
+}

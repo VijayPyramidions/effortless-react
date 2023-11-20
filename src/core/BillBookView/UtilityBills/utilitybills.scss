@@ -1,0 +1,287 @@
+.utilitycontainter {
+  flex: 1;
+  background: #ffffff;
+  padding: 20px 20px 0 20px;
+  height: 96% !important;
+  // position: relative;
+  // overflow: auto;
+
+  .descforprovider {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #868686;
+    margin-bottom: 20px;
+  }
+
+  .servicetitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.374px;
+    color: #000000;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 1023px) {
+      color: #868686;
+    }
+  }
+
+  .providersearchwrp {
+    flex-direction: row;
+    align-items: center;
+    background: rgba(237, 237, 237, 0.15);
+    border: 0.7px solid rgba(153, 158, 165, 0.39);
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 24px;
+
+    .searchicon {
+      //   height: 10.67px;
+      //   width: 10.67px;
+      padding-right: 8px;
+    }
+
+    .searchinput {
+      flex: 1;
+      border: none;
+      outline: none;
+      background: none;
+      font-family: 'Lexend', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.374px;
+      color: #000000;
+    }
+  }
+
+  .broadbandlabe {
+    background: #e9eaed;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.374px;
+    color: #000000;
+    padding: 6px 20px;
+    margin: 0 -20px 12px -20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    @media screen and (min-width: 1023px) {
+      margin: 0 -40px 12px -40px;
+      padding: 6px 40px;
+    }
+  }
+
+  .listitemwrp {
+    height: calc(100vh - 308px);
+    overflow: auto;
+    padding: 0 40px;
+    margin: 0 -20px 12px -20px;
+  }
+
+  .listelectricity {
+    padding: 0;
+  }
+
+  .list {
+    padding: 0;
+    height: calc(100vh - 348px);
+    overflow: auto;
+
+    @media screen and (max-width: 425px) {
+      height: calc(100vh - 375px);
+    }
+  }
+
+  .listitem {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .listitembtn {
+    padding: 4px 0;
+    border-radius: 8px;
+  }
+
+  .listitemavatar {
+    min-width: 24px;
+    margin-right: 12px;
+  }
+  .avatar {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-content: center;
+    background: #ffffff;
+    // border: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+  }
+
+  .listitemtext {
+    margin: 0;
+  }
+
+  .bpbswrp {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    margin-left: -40px;
+    bottom: 0;
+    z-index: 1000;
+
+    @media screen and (min-width: 1023px) {
+      position: absolute;
+    }
+
+    @media screen and (max-width: 425px) {
+      margin-left: -20px;
+    }
+
+    .bpbstitle {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: 0.374px;
+      color: #a0a4af;
+      margin-right: 16px;
+    }
+
+    .bpbslogo {
+      width: 30px;
+      height: 10px;
+      border-radius: 0;
+    }
+  }
+
+  .getbillcontainer {
+    .selectedproviderwrp {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .backbtn {
+      margin-right: 4px;
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-content: center;
+      background: #ffffff;
+      // border: 0.5px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      margin-right: 12px;
+    }
+
+    .providername {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.374px;
+      color: #000000;
+    }
+
+    .changebtn {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: #3049bf;
+      text-transform: capitalize;
+    }
+
+    .desc {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000000;
+      margin-bottom: 6px;
+      max-width: 310px;
+    }
+
+    .inputwpr {
+      background: rgba(237, 237, 237, 0.15);
+      border: 0.7px solid rgba(153, 158, 165, 0.39);
+      border-radius: 8px;
+      overflow: hidden;
+      padding: 12px 16px;
+      margin-bottom: 32px;
+
+      .numberinput {
+        border: none;
+        outline: none;
+        background: none;
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #283049;
+      }
+    }
+
+    .consnumex {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      color: #848485;
+      margin-bottom: 32px;
+    }
+
+    .submitbtn {
+      background: #f08b32;
+      border-radius: 28px;
+      padding: 14.5px;
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 18px;
+      color: #ffffff;
+      text-transform: capitalize;
+      margin-bottom: 32px;
+      width: 100%;
+    }
+  }
+}
+
+.phonebillcontainer {
+  padding: 24px 20px 20px 20px;
+  height: 87.5%;
+
+  .phoneheader {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.374px;
+    color: #283049;
+    position: relative;
+    padding-bottom: 5px;
+    padding-left: 20px;
+
+    &::before {
+      content: '';
+      height: 2px;
+      width: 17.32px;
+      position: absolute;
+      bottom: 0;
+      background: #f08b32;
+      border-radius: 4px;
+    }
+  }
+}

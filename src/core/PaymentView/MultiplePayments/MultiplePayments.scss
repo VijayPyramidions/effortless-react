@@ -1,0 +1,540 @@
+.billEditView {
+    background-color: var(--colorAppBg);
+    .multiplePaymentContainer {
+        grid-template-rows: 1fr;
+        background-color: var(--colorAppBg);
+    }
+    .headerContainer {
+        display: none;
+    }
+}
+.billListView {
+    .headerContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .headerUnderline {
+            margin-top: 26px;
+        }
+    }
+    .edit {
+        font-size: 13px;
+        font-weight: 400;
+        color: #686868;
+        text-decoration: underline;
+    }
+}
+.bottomSheet {
+    font-weight: 400;
+    text-align: center;
+    .label {
+        margin: 20px;
+        font-size: 13px;
+    }
+    .categoryOptions {
+        &.delete {
+            color: var(--colorMain);
+        }
+        margin: 0 20px;
+        border-bottom: 1px solid var(--colorDivider);
+        padding: 16px 0;
+        font-size: 16px;
+    }
+}
+.multiplePaymentContainer {
+    // height: calc(100% - 40px);
+    background-color: white;
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+
+.headerContainer {
+    position: relative;
+    padding: 20px 20px 10px;
+    .headerLabel {
+        font-weight: 400;
+    }
+    .headerUnderline {
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        margin-top: 4px;
+        margin-left: 2px;
+        background-color: var(--colorPrimaryButton);
+    }
+}
+
+.bodyContainer {
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.vendorSelection {
+    height: 100%;
+    overflow-y: auto;
+    .inputContainer {
+        margin: 60px 0;
+        display: grid;
+        gap: 24px;
+        padding-right: 30px;
+        padding-left: 20px;
+    }
+    .vendorCards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        .vendorCardItem {
+            display: grid;
+            gap: 2px;
+            position: relative;
+            box-shadow: var(--cardShadow);
+            border-radius: 4px;
+            padding: 9px;
+            font-weight: 400;
+            font-size: 13px;
+            border: 0.7px solid white;
+            &.selected {
+                background: rgba(240, 139, 50, 0.12);
+                border: 0.7px solid #f08b32;
+                .count {
+                    background-color: var(--colorPrimaryButton);
+                }
+            }
+            .title {
+                color: var(--colorInputLabel);
+            }
+            .amount {
+                color: var(--colorText);
+            }
+            .count {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                background-color: var(--colorTitle);
+                color: white;
+                font-size: 10px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.actionContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+    margin: 40px 0 20px !important;
+
+    .outlineButton,
+    .submitButton,
+    .submitButton:hover {
+        border-radius: 18px;
+        padding: 6px 20px;
+        text-align: center;
+        text-transform: none !important;
+        font-size: 14px;
+        font-weight: 400;
+        box-shadow: none;
+    }
+    .outlineButton {
+        border-color: var(--colorPrimaryButton);
+        color: var(--colorPrimaryButton);
+    }
+    .submitButton,
+    .submitButton:hover {
+        background-color: var(--colorPrimaryButton) !important;
+        color: var(--colorWhite);
+    }
+}
+
+.vendorBillSelection {
+    display: grid;
+    height: max-content;
+    .filterContainer {
+        display: flex;
+        gap: 12px;
+        padding: clamp(12px, 4vh, 24px) 20px;
+        overflow: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        .filterItem {
+            &.selected {
+                background: rgba(240, 139, 50, 0.12);
+                border: 0.7px solid #f08b32;
+            }
+            font-size: 13px;
+            color: var(--colorInputLabel);
+            padding: 6px 8px;
+            border: 0.8px solid rgba(0, 0, 0, 0.16);
+            box-sizing: border-box;
+            box-shadow: 1.77049px 0.885246px 3.54098px rgba(236, 236, 236, 0.44);
+            border-radius: 16px;
+            white-space: nowrap;
+            font-weight: 400;
+            text-align: center;
+            min-width: 60px;
+            display: inline-table;
+        }
+    }
+    .billList {
+        display: grid;
+        background-color: white;
+        font-size: 13px;
+        height: 100%;
+        overflow-y: auto;
+        .billItem {
+            &:last-child {
+                padding-bottom: 30px;
+            }
+            &.alternateColor {
+                background-color: rgba(245, 245, 243, 0.8);
+            }
+            display: grid;
+            grid-template-columns: auto 1fr;
+            padding: 16px 8px;
+            .checkbox {
+                margin-right: 4px;
+                margin-top: -3px;
+                .customCheckbox {
+                    width: 27px;
+                    height: 27px;
+                    border: 1.2px solid rgba(153, 158, 165, 0.4);
+                    border-radius: 4.8px;
+                    margin: 1.4px;
+                }
+            }
+            .info {
+                display: grid;
+                gap: 12px;
+                .title {
+                    font-weight: 500;
+                    color: #2e3a59;
+                }
+                .row {
+                    display: grid;
+                    grid-template-columns: 1fr 1.3fr;
+                    gap: 8px;
+                    .label {
+                        color: var(--colorInputLabel);
+                    }
+                    .value {
+                        color: #2e3a59;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.vendorBillEdit {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    background-color: var(--colorAppBg);
+    overflow: scroll;
+    height: max-content;
+    // height: 100%;
+    .billList {
+        display: grid;
+        gap: 8px;
+        padding: 20px 0;
+        .billCard {
+            display: grid;
+            padding: clamp(10px, 4vw, 20px);
+            margin: 0 20px;
+            gap: 20px;
+            background: #fff9f3;
+            border-radius: 13px;
+            .topSection {
+                display: grid;
+                gap: 8px;
+            }
+            .titleRow,
+            .amountSection {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                gap: 4px;
+            }
+            .titleRow {
+                font-size: 13px;
+                .title {
+                    font-weight: 400;
+                }
+                .date {
+                    font-weight: 300;
+                }
+            }
+            .description {
+                font-weight: 300;
+            }
+            .amountSection {
+                .toPay,
+                .pendingAmount {
+                    display: grid;
+                    gap: 15px;
+                    color: var(--colorInputLabel);
+                }
+                .label {
+                    font-size: 10.086px;
+                    font-weight: 400;
+                }
+                .toPay {
+                    border-right: 1px solid gray;
+                    margin-right: 10px;
+                    padding-right: 20px;
+                    position: relative;
+                    font-size: 13px;
+                    .toPayInput {
+                        display: flex;
+                        align-items: center;
+                        overflow: hidden;
+
+                        height: 30px;
+                        background: rgba(240, 139, 50, 0.06);
+                        border: 0.5px solid var(--colorPrimaryButton);
+                        box-sizing: border-box;
+                        box-shadow: inset 0px 1px 4px rgba(207, 177, 150, 0.72);
+                        border-radius: 6px;
+                        width: 100%;
+                        & > .input {
+                            flex-grow: 1;
+                            font-size: 13px;
+                            border: none;
+                            outline: none;
+                            max-width: 100%;
+                            background-color: transparent;
+                        }
+                        .prefix {
+                            font-weight: 300;
+                            font-size: 13px;
+                            padding: 0 4px 0 8px;
+                        }
+                    }
+                }
+                .pendingAmount {
+                    .amount {
+                        font-size: 18px;
+                        font-weight: 400;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.vendorBillList {
+    display: grid;
+    height: max-content;
+    .grandTotal {
+        display: flex;
+        gap: 12px;
+        padding: clamp(12px, 4vh, 24px) 20px;
+        .label {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .value {
+            color: var(--colorPrimaryButton);
+        }
+    }
+    .billList {
+        display: grid;
+        background-color: white;
+        font-size: 13px;
+        height: 100%;
+        .billItem {
+            &:last-child {
+                padding-bottom: 30px;
+            }
+            &.alternateColor {
+                background-color: rgba(245, 245, 243, 0.8);
+            }
+            display: grid;
+            padding: 16px;
+            .checkbox {
+                margin-right: 4px;
+                margin-top: -3px;
+                .customCheckbox {
+                    width: 27px;
+                    height: 27px;
+                    border: 1.2px solid rgba(153, 158, 165, 0.4);
+                    border-radius: 4.8px;
+                    margin: 1.4px;
+                }
+            }
+            .info {
+                display: grid;
+                gap: 12px;
+                position: relative;
+                .title {
+                    font-weight: 500;
+                    color: #2e3a59;
+                }
+                .row {
+                    display: grid;
+                    grid-template-columns: 1fr 1.3fr;
+                    gap: 8px;
+                    &.toPay {
+                        font-weight: 500;
+                        .label {
+                            color: #00a676;
+                        }
+                    }
+                    .label {
+                        color: var(--colorInputLabel);
+                    }
+                    .value {
+                        color: #2e3a59;
+                    }
+                }
+                .deleteIcon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}
+
+.vendorBillSummary {
+    .vendorSection {
+        display: grid;
+        margin: 20px 0;
+        gap: 18px;
+        .label {
+            margin: 0 20px;
+        }
+        .avatarSection {
+            display: flex;
+            overflow-x: auto;
+            font-weight: 400;
+            gap: 12px;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            .avatarItem {
+                display: grid;
+                gap: 12px;
+                &:first-child {
+                    margin-left: 20px;
+                    .avatar {
+                        background-color: #019375;
+                    }
+                }
+                &:last-child {
+                    margin-right: 20px;
+                    .avatar {
+                        background-color: #a595e5;
+                    }
+                }
+                &:nth-child(3) {
+                    .avatar {
+                        background-color: #a595e5;
+                    }
+                }
+                .avatar {
+                    display: grid;
+                    gap: 8px;
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 25px;
+                    color: white;
+                    background-color: #487cca;
+                    justify-self: center;
+                }
+                .name {
+                    text-align: center;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .info {
+        margin: 20px;
+        padding: 25px 22px 30px;
+        background: gainsboro;
+        background: rgba(178, 147, 189, 0.69);
+        background: rgba(245, 245, 243, 0.8);
+        border-radius: 5px;
+        font-size: 13px;
+        display: grid;
+        gap: 12px;
+        .title {
+            font-weight: 500;
+            color: #2e3a59;
+        }
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 12px;
+            &.grandTotal {
+                font-weight: 500px;
+                .label {
+                    color: var(--colorPaymentTotalLabel);
+                }
+                .value {
+                    font-weight: 500;
+                    color: var(--colorPaymentTotalValue);
+                }
+            }
+            .label {
+                color: var(--colorInputLabel);
+            }
+            .value {
+                color: #2e3a59;
+            }
+        }
+    }
+    .bankSection {
+        display: grid;
+        margin: 25px 20px 0;
+        gap: 16px;
+    }
+    .actionContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0 50px !important;
+        .submitButton,
+        .submitButton:hover {
+            border-radius: 18px;
+            padding: 7px 20px;
+            text-align: center;
+            text-transform: none !important;
+            font-size: 14px;
+            font-weight: 500;
+            box-shadow: none;
+            background-color: var(--colorPrimaryButton) !important;
+            color: var(--colorWhite);
+            width: 50%;
+        }
+    }
+}
+.categoryOptions {
+    &:last-child {
+        border-bottom: none;
+    }
+    margin: 0 20px;
+    border-bottom: 1px solid var(--colorDivider);
+    padding: 16px 0;
+    font-size: 16px;
+    font-weight: 500;
+}

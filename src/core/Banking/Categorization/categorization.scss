@@ -1,0 +1,2373 @@
+.CategorizationContainer {
+  animation: fadeInUp 2s;
+  height: 100%;
+}
+.CategorizationWrapper {
+  padding: 10px;
+  width: 98%;
+  height: 100%;
+  padding-left: unset !important;
+  padding-right: unset !important;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  // animation: fadeInUp 2s;
+
+  .CategorizationBankboxHolderBank {
+    height: 50px;
+    border: 1px solid #a0a4af;
+    border-radius: 10px;
+    padding: 5px;
+    padding-bottom: 4px;
+    background: #ffffff;
+  }
+
+  .editcategoizebutton {
+    height: 45px !important;
+    margin-top: -2px !important;
+  }
+
+  .bankTitle {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3vw;
+    line-height: 15px;
+    color: #333333;
+  }
+
+  .mobiledatagrid {
+    position: relative !important;
+    float: left;
+  }
+
+  .bankAccount {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 20px;
+    color: #666666;
+    letter-spacing: 0.4px;
+    margin-top: 9px;
+  }
+
+  .noborder {
+    border: none !important;
+  }
+
+  .CategorizationBankboxHolderTransactionAmount {
+    box-sizing: border-box;
+    background: #fbfbfb;
+    border: 1px solid #a0a4af;
+    border-radius: 8px;
+    height: 65px;
+    padding: 4px;
+    background: #ffffff;
+  }
+
+  .CategorizationBankboxHolderPaidTo {
+    box-sizing: border-box;
+    background: #fbfbfb;
+    border: 1px solid #a0a4af;
+    border-radius: 4px;
+    height: 65px;
+    padding: 4px;
+    background: #f5f5f5;
+    cursor: default;
+    padding-left: 10px;
+  }
+
+  .CategorizationBankboxHolderPaidTo:hover {
+    cursor: pointer;
+  }
+
+  .CategorizationBankboxHolderNarration {
+    box-sizing: border-box;
+    background: #fbfbfb;
+    border: 1px solid #a0a4af;
+    border-radius: 8px;
+    height: 65px;
+    padding: 4px;
+    background: #ffffff;
+  }
+
+  .CategorizationBankboxHolderIncomeCategorization {
+    box-sizing: border-box;
+    background: #fbfbfb;
+    border: 1px solid #a0a4af;
+    border-radius: 8px;
+    height: 65px;
+    padding: 4px;
+    background: #ffffff;
+    background: #f5f5f5;
+  }
+
+  .CategorizationBankboxHolderIncomeCategorizationName {
+    box-sizing: border-box;
+    background: #fbfbfb;
+    border: 1px solid #a0a4af;
+    border-radius: 8px;
+    height: 65px;
+    padding: 4px;
+    background: #ffffff;
+  }
+
+  .CategorizationBankboxHolderExpenseCategorization {
+    box-sizing: border-box;
+    background: #fbfbfb;
+    border: 1px solid #a0a4af;
+    border-radius: 8px;
+    height: 65px;
+    padding: 4px;
+    background: #ffffff;
+  }
+
+  .CategorizationBankboxHolderTax {
+    box-sizing: border-box;
+    background: #fbfbfb;
+    border: 1px solid #a0a4af;
+    border-radius: 8px;
+    height: 65px;
+    padding: 4px;
+    background: #f5f5f5;
+  }
+
+  .CategorizationBankboxHolderDate {
+    box-sizing: border-box;
+    background: #fbfbfb;
+    border: 1px solid #a0a4af;
+    border-radius: 8px;
+    height: 65px;
+    padding: 4px;
+    background: #ffffff;
+    color: #f08b32;
+  }
+
+  .CategorizationBankboxHolderType {
+    box-sizing: border-box;
+    background: #fbfbfb;
+    border: 1px solid #a0a4af;
+    border-radius: 8px;
+    height: 65px;
+    padding: 4px;
+    background: #ffffff;
+    color: #00a676;
+  }
+
+  .CategorizationBankboxHolderTowards {
+    box-sizing: border-box;
+    background: #fbfbfb;
+    border: 1px solid #a0a4af;
+    border-radius: 4px;
+    height: 65px;
+    padding: 4px;
+    background: #f5f5f5;
+    cursor: default;
+    padding-left: 10px;
+  }
+
+  .CategorizationBankboxHolderTowards:hover {
+    cursor: pointer;
+  }
+
+  .bankTrasactionAmountTitle {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9vw;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: #6e6e6e;
+    margin-top: -3px;
+    padding-left: 5px;
+  }
+
+  .bankPaidToTitle {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9vw;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #6e6e6e;
+  }
+
+  .bankNarrationTitle {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9vw;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #6e6e6e;
+  }
+
+  .bankTransactionTypeTitle {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9vw;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #6e6e6e;
+  }
+
+  .bankIncomeCategorizationTitle {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9vw;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #6e6e6e;
+  }
+
+  .bankIncomeCategorizationTitleName {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9vw;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #6e6e6e;
+  }
+
+  .notesHolder {
+    background: rgba(234, 232, 232, 0.26);
+    border: 0.694981px solid #e0e0e0;
+    border-radius: 6.94981px;
+  }
+
+  .bankExpenseCategorizationTitle {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9vw;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #6e6e6e;
+  }
+
+  .bankExpenseCategorizationTitleName {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9vw;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #6e6e6e;
+  }
+
+  .bankTaxTitle {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9vw;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #6e6e6e;
+  }
+
+  .bankTransactionType_Inflow {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.9vw;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: #2f9682;
+    margin-top: 5px;
+  }
+
+  .bankTransactionType_Outflow {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.9vw;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: #f08b32;
+    margin-top: 5px;
+  }
+
+  .bankDateTitle {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9vw;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #6e6e6e;
+  }
+
+  .bankTypeTitle {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9vw;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #6e6e6e;
+  }
+
+  .bankTowardsTitle {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9vw;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #6e6e6e;
+  }
+
+  .bankTransactionAmount {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: 20px;
+    align-items: center;
+    padding-right: 2px;
+    color: #666666;
+    margin-top: 3px;
+    width: 85%;
+    padding-left: 20px;
+  }
+
+  .bankPaidTo {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: 15px;
+    align-items: center;
+    text-align: left;
+    padding-right: 2px;
+    padding-top: 6px;
+    color: #666666;
+    width: 100%;
+  }
+
+  .bankPaidToRightIcon {
+    float: right;
+    margin-top: -5px;
+    width: 10%;
+    color: #f08b32;
+    padding-right: 10px;
+  }
+
+  .bankTowardsRightIcon {
+    float: right;
+    width: 10%;
+    color: #f08b32;
+    padding-right: 10px;
+  }
+
+  .bankIncomeCategorization {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: 15px;
+    align-items: center;
+    text-align: left;
+    padding-right: 2px;
+    padding-top: 6px;
+    color: #666666;
+    width: 100%;
+  }
+
+  .bankIncomeCategorizationRightIcon {
+    float: right;
+    margin-top: -5px;
+  }
+
+  .bankIncomeCategorizationName {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: 15px;
+    align-items: center;
+    text-align: left;
+    padding-right: 2px;
+    padding-top: 6px;
+    color: #666666;
+    width: 100%;
+  }
+
+  .bankIncomeCategorizationRightIconName {
+    float: right;
+    margin-top: -5px;
+  }
+
+  .bankExpenseCategorization {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: 15px;
+    align-items: center;
+    text-align: left;
+    padding-right: 2px;
+    padding-top: 6px;
+    color: #666666;
+    width: 100%;
+  }
+
+  .bankExpenseCategorizationRightIcon {
+    float: right;
+    margin-top: -5px;
+  }
+
+  .bankNarration {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.7vw;
+    line-height: 15px;
+    align-items: center;
+    text-align: left;
+    padding-right: 2px;
+    margin-top: 5px;
+    color: #666666;
+  }
+
+  .bankTax {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.9vw;
+    line-height: 15px;
+    align-items: center;
+    text-align: left;
+    padding-right: 2px;
+    color: #666666;
+    width: 80%;
+    display: flex;
+  }
+
+  .bankDate {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.9vw;
+    line-height: 15px;
+    align-items: center;
+    text-align: left;
+    padding-right: 2px;
+    color: #666666;
+    width: 80%;
+    margin-top: 5px;
+    display: flex;
+  }
+
+  .bankType {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.9vw;
+    line-height: 15px;
+    align-items: center;
+    text-align: left;
+    padding-right: 2px;
+    color: #666666;
+    width: 80%;
+    margin-top: 5px;
+    display: flex;
+  }
+
+  .bankTowards {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1vw;
+    line-height: 15px;
+    align-items: center;
+    text-align: center;
+    padding-right: 2px;
+    color: #666666;
+    width: 100%;
+  }
+
+  .bankTowardsRightIcon {
+    float: right;
+  }
+
+  .selectedTowards {
+    text-align: left;
+    margin-top: 6px;
+    width: 85%;
+  }
+  q .selectedIncomeCategory {
+    text-align: left;
+    margin-top: 6px;
+  }
+
+  .selectedExpenseCategory {
+    text-align: left;
+    margin-top: 6px;
+  }
+
+  .bankTransactionAmountUpIcon {
+    width: 18px;
+    height: 21px;
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.5vw;
+    line-height: 21px;
+    color: #d56400;
+    padding-bottom: 2px;
+    padding-right: 2px;
+    margin-top: 0px;
+  }
+
+  .bankTransactionAmountDownIcon {
+    width: 18px;
+    height: 21px;
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 1.5vw;
+    line-height: 21px;
+    color: #d56400;
+    padding-left: 5px;
+    margin-top: 0px;
+    transform: rotate(-0deg);
+  }
+
+  .bankTransactionIndicatorHolder {
+    float: left;
+    width: 15%;
+  }
+
+  .bankTransactionAmountHolder {
+    width: 100%;
+    display: flex;
+  }
+
+  .CategorizeCardMove {
+    float: none;
+    position: fixed;
+    bottom: 45%;
+  }
+
+  .CategorizationfloatingButtons {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex: 1;
+    position: relative;
+  }
+
+  .CategorizationPreviousBox {
+    border-color: #f08b32;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    justify-content: center;
+    float: left;
+    position: relative;
+    cursor: default;
+    pointer-events: all;
+    margin-left: -40px;
+    transform: scale(1);
+  }
+
+  .CategorizationPreviousBox:hover {
+    cursor: pointer;
+  }
+
+  .CategorizationNextBox {
+    border-color: #f08b32;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    justify-content: center;
+    margin-left: auto;
+    position: relative;
+    cursor: default;
+    pointer-events: all;
+    margin-left: -10px;
+    transform: scale(1);
+  }
+
+  .CategorizationNextBox:hover {
+    cursor: pointer;
+  }
+
+  .iconadjust1 {
+    margin-right: -15px !important;
+    margin-top: -50px;
+  }
+
+  .iconadjust2 {
+    margin-right: -5px;
+    margin-top: -50px;
+  }
+
+  .towardsname {
+    font-size: 0.9vw;
+    margin-top: 5px !important;
+    display: flex;
+  }
+
+  .towardsname input {
+    font-size: 0.9vw !important;
+    display: flex;
+  }
+
+  .paidtoname input {
+    font-size: 0.9vw !important;
+  }
+
+  .paidtoname {
+    font-size: 0.9vw;
+    display: flex;
+    margin-top: -6px !important;
+  }
+
+  .taxpercentage {
+    text-align: right;
+    float: right;
+    border: none;
+    border-width: 0;
+    box-shadow: none;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    font-size: 0.9vw;
+    text-align: right;
+    display: flex;
+    margin-top: 0px;
+  }
+
+  .taxpercentage input {
+    font-size: 0.9vw !important;
+    margin-top: 4px !important;
+  }
+
+  [role='cell'] {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+  }
+
+  .textEntry {
+    width: 100%;
+    height: 100% !important;
+    padding: 2px;
+    border: none;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    color: #000000;
+  }
+
+  .gridElement {
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+
+  .gridElementExpense {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    z-index: 10;
+  }
+
+  .gridElementIncome {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .noRowsMessageOverall {
+    position: absolute;
+    left: 40%;
+    top: 55%;
+    font-size: 0.9vw;
+  }
+
+  .noRowsMessage {
+    font-size: 0.9vw;
+  }
+
+  .mobileTextEntryHolder {
+    padding: 0px !important;
+    width: 94% !important;
+    height: 90px !important;
+  }
+
+  .mobileTextEntryHolder1 {
+    padding: 0px !important;
+    width: 84% !important;
+    height: 90px !important;
+    padding-right: 55px !important;
+  }
+
+  .textEntry {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+  }
+
+  .textEntry div:first-child {
+    height: 100% !important;
+  }
+
+  .textEntry textarea {
+    height: 100% !important;
+  }
+
+  .mobileGridRow {
+    color: #666666 !important;
+    font-size: 3vw;
+    height: auto !important;
+    width: 100%;
+  }
+
+  .categorizeNow {
+    transition: all 100s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 10px;
+
+    position: relative;
+    width: 100% !important;
+    height: 96% !important;
+
+    background: #f08b32;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+
+    width: 40px;
+    height: 18px;
+
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2vw;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    top: 24px;
+    text-transform: capitalize;
+    opacity: 1;
+  }
+
+  .categorizeNow:hover {
+    opacity: 0.5 !important;
+  }
+
+  .categorizeEdit {
+    transition: all 100s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 10px;
+
+    position: relative;
+    width: 100% !important;
+    height: 96% !important;
+
+    background: #f08b32;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+
+    width: 40px;
+    height: 18px;
+
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2vw;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    top: 24px;
+    text-transform: capitalize;
+    opacity: 1;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .categorizeEdit:hover {
+    opacity: 0.5 !important;
+  }
+
+  .fileuploadNormal {
+    height: 100%;
+    width: 100%;
+    margin-top: -10px;
+    margin-left: -1px;
+    background: #ffffff;
+    outline: 4px dashed rgba(153, 158, 165, 0.53);
+    outline-offset: 0px;
+    border-radius: 10px;
+  }
+
+  .fileuploadHighlight {
+    height: 100%;
+    width: 100%;
+    margin-top: -5px;
+    background: #ffffff;
+    outline: 6px dashed rgba(153, 158, 165, 1);
+    border-radius: 10px;
+  }
+
+  .uploadtext {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9vw;
+    line-height: 18px;
+    color: #283049;
+  }
+
+  .uploads {
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9vw;
+    line-height: 18px;
+    color: #283049;
+  }
+
+  .cloudimage {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .uploadbutton {
+    transition: all 100s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 10px;
+
+    position: relative;
+    width: 50% !important;
+    height: 96% !important;
+
+    background: #f08b32;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+
+    width: 40px;
+    height: 18px;
+
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.9vw;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    top: 24px;
+    text-transform: capitalize;
+    opacity: 1;
+  }
+
+  .uploadbutton label {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.9vw;
+  }
+
+  .categorizedNowExpenses {
+    display: flex;
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 10px;
+
+    position: relative;
+    width: 100% !important;
+    height: 96% !important;
+
+    background: #f08b32;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+
+    width: 40px;
+    height: 18px;
+
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2vw;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    top: 5px;
+  }
+
+  .formentry {
+    height: 95%;
+    overflow: auto;
+  }
+
+  .fileuploadform {
+    width: 80%;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .fileuploadholder {
+    padding-bottom: 30px;
+  }
+
+  .documentholder {
+    padding-bottom: 30px;
+  }
+
+  .fileupload {
+    width: 100%;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    float: left;
+    border: 1px solid rgba(49, 58, 78, 0.25) !important;
+    border-radius: 4px;
+    height: 50px;
+    color: #6e6e6e;
+    background: rgba(237, 237, 237, 0.15);
+    border: 0.7px solid rgba(153, 158, 165, 0.39);
+  }
+
+  .fileuploaded {
+    width: 100%;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    float: left;
+    color: #6e6e6e;
+  }
+
+  .document {
+    width: 100%;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    float: left;
+    border: 1px solid rgba(49, 58, 78, 0.25) !important;
+    border-radius: 4px;
+    margin-top: -5px;
+    height: 50px;
+  }
+
+  .taxablevalue {
+    width: 100%;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    float: left;
+    border-radius: 4px;
+    margin-top: -10px;
+    height: 40px;
+  }
+
+  .cgstvalue {
+    font-family: 'Lexend';
+    width: 100%;
+    font-style: normal;
+    font-size: 0.9vw;
+    float: left;
+    border-radius: 4px;
+    margin-top: 40px;
+    height: 40px;
+  }
+
+  .igstvalue {
+    width: 100%;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    float: left;
+    border-radius: 4px;
+    margin-top: 40px;
+    height: 40px;
+  }
+
+  .netpayable {
+    width: 100%;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    float: left;
+    border: 1px solid rgba(49, 58, 78, 0.25) !important;
+    border-radius: 4px;
+    margin-top: 60px;
+    height: 50px;
+  }
+
+  .documentdate {
+    width: 100%;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    float: left;
+    border: 1px solid rgba(49, 58, 78, 0.25) !important;
+    border-radius: 4px;
+    margin-top: 0px;
+    height: 50px;
+  }
+
+  .documentduedate {
+    width: 100%;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    float: left;
+    border: 1px solid rgba(49, 58, 78, 0.25) !important;
+    border-radius: 4px;
+    margin-top: 25px;
+    height: 50px;
+  }
+
+  .taxamount {
+    width: 100%;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    float: left;
+    border: 1px solid rgba(49, 58, 78, 0.25) !important;
+    border-radius: 4px;
+    margin-top: 20px;
+    height: 40px;
+  }
+
+  .uploadText {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+    width: 100%;
+    float: left;
+  }
+
+  .uploadValue {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+    margin-top: 10px;
+  }
+
+  .documentnumberText {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+    float: left;
+  }
+
+  .netpayableText {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+    float: left;
+  }
+
+  .taxablevalueText {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+    float: left;
+    position: relative;
+    top: 20px;
+  }
+
+  .documentdateText {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+    float: left;
+  }
+
+  .documentduedateText {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+    float: left;
+  }
+
+  .taxvalueText {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+    float: left;
+  }
+
+  .cgstvalueText {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+    float: left;
+    position: relative;
+    top: 20px;
+  }
+
+  .igstvalueText {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+    float: left;
+    position: relative;
+    top: 20px;
+  }
+
+  .netvalueText {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+    float: left;
+  }
+
+  .uploadButton {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    color: #313a4e;
+    width: 100%;
+    float: left;
+    float: left;
+    margin-top: 5px;
+    z-index: 1;
+    padding: 0px;
+  }
+
+  .documentnumberInput {
+    font-family: 'Lexend' !important;
+    font-style: normal !important;
+    font-size: 0.9vw !important;
+    line-height: 20px !important;
+    color: #313a4e !important;
+    float: left;
+    width: 100%;
+    input {
+      font-family: 'Lexend' !important;
+      font-style: normal !important;
+      font-size: 0.9vw !important;
+      line-height: 20px !important;
+      color: #313a4e !important;
+    }
+  }
+
+  .mandatoryMark {
+    position: relative;
+    margin-top: 3px;
+  }
+
+  .mandatoryMark1 {
+    position: relative;
+    top: 22px;
+  }
+
+  .mandatoryMark2 {
+    position: relative;
+    top: 22px;
+  }
+
+  .mandatoryMark3 {
+    position: relative;
+    top: 22px;
+  }
+
+  .mandatoryMark4 {
+    position: relative;
+    top: 2px;
+  }
+
+  .documentdateInput {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+    float: left;
+    width: 100%;
+  }
+
+  .documentduedateInput {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+    float: left;
+    width: 100%;
+  }
+
+  .taxablevalueInput {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+    float: left;
+    width: 100%;
+    input {
+      text-align: right;
+    }
+  }
+
+  .taxablevalueInput div:first-child {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+    float: left;
+    width: 100%;
+  }
+
+  .cgstvalueInput {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+    float: left;
+    width: 100%;
+    input {
+      text-align: right;
+    }
+  }
+
+  .cgstvalueInput div:first-child {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+    float: left;
+    width: 100%;
+  }
+
+  .igstvalueInput {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+    float: left;
+    width: 100%;
+    input {
+      text-align: right;
+    }
+  }
+
+  .igstvalueInput div:first-child {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+    float: left;
+    width: 100%;
+  }
+
+  .documentdateValue {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .netpayableValue {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    text-align: right;
+    margin-left: -13px;
+  }
+
+  .documentduedateValue {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .detailsTitle {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9vw;
+    line-height: 25px;
+    color: #283049;
+    margin-top: 10px;
+  }
+
+  .dividerLine {
+    color: 1px solid rgba(49, 58, 78, 0.25) !important;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .expenseCategoryHolder {
+    padding-bottom: 30px;
+    margin-left: 2px;
+    cursor: default;
+    pointer-events: all;
+  }
+
+  .expenseCategoryHolder:hover {
+    cursor: pointer;
+  }
+
+  .vendorHolder {
+    padding-bottom: 30px;
+    margin-left: 2px;
+    cursor: default;
+    pointer-events: all;
+  }
+
+  .vendor:hover {
+    cursor: pointer;
+  }
+
+  .taxablevalueHolder {
+    padding-bottom: 30px;
+    margin-left: 2px;
+  }
+
+  .cgstvalueHolder {
+    padding-bottom: 30px;
+    margin-left: 2px;
+  }
+
+  .igstvalueHolder {
+    padding-bottom: 30px;
+    margin-left: 2px;
+  }
+
+  .netpayableHolder {
+    padding-bottom: 30px;
+    margin-left: 2px;
+  }
+
+  .expenseCategory {
+    width: 100%;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    float: left;
+    border: 1px solid rgba(49, 58, 78, 0.25) !important;
+    border-radius: 4px;
+    margin-top: 10px;
+    height: 50px;
+  }
+
+  .expenseCategoryText {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+    float: left;
+  }
+
+  .expenseCategoryInput {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 25px;
+    margin-top: -4px;
+    float: right;
+  }
+
+  .expenselectionText {
+    text-align: center;
+    margin-top: -25px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+  }
+
+  .vendor {
+    width: 100%;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    float: left;
+    border: 1px solid rgba(49, 58, 78, 0.25) !important;
+    border-radius: 4px;
+    margin-top: 25px;
+    height: 50px;
+  }
+
+  .vendorText {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+    color: #313a4e;
+    float: left;
+  }
+
+  .vendorInput {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 25px;
+    margin-top: -4px;
+    float: right;
+  }
+
+  .vendorselectionText {
+    text-align: center;
+    margin-top: -30px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-size: 0.9vw;
+    line-height: 20px;
+  }
+
+  .buttonband {
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+  .buttonbandedit {
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+    width: 100%;
+    height: 53px;
+    margin-top: -6px;
+  }
+
+  .mobilebuttonbandedit {
+    width: 80%;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-top: 5px;
+  }
+
+  .uploadimage {
+    float: right;
+    margin-top: -0.5vh;
+  }
+
+  .expenseCategoryValueHolder {
+    float: left;
+    font-size: 0.9vw;
+    width: 100%;
+  }
+
+  .vendorValueHolder {
+    float: left;
+    font-size: 0.9vw;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .CategorizationWrapper {
+    .towardsname input {
+      margin-top: -4px !important;
+    }
+    .taxpercentage {
+      margin-top: 0px !important;
+    }
+    .taxpercentage input {
+      margin-top: -1px !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (min-height: 721px) and (max-height: 800px) {
+  .CategorizeCardMovemobile {
+    top: 3px !important;
+  }
+}
+
+// @media only screen and (min-height: 801px) {
+//   .CategorizeCardMovemobile {
+//     top: 10px !important;
+//   }
+// }
+
+@media only screen and (max-width: 300px) {
+  .CategorizationNextBox {
+    right: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .CategorizationWrapper {
+    height: calc(93% - 5px) !important;
+    overflow: hidden !important;
+    width: 100%;
+    padding-left: 0px !important;
+    margin-left: 1px !important;
+    padding-bottom: unset !important;
+    margin-top: -15px;
+    position: relative !important;
+    background: linear-gradient(
+      to bottom,
+      #401e01 50%,
+      rgba(255, 255, 255, 1) 50%
+    );
+    .drawerkeys {
+      cursor: default;
+      display: none;
+    }
+
+    .gridElement {
+      height: unset;
+    }
+
+    .settlementcolor1 {
+      color: #ff0000;
+    }
+
+    .settlementcolor2 {
+      color: #2f9682;
+    }
+
+    .collapsecrdclass {
+      padding-top: 0px !important;
+      margin-top: 2px !important;
+    }
+
+    .expandcrdclass {
+      padding-top: 0px !important;
+      margin-top: -15px !important;
+    }
+
+    .collapsegrdclass {
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+    }
+
+    .expandgrdclass {
+      padding-bottom: 20px !important;
+      margin-top: 20px !important;
+    }
+
+    .collapsegrdclass1 {
+      margin-top: 0px !important;
+    }
+
+    .expandgrdclass1 {
+      margin-top: -40px !important;
+    }
+
+    .collapsecrdcheckclass {
+      padding-top: 0px !important;
+      margin-top: 15px !important;
+      max-width: 30px !important;
+      min-width: 30px !important;
+      width: 30px !important;
+      padding: 0px !important;
+      padding-left: 10px !important;
+      padding-bottom: 10px !important;
+    }
+
+    .expandcrdcheckclass {
+      padding-top: 0px !important;
+      margin-top: 20px !important;
+      max-width: 30px !important;
+      min-width: 30px !important;
+      width: 30px !important;
+      padding: 0px !important;
+      padding-left: 10px !important;
+      padding-bottom: 10px !important;
+    }
+
+    .cardMainDivider {
+      width: 100%;
+      color: #d8d8d8;
+      background: #d8d8d8;
+      margin-left: -12px;
+      position: absolute;
+      margin-top: -10px;
+    }
+
+    .allocatedname1 {
+      width: 100% !important;
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 3vw;
+      margin-top: 4vw;
+      color: #283049;
+    }
+
+    .allocatedname2 {
+      width: 100% !important;
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 3vw;
+      margin-top: 20px;
+      color: #401e01;
+    }
+
+    .uploadtext {
+      font-size: 3vw;
+      padding-top: 0px !important;
+    }
+
+    .uploads {
+      font-size: 3vw;
+      margin-top: -15px !important;
+      padding-top: 0px !important;
+    }
+
+    .cloudimage {
+      padding-top: 0px !important;
+    }
+
+    .uploadbutton label {
+      font-size: 3vw;
+    }
+
+    .allocatedtext1 {
+      width: 100% !important;
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3vw;
+      color: #939393;
+    }
+
+    .allocatedtext2 {
+      width: 100% !important;
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3vw;
+      color: #939393;
+    }
+
+    .categorizedtext {
+      width: 100% !important;
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3vw;
+      color: #00a676;
+      position: absolute;
+      margin-left: 0px;
+    }
+
+    .categorizedtextnotrans {
+      width: 100% !important;
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3vw;
+      color: #00a676;
+      position: absolute;
+      margin-top: 27px;
+      margin-left: 0px;
+    }
+
+    .categorizedtextanother {
+      width: 100% !important;
+      font-family: 'Lexend';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3vw;
+      color: #00a676;
+      position: absolute;
+      margin-top: -3px;
+      margin-left: 0px;
+    }
+
+    .drawerkeys:hover {
+      cursor: pointer;
+    }
+
+    .openupCard {
+      pointer-events: fill;
+      cursor: default;
+    }
+
+    .openupCard:hover {
+      cursor: pointer;
+    }
+
+    .opendownCard {
+      pointer-events: fill;
+      cursor: default;
+      margin-top: -55px !important;
+    }
+
+    .opendownCard:hover {
+      cursor: pointer;
+    }
+
+    .selectedTowards {
+      margin-top: 3px !important;
+      font-size: 2.7vw !important;
+      color: #401e01 !important;
+    }
+
+    .taxpercentage input {
+      margin-top: 2px !important;
+    }
+
+    .noRowsMessageOverall {
+      position: absolute;
+      left: 25%;
+      top: 50%;
+      font-size: 3vw;
+    }
+
+    .CategorizationPreviousBox {
+      border: none !important;
+      border-radius: none !important;
+    }
+
+    .CategorizationNextBox {
+      border: none !important;
+      border-radius: none !important;
+      bottom: 3px !important;
+      right: 23px;
+    }
+
+    .selectedPaidTo {
+      margin-top: 0px !important;
+      font-size: 2.7vw !important;
+      color: #401e01 !important;
+      width: 85%;
+    }
+
+    .categorizenow {
+      margin-left: 50px;
+      height: 55px !important;
+    }
+
+    .gridElement {
+      background-color: #ffffff;
+    }
+
+    .bankTitle {
+      font-size: 3vw !important;
+      line-height: 25px !important;
+      color: #fafafa !important;
+      font-weight: 300 !important;
+    }
+
+    .bankAccount {
+      font-size: 3vw !important;
+      font-weight: 600 !important;
+      color: #ffffff;
+      margin-top: 1px;
+    }
+
+    .bankTrasactionAmountTitle {
+      font-size: 3vw !important;
+      color: #fafafa !important;
+      font-weight: 300 !important;
+      padding-left: 6vw;
+      margin-top: -5px;
+    }
+
+    .bankTransactionAmount {
+      font-size: 2.9vw !important;
+      font-weight: 600 !important;
+      color: #ffffff;
+      align-items: unset;
+      text-align: left;
+      float: left;
+      margin-top: 5px;
+    }
+
+    .bankTransactionAmountAmountHolder {
+      margin-top: -5px;
+      margin-left: -28px;
+    }
+
+    .drawerarrows:hover {
+      cursor: pointer;
+    }
+
+    .drawerarrows {
+      cursor: default;
+      color: #fafafa;
+      position: absolute;
+      left: 48%;
+      margin-top: 15px;
+      text-align: center;
+      transform: scale(2);
+      z-index: 10;
+      svg path {
+        transform: scale(0.8);
+      }
+    }
+
+    .bankPaidToTitle {
+      font-size: 3vw !important;
+    }
+
+    .bankPaidTo {
+      font-size: 3vw !important;
+    }
+
+    .bankNarrationTitle {
+      font-size: 3vw !important;
+      color: #fafafa !important;
+      font-weight: 300 !important;
+      padding-left: 6vw;
+    }
+
+    .bankNarrationHolder {
+      margin-top: -20px;
+      height: 50px;
+    }
+
+    .bankNarration {
+      font-size: 4vw !important;
+      font-weight: 600 !important;
+      color: #ffffff;
+      padding-left: 6vw;
+    }
+
+    .bankTaxTitle {
+      font-size: 3vw !important;
+      color: #fafafa !important;
+      font-weight: 300 !important;
+      margin-top: 1px;
+    }
+
+    .bankTax {
+      font-size: 3.2vw !important;
+      font-weight: 600 !important;
+      color: #ffffff;
+      border: 1px solid rgba(245, 245, 245, 0.2);
+    }
+
+    .bankDateTitle {
+      font-size: 3vw !important;
+      color: #fafafa !important;
+      font-weight: 300 !important;
+    }
+
+    .bankDate {
+      font-size: 3.2vw !important;
+      padding-top: 4px !important;
+      font-weight: 600 !important;
+      margin-top: 2px;
+      color: #ffffff;
+    }
+
+    .bankTransactionAmountUpIcon {
+      font-size: 3vw !important;
+      width: 5vw;
+      height: 5vw;
+    }
+
+    .bankTransactionAmountDownIcon {
+      font-size: 3vw !important;
+      width: 5vw;
+      height: 5vw;
+    }
+
+    .bankNarration {
+      font-size: 3.2vw !important;
+      word-break: break-word !important;
+    }
+
+    .towardsname {
+      margin-top: 0px;
+    }
+
+    .NotesTitle {
+      font-size: 3vw;
+      font-weight: 500;
+    }
+
+    .textEntry {
+      font-size: 3vw;
+    }
+    .bankTowardsTitle {
+      font-size: 3vw;
+    }
+
+    .bankTowards {
+      font-size: 3vw;
+    }
+
+    .taxpercentage {
+      font-size: 3vw;
+      color: #ffffff;
+    }
+
+    .CategorizationBankboxHolderPaidToSmallBox {
+      box-sizing: border-box;
+      background: #fbfbfb;
+      border: 1px solid rgba(167, 171, 175, 0.39);
+      border-radius: 8px;
+      height: 32px;
+      padding: 8px;
+      cursor: default;
+    }
+
+    .CategorizationBankboxHolderTowardsSmallBox {
+      box-sizing: border-box;
+      background: #fbfbfb;
+      border: 1px solid rgba(167, 171, 175, 0.39);
+      border-radius: 8px;
+      height: 32px;
+      padding: 8px;
+      cursor: default;
+    }
+
+    .bankPaidToRightIconSmallBox {
+      float: right;
+      margin-top: -4px;
+      width: 15%;
+    }
+
+    .bankTowardsRightIconSmallBox {
+      float: right;
+      margin-top: -4px;
+      width: 15%;
+    }
+
+    .taxpercentage input {
+      font-size: 3vw !important;
+    }
+
+    .categorizeNow {
+      top: -5px;
+      font-size: 3vw;
+      margin-left: 25px;
+    }
+
+    .cardConfiguration {
+      width: 100%;
+      min-height: none !important;
+      max-height: none !important;
+      height: auto;
+      padding-top: 50px;
+      padding-bottom: 20px;
+    }
+
+    .CategorizeCardMoveinitial {
+      position: relative !important;
+      z-index: 1;
+      padding-bottom: 20px;
+      margin-left: -6px;
+      float: left;
+      margin-top: unset !important;
+    }
+
+    .CategorizeCardMovemobile {
+      position: fixed !important;
+      z-index: 1;
+      padding-bottom: 20px;
+      margin-left: -6px;
+      float: left;
+      float: left !important;
+      bottom: 0px
+    }
+
+    .CategorizeCardMovemobileupdate {
+      position: relative !important;
+      z-index: 1;
+      padding-bottom: 20px;
+      margin-left: -6px;
+      height: 10vh !important;
+      float: left;
+      float: left !important;
+      top: 50px;
+    }
+
+    .CategorizeCardMoveinitialAdjust {
+      position: relative !important;
+      z-index: 1;
+      padding-bottom: 20px;
+      margin-left: -6px;
+      float: left;
+    }
+
+    .CategorizeCardMoveinitialAdjusttowards {
+      position: relative !important;
+      z-index: 1;
+      padding-bottom: 20px;
+      margin-left: -6px;
+      float: left;
+    }
+
+    .CategorizeCardMove {
+      position: relative !important;
+      z-index: 1;
+      padding-bottom: 20px;
+      margin-left: -6px;
+      bottom: unset !important;
+      float: left;
+      top: -10px;
+    }
+
+    .CategorizeCardMovesmall {
+      position: relative !important;
+      z-index: 1;
+      padding-bottom: 20px;
+      margin-left: -6px;
+      float: left;
+    }
+
+    .adjustsizenext1 {
+      margin-left: -13px;
+      margin-top: -5px;
+    }
+
+    .adjustsizenext2 {
+      margin-top: -0.5px;
+      margin-left: -3px;
+    }
+
+    .expenseCategory {
+      font-size: 4vw;
+    }
+
+    .expenseCategoryText {
+      font-size: 4vw;
+    }
+
+    .textEntryHolder {
+      padding: 20px;
+      width: 88% !important;
+      height: 100px !important;
+      padding-top: 0px;
+    }
+
+    .fileuploadform {
+      font-size: 4vw;
+    }
+
+    .fileupload {
+      font-size: 4vw;
+    }
+
+    .document {
+      font-size: 4vw;
+    }
+
+    .taxablevalue {
+      font-size: 4vw;
+    }
+
+    .cgstvalue {
+      font-size: 4vw;
+    }
+
+    .igstvalue {
+      font-size: 4vw;
+    }
+
+    .netpayablevalue {
+      font-size: 4vw;
+    }
+
+    .netpayable {
+      font-size: 4px;
+    }
+
+    .documentdate {
+      font-size: 4vw;
+    }
+
+    .documentduedate {
+      font-size: 4vw;
+    }
+
+    .uploadText {
+      font-size: 4vw;
+    }
+
+    .uploadValue {
+      font-size: 4vw;
+    }
+
+    .uploadButton {
+      font-size: 4vw;
+    }
+
+    .documentnumberText {
+      font-size: 4vw;
+    }
+
+    .netpayableText {
+      font-size: 4vw !important;
+    }
+    .documentnumberInput {
+      font-size: 4vw;
+      input {
+        font-size: 4vw;
+      }
+    }
+
+    .documentdateInput {
+      font-size: 4vw;
+    }
+
+    .documentduedateInput {
+      font-size: 4vw;
+    }
+
+    .taxablevalueInput {
+      font-size: 4vw;
+    }
+
+    .taxablevalueInput div:first-child {
+      font-size: 4vw;
+    }
+
+    .cgstvalueInput {
+      font-size: 4vw;
+    }
+
+    .cgstvalueInput div:first-child {
+      font-size: 4vw;
+    }
+
+    .igstvalueInput {
+      font-size: 4vw;
+    }
+
+    .igstvalueInput div:first-child {
+      font-size: 4vw;
+    }
+
+    .documentdateValue {
+      font-size: 4vw;
+    }
+
+    .netpayableValue {
+      font-size: 4vw;
+    }
+
+    .documentduedateValue {
+      font-size: 4vw;
+    }
+
+    .detailsTitle {
+      font-size: 4vw;
+    }
+
+    .expenseCategory {
+      font-size: 4vw;
+    }
+
+    .expenseCategoryText {
+      font-size: 4vw;
+    }
+
+    .expenseCategoryInput {
+      font-size: 4vw;
+    }
+
+    .expenselectionText {
+      font-size: 4vw;
+      margin-left: -35px;
+    }
+
+    .taxablevalueText {
+      font-size: 4vw;
+    }
+
+    .cgstvalueText {
+      font-size: 4vw;
+    }
+
+    .igstvalueText {
+      font-size: 4vw;
+    }
+
+    .documentdateText {
+      font-size: 4vw;
+    }
+
+    .documentduedateText {
+      font-size: 4vw;
+    }
+
+    .NotesInput {
+      font-size: 4vw;
+      height: 75px;
+    }
+
+    .bankExpenseCategorizationTitle {
+      font-size: 4vw;
+      font-size: 4vw;
+    }
+
+    .bankExpenseCategorization {
+      font-size: 4vw;
+      font-size: 4vw;
+    }
+
+    .vendorText {
+      font-size: 4vw;
+      font-size: 4vw;
+    }
+
+    .mandatoryMark {
+      margin-top: 1px;
+      font-size: 4vw;
+    }
+    .mandatoryMark1 {
+      top: 20px;
+    }
+
+    .mandatoryMark2 {
+      top: 20px;
+    }
+
+    .mandatoryMark3 {
+      top: 20px;
+    }
+
+    .mandatoryMark4 {
+      position: relative;
+      top: -4px;
+    }
+
+    .expenselectionText {
+      margin-top: -30px;
+      font-size: 3vw;
+    }
+    .vendorselectionText {
+      margin-top: -35px;
+      font-size: 3vw;
+    }
+    .vendorIcon {
+      margin-top: 15px;
+    }
+
+    .uploadimage {
+      float: right;
+      margin-top: -4vh;
+    }
+    .CategorizationPreviousBox {
+      margin-left: 19px !important;
+    }
+    .mobilecarddocumentname {
+      line-height: 8px !important;
+      font-weight: bolder;
+    }
+    .mobilecarddocumentvalue {
+      line-height: 8px !important;
+      font-weight: bolder;
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 5%, 0);
+    transform: translate3d(0, 5%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}

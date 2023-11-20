@@ -1,0 +1,801 @@
+.mainStack {
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+
+  .mainStack1 {
+    height: 100%;
+    margin: 1rem;
+
+    .userName {
+      text-transform: capitalize;
+      color: #283049;
+      font-weight: 400;
+      font-size: 20px;
+    }
+
+    .initialFont {
+      font-weight: 400;
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #283049;
+    }
+
+    .InvoiceactionStack {
+      justify-content: space-between;
+
+      .iconStack {
+        align-items: center;
+        text-align: center;
+
+        .iconStackText {
+          color: #283049;
+          font-weight: 300;
+          font-size: 12px;
+        }
+      }
+    }
+
+    .greenCards {
+      background-color: #2f9682;
+      border-radius: 16px;
+
+      .greenCardsStack1 {
+        margin: 1rem;
+
+        .cardHead {
+          font-weight: 500;
+          font-size: 16px;
+          color: white;
+        }
+
+        .cardContentStack {
+          width: 100%;
+          justify-content: space-between;
+
+          .cardContentRs {
+            font-weight: 700;
+            font-size: 16px;
+            color: white;
+          }
+
+          .cardContent {
+            font-weight: 300;
+            font-size: 80%;
+            color: white;
+          }
+
+          .cardButton {
+            width: 107px;
+            height: 38px;
+            border-radius: 18px;
+            background-color: #f08b32;
+            // width: 97px;
+            height: 31px;
+
+            &[disabled] {
+              background-color: rgb(165, 162, 162) !important;
+              border-color: rgb(165, 162, 162) !important;
+            }
+
+            .cardButtonTxt {
+              color: white;
+              font-weight: 500;
+              font-size: 2.7vw;
+              text-transform: capitalize;
+            }
+
+            .cardButtonTxtApprove {
+              color: white;
+              font-weight: 500;
+              font-size: 11px;
+              text-transform: capitalize;
+            }
+          }
+        }
+      }
+    }
+
+    .greenCardsStackContainer {
+      margin-top: 28px !important;
+    }
+
+    // recievables
+    .submenuStack {
+      background: #ffffff;
+      box-shadow: 0px 4px 44px rgba(114, 92, 193, 0.15),
+        0px -7px 23px rgba(0, 0, 0, 0.02);
+      border-radius: 16px;
+
+      .submenuStackMain {
+        margin: 1rem;
+
+        .submenuStack1 {
+          width: 100%;
+          justify-content: space-between;
+
+          .viewMore {
+            color: #2f9682;
+            font-weight: 400;
+            font-size: 13px;
+            cursor: pointer;
+            text-transform: underline;
+          }
+
+          .subMenuHead {
+            font-weight: 300;
+            font-size: 13.5px;
+            color: rgba(39, 48, 73, 0.76);
+          }
+        }
+
+        hr {
+          &:last-of-type {
+            display: none !important;
+          }
+        }
+      }
+    }
+
+    // overdue
+    .overdueStack {
+      background: #ffffff;
+      box-shadow: 0px 4px 44px rgba(114, 92, 193, 0.15),
+        0px -7px 23px rgba(0, 0, 0, 0.02);
+      border-radius: 16px;
+
+      .overdueStackMain {
+        margin: 1rem;
+
+        .overduesectionStack {
+          justify-content: space-between;
+        }
+
+        .amount {
+          font-weight: 400;
+          font-size: 20px;
+        }
+
+        .overduebtnStack {
+          align-self: center;
+
+          .overduebtn {
+            background: #ffffff;
+            border: 1px solid #f08b32;
+            box-sizing: border-box;
+            border-radius: 16px;
+            // width: 97px;
+            height: 31px;
+
+            &[disabled] {
+              background-color: rgb(165, 162, 162) !important;
+              border-color: rgb(165, 162, 162) !important;
+
+              .overduebtnTxt {
+                color: #fff !important;
+              }
+            }
+
+            .overduebtnTxt {
+              color: #f08b32;
+              font-weight: 500;
+              font-size: 14px;
+              text-transform: capitalize;
+            }
+          }
+        }
+      }
+    }
+
+    // categorize
+    .categorizeStack {
+      background: #ffffff;
+      box-shadow: 0px 4px 44px rgba(114, 92, 193, 0.15),
+        0px -7px 23px rgba(0, 0, 0, 0.02);
+      border-radius: 16px;
+
+      .categorizeStackMain {
+        margin: 1rem;
+
+        .categorizeHeading {
+          font-weight: 400;
+          font-size: 16px;
+        }
+
+        .categorizeTxt {
+          font-weight: 700;
+          font-size: 14px;
+          color: #5e5e5e;
+        }
+
+        .categorizeamount {
+          font-weight: 700;
+          font-size: 13px;
+          color: #f08b32;
+        }
+
+        .categorizebtnStack {
+          align-items: center;
+
+          .categorizebtn {
+            border: 1px solid #f08b32;
+            box-sizing: border-box;
+            border-radius: 16px;
+            width: 140px;
+            height: 31px;
+            background: #ffffff;
+            white-space: nowrap;
+
+            &[disabled] {
+              background-color: rgb(165, 162, 162) !important;
+              border-color: rgb(165, 162, 162) !important;
+
+              .categorizebtnTxt {
+                color: #fff !important;
+              }
+            }
+          }
+
+          .categorizebtnTxt {
+            font-weight: 400;
+            font-size: 13px;
+            text-align: center;
+            color: #f08b32;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
+}
+
+.chartStack {
+  background: #fafafa;
+  overflow: visible !important;
+  border-radius: 16px;
+
+  .chartStackMain {
+    text-align: center;
+    margin: 1rem;
+    box-shadow: 6px 7px 10px #fafafa, -6px -3px 10px #fafafa;
+    // height: 324px;
+    // width: 279px;
+    border-radius: 16px;
+
+    @media (min-width: 410px) and (max-width: 767px) {
+      .secondchart {
+        height: 271px;
+      }
+
+      .thirdchart {
+        height: 318px;
+      }
+
+      .fourthchart {
+        height: 269px;
+      }
+
+      .fifthchart {
+        height: 318px;
+      }
+    }
+
+    @media screen and (min-width: 375px) and (max-width: 410px) {
+      .secondchart {
+        height: 232px !important;
+      }
+
+      .fourthchart {
+        height: 230px;
+      }
+    }
+
+    @media (min-width: 320px) and (max-width: 374px) {
+      .secondchart {
+        height: 200px !important;
+      }
+
+      .thirdchart,
+      .fifthchart {
+        height: 247px !important;
+
+        canvas {
+          height: 247px !important;
+        }
+      }
+
+      .fourthchart {
+        height: 198px;
+
+        canvas {
+          height: 210px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 410px) and (max-width: 767px) {
+  .firstchart {
+    height: 390px !important;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 410px) {
+  .firstchart {
+    height: 351px !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+  .firstchart {
+    height: 319px !important;
+  }
+}
+
+.chartStack1 {
+  background: #ffffff;
+  overflow: visible !important;
+  border-radius: 16px;
+  // height: 324px !important;
+  // width: 279px !important;
+  margin-top: 1rem !important;
+  box-shadow: 6px 7px 10px #e6e6e6, -6px -3px 10px #e6e6e6 !important;
+
+  .chartStackMain {
+    text-align: center;
+    margin: 1rem;
+  }
+}
+
+.submenuStackContainer {
+  margin: 0px 0px 15px 0px !important;
+}
+
+.graphStack {
+  background-color: white;
+  width: 95%;
+  // height: 60vh;
+  box-shadow: 0px 0px 40px rgba(48, 73, 191, 0.05);
+  border-radius: 16px;
+
+  .graphStackMain {
+    margin: 1.3rem;
+
+    .chartBtnSelect {
+      height: 30px;
+      border: 0.7px solid #c5c5c5;
+      border-radius: 8px;
+      background-color: #c5c5c5;
+      padding: 0;
+
+      .chartBtnText {
+        font-weight: 500;
+        font-size: 13px;
+        color: #283049;
+        text-transform: capitalize;
+        padding: 0 1rem !important;
+      }
+    }
+
+    .chartBtn {
+      height: 30px;
+      border: 0.7px solid #d6d6d6;
+      border-radius: 8px;
+      padding: 0;
+
+      .chartBtnText {
+        font-weight: 500;
+        font-size: 13px;
+        color: rgba(40, 48, 73, 0.8);
+        text-transform: capitalize;
+        padding: 0 1rem !important;
+      }
+    }
+  }
+}
+
+.alertRecievablesStack {
+  max-width: 95%;
+  gap: 60px;
+
+  .alertStack {
+    background-color: white;
+    // height: 35vh;
+    padding: 16px;
+    min-width: 22vw;
+    box-shadow: 0px 0px 40px rgba(48, 73, 191, 0.05);
+    border-radius: 16px;
+    flex: 1;
+
+    .alertStack1 {
+      .greenCardDesktop {
+        background-color: #2f9682;
+        border-radius: 16px;
+        padding: 1rem;
+        justify-content: space-between;
+        margin: 1.3rem 0rem 0rem 0rem;
+      }
+
+      .cardButtonDesktop {
+        // min-width: 100px;
+        // max-height: 26px;
+        min-width: 7vw;
+        background-color: #f08b32;
+        border: 0.670833px solid #f08b32;
+        border-radius: 15.3333px;
+        align-self: center;
+
+        &[disabled] {
+          background-color: rgb(165, 162, 162) !important;
+          border-color: rgb(165, 162, 162) !important;
+        }
+
+        .cardButtonTxtDesktop {
+          font-size: 0.8rem;
+          font-weight: 400;
+          color: white;
+          text-transform: capitalize;
+          font-family: 'Lexend' !important;
+        }
+      }
+
+      .mainStackDesktop {
+        justify-content: center;
+
+        .text1 {
+          font-weight: 300;
+          font-size: 0.9rem;
+          text-transform: capitalize;
+          color: #ffffff;
+        }
+
+        .text2 {
+          font-weight: 600;
+          font-size: 1rem;
+          color: #ffffff;
+        }
+
+        .text3 {
+          font-weight: 200;
+          font-size: 0.9rem;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .receivablesStack {
+    background-color: white;
+    // height: 35vh;
+    padding: 1rem;
+    min-width: 20vw;
+    box-shadow: 0px 0px 40px rgba(48, 73, 191, 0.05);
+    border-radius: 16px;
+
+    .receivablesStackMain {
+      .progressText {
+        padding-top: 0.5rem;
+        font-weight: 400;
+        font-size: 13px;
+        color: #283049;
+      }
+
+      .receivablesStack1 {
+        justify-content: space-between;
+
+        .viewMore {
+          font-weight: 300;
+          font-size: 13px;
+          line-height: 128.91%;
+          display: flex;
+          align-items: center;
+          text-decoration-line: underline;
+          color: #283049;
+          cursor: pointer;
+          text-transform: capitalize;
+        }
+
+        .viewMoreNo {
+          display: none;
+        }
+
+        .dueText {
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 128.91%;
+          display: flex;
+          align-items: center;
+          color: rgba(39, 48, 73, 0.76);
+        }
+      }
+    }
+  }
+}
+
+.bandwidthStack {
+  // background-color: white;
+  // height: 35vh;
+  // box-shadow: 0px 0px 40px rgba(48, 73, 191, 0.05);
+  // border-radius: 16px;
+}
+
+.categorizeStack {
+  background-color: white;
+  // height: 23vh;
+  box-shadow: 0px 0px 40px rgba(48, 73, 191, 0.05);
+  border-radius: 16px;
+
+  .categorizeStackMain {
+    margin: 1rem 2rem;
+
+    .categorizeStackContent {
+      justify-content: space-between;
+      align-items: center;
+
+      .categorizeHeading {
+        font-weight: 400;
+        font-size: 16px;
+      }
+
+      .categorizeTxt {
+        font-weight: 300;
+        font-size: 14px;
+      }
+
+      .categorizeamount {
+        font-weight: 600;
+        font-size: 15px;
+      }
+    }
+
+    .categorizebtnStack {
+      align-items: center;
+
+      .categorizebtn {
+        border: 1px solid #f08b32 !important;
+        box-sizing: border-box;
+        border-radius: 16px;
+        width: 180px;
+        height: 31px;
+        background: #ffffff;
+
+        &[disabled] {
+          background-color: rgb(165, 162, 162) !important;
+          border-color: rgb(165, 162, 162) !important;
+
+          .categorizebtnTxt {
+            color: #fff !important;
+          }
+        }
+      }
+
+      .categorizebtnTxt {
+        font-weight: 400;
+        font-size: 13px;
+        text-align: center;
+        color: #f08b32 !important;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+.categorizeStackDesktop {
+  background-color: white;
+  // height: 35vh;
+  box-shadow: 0px 0px 40px rgba(48, 73, 191, 0.05);
+  border-radius: 16px;
+
+  .categorizeStackMain {
+    margin: 1.3rem;
+
+    .categorizeStackContent {
+      justify-content: space-between;
+      align-items: center;
+      margin: 16px 0px 0px;
+
+      .categorizeHeading {
+        font-weight: 400;
+        font-size: 16px;
+      }
+
+      .categorizeTxt {
+        font-weight: 300;
+        font-size: 14px;
+      }
+
+      .categorizeamount {
+        font-weight: 600;
+        font-size: 15px;
+      }
+    }
+
+    .categorizebtnStackDesktop {
+      align-items: center;
+      margin-top: 2rem;
+
+      .categorizebtn {
+        border: 1px solid #f08b32 !important;
+        box-sizing: border-box;
+        border-radius: 16px;
+        width: 180px;
+        height: 31px;
+        background: #ffffff;
+
+        &[disabled] {
+          background-color: rgb(165, 162, 162) !important;
+          border-color: rgb(165, 162, 162) !important;
+
+          .categorizebtnTxt {
+            color: #fff !important;
+          }
+        }
+      }
+
+      .categorizebtnTxt {
+        font-weight: 400;
+        font-size: 13px;
+        text-align: center;
+        color: #f08b32 !important;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+.revenueStack {
+  background-color: white;
+  // height: 45vh;
+  box-shadow: 0px 0px 40px rgba(48, 73, 191, 0.05);
+  border-radius: 16px;
+  margin-bottom: 24px !important;
+
+  .revenueStackMain {
+    margin: 1.3rem;
+
+    .revenueStack1 {
+      width: 100%;
+      justify-content: space-between;
+
+      .textAmount {
+        font-weight: 500 !important;
+        font-size: 14px !important;
+        text-align: right !important;
+        color: black !important;
+        white-space: nowrap;
+      }
+
+      .textAmount1 {
+        font-weight: 500 !important;
+        font-size: 12px !important;
+        text-align: right !important;
+        color: #444e6c !important;
+        white-space: nowrap;
+      }
+
+      .percentageText {
+        font-weight: 300;
+        font-size: 13px;
+        align-items: center;
+        color: #4aaf05;
+      }
+
+      .percentageTextred {
+        font-weight: 300;
+        font-size: 13px;
+        align-items: center;
+        color: red;
+      }
+
+      .text1 {
+        font-weight: 300;
+        font-size: 14px;
+        align-items: center;
+        color: #273049;
+      }
+
+      .text2 {
+        font-weight: 300;
+        font-size: 11px;
+        align-items: center;
+        color: rgba(40, 48, 73, 0.7);
+      }
+    }
+  }
+}
+
+.currentStatusMain {
+  background-color: white;
+  box-shadow: 0px 0px 40px rgba(48, 73, 191, 0.05);
+  border-radius: 16px;
+  width: 90%;
+  padding: 1rem;
+  margin: 1rem 0 !important;
+
+  .currentStatusStack2 {
+    justify-content: space-between;
+
+    .viewMore {
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 128.91%;
+      display: flex;
+      align-items: center;
+      text-decoration-line: underline;
+      color: #283049;
+      text-transform: capitalize;
+      cursor: pointer;
+    }
+  }
+
+  .greenCardDesktopMainStack {
+    justify-content: space-around;
+    margin: 1.3rem 0 0 0;
+  }
+
+  .greenCardDesktop {
+    background-color: #2f9682;
+    border-radius: 16px;
+    // justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    max-width: 20vw;
+    justify-content: space-around;
+  }
+
+  .mainStackDesktop {
+    width: 60%;
+
+    .text1 {
+      font-weight: 300;
+      font-size: 0.9rem;
+      text-transform: capitalize;
+      color: #ffffff;
+    }
+
+    .text2 {
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 24px;
+      color: #ffffff;
+    }
+
+    .text3 {
+      font-weight: 300;
+      font-size: 11px;
+      color: #ffffff;
+      font-size: 0.9rem;
+    }
+  }
+
+  .cardButtonDesktop {
+    // min-width: 100px;
+    // max-height: 26px;
+    background-color: #f08b32 !important;
+    border: 0.670833px solid #f08b32;
+    border-radius: 15.3333px;
+    align-self: center;
+
+    &[disabled] {
+      background-color: rgb(165, 162, 162) !important;
+      border-color: rgb(165, 162, 162) !important;
+    }
+
+    .cardButtonTxtDesktop {
+      font-size: 0.8rem;
+      color: white;
+      font-weight: 400;
+      text-transform: capitalize;
+      font-family: Lexend !important;
+    }
+  }
+}
+
+.noDataText {
+  font-weight: 300;
+  font-size: 21.3125px;
+  color: #737b8b;
+  text-transform: capitalize;
+  padding-top: 1rem;
+}

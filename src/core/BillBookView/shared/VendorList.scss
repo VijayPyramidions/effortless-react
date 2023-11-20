@@ -1,0 +1,77 @@
+.vendorListContainer.mainVendorComponent {
+    background-color: white;
+    max-height: 75vh;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.vendorList {
+    overflow: scroll;
+    // margin-bottom: 24px;
+}
+
+.vendorOptions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    border-bottom: 1px solid var(--colorDivider);
+    padding: 16px 0;
+    &.selected {
+        color: var(--colorPrimaryButton);
+    }
+    .vendorName {
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .selectedIcon {
+        font-size: 20px;
+        padding-right: 20px;
+    }
+}
+
+.addVendorBtn {
+    color: var(--colorPrimaryButton);
+    font-weight: 500;
+    font-size: 17px;
+    height: 24px;
+}
+
+.addExpenseTriggerContainer {
+    padding: 0 20px;
+    // min-height: 60vh;
+    .headerContainer {
+        position: relative;
+        .headerLabel {
+            font-weight: 400;
+            font-size: 16px;
+        }
+        .headerUnderline {
+            position: absolute;
+            width: 10px;
+            height: 2px;
+            margin-top: 4px;
+            margin-left: 2px;
+            background-color: var(--colorPrimaryButton);
+        }
+    }
+
+    .bodyContainer {
+        display: grid;
+        gap: 20px;
+        margin: 24px 0px;
+    }
+    .primaryButton {
+        border-radius: 20px;
+        padding: 8px 20px;
+        text-align: center;
+        text-transform: none !important;
+        font-size: 14px;
+        width: 70%;
+        font-weight: 500;
+        background-color: var(--colorPrimaryButton);
+        color: var(--colorWhite);
+        margin: auto;
+    }
+}

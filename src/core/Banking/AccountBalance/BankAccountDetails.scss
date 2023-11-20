@@ -1,0 +1,229 @@
+.payments {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+  padding-left: 31px !important;
+  padding-right: 25px !important;
+  padding-top: 10px;
+  width: 100%;
+  height: 100%;
+  &:nth-child(even) {
+    background-color: #f2f2f0;
+  }
+  &:nth-child(odd) {
+    background-color: white;
+  }
+  // :nth-child(0) {
+  //     background-color: #36e3c0 !important;
+  //   }
+  //   :nth-child(1) {
+  //     background-color: #36e3c0 !important;
+  //   }
+  //   :nth-child(2) {
+  //     background-color: #36e3c0 !important;
+  //   }
+}
+.payments2 {
+  padding-left: 31px !important;
+  padding-right: 25px !important;
+  padding-top: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  background: rgba(48, 73, 191, 0.05) !important;
+  &:nth-child(even) {
+    background-color: #f2f2f0;
+  }
+  &:nth-child(odd) {
+    background-color: white;
+  }
+}
+.contentPayments {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+}
+
+.container {
+  border-radius: 25px !important;
+  margin: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+.griditem1 {
+  height: 80% !important;
+  padding: 0rem !important;
+  margin-top: 24px !important;
+  margin-left: 33px !important;
+  margin-right: 30px !important;
+  background-color: white !important;
+  overflow: auto !important;
+  box-shadow: 0px 4px 44px rgba(114, 92, 193, 0.15),
+    0px -7px 23px rgba(0, 0, 0, 0.02) !important;
+  border-radius: 18px !important;
+}
+.gridItemDesktop {
+  padding: 1rem 2rem 0rem 2rem !important;
+  background-color: white !important;
+  height: 100% !important;
+  overflow: auto !important;
+  position: relative;
+}
+.bankContainer {
+  margin-top: 18px !important;
+  margin-left: 18px !important;
+  margin-right: 17px !important;
+  background-color: rgb(47, 150, 130) !important;
+  border-radius: 8px !important;
+}
+.bankContainerAccBal {
+  margin-top: 22px !important;
+  margin-bottom: 30px !important;
+  background-color: rgb(47, 150, 130) !important;
+  border-radius: 8px !important;
+}
+.bankContainerAccBalDesktop {
+  margin-bottom: 5px !important;
+  background-color: rgb(47, 150, 130) !important;
+  border-radius: 8px !important;
+}
+.lastButton {
+  background-color: rgb(240, 139, 50) !important;
+  border-radius: 18px !important;
+  padding: 0.5rem !important;
+  font-weight: 500 !important;
+  width: 100% !important;
+  height: 38px !important;
+  font-size: 14px !important;
+  color: white !important;
+  align-self: center !important;
+  margin: 20px 36px 29px !important;
+  text-transform: capitalize !important;
+}
+
+.lastButtonDesktop {
+  background-color: #f08b32 !important;
+  border-radius: 18px !important;
+  padding: 0.5rem !important;
+  font-weight: 500 !important;
+  width: 40% !important;
+  // height: 38px !important;
+  font-size: 14px !important;
+  color: white !important;
+  align-self: center !important;
+  // margin: 1% 0 1% 65% !important;
+  text-transform: capitalize !important;
+  position: absolute !important;
+  bottom: 5px;
+  left: 30%;
+  right: 30%;
+}
+.accBalMiddleContainer {
+  padding-top: 11px !important;
+  padding-bottom: 13px !important;
+  background: #401e01 !important;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 8px !important;
+  margin-bottom: 11px !important;
+}
+.accBalMiddleContainerDesktop {
+  //     padding-top: 11px !important;
+  //     padding-bottom: 13px !important;
+  //     background: #401E01 !important;
+  // box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.1) !important;
+  // border-radius: 8px !important;
+  // margin-bottom: 11px !important;
+  display: none;
+}
+.paymentsAccBal {
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+}
+.amtRed {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 10%;
+  color: #e6492d;
+  padding-top: 0%;
+}
+.amtGreen {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 10%;
+  color: #34aa44;
+}
+.dataGridForAccBal {
+  // overflow: auto;
+  height: 337px;
+  padding-top: 13px;
+}
+.dataGridForAccBalMobile {
+  overflow: auto;
+  height: 380px;
+  padding-top: 13px;
+}
+.dataGrid {
+  overflow: auto;
+  height: 380px;
+  padding-top: 13px;
+}
+.dataGridDesktop {
+  overflow: auto;
+  height: 100%;
+  padding-top: 13px;
+}
+.heightCss {
+  height: 100%;
+
+  width: 100%;
+}
+.heightCssDesktop {
+  height: 100%;
+  width: 100%;
+}
+
+.accBalanc {
+  padding-bottom: 0px;
+
+  margin-left: 20px;
+
+  margin-right: 16px;
+}
+
+.accBalancDesk {
+  padding-bottom: 0px;
+
+  margin-left: 20px;
+
+  margin-right: 16px;
+  height: 100%;
+}
+.height {
+  height: 100%;
+  width: 100%;
+}
+
+.markSubmit {
+  background-color: #f08b32 !important;
+  border-radius: 18px !important;
+  padding: 0.5rem !important;
+  font-weight: 500 !important;
+  width: 81% !important;
+  height: 38px !important;
+  font-size: 14px !important;
+  color: white !important;
+  align-self: center !important;
+  margin: 20px 36px 29px !important;
+  text-transform: capitalize !important;
+  position: fixed !important;
+  bottom: 0 !important;
+}
+.repeatIcon{
+  margin-left: 12px;
+  align-self: self-end;
+}

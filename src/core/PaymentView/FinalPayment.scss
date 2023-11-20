@@ -1,0 +1,163 @@
+.CardComponent {
+  margin-top: 10px !important;
+  box-shadow: none !important;
+  border-radius: 0px !important;
+  padding: 10px;
+  // height: 70vh;
+  overflow: auto !important;
+  .LeftSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Img {
+    height: 160px;
+    width: 160px;
+    margin-top: 20px;
+  }
+  .head {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 35px;
+    line-height: 30px;
+    text-align: center;
+    color: #283049;
+  }
+  .subhead {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgba(40, 48, 73, 0.51);
+  }
+  .btnhead {
+    margin-top: 40px;
+    .btn {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      font-size: 13px;
+      color: #fff;
+      width: auto;
+      height: 15px;
+      background: #f08b32;
+      border-radius: 28px;
+      text-transform: capitalize;
+    }
+  }
+  .link {
+    font-size: 12px;
+    text-decoration: underline;
+    margin-top: 10px;
+  }
+  .divider {
+    background-color: #d6d6d6 !important;
+    width: 1px !important;
+    margin-left: 25px;
+    margin-right: 27px;
+    height: 60vh;
+    margin-top: 32px;
+  }
+  .RightSide {
+    height: 51vh;
+    overflow: auto;
+    margin-top: 60px !important;
+    .Box {
+      padding: 10px;
+      background: #ffffff;
+      border-radius: 3px;
+      width: auto;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      z-index: -1;
+      .BoxHead {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 25px;
+        display: flex;
+        align-items: center;
+        color: #2e3a59;
+      }
+      .BoxSubHead {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        color: #6e6e6e;
+      }
+      .BoxAmount {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 28px;
+        display: flex;
+        align-items: center;
+        color: #2e3a59;
+      }
+      .ImgHead {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        .BoxImg {
+          width: 20px;
+        }
+      }
+      .BoxSuccess {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 25px;
+        /* identical to box height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: capitalize;
+        color: #00a676;
+      }
+      .BoxFailed {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 25px;
+        /* identical to box height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: capitalize;
+        color: #FF0000;
+      }
+      .BoxProcessing {
+        font-family: 'Lexend';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 25px;
+        /* identical to box height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: capitalize;
+        color: #F08B32;
+      }
+    }
+  }
+}

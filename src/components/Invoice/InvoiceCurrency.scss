@@ -1,0 +1,157 @@
+.head {
+  font-family: 'Lexend' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 18px !important;
+  display: flex;
+  align-items: center;
+  color: #6e6e6e;
+}
+.icon {
+  color: #f08b32;
+  cursor: pointer;
+}
+.businessAddress {
+  margin-left: -8px !important;
+  padding-right: 16px !important;
+  min-width: 100% !important;
+}
+.businessLoc {
+  font-family: 'Lexend';
+  font-style: normal;
+  color: #6e6e6e !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  line-height: 15px !important;
+  display: flex;
+  align-items: center;
+}
+.checkbox {
+  //   background-color: #f08b32 !important;
+  color: #f08b32 !important;
+}
+.addressDiv {
+  display: flex;
+  border: 1px solid;
+  width: 100%;
+  overflow: auto;
+  border: 1px solid #a0a4af;
+  border-radius: 8px !important;
+  margin: 15px 0;
+}
+.addressDivScroll {
+  display: flex;
+  width: 100%;
+  overflow: auto;
+  border-radius: 8px !important;
+  margin: 15px 0;
+
+  .inner {
+    margin: 0 15px;
+    min-width: calc(100% - 30px);
+  }
+  .addressDiv {
+    display: flex;
+    border: 1px solid;
+    // width: 100%;
+    // overflow: auto;
+    border: 1px solid #a0a4af;
+    border-radius: 8px !important;
+    margin: 15px 0;
+  }
+}
+.checkboxtxt {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  line-height: 15px !important;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #6e6e6e;
+}
+.swipe {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 300 !important;
+  font-size: 12px !important;
+  line-height: 15px !important;
+  color: #6e6e6e;
+  margin-bottom: 10px !important;
+  margin-top: 20px !important;
+}
+.chip {
+  // background-color: #f08b32 !important;
+  background: none !important;
+  color: #f08b32 !important;
+}
+.chipForOthers {
+  background-color: #9a9a9a !important;
+  color: #ffffff !important;
+}
+.btnCenter {
+  font-family: 'Lexend', sans-serif !important;
+  color: #f08b32 !important;
+  border: 1px solid #f08b32 !important;
+  border-radius: 30px !important;
+  padding: 10px !important;
+  text-transform: capitalize !important;
+  margin-bottom: 10px !important;
+  font-weight: 300 !important;
+}
+.btnContain {
+  color: #ffffff !important;
+  background-color: #f08b32 !important;
+  border-radius: 20px !important;
+  padding: 10px !important;
+  text-transform: capitalize !important;
+  font-family: 'Lexend', sans-serif !important;
+  font-weight: 400 !important;
+}
+.btnOutline {
+  color: #f08b32 !important;
+  border: 1px solid #f08b32 !important;
+  border-radius: 20px !important;
+  padding: 5px !important;
+  text-transform: capitalize !important;
+  font-family: 'Lexend', sans-serif !important;
+  font-weight: 400 !important;
+}
+.btnContainPeople {
+  color: #ffffff !important;
+  background-color: #f08b32 !important;
+  border-radius: 20px !important;
+  padding: 10px 30px !important;
+  text-transform: capitalize !important;
+  font-family: 'Lexend' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  white-space: nowrap;
+  margin-left: 20px !important;
+}
+.btnOutlinePeople {
+  color: #f08b32 !important;
+  border: 1px solid #f08b32 !important;
+  border-radius: 20px !important;
+  padding: 10px 15px !important;
+  text-transform: capitalize !important;
+  font-family: 'Lexend' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+  white-space: nowrap;
+}
+.errorText {
+  color: rgb(216, 0, 12);
+  font-size: 10px;
+  padding-left: 8px;
+  margin: 0;
+}
+.contactIcon {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+}

@@ -1,0 +1,291 @@
+.custompopupsButtons {
+  border-radius: 8px !important;
+  // border: 1px solid #d8d8d8 !important;
+  border: 1px solid #6e6e6e !important;
+  background: #fff !important;
+  padding: 4px 8px !important;
+  text-transform: capitalize !important;
+  // color: #a0a4af !important;
+  color: #6e6e6e !important;
+  text-align: center !important;
+  font-family: 'Lexend', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: normal !important;
+  white-space: nowrap !important;
+
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: center;
+  // align-items: center;
+  // position: relative;
+  // background: #ffffff !important;
+  // border-radius: 18px;
+  // text-align: center;
+  // color: #a0a4af !important;
+  // flex: none;
+  // order: 0;
+  // flex-grow: 0;
+  // min-width: auto;
+
+  &:hover {
+    cursor: pointer;
+    background: #f08b32 !important;
+    color: #ffffff !important;
+    border: 1px solid #ffffff !important;
+  }
+}
+
+.radioLabel {
+  color: #283049;
+  font-family: 'Lexend', sans-serif !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.radioColor {
+  color: #d8d8d8 !important;
+}
+
+.custompopupsButtonsSelected {
+  background: #f08b32 !important;
+  color: #ffffff !important;
+  border: 1px solid #ffffff !important;
+}
+
+.customButtonHolder {
+  padding: 5px;
+}
+
+.optionButtons {
+  margin-left: 18px !important;
+  margin-bottom: 8px !important;
+}
+
+.radioOption {
+  border-bottom: 1px solid rgba(199, 199, 199, 0.5) !important;
+  font-size: 16px !important;
+  font-family: 'Lexend' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 10px !important;
+  color: #283049 !important;
+  text-align: left !important;
+  word-break: break-all !important;
+  // width: 100% !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: unset !important;
+}
+
+.popupTitle,
+.purposepopupTitle {
+  margin-left: 20px !important;
+  margin-top: 8px !important;
+  color: #283049;
+  font-family: 'Lexend', sans-serif !important;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.374px;
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 10px;
+    height: 2px;
+    border-radius: 4px;
+    background: #f08b32;
+    position: absolute;
+    bottom: 0;
+    left: 2px;
+  }
+}
+
+.popupSubTitle {
+  font-family: 'Lexend', sans-serif !important;
+  color: #283049;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300 !important;
+  line-height: normal;
+  margin-left: 20px !important;
+  margin-top: 8px !important;
+}
+
+// .purposepopupTitle {
+//   font-family: 'Lexend';
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 1.2vw;
+//   line-height: 20px;
+//   letter-spacing: 0.374px;
+//   color: #283049;
+//   margin-left: 20px !important;
+//   margin-top: 30px !important;
+// }
+
+.purposepopupSubTitle01 {
+  color: #283049;
+  font-family: 'Lexend', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+  margin: 36px 0 8px 20px !important;
+}
+
+.purposepopupSubTitle02 {
+  color: #283049;
+  font-family: 'Lexend', sans-serif !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: normal !important;
+  margin-left: 20px !important;
+}
+
+.optionsbuttonHolder {
+  padding: 10px;
+}
+
+#purposeGroup {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 500;
+  padding: 10px;
+  font-size: 0.9vw;
+}
+
+[aria-labelledby='purposeGroup'] label {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9vw;
+  padding-left: 20px;
+  color: #283049;
+}
+
+[aria-labelledby='locationGroup'] label {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9vw;
+  padding-left: 20px;
+  color: #283049;
+}
+
+.popupNameButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px 4px;
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9vw;
+  float: right;
+  text-transform: capitalize;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 600px) {
+  .popupTitle {
+    font-size: 3vw !important;
+  }
+
+  .popupSubTitle {
+    font-size: 3vw !important;
+  }
+
+  .custompopupsButtons {
+    border-radius: 4px !important;
+    border: 1px solid #d8d8d8 !important;
+    padding: 4px 8px !important;
+    color: #a0a4af !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+  }
+
+  .custompopupsButtonsSelected {
+    color: #fff !important;
+    border: none !important ;
+  }
+  .purposepopupTitle {
+    font-size: 3vw !important;
+  }
+
+  .purposepopupSubTitle01 {
+    font-size: 3vw !important;
+  }
+
+  .purposepopupSubTitle02 {
+    font-size: 3vw !important;
+  }
+
+  [aria-labelledby='purposeGroup'] label {
+    font-size: 3vw !important;
+  }
+
+  [aria-labelledby='purposeGroup'] label span {
+    font-size: 3vw !important;
+  }
+
+  [aria-labelledby='locationGroup'] label {
+    font-size: 3vw !important;
+  }
+
+  [aria-labelledby='locationGroup'] label span {
+    font-size: 3vw !important;
+  }
+
+  .popupNameButton {
+    font-size: 3vw;
+  }
+}
+
+.mainStack {
+  overflow: auto;
+  .listStack {
+    // position: absolute;
+    top: 91px;
+    width: 95%;
+    .list {
+      position: relative;
+      overflow: auto;
+      .divider {
+        width: 95%;
+      }
+    }
+  }
+}
+.mainStackDesktop {
+  overflow: auto;
+  .listStackDesktop {
+    // position: absolute;
+    top: 91px;
+    width: 95%;
+    .listDesktop {
+      position: relative;
+      overflow: auto;
+      .dividerDesktop {
+        // width: 95%;
+      }
+    }
+  }
+}
+
+.bodyText {
+  color: #283049;
+  font-family: 'Lexend', sans-serif !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}

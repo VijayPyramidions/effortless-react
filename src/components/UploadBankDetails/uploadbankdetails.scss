@@ -1,0 +1,504 @@
+.holdonwrapper {
+  width: 498px;
+
+  .uploadfiles.HoldOn {
+    background-color: #ffffff !important;
+    padding: 24px 32px;
+    border-radius: 8px;
+  }
+  .paytitle {
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #f08b32;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .paymsg {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.374px;
+    color: #283049;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .paydiscription {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: -0.011em;
+    color: #283049;
+    padding: 0 5px;
+    margin-bottom: 32px;
+  }
+
+  .paybtnwrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 8px;
+
+    .paybtnno {
+      background: #ffffff;
+      border: 0.7px solid #f08b32;
+      border-radius: 36px;
+      font-family: 'Lexend', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.374px;
+      color: #f08b32;
+      padding: 9px 40px;
+      text-transform: capitalize;
+    }
+
+    .paybtnyes {
+      background: #f08b32;
+      border-radius: 36px;
+      font-family: 'Lexend', sans-serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.374px;
+      color: #ffffff;
+      padding: 9px 32px 9px 33px;
+      text-transform: capitalize;
+    }
+  }
+
+  .successwrap.contsucc {
+    background-color: #ffffff !important;
+    box-shadow: 0px 4px 44px rgba(114, 92, 193, 0.1),
+      0px -7px 23px rgba(0, 0, 0, 0.02) !important;
+    border-radius: 18px !important;
+    padding: 32px 0;
+
+    .successanimation {
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      margin-bottom: 32px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .uploadmsg {
+      font-family: 'Lexend', sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 32px;
+      text-align: center;
+      color: #283049;
+      margin-bottom: 16px;
+    }
+
+    .uploaddesc {
+      font-family: 'Lexend', sans-serif;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+      color: #6e6e6e;
+      margin: 0 70px;
+    }
+  }
+}
+
+.FileUpload {
+  .payuploadcontainer {
+    background: #f1f0f0;
+    border: 1.82299px dashed rgba(153, 158, 165, 0.53);
+    border-radius: 10px;
+    padding: 36.13px 24px 24px 24px;
+    display: grid;
+    place-items: center;
+
+    .payvendortext {
+      font-family: 'Lexend', sans-serif;
+      font-size: 20px;
+      line-height: 25px;
+      color: #000000;
+      margin-top: 32.12px;
+      margin-bottom: 12px;
+    }
+
+    .paydroptext {
+      font-family: 'Lexend', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: rgba(0, 0, 0, 0.4);
+      margin-bottom: 32px;
+    }
+
+    .paybrowsebtn {
+      font-family: 'Lexend', sans-serif;
+      background: #f08b32;
+      border-radius: 18px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 18px;
+      text-align: center;
+      color: #ffffff;
+      opacity: 0.9;
+      padding: 7px 47px 8px 47px;
+      text-transform: capitalize;
+    }
+  }
+
+  .paytempdownload {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #f08b32;
+    margin-bottom: 32px;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-transform: capitalize;
+    width: 190px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .payhdiscription_1,
+  .paydiscription_1 {
+    font-family: 'Lexend', sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #6e6e6e;
+  }
+
+  .paydiscription_1 {
+    margin-bottom: 40px;
+  }
+
+  .payhdiscription_1 {
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  .paysavebtn {
+    &:hover {
+      background-color: #f08b32 !important;
+    }
+    background: #f08b32;
+    border-radius: 28px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #ffffff;
+    padding: 14px 0;
+    text-transform: capitalize;
+  }
+
+  .filenamewrap {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #d8d8d8;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    .clearFile {
+      position: absolute;
+      right: -10px;
+      top: -12px;
+      display: flex;
+      justify-content: center;
+      background: #f4f4f4;
+      border-radius: 50%;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .fileicon {
+      width: 40px;
+      border-right: 1px solid #d8d8d8;
+      padding: 7px;
+    }
+    .filenmprogwrap {
+      flex: 1;
+      padding-left: 8px;
+      padding-right: 8px;
+
+      .filename {
+        text-align: center;
+        margin-bottom: 5px;
+      }
+      .progress_1 {
+        height: 5px;
+        border-radius: 4px;
+        background-color: #062aa1;
+      }
+
+      .progress {
+        width: 100%;
+        height: 5px;
+        border-radius: 4px;
+        background-color: #b0b3bb;
+      }
+
+      .percentage {
+        text-align: end;
+        font-size: 12px;
+      }
+    }
+  }
+}
+.msgpopupwrap {
+  background: #ffffff;
+  // box-shadow: 0px 0px 0px 2px #f08b32, 0px 40px 34px -16px rgba(0, 0, 0, 0.08),
+  //   0px 6px 4px -4px rgba(0, 0, 0, 0.06),
+  //   0px 16px 16px -8px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  border: 1px solid #f08b32;
+  border-radius: 12px;
+  padding: 16px;
+  width: 494px;
+
+  .msgpopuptitle {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #283049;
+    margin-bottom: 12px;
+  }
+  .msgpopupdesc {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.011em;
+    color: #283049;
+    margin-bottom: 20px;
+  }
+
+  .msgbtnwrap {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .msgnobtn {
+      background: #ffffff;
+      border: 0.7px solid #f08b32;
+      border-radius: 36px;
+      font-family: 'Lexend', sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.374px;
+      color: #f08b32;
+      padding: 9px 63px 9px 62px;
+      text-transform: capitalize;
+    }
+
+    .msgyesbtn {
+      background: #f08b32;
+      border: 0.7px solid #f08b32;
+      border-radius: 36px;
+      font-family: 'Lexend', sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.374px;
+      color: #ffffff;
+      padding: 9px 61px 9px 60px;
+      text-transform: capitalize;
+    }
+  }
+}
+
+// =============== Mobile CSS Start ==================== //
+
+.headupcontainer {
+  padding: 16px 24px;
+
+  .baricon {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 4px;
+    background: rgba(196, 196, 196, 0.51);
+    border-radius: 7px;
+    margin-bottom: 16px;
+  }
+
+  .headupwrap {
+    .headuptitle {
+      font-family: 'Lexend', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #f08b32;
+      margin-bottom: 23.69px;
+    }
+
+    .headupdesc,
+    .headupinfo {
+      font-family: 'Inter', sans-serif !important;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      color: #283049;
+    }
+    .headupdesc {
+      margin-bottom: 12px;
+    }
+    .headupinfo {
+      margin-bottom: 28.68px;
+    }
+
+    .headupbtnwrap {
+      flex-direction: row;
+      justify-content: space-between;
+
+      .headupnobtn {
+        background: #ffffff;
+        border: 0.7px solid #f08b32;
+        border-radius: 36px;
+        font-family: 'Lexend', sans-serif;
+        padding: 9px 16px;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: capitalize;
+        letter-spacing: 0.374px;
+        font-weight: 300;
+        color: #f08b32;
+      }
+
+      .headupyesbtn {
+        background: #f08b32;
+        border: 0.7px solid #f08b32;
+        border-radius: 36px;
+        font-family: 'Lexend', sans-serif;
+        padding: 9px 12px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.374px;
+        text-transform: capitalize;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .fileuploadwrap {
+    margin-left: -4px;
+    margin-right: -4px;
+
+    .paytitle {
+      font-family: 'Lexend', sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      color: #f08b32;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .paymsg {
+      font-family: 'Lexend', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #283049;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+  }
+
+  .uploadsuccwrap {
+    .successanimation {
+      width: 150px;
+      height: 150px;
+      margin-bottom: 16px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .uploadmsg {
+      font-family: 'Lexend', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #f08b32;
+      margin-bottom: 20px;
+    }
+
+    .uploaddesc {
+      font-family: 'Lexend', sans-serif;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+      font-style: normal;
+      font-weight: 400;
+      color: #6e6e6e;
+      margin-bottom: 8px;
+    }
+  }
+
+  .msgwrap {
+    .msgtitle {
+      font-family: 'Lexend', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #f08b32;
+      margin-bottom: 23.3px;
+    }
+
+    .msgupdesc {
+      font-family: 'Inter', sans-serif !important;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: -0.011em;
+      color: #283049;
+      margin-bottom: 24.93px;
+    }
+
+    .msgbtnwrap {
+      flex-direction: row;
+      justify-content: space-between;
+
+      .msgnobtn {
+        background: #ffffff;
+        border: 0.7px solid #f08b32;
+        border-radius: 36px;
+        font-family: 'Lexend', sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.374px;
+        color: #f08b32;
+        padding: 9px 63px 9px 62px;
+        text-transform: capitalize;
+      }
+
+      .msgyesbtn {
+        background: #f08b32;
+        border: 0.7px solid #f08b32;
+        border-radius: 36px;
+        font-family: 'Lexend', sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.374px;
+        color: #ffffff;
+        padding: 9px 61px 9px 60px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}

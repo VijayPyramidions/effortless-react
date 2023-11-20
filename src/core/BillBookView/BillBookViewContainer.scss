@@ -1,0 +1,312 @@
+.billBookViewContainerDesktop {
+  animation: fadeInUp;
+  animation-duration: 1s;
+}
+.billBookViewContainer {
+  background-color: var(--colorGreyBg);
+  width: 100%;
+  overflow: auto;
+  animation: fadeInUp;
+  animation-duration: 1s;
+  .header {
+    margin: 20px;
+    .valueHeader {
+      font-size: 20px;
+    }
+    .headerUnderline {
+      width: 10px;
+      height: 2px;
+      margin-top: 4px;
+      margin-left: 2px;
+      background-color: var(--colorPrimaryButton);
+    }
+  }
+  .card {
+    background: var(--colorWhite);
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    padding: 20px 16px;
+    margin: 32px 20px;
+    .listItem {
+      display: grid;
+      grid-template-columns: 50px 1fr auto;
+      border-bottom: 0.5px solid var(--colorDivider);
+      margin-bottom: 12px;
+      padding-bottom: 12px;
+      &:last-child {
+        border: none;
+        margin: 0;
+        padding: 0;
+      }
+      .icon {
+        .iconImg {
+          width: 35%;
+          height: 35%;
+          background: var(--colorGreyBg);
+          padding: 12px;
+          border-radius: 50%;
+        }
+      }
+      .content {
+        padding-left: 4px;
+        padding-right: calc(min(32px, 10%));
+        .title {
+          font-size: 14px;
+          font-weight: 500;
+          color: var(--colorTitle);
+        }
+        .desc {
+          color: #9f9fae;
+          font-size: 13px;
+          margin-top: 4px;
+          font-weight: 300;
+        }
+      }
+      .arrow {
+        font-size: 16px;
+        color: var(--colorGrey);
+        align-self: center;
+      }
+    }
+  }
+}
+
+.haveBillDialogBody {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  color: var(--colorTitle);
+  .rowItem {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    &:not(:last-child) {
+      border-bottom: 0.5px solid var(--colorDivider);
+    }
+  }
+}
+
+.withGstDialogBody {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  color: var(--colorTitle);
+  .rowItem {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 6px;
+    padding-bottom: 20px;
+    &:not(:last-child) {
+      border-bottom: 0.5px solid var(--colorDivider);
+    }
+    .text,
+    .desc {
+      padding-left: 12px;
+    }
+    .desc {
+      grid-column: 2/2;
+      font-size: 12px;
+    }
+  }
+}
+.note {
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 17px;
+  color: #9f9fae;
+  text-align: center;
+}
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  .primary {
+    background: #f08b32;
+    border-radius: 18px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 30px;
+    &:not(.disable):hover {
+      background: #f08b32 !important;
+      box-shadow: none !important;
+    }
+  }
+  .googleSignInBill {
+    width: 45vw;
+    height: auto;
+  }
+}
+
+.stack1 {
+  // width: 47%;
+  height: auto;
+  padding: 16px 16px 28px;
+  box-shadow: 0px 2px 12px 1px rgba(0, 0, 0, 0.09);
+  border-radius: 16px;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  img {
+    padding: 12px 12px 20px;
+  }
+  .imgText {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: #283049;
+    text-transform: capitalize;
+  }
+  .yourBillsMain {
+  }
+  .expenseMain {
+    background-color: white;
+  }
+  .utilityMain {
+    background-color: white;
+  }
+  .billsqueueMain {
+    background-color: white;
+  }
+}
+.stack2 {
+  width: 100%;
+  height: auto;
+  padding: 13px;
+  margin-left: 17px;
+  justify-content: center;
+  box-shadow: 0px 2px 12px 1px #00000017;
+  border-radius: 16px;
+  background-color: white;
+  margin-bottom: 16px !important;
+  margin-top: 16px !important;
+  .connectTextStack {
+    padding: 0px 20px;
+    justify-content: space-between;
+    .connectTextTitle {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 25px;
+      color: #283049;
+      margin-bottom: 10px;
+    }
+    .connectText {
+      font-weight: 300;
+      font-size: 14px;
+      color: #283049;
+      width: 50%;
+      display: flex;
+      flex-flow: column;
+    }
+    .connectTextBtn {
+      // width: 191px;
+      height: 36px;
+      background: #f08b32;
+      border-radius: 18px;
+      align-self: center;
+
+      .connectTextBtnText {
+        font-weight: 500;
+        font-size: 12px;
+        text-align: center;
+        color: #ffffff;
+        opacity: 0.9;
+      }
+    }
+    .googleSignInBill {
+      width: 15vw;
+      height: auto;
+      cursor: pointer;
+      transition: 0.5s;
+      // box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+.rightbillsqueueMain {
+  // width: 92%;
+  margin: 0rem 0rem 1rem 2rem;
+  min-height: 65vh;
+  box-shadow: 0px 2px 12px 1px #00000017;
+  border-radius: 16px;
+  background-color: white;
+
+  .rightbillsqueueStack {
+    margin: 1.5rem;
+    .heading {
+      font-weight: 400;
+      font-size: 20px;
+      color: #283049;
+    }
+
+    .cardStack {
+      // min-height: 65vh;
+      padding: 5px 8px;
+      .card {
+        // width: 26rem;
+        background: #2f9682;
+        border-radius: 16px;
+        .carddivmain {
+          padding: 0.7rem;
+          .carddivmainstack {
+            justify-content: space-between;
+            align-content: flex-start;
+            .cardtext1 {
+              // white-space: nowrap;
+              font-weight: 300;
+              font-size: 14px;
+              color: #ffffff;
+            }
+            .cardtext3 {
+              font-weight: 300;
+              font-size: 13px;
+              color: #ffffff;
+            }
+            .cardtext2stack {
+              justify-content: space-evenly;
+              width: 9rem;
+              align-items: center;
+              .cardtext2 {
+                font-weight: 500;
+                font-size: 14px;
+                color: #ffffff;
+              }
+            }
+            .cardtext4stack {
+              justify-content: space-evenly;
+              width: 14rem;
+              align-items: center;
+              .cardtext4 {
+                font-weight: 250;
+                font-size: 10px;
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10%, 0);
+    transform: translate3d(0, 10%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}

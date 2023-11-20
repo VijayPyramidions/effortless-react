@@ -1,0 +1,138 @@
+.paynowContainer {
+  margin: 0;
+  height: 65px;
+  // z-index: 1;
+  display: flex;
+  border-radius: 14px;
+  box-shadow: 0px 4px 44px rgba(114, 92, 193, 0.15),
+    0px -7px 23px rgba(0, 0, 0, 0.02);
+  .subContainer {
+    height: 100%;
+    z-index: 2;
+    border-radius: 14px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0px 4px 44px rgba(114, 92, 193, 0.15),
+      0px -7px 23px rgba(0, 0, 0, 0.02);
+    div {
+      padding: 0 0 0 18px;
+    }
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .subTitle {
+    margin-top: 2px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .paynow {
+    width: 30%;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+}
+.active {
+  background-color: var(--colorPrimaryButton);
+}
+.disable {
+  background: rgba(240, 139, 50, 0.56);
+}
+.btn1 {
+  width: 117px !important;
+  height: 40px !important;
+  background: #ffffff !important;
+  box-shadow: 0px 12.2096px 17.4423px #0000001a !important;
+  border-radius: 31.3962px !important;
+  color: #f08b32 !important;
+  &:hover {
+    background-color: #fff !important;
+  }
+}
+.payStackDesktop {
+  justify-content: space-between;
+  // margin: 1rem;
+  align-items: center;
+  // position: absolute;
+  bottom: 1.5rem;
+  width: 100%;
+  background-color: #00a676;
+  animation: fadeInUp 1s;
+
+  .btn {
+    width: 117px;
+    height: 40px;
+    background: #ffffff;
+    box-shadow: 0px 12.2096px 17.4423px #0000001a;
+    border-radius: 31.3962px;
+    color: #00a676;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
+.payStackDesktops {
+  justify-content: space-between;
+  margin: 1rem;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  .btn {
+    width: 117px;
+    height: 40px;
+    background: #ffffff;
+    box-shadow: 0px 12.2096px 17.4423px #0000001a;
+    border-radius: 31.3962px;
+    color: #00a676;
+  }
+}
+.transactionBtn {
+  width: 100%;
+  margin: 12px 0 20px;
+  button {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #d8d8d8;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    padding: 12px 16px;
+    text-align: left;
+    justify-content: space-between;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 5%, 0);
+    transform: translate3d(0, 5%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}

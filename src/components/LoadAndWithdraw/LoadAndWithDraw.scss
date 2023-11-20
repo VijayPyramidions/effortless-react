@@ -1,0 +1,101 @@
+.mainCss{
+    width: 90%;
+    padding: 0 5%;
+    .headerContainer {
+      position: relative;
+      .headerLabel {
+        font-family: 'Lexend' !important;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        text-transform: capitalize;
+        margin: 0;
+      }
+      .headerUnderline {
+          position: absolute;
+          width: 10px;
+          height: 2px;
+          margin-top: 4px;
+          margin-left: 2px;
+          background-color: var(--colorPrimaryButton);
+      }
+  }
+    .optionsWrapper {
+        list-style-type: none !important;
+        margin: 0;
+        padding: 0;
+        color: #273049;
+        .items {
+          padding: 5px;
+          max-height: 45vh;
+          min-height: auto;
+          overflow: auto;
+          width: 100%;
+          // border-bottom: 0.5px solid var(--colorMainLight);
+        }
+      }
+      .bankDetails{
+        display: flex;
+    justify-content: space-between;
+    // width: 15rem;
+    align-items: center;
+    gap: 10px;
+    .buisnessCss{
+      background: #F08B32;
+      color: #fff;
+      text-transform: capitalize;
+      padding: 2px 10px;
+      border-radius: 8px;
+      margin: 0;
+    }
+    .personalCss{
+      background: #00A676;
+      color: #fff;
+      text-transform: capitalize;
+      padding: 2px 10px;
+      border-radius: 8px;
+      margin: 0;
+    }
+      }
+      .btnField{
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .proceedBtn {
+        width: 270px;
+        background-color: #f08b32;
+        border-radius: 18px;
+        height: 38px;
+        cursor: pointer;
+        &:hover {
+          background-color: #f08b32;
+      }
+        .proceedBtnText {
+          color: #ffffff;
+          text-transform: uppercase;
+          font-weight: 500;
+          font-size: 14px;
+        }
+      }
+      .addAccBtn {
+        width: 270px;
+        border-radius: 18px;
+        height: 38px;
+        border: 1px solid #f08b32 !important;
+        box-sizing: border-box;
+        background: #fff !important;
+        cursor: pointer;
+        &:hover {
+          background-color: #fff;
+      }
+        .addAccText {
+          color: #f08b32 !important;
+          text-transform: uppercase;
+          font-weight: 500;
+          font-size: 14px;
+        }
+      }
+}

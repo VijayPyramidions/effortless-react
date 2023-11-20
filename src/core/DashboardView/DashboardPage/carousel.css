@@ -1,0 +1,36 @@
+.carousel-status {
+  display: none;
+}
+.carousel-root.carousel {
+  height: 85vw;
+  margin-bottom: 24px;
+}
+
+.control-arrow.control-next {
+  display: none;
+}
+
+.control-arrow.control-prev {
+  display: none;
+}
+
+.carousel.carousel-slider {
+  padding-bottom: 20px;
+}
+
+.control-dots {
+  bottom: -13px !important;
+}
+
+.carousel .control-dots .dot {
+  margin: 0 4px 0 0;
+}
+
+.dot.selected {
+  background: #f08b32 !important;
+  box-shadow: none !important;
+}
+.dot {
+  background: #f7c598 !important;
+  box-shadow: none !important;
+}

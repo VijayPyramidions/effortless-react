@@ -1,0 +1,209 @@
+.inboxContainer {
+  min-width: 100%;
+  min-height: 100%;
+  background-color: white;
+  .tabsWrapper {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+    .tabsStyle {
+      border-bottom: 4px solid #e8e8e8;
+      margin-bottom: 20px;
+    }
+    .activeTab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #f08b32;
+      width: 50%;
+      min-width: 50%;
+      font-size: 15;
+    }
+    .deactiveTab {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #b9b9b9;
+      width: 50%;
+      min-width: 50%;
+      font-size: 15;
+    }
+  }
+}
+.notificationsContainer {
+  background-color: white;
+}
+
+.actionsContainer {
+  background-color: white;
+}
+
+.styledDrawerWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 10px;
+  .styledDrawerHeader {
+    height: 5px;
+    width: 20%;
+    background-color: #c4c4c482;
+    align-self: center;
+    border-radius: 50px;
+    .list {
+      overflow: scroll;
+      .categoryOptions {
+        margin: 0 20px;
+        border-bottom: 1px solid var(--colorDivider);
+        padding: 16px 0;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .categoryOptionsLast {
+        margin: 0 20px;
+        padding: 16px 0;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+.categoryOptions {
+  margin: 0 20px;
+  border-bottom: 1px solid var(--colorDivider);
+  padding: 16px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+.categoryOptionsLast {
+  margin: 0 20px;
+  padding: 16px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+.list {
+  overflow: scroll;
+}
+
+.headerLabel {
+  font-weight: 400;
+  color: var(--colorTitle);
+  font-size: 16px;
+  color: var(--colorTitle);
+}
+
+.headerUnderline {
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  margin-top: 4px;
+  margin-left: 2px;
+  background-color: var(--colorPrimaryButton);
+}
+.remindMeLaterTab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.remindMeLaterTabActive {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  color: #f08b32;
+  font-weight: 400;
+  font-size: 15px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #f08b32;
+}
+.remindMeLaterTabDeActive {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  color: #6e6e6e;
+  font-weight: 400;
+  font-size: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #6e6e6e;
+}
+.specificTimeContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .timerSection {
+  }
+  .instructionsSection {
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .instructionsWrapper {
+      text-align: center;
+      font-size: 10px;
+    }
+  }
+  .buttonSection {
+    align-self: center;
+    .buttonWrapper {
+      background-color: #f08b32;
+      padding: 10px;
+      border-radius: 50px;
+      .buttonText {
+        font: 10px;
+        color: white;
+      }
+    }
+  }
+}
+
+.frequencyContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .checklistSection {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    .sectionLeft {
+      display: flex;
+      flex:1;
+      flex-direction: column;
+      .checkboxWithLable {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .sectionRight {
+      display: flex;
+      flex:1;
+      flex-direction: column;
+      .checkboxWithLable {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  .instruncionsSection {
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .instructionsWrapper {
+      text-align: center;
+      font-size: 10px;
+    }
+  }
+  .buttonSection {
+    align-self: center;
+    .buttonWrapper {
+      background-color: #f08b32;
+      padding: 10px;
+      border-radius: 50px;
+      .buttonText {
+        font: 10px;
+        color: white;
+      }
+    }
+  }
+}

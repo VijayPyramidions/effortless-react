@@ -1,0 +1,204 @@
+@import '../../theme.scss';
+$primaryColor: #f08b32;
+$whiteColor: #fff;
+
+
+.loginContainer {
+    max-width: 450px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // margin-top: 2rem;
+    height: 100%;
+    padding: 0rem 30px;
+    background-image: url('../../assets/ellipseBig.png'),
+      url('../../assets/ellipseSmall.png');
+    background-repeat: no-repeat;
+    background-position: top left, right bottom;
+    background-position: top left, right 50%;
+    background-size: 50%, 20%;
+    font-weight: 300;
+  
+    .fontlogo {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 50px;
+      margin-left: 10px;
+      line-height: 88px;
+      color: #ffffff;
+      opacity: 0.9;
+    }
+  
+    .introHeaderContainer {
+      display: flex;
+      flex-direction: column;
+      max-width: 410px;
+  
+      .fontlogo {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        margin-left: 10px;
+        line-height: 88px;
+        color: #ffffff;
+        opacity: 0.9;
+      }
+  
+      .appName {
+        text-transform: uppercase;
+        @include fontSize(15px, 20px);
+        // font-size: 1rem;
+        color: $primaryColor;
+        margin-bottom: 5px;
+      }
+  
+      .appDescription {
+        // font-size: 2rem;
+        @include fontSize(24px, 28px);
+        color: $whiteColor;
+      }
+    }
+  }
+
+.forgotImageContainer {
+    height: 100vh;
+    .imageStack {
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      .imageStyle {
+        height: 80%;
+      }
+    }
+  }
+
+.loginContainerDesktop {
+    max-width: 450px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // margin-top: 2rem;
+    height: 100%;
+    padding: 0rem 30px;
+    background-position: top left, right bottom;
+    background-position: top left, right 50%;
+    background-size: 50%, 20%;
+    font-weight: 300;
+    .ellipseStack {
+      // width: 100%;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+    .ellipseStack1 {
+      // width: 100%;
+      position: absolute;
+      right: 0;
+      bottom: 1;
+    }
+    .fontlogo {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 88px;
+      color: #ffffff;
+      opacity: 0.9;
+    }
+    .fontlogosignup {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 88px;
+      color: #ffffff;
+      opacity: 0.9;
+      margin-top: 5rem;
+    }
+    .introHeaderContainer {
+      display: flex;
+      flex-direction: column;
+      max-width: 410px;
+  
+      .appName {
+        text-transform: uppercase;
+        @include fontSize(15px, 20px);
+        // font-size: 1rem;
+        color: $primaryColor;
+        margin-bottom: 5px;
+      }
+  
+      .appDescription {
+        // font-size: 2rem;
+        @include fontSize(24px, 28px);
+        color: $whiteColor;
+      }
+    }
+  }
+
+  .signInContainer {
+    display: flex;
+    flex-direction: column;
+    p{
+        margin: 0;
+    }
+    .joinHeader{
+        font-family: 'Lexend' !important;
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+color: #FFFFFF;
+    }
+    .pTag{
+        font-family: 'Lexend' !important;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+color: #FFFFFF;
+    }
+    .phoneSubmit{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 40px;
+    }
+    .phoneFiled{
+        font-family: 'Lexend' !important;
+font-style: normal;
+font-weight: 500;
+font-size: 26px;
+color: #FFFFFF;
+    }
+    .resend{
+        font-family: 'Poppins' !important;
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 140%;
+color: #36E3C0;
+    }
+  }
+
+//   .submitButton,
+  .submitButton {
+    border-radius: 25px !important;
+    background-color: var(--colorPrimaryButton) !important;
+    color: var(--colorWhite) !important;
+    width: max-content !important;
+    padding: 15px 50px !important;
+    text-transform: capitalize !important;
+  }
+
+  .errorContainer {
+    color: var(--colorError);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+  
+    .errorText {
+      margin: 0 5px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }

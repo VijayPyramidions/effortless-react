@@ -1,0 +1,2745 @@
+.container {
+  display: flex;
+  //   background: #ffffff;
+
+  //   Left Sections Start
+
+  .leftsection {
+    min-width: 342px;
+    overflow: auto;
+    height: calc(100vh - 100px);
+    padding-right: 24px;
+    animation: fadeInUp 1s;
+
+    // &:hover {
+    //   overflow-y: scroll;
+    // }
+
+    // &::-webkit-scrollbar {
+    //   width: 5px;
+    //   height: 5px;
+    // }
+    // &::-webkit-scrollbar-thumb {
+    //   background: linear-gradient(13deg, #f9d4ff 14%, #c7ceff 64%);
+    //   border-radius: 10px;
+    // }
+    // &::-webkit-scrollbar-thumb:hover {
+    //   background: linear-gradient(13deg, #c7ceff 14%, #f9d4ff 64%);
+    // }
+
+    // &::-webkit-scrollbar-track {
+    //   background: #ffffff;
+    //   border-radius: 10px;
+    //   box-shadow: inset;
+    // }
+
+    .cardbackroundimg {
+      position: absolute;
+    }
+
+    .efcard_container {
+      background-image: url('../../../assets/efcardbgmobile.svg');
+      min-height: 196px;
+      border-radius: 12px;
+      margin-bottom: 24px;
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .banktitle {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      color: #ffffff;
+      width: 223px;
+      margin: 16px;
+    }
+
+    .regtext {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 18px;
+      color: #ffffff;
+      margin: 0 0 0 16px;
+    }
+
+    .accopenbtn {
+      background: #000960;
+      height: 59px;
+      width: 100%;
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      color: #ffffff;
+      text-transform: capitalize;
+      position: absolute;
+      bottom: 0;
+      border-radius: 0 0 12px 12px;
+    }
+
+    .brandtxtwrp {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 24px;
+      min-height: 24px;
+
+      .brandlogo {
+        width: 132px;
+      }
+
+      .acctext {
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #ffffff;
+      }
+    }
+
+    .accinfowrp {
+      margin-left: 24px;
+
+      .accname,
+      .accbal {
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        line-height: 16px;
+        color: #ffffff;
+        min-height: 16px;
+      }
+
+      .accname {
+        font-weight: 400;
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+
+      .accbal {
+        font-weight: 600;
+        font-size: 18px;
+      }
+    }
+
+    .loadwidthdrawbtnwrp {
+      flex-direction: row;
+      position: absolute;
+      bottom: 0;
+      height: 59px;
+      width: 100%;
+      background: #000960;
+
+      border-radius: 0 0 12px 12px;
+      .widthrawbtn,
+      .loadmoneybtn {
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #ffffff;
+        flex: 1;
+        text-transform: capitalize;
+        border-radius: 0;
+      }
+
+      .widthrawbtn {
+        border-right: 1px solid #ffffff;
+      }
+    }
+
+    .acclistcontainer {
+      border-radius: 8px;
+      border: 1px solid rgba(0, 0, 0, 0.1) !important;
+      margin-bottom: 24px;
+    }
+
+    .acclistcontainer.activecontainer {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      box-shadow: 0px 4px 4px -4px rgba(0, 0, 0, 0.04),
+        0px 6px 16px -8px rgba(0, 0, 0, 0.06);
+    }
+
+    .acctypeheader {
+      flex-direction: row;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+      padding: 16px;
+      align-items: center;
+      position: relative;
+
+      .acctypetext,
+      .accconnectbtn {
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 16px;
+        background: none !important;
+      }
+
+      .acctypetext {
+        font-weight: 400;
+        color: #283049;
+      }
+
+      .accconnectbtn {
+        font-weight: 500;
+        color: #2f9682;
+        text-transform: capitalize;
+        padding: 0 !important;
+      }
+    }
+
+    .dropdown {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      position: absolute;
+      right: -20px;
+      top: 53px;
+      animation: DropdownList 400ms ease-in-out forwards;
+      transform-origin: top center;
+      padding: 4px 0;
+      z-index: 1001;
+
+      @keyframes DropdownList {
+        0% {
+          transform: rotateX(-90deg);
+        }
+        70% {
+          transform: rotateX(20deg);
+        }
+        100% {
+          transform: rotateX(0deg);
+        }
+      }
+
+      .dropdowntext {
+        span {
+          font-family: 'Lexend', sans-serif !important;
+          font-style: normal;
+          font-weight: 200;
+          font-size: 14px;
+          line-height: 16px;
+          color: #414141;
+        }
+      }
+    }
+
+    .founderaccheader {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      position: absolute;
+      z-index: 10001;
+      width: 339px;
+      top: 50px;
+      left: 10px;
+      // animation: MuenuList 400ms ease-in-out forwards;
+      // transform-origin: top center;
+
+      // @keyframes MuenuList {
+      //   0% {
+      //     transform: rotateX(-90deg);
+      //   }
+      //   70% {
+      //     transform: rotateX(20deg);
+      //   }
+      //   100% {
+      //     transform: rotateX(0deg);
+      //   }
+      // }
+    }
+
+    .accpreference {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      color: #414141;
+      position: relative;
+      margin-top: 12px;
+      padding: 0 0 4px 12px;
+      margin-bottom: 8px;
+
+      &::before {
+        content: '';
+        width: 13px;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        background: #f08b32;
+        border-radius: 8px;
+      }
+    }
+
+    .listitem {
+      padding: 0;
+      margin-bottom: 8px;
+      border-bottom: 1px solid #dcdcdc;
+      cursor: pointer;
+
+      &:last-child {
+        margin-bottom: 4px;
+        border-bottom: none !important;
+      }
+    }
+
+    .listtext {
+      margin: 0;
+
+      span {
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 16px;
+        color: #414141;
+      }
+    }
+
+    .listitemwrp {
+      padding: 13.5px 16px;
+
+      .listitemtext {
+        span {
+          font-family: 'Lexend', sans-serif !important;
+          font-style: normal;
+          font-weight: 200;
+          font-size: 14px;
+          line-height: 18px;
+          color: #2e3a59;
+          margin: 0;
+        }
+      }
+
+      .amountwrp {
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+      }
+
+      .listaccamt {
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        color: #283049;
+      }
+
+      .arrowicon {
+        color: #283049;
+        font-size: 22px;
+      }
+    }
+
+    .nodatawrp {
+      display: grid;
+      place-items: center;
+      padding: 32px 0;
+
+      .nodataicon {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 17px;
+      }
+
+      .nodatatext {
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #283049;
+        margin-bottom: 16px;
+      }
+
+      .addaccbtn {
+        border: 1px solid #f08b32;
+        border-radius: 28px;
+        font-family: 'Lexend', sans-serif !important;
+        text-transform: capitalize;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: #f08b32;
+        padding: 13px 23.5px;
+      }
+    }
+  }
+
+  //   Right Sections Start
+
+  .rightsection {
+    flex: 1;
+    animation: fadeInUp 1s;
+    height: calc(100vh - 100px);
+  }
+}
+
+.dropdownitem {
+  padding: 8px 24px 8px 12px;
+  margin-bottom: 2px !important;
+  border-bottom: 0.5px solid #c7c7c7;
+  cursor: pointer;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+// Create Account Component Start
+
+.vacontainer {
+  background: #ffffff;
+  border-radius: 16px 16px 0px 0px;
+  margin-right: 8px;
+  height: 100%;
+
+  .headertitle {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 16px;
+    color: #283049;
+    padding: 24px;
+    border-bottom: 1px solid #e4e4e4;
+  }
+
+  .createaccwrp {
+    padding-left: 24px;
+
+    .imgwrp {
+      align-items: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .subtitle {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      color: #3049bf;
+      margin-bottom: 24px;
+      letter-spacing: 0;
+    }
+    .description {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 18px;
+      line-height: 28px;
+      color: #283049;
+      margin-bottom: 16px;
+      letter-spacing: 0;
+    }
+
+    .creataccbtn {
+      background: #f08b32;
+      border-radius: 28px;
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      color: #ffffff;
+      text-transform: capitalize;
+      padding: 13px 24.5px;
+      margin: 24px auto;
+    }
+  }
+}
+// Create Account Component End
+
+// Acounts List Component Start
+
+.alcontainer {
+  background: #ffffff;
+  border-radius: 16px 16px 0px 0px;
+  // margin-right: 8px;
+  height: 100%;
+}
+
+.caheaderwrp {
+  align-items: center;
+  flex-direction: row !important;
+  justify-content: space-between;
+
+  .headertitle {
+    color: #283049;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.374px;
+    padding-bottom: 4px;
+    position: relative;
+    margin-bottom: 12px;
+    &::before {
+      content: '';
+      border-radius: 4px;
+      background: #f08b32;
+      width: 9px;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
+.caNameError{
+  color: #D8000C;
+  font-size: 12px;
+  margin: 0px 0px 8px;
+}
+.casubtitle {
+  color: #a0a4af;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.374px;
+  margin-bottom: 24px !important;
+}
+
+.cainputwrp {
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  .calabel {
+    color: #a0a4af;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Lexend', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 12px;
+  }
+  .canameinput {
+    border: none;
+    outline: none;
+    color: #283049;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+.casavebtn {
+  padding: 10px;
+  color: #fff !important;
+  font-family: 'Lexend', sans-serif !important;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize !important;
+  border-radius: 35px !important;
+  background: #f08b32 !important;
+}
+
+.menuitem {
+  font-family: 'Lexend', sans-serif !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  color: #414141 !important;
+  padding: 8px 12px !important;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1) !important;
+  margin-bottom: 4px !important;
+  &:hover {
+    background-color: transparent !important;
+  }
+  &:last-child {
+    border-bottom: none !important;
+    color: #ff0000 !important;
+  }
+}
+
+.accountlistheader {
+  padding: 24px;
+  flex-direction: row !important;
+  justify-content: space-between;
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 24px;
+
+  .headertext,
+  .totalamount {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 16px;
+    color: #283049;
+  }
+}
+
+.acclistswrp {
+  padding: 0 24px;
+
+  .acctypewtp {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  .acctyptext {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    color: #283049;
+    transition: all 0.2s;
+  }
+  .accbalsortwrp {
+    flex-direction: row;
+    position: relative;
+
+    .addcashAccountBtn {
+      border-radius: 24px;
+      background: #f08b32;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      margin-left: 24px;
+      transition: all 0.2s;
+    }
+  }
+
+  .dropdown {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 75%;
+    animation: DropdownList 400ms ease-in-out forwards;
+    transform-origin: top center;
+    padding: 4px 0;
+
+    @keyframes DropdownList {
+      0% {
+        transform: rotateX(-90deg);
+      }
+      70% {
+        transform: rotateX(20deg);
+      }
+      100% {
+        transform: rotateX(0deg);
+      }
+    }
+
+    .dropdownitem {
+      padding: 8px 12px;
+      margin-bottom: 2px;
+      border-bottom: 0.5px solid #c7c7c7;
+      cursor: pointer;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    .dropdowntext {
+      span {
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 16px;
+        color: #414141;
+      }
+    }
+  }
+
+  .accbalsortbtn {
+    border: 1px solid #e4e4e4;
+    border-radius: 136px;
+    padding: 10px 20px 10px 16px;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6e6e6e;
+    text-transform: capitalize;
+    background: none !important;
+    transition: all 0.2s;
+
+    .active {
+      transform: rotate(180deg);
+    }
+  }
+
+  .accbalsorticon {
+    color: #8e8e8e;
+    margin-left: 6px;
+    transition: all 0.3s ease;
+  }
+
+  .accbalfetchbtn {
+    background: #f08b32;
+    color: #ffffff;
+    padding: 12px 25.67px;
+    border-radius: 24px;
+    margin-left: 21px;
+
+    &:hover {
+      background: #f08b32;
+    }
+  }
+
+  .acclistitemwrp {
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    cursor: pointer;
+    animation: fadeInUp 1s;
+
+    &:last-child {
+      margin-bottom: 24px;
+    }
+  }
+
+  .cashaccountname {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    .eiditbtn {
+      color: #f08b32;
+      text-align: right;
+      font-family: 'Lexend', sans-serif !important;
+      text-transform: capitalize !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 16px;
+      letter-spacing: 0.14px;
+      padding: 6px 0 !important;
+      &:hover {
+        background: none !important;
+      }
+    }
+    .editbtnicon {
+      margin-right: 4px;
+      padding: 0 !important;
+      &:hover {
+        background: none !important;
+      }
+    }
+  }
+  .accholdname {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 9px;
+  }
+  .accnumber {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+  }
+
+  .accstatus_utime {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 16px;
+    color: #464646;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 9px;
+    width: 18vw;
+
+    .tallyconnect {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #2f9682;
+      padding: 0;
+      text-transform: capitalize;
+    }
+
+    .connectplus {
+      width: 16px;
+      height: 16px;
+      margin-right: 1px;
+    }
+
+    .disconnect,
+    .active,
+    .pause,
+    .disable,
+    .fetching {
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      margin-right: 4px;
+
+      .dinconnectinline,
+      .activeinline,
+      .pauseinline,
+      .disableinline,
+      .fetchinginline {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+      }
+    }
+
+    .disconnect {
+      background: rgba(252, 52, 0, 0.1);
+      .dinconnectinline {
+        background: #fc3400;
+      }
+    }
+
+    .active {
+      background: #f8fbf8;
+      .activeinline {
+        background: #4aa44d;
+      }
+    }
+
+    .pause {
+      background: rgba(240, 139, 50, 0.1);
+      .pauseinline {
+        background: #f08b32;
+      }
+    }
+
+    .disable {
+      background: rgba(132, 129, 138, 0.1);
+      .disableinline {
+        background: #84818a;
+      }
+    }
+    .fetching {
+      background: rgba(85, 66, 246, 0.1);
+      .fetchinginline {
+        background: #5542f6;
+      }
+    }
+  }
+
+  .disstatus,
+  .actstatus,
+  .pausestatus,
+  .diablestatus,
+  .fetchingstatus {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    margin-right: 8px;
+  }
+
+  .disstatus {
+    color: #fc3400;
+  }
+
+  .actstatus {
+    color: #4aa44d;
+  }
+  .pausestatus {
+    color: #f08b32;
+  }
+
+  .diablestatus {
+    color: #84818a;
+  }
+
+  .fetchingstatus {
+    color: #5542f6;
+  }
+
+  .accifsccode {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+  }
+
+  .acccountsaving {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #323232;
+  }
+
+  .iciciSync {
+    font-family: 'Lexend', sans-serif;
+    font-style: normal;
+    max-width: 100px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: underline;
+    align-items: flex-end;
+    color: #f08b32;
+    border: none;
+    background: none;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    &:hover {
+      background: none;
+      text-decoration: underline;
+    }
+    &:focus {
+      background: none;
+    }
+    span {
+      display: none;
+    }
+  }
+  .amtinbnk {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 16px;
+    color: #464646;
+    text-align: right;
+    margin-right: 7px;
+  }
+
+  .amtinbnk.mr_0 {
+    margin-right: 0px;
+  }
+}
+// Acounts List Component End
+
+//  Create Virtual Account Form Start
+
+.formContainer {
+  padding: 24px 42px 32px 40px;
+  @media screen and (max-width: 425px) {
+    padding: 20px;
+  }
+
+  .popOver {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    top: 9px !important;
+    left: 2px !important;
+    min-width: 345px;
+  }
+
+  .popOverBox {
+    background: none !important;
+    border: none;
+    box-shadow: none;
+    min-width: 24.4vw !important;
+  }
+
+  .searchInputwrp {
+    background: #fafafa;
+    flex-direction: row;
+    border-radius: 8px 8px 0 0;
+    padding: 4px 12px;
+
+    .searchInput {
+      border: none;
+      outline: none;
+      flex: 1;
+      background: transparent;
+    }
+  }
+
+  .menulist {
+    padding: 0;
+
+    .listitems {
+      padding: 16px;
+      border-bottom: 1px solid rgba(153, 158, 165, 0.39);
+      cursor: pointer;
+    }
+
+    .listicons {
+      min-width: 31px;
+      color: #f08b32;
+    }
+
+    .ListItemText {
+      margin: 0;
+
+      span {
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #283049;
+      }
+    }
+
+    .addlist {
+      .addlisttext {
+        span {
+          color: #f08b32;
+        }
+      }
+    }
+  }
+
+  .fromContainer_header {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.374px;
+    color: #283049;
+    position: relative;
+    padding-bottom: 4px;
+    margin-bottom: 21px;
+    &::before {
+      content: '';
+      background: #f08b32;
+      border-radius: 4px;
+      height: 2px;
+      width: 17.3px;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  .fromContainer_subheader {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.374px;
+    color: #283049;
+    margin-bottom: 32px;
+    margin-top: 5px;
+  }
+
+  .textFieldSize {
+    margin: 1rem 0rem !important;
+    border: 1px solid grey !important;
+    width: 100% !important;
+  }
+
+  .textfieldStyle {
+    margin-bottom: 21px;
+    border: 1px solid #999ea563 !important;
+    width: 100%;
+    background: rgba(237, 237, 237, 0.15);
+  }
+
+  .fileuploadlabel {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #1e1e1e;
+    line-height: inherit;
+    margin-bottom: 20px;
+  }
+
+  .fileinput {
+    margin-bottom: 40px;
+    font-family: 'Lexend', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(40, 48, 73, 0.3);
+  }
+
+  .inputFileWrap {
+    margin-bottom: 16px;
+    position: relative;
+
+    &input[type='file'][value=''] {
+      & .fileName {
+        background-color: red;
+        color: #00a5ff;
+      }
+    }
+    .fileLabel {
+      color: #283049;
+      font-family: 'Lexend', sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      margin-bottom: 12px;
+      &::after {
+        content: '*';
+        color: red;
+        margin-left: 2px;
+        position: relative;
+        top: 2px;
+      }
+      &.error {
+        color: rgb(216, 0, 12);
+      }
+      &.notrequired {
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    .fileInput {
+      color: rgba(0, 0, 0, 0);
+
+      &::file-selector-button {
+        cursor: pointer;
+        color: #000;
+        font-family: 'Lexend', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 17px; /* 121.429% */
+        border-radius: 4px;
+        border: 0.5px solid rgba(0, 0, 0, 0.5);
+        background: rgba(0, 0, 0, 0.05);
+        padding: 2px 12px;
+      }
+    }
+
+    .fileName {
+      color: rgba(40, 48, 73, 0.3);
+      font-family: 'Lexend', sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      position: absolute;
+      top: 2px;
+      left: 110px;
+      z-index: -100;
+      display: flex;
+      align-items: center;
+
+      .closeIcon {
+        width: 16px;
+        height: 16px;
+        color: #ff0000;
+        margin-left: 8px;
+        cursor: pointer;
+        display: none;
+      }
+
+      &.fileSelected {
+        color: #3049bf;
+        z-index: 1001;
+        & .closeIcon {
+          display: block;
+        }
+      }
+    }
+
+    .validateError {
+      color: rgb(216, 0, 12);
+      font-size: 0.6rem;
+      margin-top: 4px;
+    }
+  }
+  .fromContainer_btnwrp {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3px;
+
+    .fromContainer_cancelbtn {
+      background: #ffffff;
+      border: 1px solid #f08b32;
+      border-radius: 28px;
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      text-transform: capitalize;
+      color: #f08b32;
+      width: 98px;
+      padding: 13px 0;
+
+      @media screen and (max-width: 425px) {
+        font-size: 12px;
+        line-height: 14px;
+        width: 60px;
+        padding: 8px 0;
+      }
+    }
+
+    .fromContainer_successbtn {
+      background: #f08b32;
+      border-radius: 28px;
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      text-transform: capitalize;
+      width: 210px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: #ffffff;
+      padding: 13px 0;
+
+      // padding: 13px 29.5px;
+      @media screen and (max-width: 425px) {
+        font-size: 12px;
+        line-height: 14px;
+        width: 180px;
+        padding: 8px 0;
+      }
+    }
+  }
+
+  // Add ICICI Bank Start
+
+  .bankreg_instructwrp {
+    background: rgba(240, 139, 50, 0.1);
+    padding: 12px 42px 12px 40px;
+    margin: 0 -42px 20px -40px;
+
+    .bankreg_title {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.498407px;
+      color: #f08b32;
+      margin-bottom: 12px;
+    }
+
+    .bankreg_instruction {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 15px;
+      color: #283049;
+      margin-bottom: 8px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .bangreg_list {
+      padding: 0;
+      margin: 0 0 0 12px;
+    }
+    .bankreg_link {
+      color: #3049bf;
+    }
+  }
+
+  .loginidtext {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #283049;
+    margin-left: 12px;
+  }
+
+  // Add ICICI Bank End
+}
+//  Create Virtual Form Account End
+
+// Borrowing Start
+
+.bodycontainer {
+  height: calc(100vh - 220px);
+  overflow: auto;
+  table {
+    animation: fadeInUp 1s;
+  }
+
+  .bordetail {
+    animation: fadeInUp 1s;
+  }
+}
+
+.brcontainer {
+  background: #ffffff;
+  border-radius: 16px 16px 0px 0px;
+  margin-right: 8px;
+  height: 100%;
+
+  .brcontainer_header {
+    padding: 24px;
+    border-bottom: 1px solid #e4e4e4;
+    flex-direction: row;
+    align-items: center;
+
+    .headertext {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 16px;
+      color: #283049;
+    }
+  }
+  .borrowlistwrp {
+    margin: 0 24px;
+    padding-top: 16px;
+    animation: fadeInUp 1s;
+    height: calc(100% - 81px);
+    overflow: auto;
+    scroll-behavior: smooth;
+  }
+
+  .borrowtype {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 12px;
+    color: #f08b32;
+    margin-bottom: 16px;
+    margin-top: 4px;
+    text-transform: capitalize;
+
+    &.upppercase {
+      text-transform: uppercase;
+    }
+  }
+
+  .borrowlistitem {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 16px;
+    cursor: pointer;
+  }
+
+  .borrowel.flex_ {
+    flex: 4;
+    .borrowel_header {
+      text-align: left !important;
+      font-weight: 300 !important;
+      font-size: 13px !important;
+      line-height: 16px !important;
+      color: #5542f6 !important;
+      margin-bottom: 0 !important;
+    }
+
+    .spaccountbadge {
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      background: rgba(85, 66, 246, 0.1);
+      position: relative;
+      margin-right: 4px;
+
+      &::after {
+        content: '';
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+        background: #5542f6;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  .borrowel.flex_1 {
+    flex: 1.6 !important;
+  }
+
+  .borrowel {
+    flex: 1;
+
+    .borrowel_header {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 14px;
+      line-height: 16px;
+      color: #464646;
+      margin-bottom: 12px;
+    }
+    .borrowel_value {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      color: #000000;
+      text-transform: capitalize;
+    }
+
+    .borrowel_header.mr_40,
+    .borrowel_value.mr_40 {
+      margin-right: 40px !important;
+    }
+
+    &:nth-child(2) {
+      .borrowel_header,
+      .borrowel_value {
+        padding-left: 16px;
+      }
+    }
+
+    &:nth-child(3) {
+      .borrowel_header,
+      .borrowel_value {
+        text-align: right;
+      }
+    }
+
+    &:nth-child(4) {
+      .borrowel_header,
+      .borrowel_value {
+        text-align: right;
+      }
+    }
+
+    &:nth-child(5) {
+      flex: 1.6 !important;
+
+      .borrowel_header,
+      .borrowel_value {
+        text-align: right;
+      }
+    }
+
+    &:last-child {
+      .borrowel_header,
+      .borrowel_value {
+        text-align: right;
+      }
+    }
+  }
+
+  // EMI Details Start
+
+  .lenderwrp,
+  .puposewrp {
+    flex-direction: row;
+    .lenderlabel,
+    .purposelabel {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 14px;
+      line-height: 16px;
+      color: #464646;
+    }
+    .lenderlabel {
+      margin-right: 20px;
+      margin-bottom: 16px;
+    }
+    .purposelabel {
+      margin-right: 56px;
+      margin-bottom: 32px;
+    }
+    .lendervalue,
+    .purposevalue {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      color: #000000;
+    }
+  }
+
+  .emidetail {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 24px 34px -16px rgba(0, 0, 0, 0.08),
+      0px 16px 16px -8px rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+  }
+
+  .emailitemwrp {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .itemlabel {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+      color: #464646;
+    }
+
+    .itemvalue {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.02em;
+      color: #323232;
+    }
+  }
+
+  .emitableheadrow {
+    background: #f7f7f7;
+    th {
+      padding: 12px 24px;
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #464646;
+      border-bottom: none;
+      background: #f7f7f7;
+    }
+  }
+
+  .emitablebodyrow {
+    td {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 13px;
+      line-height: 16px;
+      padding: 19px 0 19px 24px;
+      color: #000000;
+      border-bottom: 1px solid #e4e4e4;
+    }
+  }
+
+  .paidbadge,
+  .unpaidbadge {
+    border-radius: 4px;
+    padding: 8px;
+    font-family: 'Work Sans', sans-serif !important;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .paidbadge {
+    background: rgba(32, 201, 172, 0.1);
+    color: #20c9ac;
+  }
+
+  .unpaidbadge {
+    background: rgba(252, 52, 0, 0.1);
+    color: #fc3400;
+  }
+
+  .otherborrowheadrow {
+    background: #f7f7f7;
+    th {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #464646;
+      border-bottom: none;
+      padding-top: 20px;
+      padding-bottom: 20px;
+
+      &:first-child {
+        padding-left: 24px;
+      }
+    }
+  }
+
+  .otherborrowbodyrow {
+    td {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 13px;
+      line-height: 16px;
+      color: #000000;
+      border-bottom: 1px solid #e4e4e4;
+      &:first-child {
+        padding-left: 24px;
+      }
+      &:nth-child(3),
+      &:nth-child(4),
+      &:last-child {
+        text-align: right;
+        padding-right: 22px;
+      }
+      &:nth-child(4),
+      &:last-child {
+        padding-right: 26px !important;
+      }
+    }
+  }
+  // EMI Details End
+}
+// Borrowing End
+
+// Load and Withdraw Money Start //
+
+.wlcontainer {
+  padding: 24px;
+
+  .headerwrp {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+
+  .headertext {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.374px;
+    color: #283049;
+    position: relative;
+    padding-bottom: 4px;
+
+    &::before {
+      content: '';
+      width: 8.83px;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      background: #f08b32;
+      border-radius: 4px;
+      margin-left: 1px;
+    }
+  }
+
+  .typedesc {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.374px;
+    color: #a0a4af;
+    margin-bottom: 20px;
+    padding: 0 8px;
+    text-align: center;
+  }
+
+  .amountlabel {
+    color: #a0a4af !important;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .amtbtnwrp {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    .amountbtn {
+      background: #ffffff;
+      border: 1px solid #d9d9d9;
+      border-radius: 8px;
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 200;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      color: #283049;
+      text-transform: capitalize;
+      padding: 10px 31px;
+    }
+  }
+
+  .submit_btn {
+    background: #f08b32;
+    border-radius: 35px;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    padding: 14px 0;
+    opacity: 1;
+    &:hover {
+      background: #f08b32;
+    }
+  }
+
+  .submit_btn.opacitybtn {
+    opacity: 0.7 !important;
+    color: #ffffff;
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  .addpromoter_btn {
+    border-radius: 18px;
+    border: 1px solid #f08b32;
+    border-radius: 35px;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #f08b32;
+    text-transform: capitalize;
+    padding: 10px 0;
+    opacity: 1;
+    margin-bottom: 20px;
+  }
+
+  // .addpromoter_btn.opacitybtn {
+  //   opacity: 0.7 !important;
+  //   color: #ffffff;
+
+  //   &:disabled {
+  //     cursor: not-allowed;
+  //   }
+  // }
+
+  .searchwrp {
+    background: #fafafa;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    flex-direction: row;
+    padding: 12px 22px;
+    margin-bottom: 30px;
+  }
+
+  .searchinput {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #6e6e6e;
+    margin-left: 8px;
+    background: none;
+  }
+
+  .accountlistitem {
+    flex-direction: row;
+  }
+
+  .bankname {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #2e3a59;
+  }
+
+  .accnumber {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #6e6e6e;
+  }
+
+  .bankaccpersonal,
+  .bankaccbusiness {
+    border-radius: 4px;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 4px 8px;
+  }
+
+  .bankaccpersonal {
+    background: rgba(32, 201, 172, 0.1);
+    color: #20c9ac;
+  }
+
+  .bankaccbusiness {
+    background: rgba(255, 160, 67, 0.1);
+    color: #ffa043;
+  }
+
+  .listitembtn {
+    border-radius: 4px;
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+}
+
+// Load and Withdraw Money End //
+
+// Account Statement Start //
+
+.statementcontainer {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+
+  animation: fadeInUp_ 2s;
+
+  @keyframes fadeInUp_ {
+    from {
+      opacity: 0.3;
+      -webkit-transform: translate3d(0, 3%, 0);
+      transform: translate3d(0, 3%, 0);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .headercontainer {
+    padding: 20px 24px 0 24px;
+    margin-bottom: 33px;
+  }
+
+  .titlewrp {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  .titletext {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+  }
+
+  .categbtnwrp {
+    flex-direction: row;
+  }
+
+  .categalert {
+    flex-direction: row;
+    background: #fceaea;
+    border-radius: 5px;
+    padding: 6px 10px;
+    margin-right: 24px;
+    &:hover {
+      background: #fceaea;
+    }
+  }
+
+  .uncategcount {
+    background: #e73f3f;
+    border-radius: 2.5px;
+    padding: 2px 4px;
+    font-family: 'Inter', sans-serif !important;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    color: #ffffff;
+    margin-right: 12px;
+  }
+
+  .uncategtext {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+    color: #e73f3f;
+    cursor: pointer;
+  }
+
+  .btngroup {
+    border-radius: 4px;
+    box-shadow: none !important;
+  }
+
+  .actionbtn {
+    background: #f6f6f7;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #283049;
+    padding: 8px 12px;
+    text-transform: capitalize;
+
+    &:hover {
+      background: #f6f6f7;
+    }
+    &:not(:last-of-type) {
+      border-color: rgba(0, 0, 0, 0.1) !important;
+    }
+  }
+
+  .actiontbnicon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+
+  .filterelwrp {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 21px;
+  }
+
+  .movetranwrp {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    .movesubmit {
+      font-style: normal;
+      font-family: 'Lexend', sans-serif !important;
+
+      background: #f08b32;
+      border-radius: 24px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: #ffffff;
+      text-transform: capitalize;
+      padding: 11px 20px;
+      margin-right: 36px;
+    }
+
+    .selectedtranscount {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: #00a676;
+      margin-right: 4px;
+    }
+
+    .closeicon {
+      svg {
+        color: #000000;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  .trantbnwrp {
+    background: #f5f4f7;
+    border-radius: 8px;
+    padding: 5px 16px;
+    box-shadow: none !important;
+    justify-content: space-between;
+  }
+
+  .tranbtn,
+  .tranbtnactive {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: capitalize;
+    margin-right: 16px;
+    background-color: transparent;
+    border-radius: 4px;
+    padding: 8px 12px !important;
+
+    // transition: all 0.2sec;
+
+    &:hover {
+      background: #ffffff;
+      box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.05) !important;
+      color: #283049;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:not(:first-of-type) {
+      border-radius: 4px !important;
+    }
+
+    &:not(:last-of-type) {
+      border: none;
+      border-color: transparent !important;
+    }
+  }
+
+  .tranbtn {
+    color: #888888;
+
+    &:disabled {
+      background-color: transparent !important;
+    }
+    &.padd {
+      padding: 0 7px !important;
+    }
+  }
+
+  .tranbtnactive {
+    background: #ffffff;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.05) !important;
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+    color: #283049;
+    &.padd {
+      padding: 0 7px !important;
+    }
+  }
+
+  .dropdownbtn {
+    background: #ffffff;
+    border: 1px solid rgba(153, 158, 165, 0.4);
+    border-radius: 4px;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: #283049;
+    padding: 10px 12px;
+
+    &:disabled {
+      color: #283049 !important;
+    }
+    &:hover {
+      background: #ffffff;
+    }
+    span {
+      color: #6e6e6e;
+      margin-left: auto;
+
+      svg {
+        // margin-left: 32px;
+        transition: all 0.2s !important;
+      }
+    }
+    [aria-expanded*='true'] {
+      span {
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  .dropdownbtn.dateicon {
+    position: relative;
+    // width: 236px;
+
+    &::before {
+      content: '';
+      width: 40px;
+      height: 40px;
+      background: #f6f6f7;
+      position: absolute;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      left: 0;
+    }
+
+    span {
+      &:first-child {
+        margin-left: 1px !important;
+        margin-right: 22px !important;
+      }
+    }
+  }
+  .dropdownbtn[aria-expanded*='true'] {
+    span {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .balamountwrp {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .balamtelwrp {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .balamticon {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+  }
+
+  .balamttitle {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #464646;
+  }
+
+  .balamt {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #323232;
+  }
+
+  .st_table_container {
+    max-height: calc(100vh - 325px);
+    transition: all 0.3s;
+    .table_head_row {
+      th {
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #464646;
+        background: #f7f7f7 !important;
+        border-bottom: none !important;
+        &:last-child {
+          text-align: right;
+          padding: 16px 24px 16px 16px;
+        }
+      }
+    }
+
+    .table_body_row {
+      td {
+        &:last-child {
+          padding: 16px 24px 16px 16px !important;
+        }
+      }
+
+      &:last-child {
+        td {
+          border-bottom: none;
+        }
+      }
+
+      td {
+        vertical-align: top;
+      }
+      .date {
+        font-family: 'Lexend', sans-serif !important ;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #000000;
+        padding-left: 4px;
+      }
+
+      .active,
+      .disable,
+      .fetching {
+        height: 12px;
+        width: 12px;
+        min-width: 12px;
+        min-height: 12px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        margin-right: 4px;
+
+        .activeinline,
+        .disableinline,
+        .fetchinginline {
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+        }
+      }
+
+      .active {
+        background: #f8fbf8;
+        .activeinline {
+          background: #4aa44d;
+        }
+      }
+
+      .disable {
+        background: rgba(132, 129, 138, 0.1);
+        .disableinline {
+          background: #84818a;
+        }
+      }
+
+      .fetching {
+        background: rgba(85, 66, 246, 0.1);
+        .fetchinginline {
+          background: #5542f6;
+        }
+      }
+
+      .actstatus,
+      .diablestatus,
+      .fetchingstatus {
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        margin-right: 8px;
+      }
+
+      .actstatus {
+        color: #4aa44d;
+      }
+
+      .diablestatus {
+        color: #84818a;
+      }
+
+      .fetchingstatus {
+        color: #5542f6;
+      }
+
+      .party {
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #283049;
+      }
+
+      .desc_title,
+      .desc_subtitle {
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        font-weight: 300;
+      }
+      .desc_title {
+        color: #000000;
+        line-height: 16px;
+        font-size: 13px;
+        margin-bottom: 8px;
+        word-break: break-word;
+      }
+      .desc_subtitle {
+        font-size: 12px;
+        line-height: 15px;
+        color: rgba(0, 0, 0, 0.5);
+      }
+
+      .inflow,
+      .outflow,
+      .balance {
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        text-align: right;
+      }
+
+      .inflow {
+        color: #4aa44d;
+      }
+
+      .outflow {
+        color: #ff0000;
+      }
+
+      .balance {
+        color: #283049;
+      }
+    }
+  }
+}
+
+.banklogowrp {
+  flex-direction: row !important;
+  align-items: center;
+
+  .bankname {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #2e3a59;
+    margin-bottom: 2px;
+  }
+  .accnumber {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    color: #6e6e6e;
+  }
+}
+
+.activeitem {
+  color: #f08b32 !important;
+}
+
+.savings,
+.current,
+.corporate,
+.cashAccount {
+  border-radius: 2px;
+  padding: 2px 8px;
+  font-family: 'Work Sans', sans-serif !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 10px !important;
+  line-height: 12px !important;
+}
+
+.savings {
+  background: rgba(32, 201, 172, 0.1);
+  color: #20c9ac;
+}
+
+.current {
+  background: rgba(0, 165, 255, 0.1);
+  color: #00a5ff;
+}
+
+.corporate {
+  background: rgba(85, 66, 246, 0.1);
+  color: #5542f6;
+}
+
+.cashAccount {
+  background: #ff4081;
+  color: #ffffff;
+}
+.savingsdropdown,
+.currentdropdown,
+.corporatedropdown,
+.cashaccountdropdown {
+  border-radius: 2px;
+  padding: 2px 12px;
+  font-family: 'Work Sans', sans-serif !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  line-height: 14px !important;
+}
+
+.savingsdropdown {
+  background: rgba(32, 201, 172, 0.1);
+  color: #20c9ac;
+}
+
+.currentdropdown {
+  background: rgba(0, 165, 255, 0.1);
+  color: #00a5ff;
+}
+
+.corporatedropdown {
+  background: rgba(85, 66, 246, 0.1);
+  color: #5542f6;
+}
+
+.cashaccountdropdown {
+  background: #ff4081;
+  color: #ffffff;
+}
+// Account Statement End //
+
+.searchBanks {
+  padding: 14px 12px;
+  border-bottom: 0.5px solid #c7c7c7;
+  flex: 1;
+
+  .searchInput {
+    border: none;
+    width: 100%;
+    outline: none;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2e3a59;
+  }
+}
+
+.banklogo {
+  // background-image: url('../../../assets/BankLogo/banklogo.png');
+  width: 32px !important;
+  height: 32px;
+  background-repeat: no-repeat;
+  margin-right: 16px;
+
+  // &[aria-label*='icic'] {
+  //   background-position: -930px -0px;
+  //   width: 34px;
+  //   height: 34px;
+  // }
+
+  // &[aria-label*='hdfc'] {
+  //   background-position: -32px 0px;
+  // }
+
+  // &[aria-label*='sbin'] {
+  //   background-position: -64px 0px;
+  //   width: 34px;
+  //   height: 34px;
+  // }
+
+  // &[aria-label*='barb'] {
+  //   background-position: -514px 0px;
+  // }
+
+  // &[aria-label*='bkid'] {
+  //   background-position: -97px 0px;
+  //   width: 33px;
+  // }
+
+  // &[aria-label*='idib'] {
+  //   background-position: -964px 0px;
+  //   width: 34px;
+  //   height: 34px;
+  // }
+
+  // &[aria-label*='indb'] {
+  //   background-position: -130px 0px;
+  // }
+
+  // &[aria-label*='cnrb'] {
+  //   background-position: -194px 0px;
+  // }
+
+  // &[aria-label*='ioba'] {
+  //   background-position: -226px 0px;
+  // }
+
+  // &[aria-label*='cbin'] {
+  //   background-position: -290px 0px;
+  // }
+
+  // &[aria-label*='karb'] {
+  //   background-position: -322px 0px;
+  // }
+
+  // &[aria-label*='punb'] {
+  //   background-position: -354px 0px;
+  // }
+
+  // &[aria-label*='ucba'] {
+  //   background-position: -386px 0px;
+  // }
+}
+
+.banklogowrp {
+  width: 100%;
+}
+
+.logorelative {
+  @media screen and (max-width: 422px) {
+    position: relative;
+    top: 8px;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 5%, 0);
+    transform: translate3d(0, 5%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.container {
+  // margin: 24px 32px;
+
+  @media screen and (max-width: 520px) {
+    margin: 20px;
+  }
+  .headertitle {
+    color: #283049;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    padding-bottom: 4px;
+    margin-bottom: 24px;
+
+    &::before {
+      content: '';
+      width: 17.5px;
+      height: 3px;
+      border-radius: 4px;
+      background: #f08b32;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  .selectedbankwrp {
+    border-radius: 8px;
+    border: 1px solid #f08b32;
+    box-shadow: 0px 2px 4px 0px rgba(240, 139, 50, 0.15),
+      0px 0px 0px 3px rgba(240, 139, 50, 0.08);
+    padding: 16px 20px;
+    display: grid;
+    grid-template-columns: auto 37% 29%;
+    align-items: center;
+
+    @media screen and (max-width: 520px) {
+      grid-template-columns: auto 45%;
+      padding: 12px;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 422px) {
+      grid-template-columns: auto;
+      padding: 12px;
+    }
+    .accountname {
+      color: #283049;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      @media screen and (max-width: 520px) {
+        font-weight: 400;
+      }
+    }
+  }
+
+  .accountnumber,
+  .ifsccode {
+    color: #464646;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+  }
+
+  .accountnumber {
+    display: block;
+    // margin-left: 39px;
+
+    &.secondary {
+      display: none !important;
+    }
+
+    @media screen and (max-width: 422px) {
+      .accountnumber {
+        margin-left: 39px;
+        display: none;
+
+        &.secondary {
+          margin-left: 38px;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.acclistcontainer {
+  margin-bottom: 40px;
+  @media screen and (max-width: 520px) {
+    margin-bottom: 24px;
+  }
+  .subtitle {
+    color: #283049;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0 32px;
+    margin-bottom: 8px;
+    @media screen and (max-width: 520px) {
+      padding: 0 20px;
+    }
+  }
+
+  .listitembtn {
+    padding: 0;
+  }
+
+  .accountname {
+    color: #283049;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+  }
+  .accountnumber,
+  .ifsccode {
+    color: #464646;
+    font-family: Lexend;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+  }
+  @media screen and (max-width: 520px) {
+    .accountnumber {
+      text-align: left;
+      margin-top: 6px;
+      &.secondary {
+        display: block;
+      }
+    }
+  }
+}
+
+.actionbtns {
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row !important;
+  padding: 0 32px;
+  margin-bottom: 24px;
+
+  @media screen and (max-width: 520px) {
+    padding: 0 20px;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 370px) {
+    flex-direction: column !important;
+  }
+
+  .submitbtn,
+  .cancelbtn {
+    border-radius: 28px !important;
+    padding: 10px 30px !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    text-transform: capitalize !important;
+    @media screen and (max-width: 520px) {
+      font-size: 14px !important;
+    }
+  }
+  .submitbtn {
+    background: #f08b32 !important;
+    color: #fff !important;
+
+    @media screen and (min-width: 320px) and (max-width: 370px) {
+      width: 100%;
+    }
+    &:disabled {
+      opacity: 0.7;
+    }
+  }
+
+  .cancelbtn {
+    border: 1px solid #f08b32 !important;
+    background: #fff !important;
+    color: #f08b32 !important;
+
+    @media screen and (min-width: 320px) and (max-width: 370px) {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.accountnumber {
+  &.secondary {
+    display: none;
+  }
+}
+.noIfsc{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 15px;
+}
+
+@media screen and (max-width: 422px) {
+  .headacc {
+    margin-left: 39px !important;
+  }
+}

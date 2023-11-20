@@ -1,0 +1,1700 @@
+//desktop
+
+.billbox_container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  // animation: fadeInUp;
+  // animation-duration: 1s;
+
+  .billbox_card {
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    width: 164px;
+    cursor: pointer;
+    .img_box {
+      width: 22px;
+      height: 22px;
+      border-radius: 20px;
+      padding: 6px;
+      img {
+        width: 100%;
+        height: 100%;
+        scale: 0.8;
+      }
+    }
+    .cardheader {
+      color: #283049;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+    }
+    .numberofitems {
+      color: #898b93;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+  }
+  .billbox_card:hover {
+    box-shadow: 0px 2px 6px 0px rgba(246, 145, 13, 0.35);
+  }
+  .recordbutton,
+  .recordbutton:hover {
+    padding: 10px 24px;
+    border-radius: 20px;
+    background: #f29d45;
+    height: fit-content;
+    margin-left: auto;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+  }
+  .billbox_main {
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
+    // padding: 24px;
+    // height: calc(100vh - 245px);
+    flex-grow: 1;
+    animation: fadeInUp;
+    animation-duration: 1s;
+    .headtext {
+      color: #283049;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .secondarybutton,
+    .secondarybutton:hover {
+      background: #fff;
+      color: #f08b32;
+      border: 1px solid #f08b32;
+      text-align: center;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      text-transform: capitalize;
+      padding: 4px 16px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      cursor: pointer;
+    }
+    .viewchangebox {
+      height: auto;
+      background: #f3f3f3;
+      border-radius: 4px;
+      padding: 2px 6px;
+      animation: hideshowanimation;
+      animation-duration: 1s;
+    }
+    .show_view {
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1),
+        0px 0px 6px 0px rgba(0, 0, 0, 0.06);
+      padding: 4px 16px;
+      display: flex;
+      justify-content: center;
+      color: #f08b32;
+      cursor: pointer;
+      transition: all 0.3s linear;
+    }
+    .hide_view {
+      border-radius: 6px;
+      background: #f3f3f3;
+      padding: 4px 16px;
+      display: flex;
+      justify-content: center;
+      color: '#FEFEFE';
+      cursor: pointer;
+      transition: all 0.3s linear;
+    }
+    .filterbox {
+      background: #f6f6f6;
+      border-radius: 30px;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+    }
+  }
+  .scanned_bills_list {
+    animation: hideshowanimation;
+    animation-duration: 1s;
+  }
+  .scanned_bills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 38px;
+    row-gap: 20px;
+    padding: 20px 24px;
+    animation: hideshowanimation;
+    animation-duration: 1s;
+    .upload_bill_pic {
+      border-radius: 8px;
+      border: 1px solid #c7c8ca;
+      background: #f9fafc;
+      width: 186px;
+      height: 180px;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+      .pdfshow_billbox{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      
+        canvas {
+          max-width: 100% !important;
+          height: 100% !important;
+        }
+      }
+      .ocrprocessing{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  @media (max-width: 1400px) {
+    .scanned_bills {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  @media (max-width: 1200px) {
+    .scanned_bills {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  @media (max-width: 800px) {
+    .scanned_bills {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: 600px) {
+    .scanned_bills {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+// mobile
+
+.billbox_container_mobile {
+  // height: 100%;
+  width: 100%;
+  display: flex;
+  background: #fff;
+  flex-direction: column;
+  animation: fadeInUp;
+  animation-duration: 1s;
+
+  .billbox_card {
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    width: 90px;
+    cursor: pointer;
+    .img_box {
+      width: 12px;
+      height: 12px;
+      border-radius: 20px;
+      padding: 4px;
+      img {
+        // width: 100%;
+        height: 100%;
+        display: flex;
+      }
+    }
+    .cardheader {
+      color: #283049;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      white-space: nowrap;
+    }
+    .numberofitems {
+      color: #898b93;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      padding-bottom: 2px;
+    }
+  }
+  .billbox_main {
+    // padding: 24px;
+    // height: calc(100vh - 245px);
+    // flex-grow: 1;
+    animation: fadeInUp;
+    animation-duration: 1s;
+    .headertext {
+      color: #283049;
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color: #283049;
+      font-size: 16px;
+      position: relative;
+      padding-bottom: 2px;
+      text-transform: capitalize;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        bottom: 0px;
+        background: #f08b32;
+        border-radius: 6px;
+      }
+    }
+    .addbillbtn {
+      padding: 10px 24px;
+      background: #ffffff00;
+      height: fit-content;
+      color: #2f9682;
+      text-transform: capitalize;
+      padding: 0;
+    }
+    .viewchangebox {
+      height: auto;
+      background: #f3f3f3;
+      border-radius: 4px;
+      padding: 2px 4px;
+      animation: hideshowanimation;
+      animation-duration: 1s;
+    }
+    .show_view {
+      border-radius: 6px;
+      background: #fff;
+      box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1),
+        0px 0px 6px 0px rgba(0, 0, 0, 0.06);
+      padding: 4px 16px;
+      display: flex;
+      justify-content: center;
+      color: #f08b32;
+      cursor: pointer;
+      transition: all 0.3s linear;
+    }
+    .hide_view {
+      border-radius: 6px;
+      background: #f3f3f3;
+      padding: 4px 16px;
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s linear;
+    }
+    .filterbox {
+      background: #f6f6f6;
+      border-radius: 30px;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+      margin: auto 20px auto auto;
+    }
+  }
+  .scanned_bills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 16px;
+    padding: 20px;
+    width: calc(100% - 40px);
+    animation: hideshowanimation;
+    animation-duration: 1s;
+    .upload_bill_pic {
+      border-radius: 8px;
+      border: 1px solid #c7c8ca;
+      background: #f9fafc;
+      width: 100%;
+      height: 100px;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+      .pdfshow_billbox{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      
+        canvas {
+          max-width: 100% !important;
+          height: 100% !important;
+        }
+      }
+      .ocrprocessing{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 1;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+  .scanned_bills_list {
+    padding: 0 20px;
+    animation: hideshowanimation;
+    animation-duration: 1s;
+    .scanned_bills_list_mobile {
+      width: 64px;
+      height: 64px;
+      border-radius: 4px;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      margin: 12px 0;
+      overflow: auto;
+      position: relative;
+      .pdfshow_billbox{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      
+        canvas {
+          max-width: 100% !important;
+          height: 100% !important;
+        }
+      }
+    }
+    .vendorname {
+      color: #2e3a59;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      width: 200px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .billlabel {
+      color: #6e6e6e;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: capitalize;
+      width: 80px;
+    }
+    .billvalue {
+      color: #2e3a59;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      width: 100px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+}
+
+.moreactionbtn {
+  padding: 8px 12px !important;
+  border-bottom: 0.5px solid #c7c7c7 !important;
+  width: 100% !important;
+  color: #414141 !important;
+  font-family: 'Lexend', sans-serif !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  line-height: 16px !important;
+  text-transform: capitalize !important;
+  border-radius: 0 !important;
+  &:last-child {
+    border-bottom: none !important;
+    color: #f00 !important;
+  }
+}
+
+.email_bills_mobile {
+  animation: hideshowanimation;
+  animation-duration: 0.6s;
+  .emptycont {
+    .googleconnect {
+      color: #283049;
+      text-align: center;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px; /* 175% */
+    }
+  }
+  .emailcont {
+    .maillabel {
+      color: #283049;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .emailselectfield {
+      border-radius: 4px;
+      border: 1px solid rgba(153, 158, 165, 0.4);
+      background: #fff;
+      padding: 8px 12px;
+      justify-content: space-between;
+      max-width: 260px;
+      .emailtext {
+        color: #283049;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: none;
+        text-overflow: ellipsis;
+        max-width: 260px;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+    .desktop_top_view {
+      .syncmsg {
+        color: #283049;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        white-space: nowrap;
+        span {
+          color: #20c9ac;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px; /* 200% */
+        }
+      }
+      .syncprocessmsg {
+        color: #f08b32;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        white-space: nowrap;
+      }
+      .btn {
+        text-align: center;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 16px;
+        white-space: nowrap;
+        width: auto;
+        text-transform: capitalize;
+      }
+      .addnewprovider_btn {
+        border-radius: 4px;
+        background: #f08b32;
+        padding: 8px;
+        color: #fff;
+        font-weight: 300;
+      }
+      .connectgoogle_btn {
+        border-radius: 4px;
+        border: 1px solid #f08b32;
+        background: #fff;
+        color: #000;
+        font-weight: 300;
+      }
+      .moreaction_btn {
+        border-radius: 4px;
+        background: #f5f5f5;
+        padding: 8px 16px;
+        color: #283049;
+        font-weight: 400;
+      }
+    }
+    .syncbtn {
+      border-radius: 4px;
+      background: #f1f1f1;
+      height: 42px;
+    }
+    .syncmsg {
+      color: #283049;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 12px;
+      span {
+        color: #20c9ac;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 200% */
+      }
+    }
+    .syncprocessmsg {
+      color: #f08b32;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+      white-space: nowrap;
+    }
+    .moreaction_btn {
+      border-radius: 4px;
+      background: #f5f5f5;
+      display: flex;
+      padding: 8px 12px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      color: #283049;
+      text-align: center;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      white-space: nowrap;
+      width: 186px;
+      text-transform: capitalize;
+    }
+
+    .emailbill_box {
+      border-radius: 8px;
+      border: 1px solid #d9d9d9;
+      background: #fff;
+      width: calc(100% - 26px);
+      padding: 12px;
+      .emailbill_text {
+        color: #283049;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px; /* 123.077% */
+        letter-spacing: 0.26px;
+      }
+      .labeltext {
+        color: #9397a4;
+        text-align: right;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 0.1px;
+      }
+      .valuetext {
+        color: #283049;
+        font-family: Lexend;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px; /* 133.333% */
+      }
+      .statustext {
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px; /* 133.333% */
+        text-transform: capitalize;
+      }
+      .paid {
+        color: #20c9ac;
+      }
+      .unpaid {
+        color: #fc3400;
+      }
+      .progress {
+        color: #ffa043;
+      }
+    }
+  }
+}
+
+// @keyframes hideshowanimation {
+//   from {
+//     opacity: 0;
+//   }
+//   to {
+//     opacity: 1;
+//   }
+// }
+
+.deleteddialog {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .deletehead {
+    color: #f00;
+    margin: 0 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: normal;
+    position: relative;
+    text-transform: capitalize;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 26px;
+      height: 2px;
+      bottom: -4px;
+      background: #f00;
+      border-radius: 4px;
+    }
+  }
+  .descriptiontext {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .primaryButton,
+  .primaryButton:hover {
+    border-radius: 20px;
+    background: #f08b32;
+    color: #fff;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+    &:disabled {
+      opacity: 0.5 !important;
+    }
+  }
+  .secondarybutton,
+  .secondarybutton:hover {
+    border-radius: 20px;
+    background: #fff;
+    color: #f08b32;
+    border: 1px solid #f08b32;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+    border-radius: 20px;
+    gap: 4px;
+  }
+}
+
+.employeeFilter {
+  .headertext {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #283049;
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 2px;
+    text-transform: capitalize;
+    margin: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 2px;
+      bottom: 0px;
+      background: #f08b32;
+      border-radius: 6px;
+    }
+  }
+  .menutext {
+    color: #283049 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    line-height: normal !important;
+    border-bottom: 1px solid rgba(199, 199, 199, 0.5) !important;
+    padding: 8px 16px !important;
+    width: 100%;
+    justify-content: start;
+  }
+}
+.emailselectionsheet {
+  .menutext {
+    // color: #283049 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    line-height: normal !important;
+    border-bottom: 1px solid rgba(199, 199, 199, 0.5) !important;
+    padding: 8px 16px !important;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    &:last-child {
+      border-bottom: none !important;
+    }
+  }
+  .active {
+    border-radius: 2px;
+    background: var(--light-fill-green-main-green, rgba(32, 201, 172, 0.1));
+    padding: 2px 4px;
+    color: var(--fill-green-main-green, #20c9ac);
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    text-transform: capitalize;
+  }
+  .inactive {
+    border-radius: 2px;
+    background: var(--light-fill-red-main-red, rgba(252, 52, 0, 0.1));
+    padding: 2px 4px;
+    color: var(--fill-red-main-red, #fc3400);
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    text-transform: capitalize;
+  }
+  .access_revoked {
+    border-radius: 2px;
+    background: var(--light-fill-red-main-red, rgba(252, 52, 0, 0.1));
+    padding: 2px 4px;
+    color: var(--fill-red-main-red, #fc3400);
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    text-transform: capitalize;
+  }
+  .unsynced {
+    border-radius: 2px;
+    background: var(--light-fill-yellow-main-yellow, rgba(255, 160, 67, 0.1));
+    padding: 2px 4px;
+    color: var(--fill-yellow-main-yellow, #ffa043);
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    text-transform: capitalize;
+  }
+}
+.moreactionsheet {
+  .headertext {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #283049;
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 2px;
+    text-transform: capitalize;
+    margin: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 2px;
+      bottom: 0px;
+      background: #f08b32;
+      border-radius: 6px;
+    }
+  }
+  .menutext {
+    // color: #283049 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    line-height: normal !important;
+    border-bottom: 1px solid rgba(199, 199, 199, 0.5) !important;
+    padding: 8px 16px !important;
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+    &:last-child {
+      border-bottom: none !important;
+    }
+  }
+}
+
+.addnewprovider {
+  p {
+    margin: 0 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+  }
+  .headertext {
+    color: #283049;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    padding-bottom: 2px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 2px;
+      bottom: 0;
+      background: #f08b32;
+      border-radius: 6px;
+    }
+  }
+
+  .labeltext {
+    color: #283049;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .primaryButton,
+  .primaryButton:hover,
+  .secondaryButton,
+  .secondaryButton:hover {
+    border-radius: 20px !important;
+    font-family: 'Lexend', sans-serif !important;
+    text-align: center;
+    text-transform: none !important;
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 160px;
+  }
+
+  .primaryButton,
+  .primaryButton:hover {
+    background: #f08b32;
+    flex: 1;
+    color: #fff;
+    padding: 8px 59px;
+  }
+  .opensheetfieldroot {
+    border: 1px solid #ececec;
+    height: 20px;
+    padding: 12px 6px 12px 12px;
+    background: #fff;
+    border-radius: 8px;
+    flex-grow: 1;
+    cursor: pointer;
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      overflow: auto;
+      white-space: nowrap;
+    }
+  }
+  .labeltextformobile {
+    color: #283049;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
+
+.emailbillbox_main {
+  width: 100%;
+  background: #fff;
+  animation: fadeInUp;
+  animation-duration: 1s;
+  .topcard {
+    border-radius: 6px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.08);
+    width: calc(100% - 72px);
+    padding: 16px;
+    margin: 20px 20px 0;
+    .avatar {
+      width: 42px;
+      height: 42px;
+      border: 1px solid #e4e4e4;
+    }
+    .title {
+      color: #191919;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px; /* 100% */
+    }
+    .subtitle {
+      color: #000;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 16px; /* 133.333% */
+    }
+    .actionbtn {
+      border-radius: 40px;
+      border: 1px solid #e4e4e4;
+      width: 24px;
+      height: 24px;
+      padding: 12px;
+    }
+  }
+  .mid_cont {
+    padding: 16px 20px;
+    .text {
+      color: #000;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px; /* 125% */
+    }
+
+    .secondaryButton,
+    .secondaryButton:hover {
+      padding: 8px 16px;
+      width: fit-content;
+      color: #f08b32;
+      border: 1px solid #f08b32;
+      border-radius: 40px;
+      text-transform: capitalize;
+      &:disabled {
+        opacity: 0.6 !important;
+      }
+    }
+  }
+  .last_cont {
+    animation: fadeInUp;
+    animation-duration: 1s;
+    .headcont {
+      background: #f7f7f7;
+      padding: 12px 20px;
+      margin-bottom: 16px;
+      .headtitletext {
+        color: #464646;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+      }
+    }
+    .row_cont {
+      border-radius: 4px;
+      border: 1px solid #d8d8d8;
+      background: #fff;
+      box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.08);
+      padding: 12px;
+      width: calc(100% - 64px);
+      margin: 0 20px;
+      justify-content: space-between;
+      .row_text {
+        color: #283049;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        text-align: center;
+      }
+      .paid {
+        border-radius: 2px;
+        background: var(--light-fill-green-main-green, rgba(32, 201, 172, 0.1));
+        padding: 2px 4px;
+        color: var(--fill-green-main-green, #20c9ac);
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 18px;
+        text-transform: capitalize;
+      }
+      .unpaid {
+        border-radius: 2px;
+        background: var(--light-fill-red-main-red, rgba(252, 52, 0, 0.1));
+        padding: 2px 4px;
+        color: var(--fill-red-main-red, #fc3400);
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 18px;
+        text-transform: capitalize;
+      }
+      .progress {
+        border-radius: 2px;
+        background: var(
+          --light-fill-yellow-main-yellow,
+          rgba(255, 160, 67, 0.1)
+        );
+        padding: 2px 4px;
+        color: var(--fill-yellow-main-yellow, #ffa043);
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 18px;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+.email_bills_list {
+  [data-field='email_list_name'] {
+    cursor: pointer;
+  }
+  .avatar_service {
+    width: 32px;
+    height: 32px;
+  }
+  .openbilltag,
+  .openbilltag:hover {
+    color: #3049bf;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: underline;
+    text-transform: capitalize;
+    &:disabled {
+      color: #3049bf;
+      opacity: 0.5 !important;
+    }
+  }
+  .viewButton,
+  .viewButton:hover {
+    padding: 8px;
+    width: fit-content;
+    border-radius: 4px;
+    border: 1px solid #dcdcdc;
+    background: #fff;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.08);
+    text-transform: capitalize;
+    color: #3049bf;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+  }
+  .secondaryButton,
+  .secondaryButton:hover {
+    padding: 8px;
+    width: fit-content;
+    color: #f08b32;
+    border: 1px solid #f08b32;
+    border-radius: 4px;
+    text-transform: capitalize;
+    color: #f08b32;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .emailbillmoreactionbtn,
+  .emailbillmoreactionbtn:hover {
+    padding: 8px;
+    border-radius: 4px;
+    background: #f1f1f1;
+    min-width: fit-content !important;
+  }
+}
+
+.emailbillbox_desktop_main {
+  width: 100%;
+  height: 100%;
+  .first_container {
+    min-width: 424px;
+    height: 96%;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.08);
+    animation: fadeInUp;
+    animation-duration: 1s;
+    .emailbills_text {
+      color: #283049;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .emailbills_label {
+      color: rgba(40, 48, 73, 0.5);
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+    .emailbills_email {
+      color: #283049;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .emailbill_card {
+      border-radius: 12px;
+      border: 1px solid #e5e5e5;
+      background: #fff;
+      box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.08);
+      width: 100%;
+      padding: 14px 16px;
+      cursor: pointer;
+      text-transform: capitalize;
+      display: block;
+      .avatar_emailbill {
+        width: 48px;
+        height: 48px;
+        border: 1px solid #e5e5e5;
+        // padding: 8px;
+      }
+      .emailbill_provider {
+        color: #000;
+        font-family: Inter !important;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        text-align: left;
+        // width: 212px;
+        // text-overflow: ellipsis;
+        // white-space: nowrap;
+        // overflow: hidden;
+      }
+      .emailbill_datelabel {
+        color: #646464;
+        font-family: Inter !important;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+      }
+      .emailbill_datevalue {
+        color: #283049;
+        font-family: Inter !important;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+      }
+      .emailbill_amount {
+        color: #000;
+        text-align: right;
+        font-family: Inter !important;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+      }
+      .paid {
+        border-radius: 2px;
+        background: var(--light-fill-green-main-green, rgba(32, 201, 172, 0.1));
+        padding: 2px 4px;
+        color: var(--fill-green-main-green, #20c9ac);
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 18px;
+        text-transform: capitalize;
+      }
+      .unpaid {
+        border-radius: 2px;
+        background: var(--light-fill-red-main-red, rgba(252, 52, 0, 0.1));
+        padding: 2px 4px;
+        color: var(--fill-red-main-red, #fc3400);
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 18px;
+        text-transform: capitalize;
+      }
+      .progress {
+        border-radius: 2px;
+        background: var(
+          --light-fill-yellow-main-yellow,
+          rgba(255, 160, 67, 0.1)
+        );
+        padding: 2px 4px;
+        color: var(--fill-yellow-main-yellow, #ffa043);
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 18px;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .second_container {
+    height: 96%;
+    // flex-grow: 1;
+    width: calc(100% - 445px);
+    .top_container {
+      background: #fff;
+      height: 64px;
+      border-radius: 6px;
+      border: 1px solid #e5e5e5;
+      background: #fff;
+      box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.08);
+      overflow: auto;
+      .avatar_emailbill {
+        width: 64px;
+        height: 64px;
+        border: 1px solid #e5e5e5;
+      }
+      .emailbill_provider {
+        color: #000;
+        font-family: Inter !important;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px;
+      }
+      .emailbill_email {
+        color: #000;
+        font-family: Inter !important;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+      }
+      .actionbtn {
+        border-radius: 40px;
+        border: 1px solid #e4e4e4;
+        width: 44px;
+        height: 44px;
+        padding: 12px;
+      }
+    }
+    .bottom_container {
+      background: #fff;
+      height: calc(96% - 104px);
+      border-radius: 6px;
+      border: 1px solid #e5e5e5;
+      box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.08);
+      animation: fadeInUp;
+      animation-duration: 1s;
+      .bill_history {
+        color: #000;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 100% */
+      }
+      .primaryButton,
+      .primaryButton:hover {
+        border-radius: 20px;
+        background: #f08b32;
+        color: #fff;
+        text-align: center;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        text-transform: capitalize;
+        padding: 10px 30px;
+        &:disabled {
+          opacity: 0.8 !important;
+        }
+      }
+      .email_bill_box_list {
+        .avatar_service {
+          width: 32px;
+          height: 32px;
+        }
+        .openbilltag {
+          color: #3049bf;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+          text-decoration: underline;
+          text-transform: capitalize;
+          &:disabled {
+            color: #3049bf;
+            opacity: 0.5 !important;
+          }
+        }
+        .viewButton,
+        .viewButton:hover {
+          padding: 8px;
+          width: fit-content;
+          border-radius: 4px;
+          border: 1px solid #dcdcdc;
+          background: #fff;
+          box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.08);
+          text-transform: capitalize;
+          color: #3049bf;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 18px;
+        }
+        .emailbillmoreactionbtn,
+        .emailbillmoreactionbtn:hover {
+          padding: 8px;
+          border-radius: 4px;
+          background: rgba(255, 0, 0, 0.1);
+          min-width: fit-content !important;
+        }
+      }
+    }
+  }
+}
+
+.ignoreddialog {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .deletehead {
+    color: #000;
+    margin: 0 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: normal;
+    position: relative;
+    text-transform: capitalize;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 2px;
+      bottom: -4px;
+      background: #f08b32;
+      border-radius: 4px;
+    }
+  }
+  .descriptiontext {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .primaryButton,
+  .primaryButton:hover {
+    border-radius: 20px;
+    background: #f08b32;
+    color: #fff;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+    &:disabled {
+      opacity: 0.5 !important;
+    }
+  }
+  .secondarybutton,
+  .secondarybutton:hover {
+    border-radius: 20px;
+    background: #fff;
+    color: #f08b32;
+    border: 1px solid #f08b32;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+    border-radius: 20px;
+    gap: 4px;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10%, 0);
+    transform: translate3d(0, 10%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.pdfstyle_billbox {
+  background: #f1f0f0;
+  margin: auto;
+  width: 48px;
+  height: 100%;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  canvas {
+    max-width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+.gallery_view {
+  position: relative;
+  height: 100vh;
+  padding: 0px !important;
+  .topcont {
+    padding: 8px 20px;
+    margin-top: 16px;
+    position: relative;
+    box-shadow: 0px 4px 4px 0px #cacaca82;
+    z-index: 1;
+    .titlecont {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      .date {
+        color: #283049;
+        text-align: center;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+      .time {
+        color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+    }
+    .moredetails {
+      color: #f08b32;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+  }
+  .iframeViewDocument {
+    height: calc(84vh - 52px);
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .pdfStyle {
+    display: inline-block;
+    margin: auto;
+
+    canvas {
+      max-width: 100% !important;
+    }
+  }
+  .page {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #6e6e6e;
+  }
+  .primaryButton,
+  .primaryButton:hover {
+    border-radius: 20px;
+    background: #f08b32;
+    color: #fff;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+    width: 100%;
+    &:disabled {
+      opacity: 0.5 !important;
+    }
+  }
+  .secondarybutton,
+  .secondarybutton:hover {
+    border-radius: 20px;
+    background: #fff;
+    color: #f08b32;
+    border: 1px solid #f08b32;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+    border-radius: 20px;
+    width: 100%;
+  }
+}
+
+.scannedbilldetailscard {
+  padding: 32px 20px 0px;
+
+  .viewuploadbill {
+    color: #f08b32;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .headertext {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    padding-bottom: 2px;
+    text-transform: capitalize;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 1px;
+      bottom: 0;
+      background: #f08b32;
+      border-radius: 6px;
+    }
+  }
+  .label {
+    color: #8f8f8f;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .value {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+.duplicate_bill {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  font-family: 'Lexend', sans-serif !important;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  background: rgba(255, 0, 0, 0.35);
+  padding: 8px 0;
+}
+.ocr_processing{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  font-family: 'Lexend', sans-serif !important;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  background: rgba(93, 90, 90, 0.35);
+  padding: 8px 0;
+}
+.scannedbillmoreactionbtn,
+.scannedbillmoreactionbtn:hover {
+  padding: 8px;
+  border-radius: 4px;
+  background: #f1f1f1 !important;
+  min-width: fit-content !important;
+}

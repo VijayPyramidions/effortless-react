@@ -1,0 +1,42 @@
+.mainContainer {
+    border: 1px solid rgb(160, 164, 175);
+    height: 80px;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px;
+    .amountF{
+        padding: 15px 0px;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    }
+    .narrationF{
+        padding: 5px 0px;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    }
+    .towardsF{
+        padding: 5px 0px;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    }
+    .paidToF{
+        padding: 5px 0px;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    }
+    .percentF{
+        padding: 10px 0px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .downIconColor{
+        color: #f08b32;
+        scale: 1.5;
+    }
+}

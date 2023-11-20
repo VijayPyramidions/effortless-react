@@ -1,0 +1,78 @@
+.rentContainer {
+    padding: 20px;
+    height: calc(100% - 40px);
+    background-color: white;
+    overflow: auto;
+}
+
+.headerContainer {
+    position: relative;
+    .headerLabel {
+        font-weight: 400;
+        color: var(--colorTitle);
+        font-size: 16px;
+        color: var(--colorTitle);
+    }
+    .headerUnderline {
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        margin-top: 4px;
+        margin-left: 2px;
+        background-color: var(--colorPrimaryButton);
+    }
+}
+
+.inputContainer {
+    margin-top: 24px;
+    display: grid;
+    gap: 24px;
+    width: 100%;
+    .greyBorder {
+        border-color: lightgrey;
+    }
+    & > * {
+        margin: 0 !important;
+        & .MuiInputLabel-root {
+            color: red;
+        }
+    }
+}
+
+.actionContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+    margin: 40px 0 20px!important;
+    
+    .outlineButton,
+    .submitButton,
+    .submitButton:hover {
+        border-radius: 18px;
+        padding: 6px 20px;
+        text-align: center;
+        text-transform: none !important;
+        font-size: 14px;
+        font-weight: 500;
+        width: 30%;
+        box-shadow: none;
+    }
+    .outlineButton {
+        border-color: var(--colorPrimaryButton);
+        color: var(--colorPrimaryButton);
+    }
+    .submitButton,
+    .submitButton:hover {
+        background-color: var(--colorPrimaryButton) !important;
+        color: var(--colorWhite);
+    }
+}
+
+.categoryOptions {
+    margin: 0 20px;
+    border-bottom: 1px solid var(--colorDivider);
+    padding: 16px 0;
+    font-size: 16px;
+    font-weight: 500;
+}

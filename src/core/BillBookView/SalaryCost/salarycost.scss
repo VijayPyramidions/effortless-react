@@ -1,0 +1,212 @@
+.salaryCost {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px #3049bf0d;
+  border-radius: 8px;
+  .titlecont {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 24px 24px 2px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 1px;
+      bottom: 0;
+      background: #f08b32;
+      border-radius: 6px;
+    }
+  }
+
+  .buttonselect {
+    border-radius: 6px;
+    background: #f3f3f3;
+    padding: 2px 4px;
+    // margin: 24px;
+    flex-direction: row;
+    gap: 12px;
+    width: min-content;
+    .button {
+      color: #333;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+    .active {
+      border-radius: 5px;
+      background: #fff;
+      box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1),
+        0px 0px 6px 0px rgba(0, 0, 0, 0.06);
+
+      font-weight: 500;
+    }
+  }
+
+  .salarycost_datagrid {
+    .linkbutton {
+      color: #3049bf;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px; /* 114.286% */
+      text-decoration-line: underline;
+      text-transform: capitalize;
+    }
+    .pendingbutton {
+      color: #ffa043;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      border-radius: 2px;
+      background: #ffa0431a;
+      text-transform: capitalize;
+    }
+    .rejectbutton {
+      color: #fc3400;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      border-radius: 2px;
+      background: #fc34001a;
+      text-transform: capitalize;
+    }
+  }
+  .primaryButton,
+  .primaryButton:hover {
+    border-radius: 20px;
+    background: #f08b32;
+    color: #fff;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    &:disabled {
+      opacity: 0.8 !important;
+    }
+  }
+}
+
+.salarycostaction {
+  .titlecont {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.374px;
+    padding: 24px 40px 2px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 2px;
+      bottom: 0;
+      background: #f08b32;
+      border-radius: 6px;
+    }
+  }
+  .descriptioncont {
+    color: #868686;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 16px 0px 20px 40px;
+  }
+
+  .labelcont {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 0 32px;
+  }
+
+  .secondRow {
+    width: calc(100% - 64px);
+    background: #f1f0f0;
+    border: 2px dashed #999ea587;
+    height: 180px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    flex-direction: column;
+    margin: 0px 32px;
+
+    .uploadP {
+      font-weight: 400;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 16px;
+      line-height: 38px;
+      color: #000000;
+    }
+    .typeP {
+      color: rgba(0, 0, 0, 0.4);
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .browseCont {
+      background: #f08b32;
+      border-radius: 18px;
+      padding: 8px 54px;
+      cursor: pointer;
+    }
+    .browseP {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      text-align: center;
+      color: #ffffff;
+      font-family: 'Lexend', sans-serif !important;
+    }
+  }
+  .primaryButton,
+  .primaryButton:hover {
+    border-radius: 28px;
+    background: #f08b32;
+    color: #fff;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    &:disabled {
+      opacity: 0.8 !important;
+    }
+  }
+}

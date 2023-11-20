@@ -1,0 +1,39 @@
+@mixin iconStyles {
+  margin-right: 10px;
+}
+
+.messageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: 'black';
+  .message {
+    color: black;
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+  .success {
+    font-size: 3rem;
+    color: green;
+    padding-right: 1rem;
+    font-size: 1rem;
+  }
+
+  .tryagain {
+    font-size: 3rem;
+    color: #f08b32;
+    padding-right: 1rem;
+  }
+  .declined {
+    font-size: 3rem;
+    color: red;
+    padding-right: 1rem;
+  }
+  .successTxt {
+    text-transform: uppercase;
+    color: black;
+    font-weight: 800;
+    font-size: 1rem;
+  }
+}

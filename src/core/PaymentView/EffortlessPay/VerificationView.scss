@@ -1,0 +1,81 @@
+.verificationViewContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  height: 100%;
+  margin: 1rem;
+  .content{
+      margin-top: 30px;
+  }
+  .title{
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 41px;
+      text-align: center;
+  }
+  .subtitle{
+      margin-top: 25px;
+      font-size: 16px;
+      color:#6E6E6E;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 24px;
+      text-align: center;
+      .mobileNumber{
+          font-weight: 400;
+          color:black;
+      }
+  }
+}
+.didnotReceive{
+  color: #6E6E6E;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+}
+.resent{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color:#283049;
+  border-bottom: 1px solid #283049;
+  width: fit-content;
+  margin: 0 auto;
+}
+.button{
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+.greyBorder {
+  border-color: lightgrey !important;
+  margin: 20px 0 0 0 !important;
+  background-color: var(--colorInputBG) !important;
+}
+.errorContainer {
+  color: var(--colorError);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0;
+
+  .errorText {
+      margin: 0 5px;
+      display: flex;
+      flex-wrap: wrap;
+  }
+}
+.active{
+  background-color: var(--colorPrimaryButton) !important;
+}
+.disabled{
+  background: rgba(240, 139, 50, 0.56) !important;
+  color: white !important;
+}

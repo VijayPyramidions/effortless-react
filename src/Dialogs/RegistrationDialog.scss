@@ -1,0 +1,18 @@
+
+.registrationFormContainer {
+    .field {
+        margin: 5px 0;
+    }
+
+    .registerButton {
+        margin-top: 15px;
+        background-color: var(--colorSuccess);
+        color: var(--colorWhite);
+        font-weight: 500;
+    
+        &:hover {
+            color: var(--colorDark);
+        }
+    }
+}
+

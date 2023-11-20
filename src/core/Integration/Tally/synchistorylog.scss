@@ -1,0 +1,71 @@
+.synchistorylogcontainer {
+  max-height: 250px;
+  .histotylogtable {
+    .historyloghead {
+      .historylogrow {
+        th {
+          background: #f7f7f7;
+          border-bottom: none;
+          color: #000;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 16px;
+          padding: 13px 16px;
+          // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          // border-right: 1px solid rgba(0, 0, 0, 0.1);
+          // &:last-child {
+          //   border-right: none;
+          // }
+        }
+      }
+    }
+
+    .historylogbody {
+      .historylogrow {
+        td {
+          color: #000;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 16px;
+          padding: 13px 16px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          border-right: 1px solid rgba(0, 0, 0, 0.1);
+
+          &:last-child {
+            border-right: none;
+          }
+
+          .synclistwrp {
+            flex-direction: row;
+            gap: 12px;
+
+            .syncstatusicon {
+              width: 20px;
+              height: 20px;
+              flex-shrink: 0;
+            }
+
+            .synclisttitle {
+              color: #000;
+              font-family: 'Lexend', sans-serif !important;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 300;
+              line-height: 16px;
+            }
+          }
+        }
+
+        &:last-child {
+          td {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}

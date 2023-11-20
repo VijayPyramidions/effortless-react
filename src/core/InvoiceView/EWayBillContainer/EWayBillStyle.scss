@@ -1,0 +1,1050 @@
+.ewaybilldesktop {
+  height: 100%;
+  animation: fadeInUp;
+  animation-duration: 1s;
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 5%, 0);
+      transform: translate3d(0, 5%, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  p {
+    margin: 0 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+  }
+  .topbox {
+    border-radius: 8px;
+    border: 1px solid #e2e2e4;
+    background: #fff;
+    padding: 8px 12px;
+    width: fit-content;
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+    .topbutton {
+      text-transform: capitalize;
+      padding: 12px 20px;
+      color: #888;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+    }
+    .selected {
+      border-radius: 8px;
+      border: 1px solid #ededed;
+      background: #f08b32;
+      box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.05);
+      color: #fff;
+    }
+  }
+  .tobegenerateddesktop {
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    height: calc(100% - 180px);
+    .toptext {
+      color: #283049;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: normal;
+      margin: 20px 20px 0 !important;
+    }
+    .avatar {
+      width: 30px !important;
+      height: 30px !important;
+      margin-right: 10px;
+      background: linear-gradient(28deg, #a2d4f3 0%, #3db4da 100%);
+    }
+    .generatebtn {
+      text-transform: capitalize;
+      padding: 8px 16px;
+      color: #f29d45;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      border-radius: 100px;
+      border: 1px solid #f29d45;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .excludebtn {
+      text-transform: capitalize;
+      padding: 8px 16px;
+      color: #f00;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      border-radius: 100px;
+      border: 1px solid #f00;
+    }
+  }
+
+  .generatedewaybilldesktop {
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    height: calc(100% - 180px);
+    .toptext {
+      color: #283049;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: normal;
+      margin: 20px 20px 0 !important;
+    }
+    .avatar {
+      width: 30px !important;
+      height: 30px !important;
+      margin-right: 10px;
+      background: #a8aebe;
+    }
+  }
+
+  .unassociatedewaybilldesktop {
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+    height: calc(100% - 180px);
+    .toptext {
+      color: #283049;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: normal;
+      margin: 20px 20px 0 !important;
+    }
+    .avatar {
+      width: 30px !important;
+      height: 30px !important;
+      margin-right: 10px;
+      background: #a8aebe;
+    }
+  }
+}
+
+.createewaybillmobile {
+  height: 100% !important;
+  margin-bottom: 0 !important;
+}
+
+.createewaybilldesktop {
+  height: calc(100% - 20px);
+  width: 100%;
+  margin-bottom: 20px;
+  animation: fadeInUp;
+  animation-duration: 1s;
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 5%, 0);
+      transform: translate3d(0, 5%, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  p {
+    margin: 0 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+  }
+  .ewaybillpdf {
+    background-color: white;
+    height: calc(100% - 40px);
+    border-radius: 2px;
+    flex-grow: 1;
+    padding: 20px;
+    .scrolling {
+      height: 100%;
+      width: 100%;
+      border: none;
+      overflow-y: auto;
+    }
+    .scrolling::-webkit-scrollbar {
+      width: 0px;
+      height: 0px;
+      display: none;
+    }
+  }
+  .ewaybillfieldsbox {
+    background-color: white;
+    height: calc(100% - 40px);
+    border-radius: 8px;
+    padding: 20px;
+
+    .headertext {
+      color: #283049;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-bottom: 26px !important;
+      position: relative;
+      padding-bottom: 2px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        bottom: 0;
+        background: #f08b32;
+        border-radius: 6px;
+      }
+    }
+    .ewaybillaccordian {
+      border-radius: 8px;
+      border: 1px solid #e5e5e5;
+      background: #fff;
+      box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.08);
+      &::before {
+        display: none;
+      }
+      .accordianheadertext {
+        color: #283049;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: normal;
+      }
+      .accordiandetails {
+        border-top: 1px solid #e5e5e5;
+      }
+    }
+
+    .primaryButton,
+    .primaryButton:hover {
+      border-radius: 20px !important;
+      font-family: 'Lexend', sans-serif !important;
+      text-align: center;
+      text-transform: none !important;
+      font-size: 14px;
+      font-weight: 500;
+      background: #f08b32;
+      flex: 1;
+      color: #fff;
+      padding: 8px 59px;
+      max-width: unset !important;
+      white-space: nowrap;
+    }
+    .addNew {
+      color: #f08b32;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .createewaybillparta {
+    .labeltext {
+      color: #283049;
+      width: 35%;
+      font-size: 14px;
+      font-weight: 300;
+    }
+    .labeltextformobile {
+      color: #283049;
+      font-size: 14px;
+      font-weight: 300;
+    }
+    .opensheetfieldroot {
+      border: 1px solid #ececec;
+      height: 20px;
+      padding: 12px 6px 12px 12px;
+      background: #fff;
+      border-radius: 8px;
+      flex-grow: 1;
+      cursor: pointer;
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        overflow: auto;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .createewaybillpartb {
+    .labeltext {
+      color: #283049;
+      width: 35%;
+      font-size: 14px;
+      font-weight: 300;
+    }
+    .labeltextformobile {
+      color: #283049;
+      font-size: 14px;
+      font-weight: 300;
+    }
+    .checkboxgroup {
+      flex-direction: row;
+      flex-wrap: inherit;
+      .checkboxtext {
+        color: #283049;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: normal;
+        white-space: nowrap;
+      }
+    }
+    .transportmode {
+      padding: 4px 6px;
+      border-radius: 2px;
+      border: 0.5px solid #e3e3e3;
+      cursor: pointer;
+      p {
+        color: #283049;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: normal;
+      }
+    }
+
+    .transportmodeselected {
+      padding: 4px 6px;
+      border-radius: 2px;
+      border: 0.5px solid #f08b32;
+      p {
+        color: #f08b32;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: normal;
+      }
+    }
+
+    .mobiledate {
+      width: calc(100% - 20px);
+      padding: 4px 10px;
+      border-radius: 6px;
+      border: 1px solid #0000001a;
+      background: #fff;
+      .mobiledatelabel {
+        font-size: 11px;
+        color: rgb(160, 164, 175) !important;
+        font-weight: 400;
+        margin: 0;
+      }
+      .mobiledatefield {
+        margin: 5px;
+        font-size: 14px;
+        color: rgb(40, 48, 73);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .mobiledateinput {
+          pointer-events: none;
+          width: 90%;
+          border: none;
+          background: #fff;
+        }
+      }
+    }
+  }
+
+  .createewaybillpartc {
+    .labeltext {
+      color: #283049;
+      width: 35%;
+      font-size: 14px;
+      font-weight: 300;
+    }
+    .checkboxgroup {
+      flex-direction: row;
+      flex-wrap: inherit;
+      .checkboxtext {
+        color: #283049;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: normal;
+        white-space: nowrap;
+      }
+    }
+    .transportmode {
+      padding: 4px 6px;
+      border-radius: 2px;
+      border: 0.5px solid #e3e3e3;
+      cursor: pointer;
+      p {
+        color: #283049;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: normal;
+      }
+    }
+
+    .transportmodeselected {
+      padding: 4px 6px;
+      border-radius: 2px;
+      border: 0.5px solid #f08b32;
+      p {
+        color: #f08b32;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: normal;
+      }
+    }
+
+    .mobiledate {
+      width: calc(100% - 20px);
+      padding: 4px 10px;
+      border-radius: 6px;
+      border: 1px solid #0000001a;
+      background: #fff;
+      .mobiledatelabel {
+        font-size: 11px;
+        color: rgb(160, 164, 175) !important;
+        font-weight: 400;
+        margin: 0;
+      }
+      .mobiledatefield {
+        margin: 5px;
+        font-size: 14px;
+        color: rgb(40, 48, 73);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .mobiledateinput {
+          pointer-events: none;
+          width: 90%;
+          border: none;
+          background: #fff;
+        }
+      }
+    }
+    .opensheetfieldroot {
+      border: 1px solid #ececec;
+      height: 20px;
+      padding: 12px 6px 12px 12px;
+      background: #fff;
+      border-radius: 8px;
+      flex-grow: 1;
+      cursor: pointer;
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        overflow: auto;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.transportersheet {
+  p {
+    margin: 0 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+  }
+  .headertext {
+    color: #283049;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    padding-bottom: 2px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 2px;
+      bottom: 0;
+      background: #f08b32;
+      border-radius: 6px;
+    }
+  }
+
+  .addNew {
+    color: #f08b32;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .titletoptext {
+    color: #283049;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .nodatatext {
+    color: #283049;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin: 16px !important;
+  }
+  .transportertext {
+    color: #000;
+    text-align: center;
+    font-family: Lexend;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+}
+.addtransportersheet {
+  p {
+    margin: 0 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+  }
+  .headertext {
+    color: #283049;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    padding-bottom: 2px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 2px;
+      bottom: 0;
+      background: #f08b32;
+      border-radius: 6px;
+    }
+  }
+
+  .labeltext {
+    color: #283049;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .primaryButton,
+  .primaryButton:hover,
+  .secondaryButton,
+  .secondaryButton:hover {
+    border-radius: 20px !important;
+    font-family: 'Lexend', sans-serif !important;
+    text-align: center;
+    text-transform: none !important;
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 160px;
+  }
+
+  .primaryButton,
+  .primaryButton:hover {
+    background: #f08b32;
+    flex: 1;
+    color: #fff;
+    padding: 8px 59px;
+  }
+
+  .secondaryButton,
+  .secondaryButton:hover {
+    padding: 8px 50px;
+    background: #fff;
+    color: #f08b32;
+    border: 1px solid #f08b32;
+    flex: 1;
+  }
+}
+
+.cancelbar {
+  padding: 14px 36px;
+  background: #ffdede;
+  width: calc(100% - 72px);
+  // position: sticky;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  .canceltext {
+    color: #ff5d5d;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    white-space: nowrap;
+    margin: 0;
+  }
+}
+.cancelbarmobile {
+  padding: 8px 20px;
+  background: #ffdede;
+  width: calc(100% - 40px);
+  // position: sticky;
+  position: absolute;
+  top: 140px;
+  left: 0;
+  .canceltext {
+    color: #ff5d5d;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+  }
+}
+.genratedewaybillmobile {
+  width: 100%;
+  height: 100%;
+  position: inherit;
+  animation: fadeInUp;
+  animation-duration: 1s;
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 5%, 0);
+      transform: translate3d(0, 5%, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  p {
+    margin: 0 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+  }
+  .statustext {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: normal;
+    margin: 100px 0 16px !important;
+  }
+  .statustextnew {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: normal;
+    margin: 20px 0 16px !important;
+  }
+  .pdffields {
+    display: flex;
+    flex-wrap: wrap;
+    width: 96%;
+    height: calc(100% - 150px);
+    margin: 0 auto;
+    background-color: var(--colorWhite);
+    border-radius: 16px;
+    position: relative;
+  }
+  .pdffieldsfornew {
+    display: flex;
+    flex-wrap: wrap;
+    width: 96%;
+    height: calc(100% - 75px);
+    margin: 0 auto;
+    background-color: var(--colorWhite);
+    border-radius: 16px;
+    position: relative;
+  }
+  .pdfbuttonfields {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    .cancelpdfButton,
+    .cancelpdfButton:hover {
+      border-radius: 100px;
+      background: #ff5d5d;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      text-transform: capitalize;
+      width: 80%;
+      height: 40px;
+      margin: auto;
+      color: #fff;
+    }
+    .primaryButton,
+    .primaryButton:hover {
+      border-radius: 100px;
+      background: #f08b32;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      text-transform: capitalize;
+      width: 80%;
+      height: 40px;
+      margin: auto;
+      color: #fff;
+    }
+    .secondaryButton,
+    .secondaryButton:hover {
+      border-radius: 100px;
+      border: 1px solid #f08b32;
+      background: #fff;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      text-transform: capitalize;
+      width: 80%;
+      height: 40px;
+      margin: auto;
+      color: #f08b32;
+    }
+  }
+  .pdfStyle {
+    display: inline-block;
+    overflow: auto;
+    background: #f1f0f0;
+    border-radius: 16px;
+    margin: auto;
+
+    canvas {
+      max-width: 100% !important;
+    }
+  }
+}
+.headertextforsheet {
+  color: #283049;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  padding-bottom: 2px;
+  margin: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    bottom: 0;
+    background: #f08b32;
+    border-radius: 6px;
+  }
+}
+.genratedewaybilldesktop {
+  width: 100%;
+  height: calc(100% - 86px);
+  position: inherit;
+  animation: fadeInUp;
+  animation-duration: 1s;
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 5%, 0);
+      transform: translate3d(0, 5%, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  p {
+    margin: 0 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+  }
+  .statustext {
+    color: #2f9682;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 60px 0 16px !important;
+  }
+  .statustextnew {
+    color: #2f9682;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0px 0 16px !important;
+  }
+  .ewaybillpdf {
+    background-color: white;
+    height: 100%;
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 2px;
+    padding: 20px;
+    .scrolling {
+      height: 100%;
+      width: 100%;
+      border: none;
+      overflow-y: auto;
+    }
+    .scrolling::-webkit-scrollbar {
+      width: 0px;
+      height: 0px;
+      display: none;
+    }
+  }
+  .pdfactionbox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20%;
+    flex-direction: column;
+    gap: 32px;
+
+    .actionbtn {
+      cursor: pointer;
+      border-radius: 50px;
+      padding: 16px;
+      height: 52px;
+    }
+  }
+}
+
+.ewaybillmobile {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  animation: fadeInUp;
+  animation-duration: 1s;
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 5%, 0);
+      transform: translate3d(0, 5%, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  p {
+    margin: 0 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+  }
+
+  .headertext {
+    color: #283049;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    padding-bottom: 2px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      bottom: 0;
+      background: #f08b32;
+      border-radius: 6px;
+    }
+  }
+  .tabButtons {
+    text-transform: capitalize;
+    font-family: 'Lexend', sans-serif !important;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #00000080;
+  }
+}
+
+.tobegeneratedmobile {
+  .tobegeneratedbox {
+    padding: 8px 20px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &:nth-child(even) {
+      background-color: #f2f2f0;
+    }
+    &:nth-child(odd) {
+      background-color: #fff;
+    }
+    .customername {
+      color: #000;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: normal;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 58%;
+    }
+    .invoiceamt {
+      color: #000;
+      text-align: right;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: normal;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 38%;
+    }
+    .invoicedate {
+      color: #646464;
+      font-size: 13px;
+      font-weight: 300;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 36%;
+    }
+    .invoicenumber {
+      color: #646464;
+      font-size: 13px;
+      font-weight: 300;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .invoicetype {
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: normal;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}
+
+.generatedewaybillmobile {
+  .generatedewaybillbox {
+    padding: 8px 20px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &:nth-child(even) {
+      background-color: #f2f2f0;
+    }
+    &:nth-child(odd) {
+      background-color: #fff;
+    }
+    .customername {
+      color: #000;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: normal;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      flex-grow: 1;
+    }
+    .invoicedate {
+      color: #646464;
+      font-size: 13px;
+      font-weight: 300;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 38%;
+    }
+    .invoicenumber {
+      font-size: 13px;
+      font-weight: 300;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .traveltype {
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: normal;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.unassociatedewaybillmobile {
+  .unassociatedewaybillbox {
+    padding: 8px 20px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &:nth-child(even) {
+      background-color: #f2f2f0;
+    }
+    &:nth-child(odd) {
+      background-color: #fff;
+    }
+    .customername {
+      color: #000;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: normal;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      flex-grow: 1;
+    }
+    .invoicedate {
+      color: #646464;
+      font-size: 13px;
+      font-weight: 300;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 32%;
+    }
+    .invoicenumber {
+      font-size: 13px;
+      font-weight: 300;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+    .traveltype {
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: normal;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}
+
+.headertext {
+  color: #283049;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  padding-bottom: 2px;
+  text-transform: capitalize;
+  margin: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    bottom: 0;
+    background: #f08b32;
+    border-radius: 6px;
+  }
+}

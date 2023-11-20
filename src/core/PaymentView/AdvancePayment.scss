@@ -1,0 +1,139 @@
+.advancePaymentContainer {
+  padding: 20px;
+  height: calc(100% - 40px);
+  background-color: white;
+  width: 100%;
+  overflow: auto;
+}
+.advancePaymentContainerDesktop {
+  background-color: white;
+  width: 100%;
+  height: calc(100vh - 124px);
+  margin-top: 5px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headerContainer {
+  position: relative;
+
+  .headerLabelDesktop {
+    font-weight: 400;
+    color: var(--colorTitle);
+    font-size: 25px;
+    margin-top: 12px;
+  }
+  .headerLabel {
+    font-weight: 400;
+    color: var(--colorTitle);
+    font-size: 16px;
+    margin: 0;
+  }
+  .headerUnderlineDesktop {
+    display: none;
+  }
+  .headerUnderline {
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    margin-top: 4px;
+    margin-left: 2px;
+    background-color: var(--colorPrimaryButton);
+  }
+}
+
+.inputContainer {
+  margin-top: 15px;
+  display: block;
+  gap: 24px;
+  width: 100%;
+  animation: fadeInUp 1s;
+  &.noMargin {
+    margin: 0;
+  }
+  .greyBorder {
+    border-color: lightgrey;
+    background-color: var(--colorInputBG);
+  }
+  & > * {
+    margin: 10px 0 20px 0 !important;
+    & .MuiInputLabel-root {
+      color: red;
+    }
+  }
+}
+.wrapLabel {
+  white-space: pre-wrap;
+  padding: 4px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.actionContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin: 40px 0 0px !important;
+  animation: fadeInUp 1s;
+  @media screen and (min-width: 720px) {
+    margin: 40px 0 55px !important;
+  }
+
+  .outlineButton,
+  .submitButton,
+  .submitButton:hover {
+    border-radius: 18px;
+    padding: 6px 20px;
+    text-align: center;
+    text-transform: none !important;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: none;
+  }
+  .outlineButton {
+    border-color: var(--colorPrimaryButton);
+    color: var(--colorPrimaryButton);
+  }
+  .submitButton,
+  .submitButton:hover {
+    background-color: var(--colorPrimaryButton) !important;
+    color: var(--colorWhite);
+  }
+}
+
+.categoryOptions {
+  margin: 0 20px;
+  border-bottom: 1px solid var(--colorDivider);
+  padding: 16px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.active {
+  border-color: var(--colorPrimaryButton);
+  color: var(--colorPrimaryButton);
+}
+
+.otpScreenWrapper {
+  margin: auto;
+  width: 100%;
+}
+.PayNow {
+  margin: 60px 10px 0 0;
+  padding-bottom: 1rem;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 5%, 0);
+    transform: translate3d(0, 5%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}

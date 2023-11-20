@@ -1,0 +1,55 @@
+.previewTrigger {
+    padding: 0 20px;
+    color: var(--colorTitle);
+    .headerContainer {
+        position: relative;
+        .headerLabel {
+            font-weight: 400;
+            font-size: 16px;
+        }
+        .headerUnderline {
+            position: absolute;
+            width: 10px;
+            height: 2px;
+            margin-top: 4px;
+            margin-left: 2px;
+            background-color: var(--colorPrimaryButton);
+        }
+    }
+
+    .previewBody {
+        display: grid;
+        padding: 20px 0;
+        gap: 16px;
+        .previewItem {
+            display: grid;
+            gap: 4px;
+            font-weight: 400;
+            .label {
+                font-size: 13px;
+                color: var(--colorInputLabel);
+            }
+            .value {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .previewAction {
+        text-align: center;
+        margin-bottom: 20px;
+        .primaryButton,
+        .primaryButton:hover {
+            border-radius: 20px;
+            padding: 8px 20px;
+            text-align: center;
+            text-transform: none !important;
+            font-size: 14px;
+            width: 70%;
+            font-weight: 500;
+            background-color: var(--colorPrimaryButton);
+            color: var(--colorWhite);
+            margin: auto;
+        }
+    }
+}

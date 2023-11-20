@@ -1,0 +1,124 @@
+
+.addCustomerFooter {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 25px 0;
+  .secondary {
+    background: #ffffff;
+    text-transform: capitalize;
+    border: 1px solid #f08b32;
+    border-radius: 20px;
+    width: 113px;
+    height: 38px;
+    color: #f08b32;
+    .secondaryText {
+      font-size: 13px;
+      font-weight: 400;
+      color: #f08b32;
+    }
+  }
+  .primary {
+    width: 180px;
+    height: 38px;
+    text-transform: capitalize;
+    background-color: #f08b32;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+    white-space: nowrap;
+    box-shadow: none !important;
+    &:active {
+      background-color: #f08b32;
+    }
+    &:hover {
+      background-color: #f08b32;
+    }
+    &:visited {
+      background-color: #f08b32;
+    }
+    &:not(:hover) {
+      background-color: #f08b32;
+    }
+    .primaryText {
+      font-size: 13px;
+      font-weight: 400;
+      color: white;
+    }
+  }
+  .submitBtn {
+    padding: 10px 20px;
+  }
+}
+
+.addCustomerContainerNew {
+  display: flex;
+  margin: 20px 20px 38px;
+}
+
+.gstCheckBox {
+  // font-family: Lexend;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 10px 10px 20px;
+  flex-direction: row;
+  span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+
+    // color: #6E6E6E;
+  }
+}
+
+.contactIcon {
+  position: absolute;
+  top: 35%;
+  right: 10%;
+}
+
+.headerContainer {
+  position: relative;
+  margin-top: 1rem;
+
+  .headerLabelDesktop {
+    font-weight: 400;
+    color: var(--colorTitle);
+    font-size: 25px;
+  }
+
+  .headerLabel {
+    font-weight: 400;
+    color: var(--colorTitle);
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .headerLabelForEdit {
+    font-family: 'Lexend' !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+
+    &:first-letter {
+      // content: "";
+      text-decoration-line: underline;
+      text-decoration-style: solid;
+      text-decoration-color: var(--colorPrimaryButton);
+      text-decoration-thickness: 3px;
+      text-underline-offset: 5px;
+    }
+  }
+
+  .headerUnderlineDesktop {
+    display: none;
+  }
+
+}

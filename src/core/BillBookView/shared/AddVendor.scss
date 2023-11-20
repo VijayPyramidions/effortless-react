@@ -1,0 +1,98 @@
+.addNewVendorContainer {
+    
+}
+.inputContainer {
+    margin-top: 24px;
+    display: grid;
+    gap: 24px;
+    width: 100%;
+    .greyBorder {
+        border-color: lightgrey;
+    }
+    & > * {
+        margin: 0 !important;
+        background-color: var(--colorInputBG);
+        & .MuiInputLabel-root {
+            color: red;
+        }
+    }
+}
+.isMsme {
+    background-color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.validatebankRow {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    & > .MuiButtonBase-root {
+        padding: 0;
+    }
+
+    .validatebank {
+        .title {
+            font-weight: 500;
+            padding-bottom: 4px;
+            font-size: 15px;
+        }
+        .desc {
+            font-weight: 300;
+            font-size: 13px;
+        }
+    }
+}
+
+.bankCardsContainer {
+    display: grid;
+    gap: 12px;
+    .bankCard {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid gray;
+        padding: 15px;
+        border-color: var(--colorInputBorder);
+        border-radius: 8px;
+    }
+}
+.bankAction {
+    .cardIcon {
+        color: var(--colorInputLabel);
+    }
+    .addBank {
+        color: var(--colorPrimaryButton);
+        font-weight: 500;
+        text-decoration: underline;
+    }
+}
+
+.actionContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    align-items: center;
+    margin: 40px 0 20px!important;
+    
+    .outlineButton,
+    .submitButton,
+    .submitButton:hover {
+        border-radius: 18px;
+        padding: 6px 20px;
+        text-align: center;
+        text-transform: none !important;
+        font-size: 14px;
+        font-weight: 500;
+        width: 30%;
+        box-shadow: none;
+    }
+    .outlineButton {
+        border-color: var(--colorPrimaryButton);
+        color: var(--colorPrimaryButton);
+    }
+    .submitButton,
+    .submitButton:hover {
+        background-color: var(--colorPrimaryButton) !important;
+        color: var(--colorWhite);
+    }
+}

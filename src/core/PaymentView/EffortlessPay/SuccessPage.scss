@@ -1,0 +1,100 @@
+.successContainer {
+    background-color: #401e01;
+    height: calc(100% - 195px);
+}
+.success{
+    background-color: var(--colorGreyBg);
+    border-radius: 25px 25px 0 0;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+}
+.transaction{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+.headerContainer {
+    position: relative;
+    .headerLabel {
+        font-weight: 400;
+        color: var(--colorTitle);
+        font-size: 16px;
+    }
+    .underline {
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        margin-top: 4px;
+        margin-left: 2px;
+        background-color: var(--colorPrimaryButton);
+    }
+}
+.content{
+    margin: 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .item{
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 14px 0;
+        .title{
+            margin: 0 0 3px 0;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #6E6E6E;
+        }
+        .value{
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #283049;
+        }
+    }
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin: 5px 0 0 0;
+}
+.linkDashboard {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-align: center;
+    color: rgba(40, 48, 72, 0.7);
+    margin: 0 0 15px 0;
+}
+.reimbursement{
+    margin: 20px 20px 10px;
+    .mainHeader{
+        margin: 0 0 25px 0;
+        color: #283049;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    .details{
+        margin: 20px 0 0 0;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 19px;
+        color: #6E6E6E;
+    }
+    span{
+        font-weight: 500;
+    }
+}

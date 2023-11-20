@@ -1,0 +1,227 @@
+@import '../../theme.scss';
+$primaryColor: #f08b32;
+$whiteColor: #fff;
+
+.memberReg{
+    
+}
+
+.forgotImageContainer {
+    height: 100vh;
+    .imageStack {
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      .imageStyle {
+        height: 80%;
+      }
+    }
+  }
+  
+  .loginContainerDesktop {
+    max-width: 450px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // margin-top: 2rem;
+    height: 100%;
+    padding: 0rem 30px;
+    background-position: top left, right bottom;
+    background-position: top left, right 50%;
+    background-size: 50%, 20%;
+    font-weight: 300;
+    .ellipseStack {
+      // width: 100%;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+    .ellipseStack1 {
+      // width: 100%;
+      position: absolute;
+      right: 0;
+      bottom: 1;
+    }
+    .fontlogo {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 88px;
+      color: #ffffff;
+      opacity: 0.9;
+    }
+    .fontlogosignup {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 88px;
+      color: #ffffff;
+      opacity: 0.9;
+      margin-top: 5rem;
+    }
+    .introHeaderContainer {
+      display: flex;
+      flex-direction: column;
+      max-width: 410px;
+  
+      .appName {
+        text-transform: uppercase;
+        @include fontSize(15px, 20px);
+        // font-size: 1rem;
+        color: $primaryColor;
+        margin-bottom: 5px;
+      }
+  
+      .appDescription {
+        // font-size: 2rem;
+        @include fontSize(24px, 28px);
+        color: $whiteColor;
+      }
+    }
+  }
+  .signInContainer {
+    display: flex;
+    flex-direction: column;
+  
+    &.orgDetailsForm {
+      margin-top: 30px;
+    }
+  
+    .titleInfo {
+      color: var(--colorWhiteDark);
+      font-size: 14px;
+      margin: 0px 0 5px;
+    }
+  
+    .inputField {
+      margin-top: 20px;
+      &.hasError {
+        border: 1px solid var(--colorError);
+        margin-bottom: 10px;
+      }
+    }
+  
+    .forgotPassword {
+      font-size: 12px;
+      color: var(--colorWhiteLight);
+      display: flex;
+      justify-content: flex-end;
+      // text-decoration: underline;
+      margin: 5px;
+      font-weight: 400;
+    }
+  
+    .submitButton,
+    .submitButton:hover {
+      border-radius: 16px;
+      background-color: var(--colorPrimaryButton) !important;
+      margin: 30px 0;
+      color: var(--colorWhite);
+      height: 50px;
+    }
+  
+    .footerLink {
+      color: white;
+      font-weight: 400;
+      font-size: 12px;
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .pageTitle {
+      font-weight: normal;
+      font-size: 24px;
+      opacity: 0.8;
+      color: $whiteColor;
+    }
+  
+    .pageSubTitle {
+      font-weight: 300;
+      font-size: 14px;
+      opacity: 0.8;
+      color: $whiteColor;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .submitButton,
+  .submitButton:hover {
+    border-radius: 16px;
+    background-color: var(--colorPrimaryButton) !important;
+    margin: 30px 0;
+    color: var(--colorWhite);
+    height: 50px;
+  }
+
+.loginContainer {
+    max-width: 450px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // margin-top: 2rem;
+    height: 100%;
+    padding: 0rem 30px;
+    background-image: url('../../assets/ellipseBig.png'),
+      url('../../assets/ellipseSmall.png');
+    background-repeat: no-repeat;
+    background-position: top left, right bottom;
+    background-position: top left, right 50%;
+    background-size: 50%, 20%;
+    font-weight: 300;
+  
+    .fontlogo {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 50px;
+      margin-left: 10px;
+      line-height: 88px;
+      color: #ffffff;
+      opacity: 0.9;
+    }
+  
+    .introHeaderContainer {
+      display: flex;
+      flex-direction: column;
+      max-width: 410px;
+  
+      .fontlogo {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        margin-left: 10px;
+        line-height: 88px;
+        color: #ffffff;
+        opacity: 0.9;
+      }
+  
+      .appName {
+        text-transform: uppercase;
+        @include fontSize(15px, 20px);
+        // font-size: 1rem;
+        color: $primaryColor;
+        margin-bottom: 5px;
+      }
+  
+      .appDescription {
+        // font-size: 2rem;
+        @include fontSize(24px, 28px);
+        color: $whiteColor;
+      }
+    }
+  }
+
+  .errorContainer {
+    color: var(--colorError);
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+  
+    .errorText {
+      margin: 0 5px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }

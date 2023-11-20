@@ -1,0 +1,474 @@
+.reimbursementClaimContainerMobile {
+  width: 100%;
+  background: #fff;
+  overflow: auto;
+
+  .headertitle {
+    color: #283049;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.374px;
+    padding: 24px 32px 4px 32px;
+    position: relative;
+    margin-bottom: 24px;
+
+    &::before {
+      content: '';
+      border-radius: 4px;
+      background: #f08b32;
+      width: 17.317px;
+      height: 2px;
+      flex-shrink: 0;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  .orgAvatar {
+    width: 40px;
+    height: 40px;
+    border: 0.5px solid #d8d8d8;
+    @media screen and (max-width: 768px) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .nameContainer {
+    display: flex;
+    align-items: center;
+    margin: 20px 20px 16px;
+    .nameContainerText {
+      margin-left: 12px;
+      color: #283049;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px; /* 114.286% */
+    }
+  }
+  .tripCardDetails {
+    label {
+      color: #a0a4af;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 16px; /* 133.333% */
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+    p {
+      color: #283049;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px; /* 114.286% */
+      letter-spacing: 0.28px;
+      margin: 0;
+      margin-top: 8px;
+    }
+  }
+  .detailsCard {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px 20px 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px;
+
+    &.grid3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .viewBills {
+      color: #2e56d2;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px; /* 133.333% */
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      text-align: right;
+      cursor: pointer;
+    }
+    .tripCardDetails {
+      margin-bottom: 16px;
+    }
+    .tripValue {
+      p {
+        font-weight: 600;
+      }
+    }
+    .advance {
+      p {
+        color: #2f9682;
+        font-weight: 500;
+      }
+
+      // text-align: right;
+    }
+    .toRecieve {
+      text-align: right;
+      p {
+        color: #f00;
+      }
+    }
+    // .claimed {
+    //   text-align: center;
+    // }
+    .submitDate {
+      text-align: right;
+    }
+  }
+  .reimbursementDetailsContainer {
+    margin: 0px 20px;
+    .reimbursementCard {
+      display: flex;
+      flex-flow: column;
+      border-radius: 8px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background: #fff;
+      margin: 16px 0px;
+      padding: 8px 12px;
+    }
+    .containerOne,
+    .containerTwo {
+      display: inline-flex;
+      p {
+        margin: 0px;
+      }
+    }
+    .containerOne {
+      margin-bottom: 12px;
+      p {
+        &:first-of-type {
+          color: #3049bf;
+          text-align: right;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 16px; /* 133.333% */
+        }
+        &:nth-child(2) {
+          color: #283049;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 16px; /* 133.333% */
+          margin-left: 12px;
+        }
+      }
+    }
+    .containerTwo {
+      margin-bottom: 12px;
+      p {
+        &:first-of-type {
+          color: #283049;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 16px; /* 133.333% */
+        }
+        &:nth-child(2) {
+          color: #f08b32;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 16px; /* 123.077% */
+          margin-left: 12px;
+        }
+      }
+    }
+    .vendorCard,
+    .clientCard {
+      p {
+        margin: 0px;
+        &:first-of-type {
+          color: #a0a4af;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 16px; /* 114.286% */
+          letter-spacing: 1.4px;
+          text-transform: uppercase;
+          margin-bottom: 8px;
+        }
+        &:nth-child(2) {
+          color: #283049;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 16px; /* 100% */
+          letter-spacing: 0.32px;
+        }
+      }
+    }
+    .clientCard {
+      margin: 20px 0px;
+    }
+    .vendorCard {
+      display: flex;
+      .vendorCardRight {
+        margin-left: auto;
+        span {
+          margin-left: auto;
+          color: var(--fill-green-main-green, #20c9ac);
+          font-feature-settings: 'clig' off, 'liga' off;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 18px;
+          border-radius: 4px;
+          background: var(
+            --light-fill-green-main-green,
+            rgba(32, 201, 172, 0.1)
+          );
+          padding: 4px 8px;
+        }
+      }
+    }
+    .descCard {
+      p {
+        margin: 0;
+        &:first-of-type {
+          color: #6e6e6e;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-bottom: 8px;
+        }
+        &:nth-child(2) {
+          color: #283049;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+  .footerBtn {
+    margin: 20px;
+    .sectionOne {
+      justify-content: space-around;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .rejectBtn {
+        border-radius: 20px;
+        border: 1px solid #de2f2f;
+        display: inline-flex;
+        padding: 10px 56px;
+        justify-content: center;
+        align-items: center;
+        color: #de2f2f;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+      .approveBtn {
+        display: inline-flex;
+        padding: 10px 42px;
+        justify-content: center;
+        border-radius: 20px;
+        background: #2f9682;
+        align-items: center;
+        padding: 10px 56px;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+    }
+    .sectionTwo {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      .payBtn {
+        display: inline-flex;
+        padding: 10px 42px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        background: #f08b32;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+        &:disabled {
+          opacity: 0.5 !important;
+        }
+      }
+    }
+  }
+}
+
+.rejectReasonBtn {
+  border-radius: 20px !important;
+  background: #f08b32 !important;
+  color: #fff !important;
+  text-align: center !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 18px !important;
+  padding: 8px 20px !important;
+  cursor: pointer !important;
+  text-transform: capitalize !important;
+  width: 160px;
+}
+
+.tripexpensecard {
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 8px 12px;
+  position: relative;
+  margin-bottom: 6px;
+  .datefield {
+    color: #3049bf;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+  }
+  .expensefiled {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .lefttext {
+    color: #464646;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+  }
+  .amounttext {
+    color: #f08b32;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+  }
+  .descriptiontext {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+  }
+  .cardaction {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    .viewbill {
+      text-transform: capitalize;
+      color: #3049bf;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 16px;
+      cursor: pointer;
+    }
+  }
+}
+
+.advancetable {
+  margin: 0 20px;
+}
+
+.paynowContainer {
+  margin: 0;
+  height: 65px;
+  // z-index: 1;
+  display: flex;
+  border-radius: 16px;
+
+  // box-shadow: 0px 4px 44px rgba(114, 92, 193, 0.15),
+  //   0px -7px 23px rgba(0, 0, 0, 0.02);
+  // border-radius: 16px;
+  // background: #fff;
+  // box-shadow: 0px 4px 44px 0px rgba(114, 92, 193, 0.15);
+  .subContainer {
+    height: 100%;
+    z-index: 2;
+
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 15px;
+    // background: #f08b32;
+    box-shadow: 0px 4px 44px 0px rgba(114, 92, 193, 0.15);
+
+    div {
+      padding: 0 0 0 18px;
+    }
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .subTitle {
+    margin-top: 2px;
+    color: #a0a4af;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .paynow {
+    width: 30%;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+
+    p {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 16px;
+      text-transform: capitalize;
+    }
+
+    &:disabled {
+      color: #fff;
+      opacity: 0.5;
+    }
+  }
+}
+
+.active {
+  background-color: #f08b32;
+}

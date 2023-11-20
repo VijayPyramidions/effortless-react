@@ -1,0 +1,449 @@
+.einvoicesettings {
+  width: 100%;
+  height: 100%;
+  animation: fadeInUp;
+  animation-duration: 1s;
+  p {
+    margin: 0 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 5%, 0);
+      transform: translate3d(0, 5%, 0);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .tabButtons {
+    text-transform: capitalize;
+    font-family: 'Lexend', sans-serif !important;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #00000080;
+  }
+
+  .einvoicemod {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .einvoicecardmobile {
+      box-shadow: none;
+      border: none;
+      border-radius: 0 !important;
+      margin: 16px 20px 0 20px;
+
+      &::before {
+        display: none;
+      }
+    }
+    .einvoicecard {
+      border-radius: 8px;
+      border: 1px solid #e5e5e5;
+      width: calc(100% - 32px);
+      padding: 0;
+      box-shadow: none;
+
+      @media screen and (max-width: 480px) {
+        border: none !important;
+        border-bottom: 1px solid #e5e5e5 !important;
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+    .headtext {
+      color: #283049;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    .invalidcredentials {
+      padding: 4px 8px;
+      color: var(--fill-red-main-red, #fc3400);
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 18px;
+      border-radius: 4px;
+      background: var(--light-fill-red-main-red, rgba(252, 52, 0, 0.1));
+    }
+    .descriptiontext {
+      color: #808080;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+  }
+
+  .ewaybillmod {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    .ewaybillcardmobile {
+      box-shadow: none;
+      border: none;
+      border-radius: 0 !important;
+      margin: 16px 20px 0 20px;
+
+      &::before {
+        display: none;
+      }
+    }
+    .ewaybillcard {
+      border-radius: 8px;
+      border: 1px solid #e5e5e5;
+      width: calc(100% - 32px);
+      padding: 0;
+      box-shadow: none;
+
+      @media screen and (max-width: 480px) {
+        border: none !important;
+        border-bottom: 1px solid #e5e5e5 !important;
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+    .headtext {
+      color: #283049;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    .invalidcredentials {
+      padding: 4px 8px;
+      color: var(--fill-red-main-red, #fc3400);
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 18px;
+      border-radius: 4px;
+      background: var(--light-fill-red-main-red, rgba(252, 52, 0, 0.1));
+    }
+    .descriptiontext {
+      color: #808080;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+  }
+
+  .einvoiceform {
+    position: relative;
+    .credentials {
+      color: #3049bf;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+    .formlabel {
+      color: #283049;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: normal;
+    }
+    .primaryButton,
+    .primaryButton:hover {
+      font-family: 'Lexend', sans-serif !important;
+      border-radius: 20px;
+      padding: 8px 59px;
+      text-align: center;
+      text-transform: none !important;
+      font-size: 14px;
+      font-weight: 500;
+      background: #f08b32;
+      color: #fff;
+      max-width: 160px;
+      height: 40px;
+    }
+
+    .secondaryButton,
+    .secondaryButton:hover {
+      border-radius: 20px !important;
+      padding: 8px 50px;
+      text-align: center;
+      text-align: center;
+      text-transform: none !important;
+      font-size: 14px;
+      font-weight: 500;
+      background: #fff;
+      border: 1px solid #f08b32;
+      border-radius: 4px;
+      color: #f08b32;
+      max-width: 160px;
+      height: 40px;
+      font-family: 'Lexend', sans-serif !important;
+    }
+  }
+
+  .einvoiceedit {
+    .selectedbox {
+      width: fit-content;
+      padding: 4px 8px;
+      background: #f08b321a;
+      border-radius: 4px;
+      color: #f08b32;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 18px;
+      cursor: pointer;
+      text-transform: capitalize;
+    }
+    .unselectedbox {
+      width: fit-content;
+      padding: 4px 8px;
+      background: #84818a1a;
+      border-radius: 4px;
+      color: #2e2c34;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 18px;
+      cursor: pointer;
+      text-transform: capitalize;
+    }
+    .descriptiontext {
+      color: #808080;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+  }
+}
+
+.einvoiceformmobile {
+  .headertext {
+    color: #283049;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: normal;
+    position: relative;
+    padding-bottom: 2px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 0.5px;
+      bottom: 0;
+      background: #f08b32;
+      border-radius: 6px;
+    }
+  }
+  .mobiledate {
+    width: calc(100% - 20px);
+    padding: 10px 10px 0;
+    border-radius: 6px;
+    border: 1px solid #0000001a;
+    background: #00000005;
+    .mobiledatelabel {
+      font-size: 11px;
+      color: rgb(160, 164, 175) !important;
+      font-weight: 400;
+      margin: 0;
+    }
+    .mobiledatefield {
+      margin: 5px;
+      font-size: 14px;
+      color: rgb(40, 48, 73);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .mobiledateinput {
+        pointer-events: none;
+        width: 90%;
+        border: none;
+        background: rgb(250, 250, 250);
+      }
+    }
+  }
+
+  .primaryButton,
+  .primaryButton:hover,
+  .secondaryButton,
+  .secondaryButton:hover {
+    border-radius: 20px !important;
+    font-family: 'Lexend', sans-serif !important;
+    text-align: center;
+    text-transform: none !important;
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 160px;
+  }
+
+  .primaryButton,
+  .primaryButton:hover {
+    background: #f08b32;
+    flex: 1;
+    color: #fff;
+    padding: 8px 59px;
+    max-width: unset !important;
+  }
+
+  .secondaryButton,
+  .secondaryButton:hover {
+    padding: 8px 50px;
+    background: #fff;
+    color: #f08b32;
+    border: 1px solid #f08b32;
+    max-width: unset !important;
+    flex: 1;
+  }
+}
+
+.ewaybilledit {
+  .credentials {
+    color: #3049bf;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+  .formlabel {
+    color: #283049;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .generatebtn {
+    padding: 8px 16px;
+    text-transform: capitalize;
+    color: #888;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+  }
+  .generatebtn:hover {
+    background: #fff;
+  }
+  .selected {
+    background: #fff;
+    color: #283049;
+  }
+  .primaryButton,
+  .primaryButton:hover {
+    font-family: 'Lexend', sans-serif !important;
+    border-radius: 20px;
+    padding: 8px 59px;
+    text-align: center;
+    text-transform: none !important;
+    font-size: 14px;
+    font-weight: 500;
+    background: #f08b32;
+    color: #fff;
+    max-width: 160px;
+    height: 40px;
+  }
+
+  .secondaryButton,
+  .secondaryButton:hover {
+    border-radius: 20px !important;
+    padding: 8px 50px;
+    text-align: center;
+    text-align: center;
+    text-transform: none !important;
+    font-size: 14px;
+    font-weight: 500;
+    background: #fff;
+    border: 1px solid #f08b32;
+    border-radius: 4px;
+    color: #f08b32;
+    max-width: 160px;
+    height: 40px;
+    font-family: 'Lexend', sans-serif !important;
+  }
+}
+
+.ewaybillformmobile {
+  .headertext {
+    color: #283049;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: normal;
+    position: relative;
+    padding-bottom: 2px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 0.5px;
+      bottom: 0;
+      background: #f08b32;
+      border-radius: 6px;
+    }
+  }
+  .formlabel {
+    color: #283049;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .generatebtn {
+    padding: 8px 16px;
+    text-transform: capitalize;
+    color: #888;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+  }
+  .generatebtn:hover {
+    background: #fff;
+  }
+  .selected {
+    background: #fff;
+    color: #283049;
+  }
+  .primaryButton,
+  .primaryButton:hover,
+  .secondaryButton,
+  .secondaryButton:hover {
+    border-radius: 20px !important;
+    font-family: 'Lexend', sans-serif !important;
+    text-align: center;
+    text-transform: none !important;
+    font-size: 14px;
+    font-weight: 500;
+    max-width: 160px;
+  }
+
+  .primaryButton,
+  .primaryButton:hover {
+    background: #f08b32;
+    flex: 1;
+    color: #fff;
+    padding: 8px 59px;
+    max-width: unset !important;
+  }
+
+  .secondaryButton,
+  .secondaryButton:hover {
+    padding: 8px 50px;
+    background: #fff;
+    color: #f08b32;
+    border: 1px solid #f08b32;
+    max-width: unset !important;
+    flex: 1;
+  }
+}

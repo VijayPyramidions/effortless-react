@@ -1,0 +1,2489 @@
+
+.categorization_CategorizationWrapper #mui-9-label{
+  top:10px !important;
+}
+
+.BankingCategorizationDetails_bankCategorizationWrapper #mui-9-label{
+  top:10px !important;
+}
+
+.BankingCategorizationDetails_bankCategorizationWrapper #datagridbox > div{
+   border-radius: 10px 10px 0px 0px;
+}   
+
+.BankingCategorizationDetails_bankCategorizationWrapper .bankCategorizationgrid_uncategorized_option .MuiTypography-root{
+  font-family: 'Lexend' !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: .9vw !important;
+  line-height: 15px !important;
+}
+
+
+.BankingCategorizationDetails_bankCategorizationWrapper .MuiDataGrid-footerContainer > div {
+   float:left;
+   width:100%;
+   height:100%;
+}
+
+#mobileeditcategorized{
+    margin-top: -90px;
+    width: 30px;
+    font-size: 3vw;
+    float: right;
+    margin-right: 70px;
+    color:#F08B32;
+}
+
+#mobileeditcattext{
+  margin-top: -22px;
+  margin-left: 22px;
+}
+
+#totalblock{
+  width:100%;
+}
+
+.expensegrid{
+  width:88% !important;
+  padding-top:20px;
+}
+
+#document{
+  color:#1A38C3;
+  line-height: 1.8vh;
+}
+
+#addadvancevalue{
+  background: #FBE2CC;
+  height: 10px;
+  top: 20px;
+  float: left;
+  padding-bottom: 10px;
+  padding-top: 10px;  
+}
+
+#total{
+    float:left;
+    width:100% !important;
+}
+
+
+.BankingCategorizationDetails_bankCategorizationWrapper .MuiDataGrid-virtualScroller [data-field="date"]{
+      color:#313A4E !important;
+}
+
+.BankingCategorizationDetails_bankCategorizationWrapper .MuiDataGrid-virtualScroller [data-field="txn_id"]{
+      color:#1A38C3 !important;     
+}  
+
+.BankingCategorizationDetails_bankCategorizationWrapper .MuiDataGrid-virtualScroller [data-field="party_name"]{
+      color:#6B6F7B !important; 
+}  
+
+.BankingCategorizationDetails_bankCategorizationWrapper .MuiDataGrid-virtualScroller [data-field="party_name"]{
+     color:#1A38C3 !important;   
+}
+
+.BankingCategorizationDetails_bankCategorizationWrapper .MuiDataGrid-virtualScroller [data-field="narration"]{
+     white-space:pre-wrap !important;
+     color:#6B6F7B !important; 
+}
+
+.BankingCategorizationDetails_bankCategorizationWrapper .MuiDataGrid-virtualScroller [data-field="amount1"]{
+     color:#283049 !important;
+}
+
+.BankingCategorizationDetails_bankCategorizationWrapper .MuiDataGrid-virtualScroller [data-field="amount2"]{
+     color:#9C3131 !important;
+}
+
+.categorization_CategorizationWrapper  .total{
+  padding-left:20px !important;
+}
+
+#datagridbox [data-field="narration"]{
+  margin-top:2px;
+}
+
+#datagridbox .Mui-selected{
+   background-color:unset !important;
+}
+
+
+.BankingCategorizationDetails_bankCategorizationWrapper [role='row']{
+  color:  #6B6F7B;
+}
+
+
+#datagridbox svg[data-testid="CheckBoxOutlineBlankIcon"]{
+  stroke: #F08B32 !important;
+  stroke-opacity:.2 !important;
+}
+
+.categorization_CategorizationWrapper #datagridbox [data-field="Details"]{
+  max-width:84vw important;
+  min-width:84vw !important;
+  margin-left:-15px;
+  max-height:25px !important;
+  min-height:25px !important;
+}
+
+.categorization_CategorizationWrapper #datagridbox [role="columnheader"]{
+  max-height:52px !important;
+  min-height:52px !important; 
+}
+
+#desktoptextEntryHolder{
+  padding:0px !important;
+  width:98% !important;
+  height:99% !important;
+}
+
+
+.categorization_CategorizationWrapper #datagridbox [data-field="Advances"]{
+
+  margin-left:3px;
+}
+
+#datagridbox svg[data-testid="CheckBoxOutlineBlankIcon"] path{
+  stroke-width: 1e-8px !important;
+  stroke: #F08B32 !important;
+  stroke-opacity:.2 !important;
+  fill-opacity:.5 !important;
+}   
+
+#datagridbox .custombuttom-MuiButtonBase-root-MuiCheckbox-root.Mui-checked, #datagridbox .custombuttom-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+  color: #1976d2;
+}  
+
+#datagridbox .custombutton {
+  cursor: inherit;
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+ }
+
+#datagridbox .custombutton-MuiSvgIcon-root{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;fill:currentColor;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;font-size:1.5rem;}
+
+#datagridbox .custombutton-MuiButtonBase-root-MuiCheckbox-root {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  padding: 9px;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#datagridbox .custombutton-MuiTouchRipple-root{overflow:hidden;pointer-events:none;position:absolute;z-index:0;top:0;right:0;bottom:0;left:0;border-radius:inherit;}
+
+
+.BankingCategorizationDetails_bankCategorizationWrapper .css-dmmspl-MuiFormGroup-root{
+    margin-top:10px;
+}
+
+
+.categorization_CategorizationNextBox{
+     margin-top:-2px;
+}
+
+
+.BankingCategorizationDetails_bankCategorizationWrapper input{
+  font-size:.9vw;
+  margin-top:0px;
+  color: #666666;    
+}
+
+.BankingCategorizationDetails_bankCategorizationWrapper .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root{
+  border:1px solid #A0A4AF;
+  font-size:.5vw;
+  border-radius:10px;
+}
+
+#bankingCategorizationClosingBalanceWrapper{
+  margin-top: 10px;
+  float: left;
+}   
+
+#bankingCategorizationClosingBalanceWrapper_Mobile{
+  margin-top: 15px;
+  float: left;
+  width: 100%;
+}   
+
+
+
+
+.bankCategorizationWrapper_AdditionalDataButton{
+  background-color:transparent;
+  border:1px solid #6E6E6E !important;
+  color:#6E6E6E !important;
+  cursor:default;
+  opacity:1;
+  margin-left:2px;
+}
+
+.bankCategorizationWrapper_AdditionalDataButton:hover{
+  cursor:pointer;
+  opacity:.5;
+}
+
+.bankCategorizationWrapper_addnewrows{
+  font-size:.9vw !important;
+ }
+
+
+#bankingCategorizationClosingBalance{
+  position:relative;
+  font-size:.9vw !important;
+  color: #6E6E6E !important;
+  white-space: nowrap;
+  width: 100%;
+}
+
+
+
+
+#bankingCategorizationClosingBalance_text{
+  width:50%;
+  display:inline-block;
+  position:absolute;
+}
+
+#bankingCategorizationClosingBalance_text_mobile{
+  display:inline-block;
+  font-size: 3vw !important;
+  color:#283049;
+  font-family: 'Lexend';
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+}
+
+#bankingCategorizationClosingBalance_text_desktop{
+  display:inline-block;
+  font-size: .9vw !important;
+}
+
+#bankingCategorizationClosingBalance_value_debit{
+  width: 50%;
+  margin-left: 87%;
+  position:absolute;
+  display: inline-block;
+}  
+
+#bankingCategorizationClosingBalance_value_credit_zero_desktop{
+  width: 50%;
+  margin-left: 30%;
+  position:absolute;
+  display: inline-block;
+  top:0px;
+}  
+
+#bankingCategorizationClosingBalance_value_debit_zero_desktop{
+  float:right;
+  margin-right:28px;
+  top:0px;
+  font-weight:600;
+  color: #283049 !important;
+}  
+
+#bankingCategorizationClosingBalance_value_credit_desktop{
+  position:relative;
+  display: inline-block;
+  top:0px;
+  font-weight:600;
+  color: #283049 !important;
+  float:right;
+  padding-right:8px;
+  margin-top:10px;
+}  
+
+#bankingCategorizationClosingBalance_value_creditZeroWithTransactions{
+  width: 52%;
+  margin-left: 65%;
+  position:absolute;
+  display: inline-block;
+  top:0px;
+}  
+
+
+#bankingCategorizationClosingBalance_value_debit_mobile{
+  float:right;
+  font-size:3vw;
+  padding-right:2vw;
+  font-weight:600;
+  font-family: 'Lexend';
+  font-style: normal;
+  line-height:15px;
+  color:#283049;
+  margin-top:2px;
+}
+
+#bankingCategorizationClosingBalance_value_credit_mobile{
+  float:right;
+  font-size:3vw;
+  margin-left:2px !important;
+  font-weight:600;
+  font-family: 'Lexend';
+  font-style: normal;
+  line-height:15px;
+  color:#283049;
+}
+
+#bankingCategorizationClosingBalance_value_debit_desktop{
+  float:right;
+  font-size:.9vw;
+  font-weight:600;
+  color: #283049 !important;
+  padding-right:6px;
+  margin-top:10px;
+}
+
+#bankingCategorizationClosingBalance_value_creditZeroWithoutTransactions{
+  width: 52%;
+  margin-left: 61%;
+  position:absolute;
+  display: inline-block;
+  top:0px;
+} 
+
+#bankingCategorizationClosingBalance_value_debitZeroWithoutTransactions{
+  width: 52%;
+  margin-left: 92.3%;
+  position:absolute;
+  display: inline-block;
+  top:0px;
+} 
+
+
+#datagridbox .MuiDataGrid-virtualScrollerRenderZone [role="row"] [data-field*=taxamount]{
+  padding:10px;
+}
+
+#datagridbox  .MuiDataGrid-virtualScrollerRenderZone [role="row"] [data-field*=adjustment]{
+  padding:10px;
+}
+
+#datagridbox .MuiDataGrid-virtualScrollerRenderZone [role="row"] [data-field*=amount]{
+  padding:10px;
+}
+
+#datagridbox .MuiDataGrid-virtualScrollerRenderZone [role="row"] [data-field*=net_bslsnce]{
+  padding:10px;
+}
+
+#datagridbox .MuiDataGrid-virtualScrollerRenderZone [role="row"] [data-field*=cash]{
+  padding:10px;
+}
+
+#datagridbox .MuiDataGrid-virtualScrollerRenderZone [role="row"] [data-field*=settlementamount]{
+  padding:10px;
+}
+
+#datagridbox [data-field*=taxamount] .MuiDataGrid-cellContent{
+  text-align:left;
+  min-height:40px !important;
+  width:50% !important
+}
+
+#datagridbox [data-field*=afjustment] .MuiDataGrid-cellContent{
+  text-align:left;
+  min-height:40px !important;
+  width:50% !important
+}
+
+#datagridbox .Mui-checked{
+  color:#F08B32 !important;
+}
+
+
+
+#datagridbox [data-field*=adjustment] .MuiDataGrid-cellContent{
+  text-align:right;
+  background: #F5F5F5 !important;
+  min-height:40px !important;
+}
+
+#datagridbox [data-field*=adjustment]{
+  min-height:40px !important;
+}
+
+#datagridbox [data-field*=taxamount]{
+  min-height:40px !important;
+}
+
+#datagridbox .MuiDataGrid-cell.MuiDataGrid-cell--editing{
+    box-shadow:none !important;
+
+}
+
+#datagridbox .MuiDataGrid-cell--editing .MuiDataGrid-cell .MuiDataGrid-cell--textRight .MuiDataGrid-cell--editable{
+    border:none !important;
+    box-shadow:none !important;
+}
+
+#datagridbox .MuiDataGrid-columnHeader--moving{
+    background:none !important;
+}
+
+
+.BankingCategorizationDetails_bankCategorizationWrapper .MuiDataGrid-columnHeaders [role="row"]{
+  margin-top:-20px;
+}
+
+.BankingCategorizationDetails_bankCategorizationWrapper  .MuiDataGrid-columnHeaderDraggableContainer{
+   height:100px !important;
+}
+
+
+#datagridbox .MuiDataGrid-columnHeaders  [data-field*=taxamount]{
+  background: none !important;
+}
+
+#datagridbox .MuiDataGrid-columnHeaders [data-field*=adjustment]{
+  background: none !important;
+}
+
+#datagridbox .MuiDataGrid-virtualScroller [data-field*=taxamount]{
+  background: rgba(217, 217, 217, 0.35);
+}
+
+#datagridbox .MuiDataGrid-virtualScroller [data-field*=adjustment]{
+  background: rgba(217, 217, 217, 0.35);
+}
+
+
+.categorization_textEntryHolder textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #000000;
+  opacity: 1; /* Firefox */
+  font-family: 'Lexend' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: .9vw !important;
+  line-height: 10px !important;
+  padding:10px;
+}
+
+.categorization_textEntryHolder textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #000000;
+  font-family: 'Lexend' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: .9vw !important;
+  line-height: 10px !important;
+  padding:10px;
+}
+
+.categorization_textEntryHolder textarea::-ms-input-placeholder { /* Microsoft Edge */
+  color: #000000;
+  font-family: 'Lexend' !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: .9vw !important;
+  line-height: 10px !important;
+  padding:10px;
+}
+
+
+#datagridbox .edtiable{
+  background: #F5F5F5
+}
+
+
+#Categorizationgrid{
+  padding-bottom:10px !important;
+  padding-left:1
+} 
+
+.categorization_textEntryHolder  #datagridbox .MuiDataGrid-row {
+  border-top :1px solid rgba(0,0,0,.2);
+}
+
+#adjustmentamount{
+    width:100% !important;
+    height:100% !important;
+    float:left !important;
+    padding:0 !important;
+    padding-right: 4px !important;
+}
+
+#datagridbox [role="cell"] {
+  max-height:100% !important;
+}
+
+.categorization_CategorizationWrapper [data-field="adjustment"]{
+  max-height:100% !important;
+}
+
+
+#datagridbox [data-field="adjustment"] div:first-child{
+  height:100% !important;
+}
+
+#datagridbox [data-field="adjustment"] div:first-child div:first-child{
+  height:100% !important;
+  float:left;
+  border:none;
+}
+
+
+#datagridbox [data-field="taxamount"] input:focus {
+  border: none !important;
+}  
+
+#datagridbox [data-field="adjustment"] input:focus {
+  border: none !important;
+}  
+
+#datagridbox [data-field="adjustment"] input {
+  width: 100%;
+  height: 100%;
+  text-align:right;
+  color: #313A4E;
+  background:rgba(217, 217, 217, 0.35) !important;
+  font-family: 'Lexend' !important;
+  font-style: normal;
+  font-weight: 300;
+  font-size: .9vw !important;
+  outline:none !important;
+  border:none !important;
+}
+
+#datagridbox [data-field="taxamount"] input {
+  width: 100%;
+  height: 100%;
+  text-align:right;
+  color: #313A4E;
+  background:rgba(217, 217, 217, 0.35) !important;
+  font-family: 'Lexend' !important;
+  font-style: normal;
+  font-weight: 300;
+  font-size: .9vw !important;
+  outline:none !important;
+  border:none !important;
+  padding-right: 4px !important;
+}
+
+.categorization_CategorizationWrapper [data-field="taxamount"]{
+  max-height:100% !important;
+}
+
+.categorization_CategorizationWrapper [data-field="adjustment"]{
+  max-height:100% !important;
+}
+
+#datagridbox [data-field="taxamount"] div:first-child{
+  height:100% !important;
+}
+
+#datagridbox [data-field="adjustment"] div:first-child{
+  height:100% !important;
+}
+
+#datagridbox [data-field="taxamount"] div:first-child div:first-child{
+  height:100% !important;
+  float:left;
+  border:none;
+  line-height:unset !important;
+}
+
+#datagridbox [data-field="adjustment"] div:first-child div:first-child{
+  height:100% !important;
+  float:left;
+  border:none;
+  line-height:unset !important;
+}
+
+#datagridbox [data-field="taxamount"] input:focus{
+   border: none;
+}
+
+#datagridbox [data-field="adjustment"] input:focus{
+  border: none;
+}
+
+#datagridbox [data-field="taxamount"] input {
+  width: 100%;
+  height: 100%;
+  text-align:right;
+  color: #313A4E;
+  background:rgba(217, 217, 217, 0.35);
+  font-family: 'Lexend' !important;
+  font-style: normal;
+  font-weight: 300;
+  font-size: .9vw !important;
+  outline:none;
+  border:none;
+}
+
+#datagridbox [data-field="adjustment"] input {
+  width: 100%;
+  height: 100%;
+  text-align:right;
+  color: #313A4E;
+  background:rgba(217, 217, 217, 0.35);
+  font-family: 'Lexend' !important;
+  font-style: normal;
+  font-weight: 300;
+  font-size: .9vw !important;
+  outline:none;
+  border:none;
+}
+
+
+#toppart{
+  margin-left:12px !important;
+}
+
+.BankingCategorizationDetails_bankCategorizationWrapper.MuiFormControlLabel-root.MuiFormControlLabel-labelPlacementEnd.css-j204z7-MuiFormControlLabel-root{
+    font-size:.9vw;
+}
+
+#advancebutton{
+  bottom:0px;
+  float:left;
+}
+
+
+.addadvanceholder{
+   font-family: 'Lexend' !important;
+   font-style: normal;
+   font-weight: 300;
+   font-size: .9vw !important;
+   outline:none;
+   border:none;
+}
+
+.addadvanceplus{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.1vw !important;
+  color:#00A676;
+  margin-left:5px;
+}
+
+.addadvance{
+  font-style: normal;
+  font-weight: 500;
+  font-size: .9vw !important;
+  color:#00A676;
+  margin-left:10px;
+  text-decoration: none;
+  margin-top:10px;
+}
+
+#datagridbox [data-field="document_number"]{
+  white-space:pre-wrap !important;
+}
+
+#datagridbox .taxamountnoedit{
+  background:unset!important;
+}  
+
+#datagridbox .taxamountnoedit div{
+   text-align:center !important;
+   align-content:center !important;
+   align-items:center !important;
+   vertical-align: middle !important;
+
+} 
+
+@media only screen and (max-width:300px){
+  .categorization_CategorizationWrapper #datagridbox  [rel=adjustmentdetails] input{
+     font-size:4.5vw;
+
+  }
+
+  .categorization_CategorizationWrapper #datagridbox  .categorization_gridElement{
+     padding-left:13px !important;
+  }
+
+  .categorization_CategorizationWrapper #datagridbox #advancedetails{
+     margin-left:-12px !important;
+  }
+}  
+
+
+
+
+
+@media only screen and (min-width: 601px) and (max-width: 820px) {
+    #Categorizationgridbottom{
+      padding-top:12px !important;
+    }
+
+    .BankingCategorizationDetails_bankCategorizationWrapper  #bankCategorizationgrid{
+        margin-top: -15px !important;
+    }
+
+    #CategorizeMoveButtons{
+        bottom:45% !important;
+    }
+
+    #CategorizeMoveButtons div:first-child{
+        margin-left:-7px !important;
+    }
+    .DashboardViewContainer_dashboardBodyContainerhideNavBar > div{
+      float: left;
+      position: relative;
+      width: 100%;
+      display:block;
+      box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+      border-radius: 8px;
+    }
+ }
+
+ .increasebillbookingheight{
+   height:100% !important;
+ }
+
+@media only screen and (max-width: 600px) {
+  .BankingCategorizationDetails_bankCategorizationWrapper input{
+    font-size:3vw !important;
+  }
+
+  #bankCategorizationgrid{
+     height:53px !important;
+  }
+
+  .BankingCategorizationDetails_bankCategorizationWrapper  .MuiDataGrid-virtualScroller{
+     margin-top:80px !important;
+  }
+
+  .BankingCategorizationDetails_bankCategorizationWrapper headerStyle{
+    font-family: 'Lexend' !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    color:#6B6F7B !important;
+  }
+
+  .BankingCategorizationDetails_bankCategorizationWrapper  [data-field="Details"]{
+    height:110px !important;
+  }
+
+
+  .BankingCategorizationDetails_bankCategorizationWrapper #cardTitleLeft{
+    float:left;
+    width:45% !important;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    color:#283049;
+   }
+  
+   .BankingCategorizationDetails_bankCategorizationWrapper #cardDataLeft{
+    float:left;
+    width:50% !important;
+    text-align:left;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    color:#283049;
+   }
+  
+   .BankingCategorizationDetails_bankCategorizationWrapper #cardDataRight{
+    float: right;
+    width: 45% !important;
+    text-align: right;
+    padding-right:11px;
+    margin-right: -8px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    color:#283049;
+   } 
+
+   .BankingCategorizationDetails_bankCategorizationWrapper [rel="diffcolor1"]{
+      color:#00A676 !important;
+   }
+
+   .BankingCategorizationDetails_bankCategorizationWrapper [rel="diffcolor2"]{
+    color:#F08B32 !important;
+ }
+
+  .categorization_CategorizationWrapper #datagridbox .categorization_gridElement{
+    float:left;
+  }
+
+  #closingbalancebutton{
+    border:none !important;
+    margin-top:1px;
+    color:#F08B32;
+    margin-left:10px !important;
+  }
+
+  #details{
+    padding-left:10px;
+  }
+
+  .BankingCategorizationDetails_bankCategorizationWrapper #cardDataLeft{
+     margin-left:-10px;
+  }
+
+  .BankingCategorizationDetails_bankCategorizationWrapper .MuiDataGrid-main > div{
+     border: 1px solid #D8D8D8;
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+     border-radius: 4px;
+  }
+
+  .BankingCategorizationDetails_bankCategorizationWrapper #cardDataRight{
+     padding-right:30px;
+  }
+
+  .BankingCategorizationDetails_bankCategorizationWrapper .MuiDataGrid-footerContainer{
+    height:30px !important;
+  }
+
+
+
+  .BankingCategorizationDetails_fromdate input{
+    margin-top:4px;
+    padding-left:8px;
+  }
+
+  .BankingCategorizationDetails_bankCategorizationWrapper [rel="adjustdateposition"]{
+     padding-right:20px !important;
+  }
+
+  .BankingCategorizationDetails_fromdate > div{
+      width:80%;
+  }
+
+  .BankingCategorizationDetails_bankCategorizationWrapper [rel="applybutton"]{
+      margin-top:-10px !important;
+  }
+
+  .bankCategorizationgrid_uncategorized_option{
+    margin-left:6px !important;
+    margin-top:10px !important;
+  }
+  
+   .applyHolder{
+      margin-top:-45px !important;
+   }
+
+
+  [rel="dates"]{
+    margin-top:40px !important;
+    border:none !important;
+  }
+
+
+  .categorization_CategorizationWrapper #datagridbox .MuiDataGrid-virtualScrollerContent{
+     height:100% !important;
+  }
+ 
+
+  .categorization_gridElement{
+    height : calc(100% - 75px) !important;
+  }
+
+  #document{
+     line-height:1.4vh !important;
+  }
+
+
+  .categorization_CategorizationWrapper #datagridbox [data-field="Advances"]{
+      margin-top:10px;
+  }  
+
+  .categorization_CategorizationWrapper #datagridbox .MuiDataGrid-row [data-field="Advances"]{
+      margin-top:-20px;
+  }
+
+  .categorization_CategorizationWrapper .MuiDataGrid-columnHeaders{
+    margin-top:-5px !important;
+  }
+
+  #datagridbox .MuiDataGrid-main > .MuiDataGrid-columnHeaders{
+    max-height:60px !important ;
+    min-height:60px !important ;
+    line-height:unset !important ;
+  }
+
+ 
+
+  .categorization_CategorizationWrapper #datagridbox [rel="party"]{
+     padding-right:10px;
+     margin-left: 4.5vw;
+     margin-top:-20px;
+     height:80px;
+  }
+
+  .categorization_CategorizationWrapper #datagridbox [rel="purpose"]{
+    padding-right:10px;
+    margin-top:-20px;
+    height:80px;
+ }
+
+  #datagridbox .MuiDataGrid-virtualScrollerRenderZone{
+    width: 98%;
+  }
+
+  .categorization_CategorizationWrapper #datagridbox [role="grid"]{
+      width:88% !important;
+  }
+
+
+  .categorization_CategorizationWrapper #datagridbox  [data-field="selection"]{  
+      max-width: 30px !important;
+      min-width: 30px !important;
+  }
+
+  #allocatedbillcount{
+     right:unset !important;
+     margin-left: -6.5vw !important;
+     margin-top: -7.3vw;
+  }
+
+  #datagridbox{
+    border-top-left-radius: 25px;
+    border-top-right-radius:25px;
+    border:none;
+  }
+
+
+  .categorization_bankTax input{
+     color:#ffffff !important;
+  }
+  
+  .categorization_CategorizationWrapper #datagridbox [aria-rowindex="1"] [aria-colindex="2"]{
+    min-width: 100% !important;
+  }
+
+  #datagridbox [rel="documentdetails"]{
+    line-height:12px !important;
+    margin-top:0px;
+  }
+
+  #Categorizationgrid{
+    padding-left:12px !important;
+  }
+
+  #datagridbox .collapsecard{
+    min-height: 25px !important;
+    max-height: 25px !important;
+  }
+
+  #datagridbox  .collapsecard-heightadjust1{
+       height:20px !important;
+  }
+
+  #datagridbox .collapsecard-heightadjust2{
+      height:30px !important;
+  }  
+  
+  #datagridbox .expandcard-heightadjust3{
+    height:auto !important;
+  }  
+
+  .categorization_CategorizationWrapper #datagridbox [data-field="Advances"]{
+     width:395px;
+  }
+
+  #datagridbox  .collapsecard-adjust1{
+      padding-top: 45px !important;
+      margin-top: 0px !important; 
+  }   
+
+  #datagridbox .collapsecard-adjust2 {
+      margin-top: -30px !important;
+  }
+
+  #datagridbox .collapsecard-adjust3 {
+      max-height: 20px !important;
+  }
+
+  #datagridbox .collapsecard-adjust4{
+      margin-left:0px !important;
+  }
+
+  #datagridbox .expandcard{
+     max-height: unset !important;
+     min-height: unset !important;
+  }   
+
+  #datagridbox .expandcard-heightadjust{
+      height:150px !important;
+  }
+
+  #datagridbox  .expandcard-adjust1{
+      padding-top: 0px !important;
+      margin-top: 0px !important; 
+  }
+
+  #datagridbox .expandcard-adjust2 {
+      margin-top: 0px !important;
+  }
+
+  #datagridbox .expandcard-adjust3 {
+      max-height: unset !important;
+  }
+  
+
+  #advancedetails{
+    font-size: 3vw !important;
+    float: left;
+    font-weight: 300;
+    width: 90%;
+    margin-top:-2px !important;
+  }
+
+
+
+  #datagridbox [role='row']{
+     width:99% !important;
+  }
+
+  #advancesel{
+    float:left;
+    margin-top:10px;
+    font-weight:300;
+    margin-left:10px !important;
+  }
+
+  #datagridbox [rel="documentdetails"]{
+      white-space:pre-wrap !important;
+  }
+
+
+  #advancesel{
+    width:10% !important;
+  }
+
+  .categorization_CategorizationWrapper [data-field="Details"] .MuiDataGrid-columnHeaderDraggableContainer{
+      margin-left:-15px !important;
+      margin-top:23px !important;
+  }
+
+  .categorization_CategorizationWrapper  .MuiDataGrid-row{
+     background: #FFFFFF;
+     border: 1px solid #D8D8D8;
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);  
+     border-radius: 4px;
+     padding-top:10px;
+     margin-left: 5px;
+  }   
+  
+  #datagridbox [role="row"]{
+     max-height:25px !important;
+     min-height:25px !important;
+     margin-bottom:10px;
+  }
+
+  #mobile_docno{
+    font-size: 3vw;
+    font-family: 'Lexend' !important;
+    font-style: normal;
+    font-weight: 300;
+    color: #434A60;
+    float: left;
+    width:  35%;
+    margin-top:-2px !important;
+  }
+
+  #mobile_docno label{
+    margin-left:6px !important;
+  }
+
+  #advancesel [data-field="selection"]{
+    margin-left:-3px !important;
+    margin-top:-3px !important;
+  }
+
+
+  #mobile_value1{
+    font-size: 3vw;
+    font-family: 'Lexend' !important;
+    font-style: normal;
+    color: #434A60;
+    float: left;
+    width:23%;
+    padding-left:9px; 
+    margin-top:-1px !important;
+  }
+
+
+  #mobile_value2{
+    font-size: 3vw;
+    font-family: 'Lexend' !important;
+    font-style: normal;
+    color: #434A60;
+    float: left;
+    width:40%;
+    margin-left:-7px;
+    margin-top:-1px !important;
+    padding-bottom: 6px;
+  }
+
+  #mobile_title1{
+    font-size: 3vw;
+    font-family: 'Lexend' !important;
+    font-style: normal;
+    color: #434A60;
+    width:39%;   
+    float:left;
+  }
+
+  #mobile_title2{
+    font-size: 3vw;
+    font-family: 'Lexend' !important;
+    font-style: normal;
+    color: #434A60;
+    width:39%;
+    float:left;
+  }
+
+  #mobile_title3{
+    font-size: 3vw;
+    font-family: 'Lexend' !important;
+    font-style: normal;
+    color: #F08B32;
+    width:50%;
+    float:left;
+  }
+
+  #mobile_value3{
+    font-size: 3vw;
+    font-family: 'Lexend' !important;
+    font-style: normal;
+    color: #434A60;
+    width:22.5%; 
+    float:left;
+  }
+
+  #mobile_value4{
+    font-size: 3vw;
+    font-family: 'Lexend' !important;
+    font-style: normal;
+    width:22.5%;
+    float:left;
+  }
+
+  #mobile_value5{
+    font-size: 3vw;
+    font-family: 'Lexend' !important;
+    font-style: normal;
+    width:48%;
+    float:left;
+  }
+
+  .allocated{
+    width:30%;
+    float: left;
+    position: relative;
+    height: 50px;
+    top: 50px !important;
+    left: 45px;
+  }
+
+  .allocatednotrans{
+     width:unset;
+     float: left;
+     position: relative;
+     height: 50px;
+     top: 50px !important;
+     left: 45px;
+   }
+
+   
+  .categorization_CategorizationWrapper .MuiDataGrid-footerContainer{
+      display:none !important;
+  }
+
+  .BankingCategorizationDetails_bankCategorizationWrapper.MuiFormControlLabel-root.MuiFormControlLabel-labelPlacementEnd.css-j204z7-MuiFormControlLabel-root{
+    font-size:3vw !important;
+  }
+
+  .BankingCategorizationDetails_bankCategorizationWrapper .bankCategorizationgrid_uncategorized_option label .MuiTypography-root{
+    font-size:3vw !important;      
+  }
+
+  .categorization_CategorizationWrapper #datagridbox{
+     background-color:#fff !important;
+  }
+
+  .categorization_CategorizationWrapper .MuiDataGrid-columnHeaderTitleContainerContent div:first-child{
+     width:100% !important;
+  }
+
+  .categorization_CategorizationWrapper  [aria-rowindex="1"] [aria-colindex="2"] {
+      position:absolute ;
+      width: 330px !important;
+      min-width: 330px !important;
+      max-width: 330px !important;
+      margin-left: 56px !important;
+      margin-top:3px;
+  }
+
+  .categorization_CategorizationWrapper  [aria-rowindex="1"] [aria-colindex="1"] {
+    margin-left:-1px !important;
+  }
+
+  .categorization_CategorizationNextBox{
+     margin-top:0px !important;
+  }
+
+  .categorization_CategorizationWrapper #datagridbox [role="grid"]{
+     background-color:#fff !important;
+  }
+
+  .categorization_CategorizationWrapper [data-field="selection"]{
+    margin-bottom:45% !important;
+    margin-left:-5px !important;
+ }
+
+
+  #Categorizationgridbottom{
+    padding-top:25px !important;
+    padding-left:2vw !important;
+ }
+
+
+  .addadvanceholder{
+     font-size: 3vw !important;
+  }
+
+  .addadvanceplus{
+     font-size: 5vw !important; 
+  }
+
+  .addadvance{
+     font-size: 3.5vw !important;
+  }
+
+  #toppart{
+    margin-left:-24px !important;
+    padding-top: 10px;
+    margin-left: -1px !important;
+    padding-right: 30px !important;
+ }
+
+ .categorization_bankPaidTo #paidto{
+  width:85% !important;
+  float:left;
+}
+
+
+#datagridbox .MuiDataGrid-footerContainer{
+    height:60px;
+ }
+
+
+ .categorization_CategorizationWrapper #cardDataright{
+  float: right;
+  text-align: right;
+ }  
+
+ .categorization_CategorizationWrapper #cardDataleft{
+  float: left;
+  text-align: left;
+ }  
+
+ .categorization_CategorizationWrapper #cardTitleright{
+  float: right;
+  text-align: right;
+ }  
+
+ .categorization_CategorizationWrapper #cardTitleleft{
+  float: left;
+  text-align: left;
+ }  
+
+ .categorization_CategorizationWrapper .adjustpadding{
+  padding-right:13vw;
+  font-size:2.5vw !important;
+ }
+
+ .categorization_CategorizationWrapper .adjusttaxpadding{
+  padding-right:13.1vw;
+  margin-left:-30px;
+  font-size:2.5vw !important;
+ }
+
+ .categorization_CategorizationWrapper .adjustbalancepadding{
+  padding-right:4vw;
+ }
+
+ .categorization_CategorizationWrapper .MuiDataGrid-virtualScroller [role="row"] [data-field="selection"]{
+   margin-top:-17px;
+ }
+
+ .categorization_CategorizationWrapper [data-field="selection"]{
+      margin-top:0px;
+ }
+
+ .categorization_CategorizationWrapper [data-field="selection"]{
+     max-width:60px !important;
+     min-width:60px !important;
+ }
+
+  
+ #bankingCategorizationClosingBalance_text{
+    font-size:2vw;
+ }
+
+ #bankingCategorizationClosingBalance_text_mobile{
+  font-size:2vw;
+  padding-left:8px;
+ }
+
+
+ #bankingCategorizationClosingBalance_text_desktop{
+  font-size:.9vw;
+ }
+
+ #bankingCategorizationClosingBalance_value_debit_zero_mobile{
+  float:right;
+  margin-right:-8px;
+  top:0px;
+  font-size:3vw;
+  font-family: 'Lexend' !important;
+  font-style: normal !important;;
+  font-weight: 600 !important;
+  line-height:15px;
+  color:#283049;
+  margin-left:-2px;
+ }  
+
+
+ #bankingCategorizationClosingBalance_value_credit{
+  width: 50%;
+  left: 66%;
+  /* position: absolute; */
+  font-size: 2vw;
+  display: inline-block;
+  position: absolute;
+  top:-3px;
+ }  
+ #bankingCategorizationClosingBalance_value_creditZero{
+    top:-3px;
+    left: 78% !important;
+ }
+
+ #bankingCategorizationClosingBalance_value_debit{
+    width: 50%;
+    left: 100%;
+    /* position: absolute; */
+    font-size: 2vw;
+    display: inline-block;
+    position: absolute;
+ }  
+
+ #datagridbox .MuiDataGrid-columnHeaders{
+    pointer-events:none !important;
+ }
+
+ #datagridbox .addnewrows{
+  font-size:3vw;
+ }
+
+ #Categorizationgridbuttons{
+   margin-top:5px;
+   margin-left:-15px;
+ }
+
+ #Categorizationgridbuttons_left{
+  margin-top:5px;
+  margin-left:-21px;
+}
+
+#Categorizationgridbuttons_right{
+  margin-top:5px;
+  position: absolute;
+  margin-left: 99%;
+}
+
+ #bankingCategorizationClosingBalance_value_creditZero{
+  width: 52%;
+  left: 92%;
+  position:absolute;
+  display: inline-block;
+ }  
+
+ #cardTitleLeft{
+  float:left;
+  width:49% !important;
+ }
+
+ #cardDataLeft{
+  float:left;
+  width:50% !important;
+  text-align:left;
+ }
+
+ #cardDataRight{
+  float: right;
+  width: 45% !important;
+  text-align: right;
+  padding-right:11px;
+ }   
+
+ #datagridbox .MuiDataGrid-menuIcon {
+   display:none !important;
+ }
+
+ .bankCategorizationWrapper_AdditionalDataButton{
+   background-color:transparent;
+   border:1px solid #6E6E6E !important;
+   color:#6E6E6E !important;
+   pointer-events:visibleStroke;
+   cursor:default;
+   opacity:1;
+ }
+
+ .bankCategorizationWrapper_AdditionalDataButton:hover{
+    cursor:pointer;
+    opacity:.5; 
+ }
+
+ .bankCategorizationWrapper_addnewrows{
+   font-size:2vw !important;
+ } 
+
+ #datagridbox .MuiGrid-item{
+    padding-top:16px !important;
+ }
+
+ #Categorizationgrid{
+   padding-bottom:10px !important;
+ } 
+
+ #documentdate{
+  font-size: 4vw !important;
+  line-height: 20px;
+}  
+
+ #duedate{
+  font-size: 4vw !important;
+}  
+
+ #documentnumber{
+ font-size: 4vw !important;
+}   
+
+ #filenameloaded{
+  font-size: 3vw !important;
+}
+
+ #documentnumber-helper-text{
+  font-size: 3vw !important;
+  margin-top:-2px !important;
+}
+
+ #documentdate-helper-text{
+  font-size: 3vw !important;
+  margin-top:-1px !important;
+}
+
+ #documentduedate-helper-text{
+  font-size: 3vw !important;
+  margin-top:-1px !important;
+}
+
+ #accountcategoryerrormessage{
+  font-size: 3vw !important;
+  margin-top:30px !important;
+}
+
+ #vendorerrormessage{
+  font-size: 3vw !important;
+  margin-top:40px !important;
+}
+
+
+ #taxablevalueerrormessage{
+  font-size: 3vw !important;
+  margin-top:-1px !important;
+}
+
+ #fileuploadderrormessage{
+  font-size: 3vw !important;
+  top:3px !important;
+}
+
+ #cgstvalueerrormessage{
+  font-size: 3vw !important;
+  margin-top:1px !important;
+}
+
+ #igstvalueerrormessage{
+  font-size: 3vw !important;
+  margin-top:1px !important;
+}
+
+ #netpayableerrormessage{
+  font-size: 3vw !important;
+  margin-top:30px !important;
+}  
+
+ #datagridbox .MuiDataGrid-columnHeaders{
+    display:block !important;
+}
+
+#datagridbox .MuiDataGrid-main > .MuiDataGrid-columnHeaders{
+    border-bottom:none !important;
+}
+
+ #datagridbox .MuiDataGrid-columnHeaderTitleContainer{
+  display:block !important;     
+}
+
+ #datagridbox.MuiDataGrid-columnHeaderTitleContainerContent{
+  display:block !important;
+}
+
+.bankCategorizationWrapper_AdditionalDataButton{
+  background-color:transparent;
+  border:1px solid #6E6E6E !important;
+  color:#6E6E6E !important;
+  cursor:default;
+  opacity:1;
+  margin-left:2px;
+}
+
+.bankCategorizationWrapper_AdditionalDataButton:hover{
+  cursor:pointer;
+  opacity:.5;
+}
+
+.bankCategorizationWrapper_addnewrows{
+  font-size:3vw !important;
+ }  
+ 
+ #datagridbox [role="cell"] {
+  padding:0px;
+}
+
+.categorization_CategorizationWrapper [rel="taxamountentry"] div:first{
+  width:50% !important;
+}
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1050px) {
+  .BankingCategorizationDetails_bankCategorizationWrapper{
+    margin-top:5px;
+    font-size:.9vw !important;
+  }
+
+  #bankingCategorizationClosingBalance_value_creditZero{
+    top:0px;
+  }
+
+  #bankingCategorizationClosingBalance{
+    font-size:.9vw;
+    width:62.8%;
+  }
+  #datagridbox .MuiDataGrid-footerContainer{
+    height:60px !important;
+  }
+  #datagridbox .addnewrows{
+    font-size:.9vw;
+  }
+
+  #bankingCategorizationClosingBalance_value_credit{
+    top:0px;
+  }  
+
+  .DashboardViewContainer_dashboardBodyContainerhideNavBar > div{
+    float: left;
+    position: relative;
+    width: 100%;
+    display:block;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+  }
+}
+
+@media only screen and (min-width: 1051px){
+    #bankingCategorizationClosingBalance{
+      position:absolute;
+      left:36%;
+      font-size:.9vw !important;   
+      width:60%;    
+   } 
+   #datagridbox .MuiDataGrid-footerContainer{
+      height:60px !important;
+      min-height:60px !important;
+      max-height:60px !important;
+   }
+   .addnewrows{
+    font-size:.9vw;
+   }
+
+   #bankingCategorizationClosingBalance_value_credit{
+    top:0px;
+   }
+   #bankingCategorizationClosingBalance_value_creditZero{
+    top:0px;
+  }
+}
+
+#datagridbox .MuiDataGrid-footerContainer{
+  height:none!important;
+ }
+
+#bankCategorizationgrid{
+  height:69px !important;
+}
+
+#editcategorization{
+  height:53px !important;
+}
+
+#datagridbox .MuiDataGrid-root .MuiDataGrid-cell:focus-within {
+  outline: none !important;
+  outline: 0px solid transparent;
+}  
+
+#datagridbox .MuiDataGrid-root .MuiDataGrid-columnHeader:focus-within {
+  outline: none !important;
+}  
+
+#datagridbox .MuiDataGrid-row{
+  max-height:none !important;
+  min-height:none !important;
+  height:auto;
+}
+
+#datagridbox .MuiDataGrid-cell--withRenderer{
+  max-height:none !important;
+  min-height:none !important;
+  height:auto !important;    
+}
+
+#datagridbox .MuiPagination-ul button{
+  color: #6E6E6E !important;
+}
+
+
+
+#datagridbox .MuiDataGrid-columnHeaderTitle{
+  color: #000000 !important;
+  font-family: 'Lexend' !important;
+  font-style: normal !important;;
+  font-weight: 700 !important;;
+  font-size: .9vw !important;
+}
+
+
+.BankingCategorizationDetails_bankCategorizationWrapper  #datagridbox .MuiDataGrid-columnHeaderTitle{
+  color: #6B6F7B !important;
+  font-family: 'Lexend' !important;
+  font-style: normal !important;;
+  font-weight: 700 !important;;
+  font-size: .9vw !important;
+}
+
+
+.headerStyle{
+ font-size:.9vw;
+}
+
+.headerStyleAmount{
+ text-align:right !important;
+ font-size:.9vw;
+}
+
+#datagridbox .MuiDataGrid-selectedRowCount .MuiDataGrid-rowCount{
+ visibility:hidden !important;
+ display:none !important;
+}
+
+#datagridbox .MuiDataGrid-selectedRowCount{
+ display:none !important;
+}
+
+#customTextHolder{
+position:absolute !important;
+width:95%;
+margin-top:17px;
+}
+
+
+  
+#datagridbox .MuiPagination-ul{
+margin-top:10px !important;
+}
+
+
+#bankingCategorization_Closing_Balance_Debit_New{
+float: right !important;
+text-align: right;
+margin-right:25px;
+}
+
+#bankingCategorization_Closing_Balance_Debit_New_zero{
+float: right !important;
+text-align: right;
+margin-right:30px; 
+}
+
+#bankingCategorization_Closing_Balance_Credit_New{
+width: 30%;
+position: absolute;
+float: right !important;
+left: 43%;
+text-align: right;
+margin-left:-2px;
+margin-top:-13px;
+} 
+
+#datagridbox [data-field="amount2"]{
+padding-right:2px;
+margin-left: -5px !important;
+}
+
+#datagridbox [data-field^="amount2"] .MuiDataGrid-columnHeaderDraggableContainer .MuiDataGrid-menuIcon{
+position: absolute;
+left: 83%;
+top: 40px;
+}  
+#datagridbox [data-field^="amount1"] .MuiDataGrid-columnHeaderDraggableContainer .MuiDataGrid-menuIcon{
+position: absolute;
+left: 85%;
+top: 40px;
+}   
+
+#datagridbox .MuiDataGrid-row [data-field="amount2"] {
+ padding-right:8px !important;
+}
+
+
+#taxamount{
+text-align:right;
+float:right;
+padding:0 !important;
+}
+
+#adjustmentamount{
+text-align:right;
+float:right;
+}
+
+
+#Categorizationgrid{
+padding-bottom:10px;
+}
+
+#Categorizationgridbottom{
+ padding-top:35px;
+}
+
+#mobileclosing{
+  margin-top: -10px;
+  width: 100%;
+  float: left;
+  height: 30px;
+}
+
+.categorization_textareaholder{
+height:50px !important;
+margin-left:-.5vw;
+margin-top:30px;
+font-family: 'Lexend' !important;
+font-style: normal !important;
+font-weight: 700 !important;
+font-size: 1vw !important;
+line-height: 20px !important;
+}
+
+#notes_textarea{
+width:100% !important;
+height:100% !important;
+position:relative !important;
+float:left;
+font-family: 'Lexend' !important;
+font-style: normal !important;
+font-weight: 300 !important;
+font-size: 1vw !important;
+line-height: 20px !important;
+background: rgba(234, 232, 232, 0.26);
+border: 0.694981px solid #E0E0E0; 
+border-radius: 6.94981px;
+}
+
+.categorization_textarea{
+height:100% !important;
+position:relative !important;
+display:block !important;
+font-family: 'Lexend' !important;
+font-style: normal !important;
+font-weight: 400 !important;
+font-size: .9vw !important;
+line-height: 20px !important;
+}
+
+.categorization_textEntry{
+ width:100% !important;
+ height:100% !important;
+ background: rgba(234, 232, 232, 0.26) !important;
+ border: 0.694981px solid #E0E0E0 !important;
+ border-radius: 6.94981px;
+ font-family: 'Lexend' !important;
+ font-style: normal !important;
+ font-weight: 400 !important;
+ font-size: .9vw !important;
+ line-height: 20px !important;   
+}
+
+.categorization_textEntry div:first-child{
+width:100% !important;
+height:100% !important;
+background: rgba(234, 232, 232, 0.26) !important;
+border-radius: 6.94981px !important;
+border:none;
+top:unset !important;
+left:unset !important;
+padding:unset !important;
+font-family: 'Lexend' !important;
+font-style: normal !important;
+font-weight: 400 !important;
+font-size: .9vw !important;
+line-height: 20px !important;
+}
+
+.categorization_textEntry textarea{
+width:100% !important;
+height:100% !important;
+background: rgba(234, 232, 232, 0.26) !important;
+border:none;
+border-radius: 6.94981px !important;
+top:unset !important;
+left:unset !important;
+font-family: 'Lexend' !important;
+font-style: normal !important;
+font-weight: 400 !important;
+font-size: .9vw !important;
+line-height: 20px !important;
+}
+
+.categorization_textEntryHolder textarea{
+width:100% !important;
+height:100% !important;
+background: rgba(234, 232, 232, 0.26) !important;
+border: none;
+border-radius: 6.94981px !important;
+top:unset !important;
+left:unset !important;
+font-family: 'Lexend' !important;
+font-style: normal !important;
+font-weight: 400 !important;
+font-size: .9vw !important;
+line-height: 20px !important;
+}
+
+#allocatedname{
+ width:100px !important;
+}
+
+#allocatedtext{
+width:100px !important;
+}
+
+
+#totalblock{
+ font-size:.9vw !important;
+ font-weight:700 !important;
+ float: left;
+ position: absolute;
+ margin-top:-57px !important;
+}
+
+#total{
+font-size:.9vw !important;
+font-weight:700 !important;
+float: left;
+position: relative;
+display: flex;
+width: 100%;
+height: 20px;  
+margin-top:-2px;
+}
+
+#advancevalue{
+font-size:.9vw !important;
+float: left;
+position: relative;
+display: flex;
+width: 100%;
+height: 20px;  
+display:flex;
+font-weight:300;
+}
+#advancesel{
+  float:left;
+  margin-top:-14px;
+  font-weight:300;
+  margin-left:10px;
+}
+#advancedetails{
+font-size:.9vw !important;
+float: left;
+margin-left:-20px;
+font-weight:300;
+height:30px;
+margin-top:1px;
+}
+
+#pagetotal{
+font-size:.9vw !important;
+float: left;
+position: relative;
+display: flex;
+width: 100%;
+height: 20px;  
+}
+
+.categorization_documentduedateInput div:first-child {
+  width:100% !important;
+
+}
+
+.categorization_documentdateInput div:first-child {
+width:100% !important;
+
+}
+
+
+.percentagevisible{
+visibility:visible;
+}
+
+.percentagehidden{
+visibility:hidden;
+}
+
+#documentdate{
+font-family: 'Lexend'; 
+font-style: normal;
+font-size: .9vw;
+line-height: 20px;
+}  
+
+#duedate{
+font-family: 'Lexend'; 
+font-style: normal;
+font-size: .9vw;
+line-height: 20px;
+}  
+
+#documentnumber{
+font-family: 'Lexend'; 
+font-style: normal;
+font-size: .9vw;
+line-height: 20px;
+}   
+
+#filenameloaded{
+text-align: center;
+margin-top: -10px;
+font-style: normal;
+font-size: .9vw;
+position: absolute;
+left:40%;
+top:30px;
+}
+
+#documentnumber-helper-text{
+text-align: left;
+font-style: normal;
+font-size: .9vw;
+position: relative;
+margin-top:0px;
+}
+
+#documentdate-helper-text{
+text-align: left;
+font-style: normal;
+font-size: .9vw;
+position: relative;
+margin-top:1px;
+}
+
+#documentduedate-helper-text{
+text-align: left;
+font-style: normal;
+font-size: .9vw;
+position: relative;
+margin-top:11px;
+}
+
+#accountcategoryerrormessage{
+text-align: left;
+font-style: normal;
+font-size: .9vw;
+position: relative;
+margin-top:22px;
+}
+
+
+#vendorerrormessage{
+text-align: left;
+font-style: normal;
+font-size: .9vw;
+position: relative;
+margin-top: 33px;
+}
+
+#taxablevalueerrormessage{
+text-align: left;
+font-style: normal;
+font-size: .9vw;
+position: relative;
+margin-top:55px;  
+}
+
+#fileuploaderrormessage{
+text-align: left;
+font-style: normal;
+font-size: .9vw;
+margin-top: 35px;
+position:absolute; 
+}  
+
+#cgstvalueerrormessage{
+text-align: left;
+font-style: normal;
+font-size: .9vw;
+position: relative;
+margin-top:50px;  
+}
+
+#igstvalueerrormessage{
+text-align: left;
+font-style: normal;
+font-size: .9vw;
+position: relative;
+margin-top:48px;  
+}
+
+#netpayableerrormessage{
+text-align: left;
+font-style: normal;
+font-size: .9vw;
+position: relative;
+margin-top:50px;  
+}
+
+#taxablevalue{
+z-index:2;
+}
+
+.MuiDataGrid-rowCount{
+ display:none !important;
+ visibility:hidden !important;
+}
+
+.MuiDataGrid-cell{
+ border-bottom:none !important;
+}
+
+.BankingCategorizationDetails_bankCategorizationWrapper textarea:hover{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  outline:none;
+  border:none;
+
+}
+.BankingCategorizationDetails_bankCategorizationWrapper input:hover{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  outline:none;
+  border:none;
+}
+.BankingCategorizationDetails_bankCategorizationWrapper  textarea:active{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  outline:none;
+  border:none;
+}
+.BankingCategorizationDetails_bankCategorizationWrapper  input:active{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  outline:none;
+  border:none;
+}
+.BankingCategorizationDetails_bankCategorizationWrapper textarea:focus{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  outline:none;
+  border:none;
+}
+.BankingCategorizationDetails_bankCategorizationWrapper input:focus{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  outline:none;
+  border:none;
+}
+.BankingCategorizationDetails_bankCategorizationWrapper button:focus{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  outline:none;
+  border:none;
+}
+.BankingCategorizationDetails_bankCategorizationWrapper button:active{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  outline:none;
+  border:none;
+}
+.BankingCategorizationDetails_bankCategorizationWrapper  button:hover{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  outline:none;
+  border:none;
+}
+.BankingCategorizationDetails_bankCategorizationWrapper label:focus{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  outline:none;
+  border:none;
+}
+.BankingCategorizationDetails_bankCategorizationWrapper .btn:active{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  outline:none;
+  border:none;
+}
+.btn.active
+{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  outline:none;
+  border:none;
+}
+
+.categorization_CategorizationWrapper textarea:hover{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  outline:none;
+  border:none;
+
+} 
+.categorization_CategorizationWrapper input:hover{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  outline:none;
+  border:none;
+}
+.categorization_CategorizationWrapper  textarea:active{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  outline:none;
+  border:none;
+
+} 
+.categorization_CategorizationWrapper input:active{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  outline:none;
+  border:none;
+
+}
+.categorization_CategorizationWrapper textarea:focus{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  outline:none;
+  border:none;
+
+}
+
+.categorization_CategorizationWrapper input:focus{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  outline:none;
+  border:none;
+}
+
+.categorization_CategorizationWrapper button:focus{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  outline:none;
+  border:none;
+}
+.categorization_CategorizationWrapper  button:active{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  outline:none;
+  border:none;
+}
+.categorization_CategorizationWrapper  button:hover{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  outline:none;
+  border:none;
+}
+.categorization_CategorizationWrapper  label:focus{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  outline:none;
+  border:none;
+}
+.categorization_CategorizationWrapper  .btn:active{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  outline:none;
+  border:none;
+}
+.categorization_CategorizationWrapper .btn.active
+{
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  outline:none;
+  border:none;
+}
+
+#totalblock{
+ margin-top:-10px;
+}
+
+#datagridbox.MuiDataGrid-selectedRowCount{
+ display:none !important;
+ visibility:hidden !important;
+}
+
+
+@media only screen and (min-width: 1051px){
+ [data-field^="amount2"] .MuiDataGrid-columnHeaderDraggableContainer .MuiDataGrid-menuIcon{
+   position: absolute;
+   left: 90%;
+   top: 40px;
+ }  
+ [data-field^="amount1"] .MuiDataGrid-columnHeaderDraggableContainer .MuiDataGrid-menuIcon{
+   position: absolute;
+   left: 90%;
+   top: 40px;
+ }  
+}  
+
+
+
+#totalcount div {
+margin-top: -5px;
+float: left;
+position: absolute;
+font-family: 'Lexend' !important;
+font-style: normal;
+font-weight: 300;
+font-size: .9vw !important;
+width:100px;
+}
+
+
+.categorization_CategorizationWrapper #paidto{
+width:80% !important;
+float:left;
+word-wrap: break-word;
+
+}
+
+.categorization_CategorizationWrapper #towardsname{
+width:80% !important;
+float:left;
+word-wrap: break-word;
+margin-top:6px !important;
+}
+
+.BankingCategorizationDetails_bankCategorizationWrapper  #datagridbox{
+  margin-top:15px;
+}
+
+@media only screen and (max-width: 600px) {
+#datagridbox [rel="taxamountentry"] div{
+  width:70% !important;  
+  margin-left:35px !important;
+  margin-top:-10px !important;
+}
+#datagridbox .categorization_cloudimage{
+   padding-top:0px !important;
+}  
+.BankingCategorizationDetails_bankCategorizationWrapper  #datagridbox{
+  margin-top:0px;
+}
+#datagridbox .categorization_uploads{
+  padding-top:0px !important;
+  margin-top:10px !important;
+}
+#datagridbox .categorization_uploadtext{
+  padding-top:0px !important;
+  margin-top:0px;
+} 
+
+#bankCategorizationgrid{
+  height: 53px !important;
+}
+
+#allocatedname > .categorization_allocatedname1{
+  padding-top:3px;
+}
+
+.categorization_CategorizationWrapper .adjusttaxpadding> div> div{
+   left:6px;
+}  
+
+#taxamount{
+   padding-right:4px !important;
+}
+
+.categorization_CategorizationWrapper .adjusttaxpadding> div> div input{
+    border: 0.5px solid #F08B32 !important;
+    color:#401E01;
+    background:#FFFFFF;  
+}
+
+.categorization_CategorizationWrapper [rel="adjustmentdetails"] div> div{
+   padding-right:0px;
+}
+.categorization_CategorizationWrapper [rel="adjustmentdetails"] div> div input{   
+      border:0.5px solid #283049 !important;
+      color:#283049;
+      background:#FFFFFF;
+      padding-right:8px;
+}
+
+.allocatedbillcount{
+    right: 15px;
+    height: 15px;
+    margin-top: -15px;
+    float: left;
+    text-align: right;
+    width: 100%;
+}
+
+.categorization_CategorizationWrapper .categorization_CategorizationBankboxHolderPaidToSmallBox svg path{
+   stroke:#F08B32;
+   fill:#F08B32;
+}
+
+.categorization_CategorizationWrapper .categorization_bankTowardsRightIconSmallBox svg path{
+  stroke:#F08B32;
+  fill:#F08B32;
+}
+
+.categorization_CategorizationWrapper #datagridbox [role="grid"]{
+  border:none !important;
+}
+
+.categorization_CategorizationWrapper #paidto{
+  width:85% !important;
+  float:left;
+}
+
+.categorization_CategorizationWrapper #towardsname{
+  width:85% !important;
+  float:left;
+  margin-top:1px !important;
+}
+
+.categorization_textEntryHolder textarea::placeholder {
+  font-size:3vw !important;
+}
+
+.categorization_textEntryHolder textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-size:3vw !important;
+}
+
+.categorization_textEntryHolder textarea::-ms-input-placeholder { /* Microsoft Edge */
+  font-size:3vw !important;
+}
+
+.categorization_textEntry textarea{
+   font-size:3vw !important;
+   background:unset !important;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.06);
+   border-radius: 25px;
+}  
+
+.categorization_textEntry{
+    height:100px !important;
+    background:unset !important;
+}
+
+.categorization_textEntry div:first-child{
+  background:unset !important;
+}
+
+.categorization_textEntryHolder{
+     padding:0px !important;
+     width:100% !important;
+     height:100px !important;
+}
+
+
+#notes_textarea{
+  background:unset !important;
+}   
+
+}  
+
+.MuiDataGrid-cell:focus,
+.MuiDataGrid-cell:focus-within,
+.MuiDataGrid-columnHeader:focus,
+.MuiDataGrid-columnHeader:focus-within {
+  outline: none !important;
+}
+
+
+

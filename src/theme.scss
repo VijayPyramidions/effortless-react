@@ -1,0 +1,98 @@
+
+@use "sass:math";
+
+$themeColors: (
+    'colorPrimary': #2196f3,
+    'colorDark': #000,
+    'colorWhite': #fff,
+    'colorPayil': #49D6FF,
+    'colorSuccess': #28c76b,
+    'colorWhiteLight': rgba(255, 255, 255,0.2),
+    'colorDarkLight': rgba(0, 0, 0, 0.1),
+    'colorDarkFaded': rgba(0, 0, 0, 0.8),
+    'colorWhiteDark': rgba(255, 255,255, 0.8),
+    'colorMainLight': rgba(64, 30, 1, 0.2),
+    'colorPrimaryButton': #F08B32,
+    'colorMain': #EE5634,
+    'colorAppBg': #261201,
+    'colorLinks': #36E3C0,
+    'colorError': #D8000C,
+    'colorGrey': #A0A4AF,
+    'colorInputBG': rgba(237, 237, 237, 0.15),
+    'colorInputBorder': rgba(153, 158, 165, 0.39),
+    'colorInputLabel': #6E6E6E,
+    'colorDivider': rgba(199, 199, 199, 0.5),
+    'colorDrawerHandle': rgba(196, 196, 196, 0.51),
+    'colorGreen': #36E3C0,
+    'colorGreyBg': #F2F2F0,
+    'colorWarning': #ff9800,
+    'colorTitle': #283049,
+    'cardShadow': -1px -1px 11px rgba(0, 0, 0, 0.08),
+    'colorOtpPayment': #FDDFC5,
+    'colorPaymentTotalLabel': #00A676,
+    'colorPaymentTotalValue': #2E3A59,
+    'colorNotify': #14FF00,
+    'colorDashboardMenuBorder': #D6D6D6,
+    'colorDashboardMenuSelected': #EFEFED,
+    'colorDashboardTableBorder': #999EA5,
+    'colorDashboardTableHeaderBg': #F5F5F5,
+    'receivableChartColor1': #B8E2B5,
+    'receivableChartColor2': #DEF2C3,
+    'receivableChartColor3': #F6F8B1,
+    'receivableChartColor4': #F8E0A2,
+    'receivableChartColor5': #EBA3A3,
+    'receivableChartColor6': #E58784,
+    'colorTableError': #950909,
+);
+
+// 300px: 320px;
+// 1200px: 1200px;
+// $min_font: 16px;
+// $max_font: 24px;
+
+// To use in scss files
+// usuage var(-colorPrimary)
+
+:root{
+    @each $key, $value in $themeColors {
+        #{--#{unquote($key)}}: #{$value};
+    }
+}
+
+// To use in javascript files
+// import theme file
+// theme.colorPrimary
+
+@each $key, $value in $themeColors {
+    :export{
+        #{unquote($key)}: $value;
+    }
+}
+
+@function strip-unit($value) {
+    @return math.div($value, $value * 0 + 1);
+  }
+  
+  @mixin fontSize($min-font-size, $max-font-size) {
+    $u1: unit(300px);
+    $u2: unit(1400px);
+    $u3: unit($min-font-size);
+    $u4: unit($max-font-size);
+  
+    @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+      & {
+        font-size: $min-font-size;
+        @media screen and (min-width: 300px) {
+          font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{300px}) / #{strip-unit(1400px - 300px)})) !important;
+        }
+        @media screen and (min-width: 1400px) {
+          font-size: $max-font-size !important;
+        }
+      }
+    }
+  }
+
+
+
+// TODO 
+// https://medium.com/@sroskelley/theming-in-react-using-sass-variables-26d2d3052c4

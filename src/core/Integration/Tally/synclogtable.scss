@@ -1,0 +1,35 @@
+.synclogtablecontainer {
+  max-height: calc(100vh - 100px);
+  .synclogtable {
+    .syncloghead {
+      .syncheadlogrow {
+        th {
+          color: #000;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 16px;
+          background: #f7f7f7;
+          border-bottom: none;
+          padding: 14px 20px;
+        }
+      }
+    }
+
+    .synclogbody {
+      .synclogbodyrow {
+        td {
+          color: #000;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 16px;
+          padding: 12px 20px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+}

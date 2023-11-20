@@ -1,0 +1,368 @@
+.billinfocontainer {
+  padding: 20px 20px 0 20px;
+
+  .bar {
+    background: rgba(196, 196, 196, 0.51);
+    border-radius: 7px;
+    width: 50px;
+    height: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+  }
+
+  .providerinfowrp {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+    align-items: center;
+    margin: 0 -20px;
+    padding: 0 20px 16px 20px;
+
+    .providerlogo {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-content: center;
+      background: #ffffff;
+      border: 0.5px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      margin-right: 12px;
+    }
+
+    .paytypewrp {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 4px;
+
+      .paytype {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 2px;
+        color: #838588;
+      }
+
+      .billdetailbtn {
+        font-family: 'Lexend', sans-serif !important;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        color: #3049bf;
+        text-transform: capitalize;
+        padding: 0;
+      }
+    }
+    .providername {
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: 0.374px;
+      color: #283049;
+    }
+  }
+
+  .billinfo {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0 -20px 20px -20px;
+    padding: 16px 20px 4px 20px;
+
+    .billamtlabel {
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 2px;
+      color: #838588;
+      margin-bottom: 6px;
+    }
+
+    .spacer {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 16px;
+      color: #6e6e6e;
+    }
+
+    .billamt {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 1px;
+      color: #283049;
+      margin-bottom: 16px;
+    }
+
+    .labelwrp {
+      flex-direction: row;
+      margin-bottom: 12px;
+
+      .label {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #6e6e6e;
+        margin-right: 12px;
+        min-width: 110px;
+      }
+      .value {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #283049;
+        margin-left: 12px;
+      }
+    }
+  }
+
+  .paidmsg {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-bottom: 20px;
+    margin-top: -4px;
+  }
+
+  .paybtn {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    background: #f08b32;
+    border-radius: 28px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px;
+    color: #ffffff;
+    padding: 14.5px 0;
+    text-transform: capitalize;
+
+    &:focus,
+    &:hover {
+      background: #f08b32;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      color: #ffffff;
+    }
+  }
+
+  .bpbswrp {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    padding: 16px 0 20px 0;
+    width: 100%;
+
+    .bpbstitle {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: 0.374px;
+      color: #a0a4af;
+      margin-right: 16px;
+    }
+
+    .bpbslogo {
+      width: 30px;
+      height: 10px;
+      border-radius: 0;
+    }
+  }
+
+  .billdetailheader {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .headertxt {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: #2e3a59;
+    }
+
+    .closeicon {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .billdetail {
+    .labelwrp {
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 20px;
+
+      .label {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #6e6e6e;
+        min-width: 111px;
+        margin-right: 12px;
+      }
+
+      .spacer {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #6e6e6e;
+        margin-right: 12px;
+      }
+
+      .value {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #283049;
+      }
+    }
+  }
+}
+
+// Web //
+
+.billinfocontainerweb {
+  padding: 24px 40px;
+
+  .phoneheader {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.374px;
+    color: #283049;
+    position: relative;
+    padding-bottom: 5px;
+    margin-bottom: 16px;
+
+    &::before {
+      content: '';
+      height: 2px;
+      width: 17.32px;
+      position: absolute;
+      bottom: 0;
+      background: #f08b32;
+      border-radius: 4px;
+    }
+  }
+
+  .msgdesc {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.374px;
+    color: #868686;
+    margin-bottom: 20px;
+  }
+
+  .providerlist {
+    margin-bottom: 16px;
+  }
+
+  .textfieldStyle {
+    margin-bottom: 16px;
+    input[type='number'] {
+      &:disabled {
+        color: #283049;
+      }
+    }
+  }
+
+  .billdetailcontainer {
+    margin-top: 4px;
+    background: #e9eff6;
+    border-radius: 12px;
+    padding: 12px 12px 0 12px;
+    margin-bottom: 20px;
+
+    .billdetailtitle {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      color: #283049;
+      margin-bottom: 16px;
+    }
+
+    .labelwrp {
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 12px;
+
+      .label {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #6e6e6e;
+        min-width: 114px;
+        margin-right: 33px;
+      }
+
+      .spacer {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #283049;
+        margin-right: 8px;
+      }
+
+      .value {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #283049;
+      }
+    }
+  }
+
+  .paybillbtn {
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    background: #f08b32;
+    border-radius: 28px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: #ffffff;
+    padding: 12.5px 0;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+
+    &:disabled {
+      color: #ffffff;
+      opacity: 0.5;
+    }
+
+    &:hover,
+    &:focus {
+      background: #f08b32;
+    }
+  }
+
+  .bpbswrp {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    padding: 16px 0 20px 0;
+    width: 100%;
+
+    .bpbstitle {
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: 0.374px;
+      color: #a0a4af;
+      margin-right: 16px;
+    }
+
+    .bpbslogo {
+      width: 30px;
+      height: 10px;
+      border-radius: 0;
+    }
+  }
+}

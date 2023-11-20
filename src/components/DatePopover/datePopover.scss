@@ -1,0 +1,21 @@
+.dropDown{
+    min-height: 240px;
+    max-height: 250px;
+    overflow-y: auto;
+.dropDownP{
+    padding: 10px 5px 5px 5px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #414141;
+    border-bottom: 1px solid #bfbfbf;
+    cursor: pointer;
+}
+.dropDownCustom{
+    padding: 10px 5px 5px 5px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #F08B32;
+    border-bottom: 1px solid #bfbfbf;
+    cursor: pointer;
+}
+}

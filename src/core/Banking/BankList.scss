@@ -1,0 +1,279 @@
+
+.paper {
+    background: rgba(240, 139, 50, 0.69) !important;
+    border-radius: 16px !important;
+    margin-bottom: 28px !important;
+}
+.grid1{
+    margin-left: 30px !important;
+    margin-right: 32px !important;
+    margin-top: 29px !important;
+    margin-bottom: 29px !important;
+    padding-bottom: 15%;
+}
+.grid1Web{
+    margin-left: 30px !important;
+    margin-right: 32px !important;
+    margin-top: 29px !important;
+    margin-bottom: 29px !important;
+    padding-bottom: 6%;
+}
+.gridListHeading{
+    // padding-top: 5%;
+    padding-bottom: 2%;
+}
+.dividerTitle{
+    border-radius: 4px;
+    width: 10px;
+    margin-top: -8px !important;
+    height: 1px !important;
+    background-color: #f08b32 !important;
+}
+.typo2{
+    font-weight: 400 !important;
+font-size: 16px !important;
+line-height: 41px !important;
+letter-spacing: 0.374px !important;
+color: #283049 !important;
+}
+.typo3{
+    font-weight: 400 !important;
+font-size: 13px !important;
+line-height: 18px !important;
+
+color: #2E3A59 !important;
+}
+.typo4{
+    font-weight: 400 !important;
+font-size: 14px !important;
+line-height: 18px !important;
+color: rgba(94, 94, 94, 0.6) !important;
+}
+.balance{
+    margin-top: 10px;
+    background: #FFFFFF;
+border: 1px solid rgba(94, 94, 94, 0.2);
+box-sizing: border-box;
+box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.04);
+border-radius: 10px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 20px;
+}
+.amountContainer{
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 23px;
+    margin-top: 0px    ;
+    text-align: left;
+}
+.loadMoney{
+    font-weight: 500 !important;
+font-size: 14px !important;
+line-height: 18px !important;
+text-align: center !important;
+border: 1px solid #FFFFFF !important;
+box-sizing: border-box !important;
+border-radius: 18px !important;
+white-space: nowrap !important;
+text-transform: capitalize !important;
+}
+.bankDetailsGrey{
+    padding: 17px;
+     background: #F2F2F0;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+.bankDetails{
+    padding: 17px;
+     background: #FFFFFF;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+.bankDetails{
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+  
+    @keyframes growDown {
+      0% {
+        transform: scaleY(0);
+      }
+      80% {
+        transform: scaleY(1.1);
+      }
+      100% {
+        transform: scaleY(1);
+      }
+    }
+    padding: 17px;
+     background: #FFFFFF;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    justify-content: space-between;
+}
+.bankDetailsTop{
+    padding: 3px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+
+.arrowDown{
+    transition: 0.5s ease all !important;
+    margin-inline-start: 4% !important;
+    margin: -3px;
+}
+.arrowDownWeb{
+    transition: 0.5s ease all !important;
+    margin-inline-start: 16% !important;
+    margin: -3px;
+}
+.arrowiconRight{
+    font-size: 27px !important;
+    transform: rotate(274deg);
+    transition: 0.5s ease all !important;
+}
+.arrowiconDown{
+    font-size: 27px !important;
+    transition: 0.5s ease all !important;
+
+}
+.amountArrowIcon{
+    align-self: self-end;
+
+}
+.bankDetailsGridbefore{
+    padding: 3%;
+    padding-bottom: 1%;
+    background: #F2F2F0;
+    margin-bottom: 18px;
+}
+.bankDetailsGridAfter{
+    padding: 4%;
+    padding-bottom: 2%;
+    margin-bottom: 18px;
+    background: #F2F2F0;
+}
+.bankDetailsGridRight{
+margin-top: -6px;
+padding-left: 9%;
+padding-right: 2%;
+
+}
+.amountTotalStack{
+    width: 49%;
+    justify-content: right;
+}
+
+.accNum{
+    font-weight: 400 !important;
+font-size: 13px !important;
+line-height: 16px !important;
+display: flex !important;
+align-items: center !important;
+text-transform: capitalize !important;
+color: #6E6E6E !important;
+margin-top: 9px !important;
+}
+.balAmount{
+    font-weight: 500 !important;
+font-size: 14px !important;
+line-height: 16px !important;
+text-align: center !important;
+color: #F08B32 !important;
+}
+.container{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    overflow: auto;
+}
+.containerWeb{
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+    position: relative;
+}
+.connectButton{
+    
+    margin-bottom: 12px !important;
+    margin-top: 6px !important;
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(240, 139, 50) !important;
+    align-self: self-end !important;
+    height: min-content !important;
+    padding-left: 2% !important;
+    padding-right: 4% !important;
+
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+    text-align: center !important;
+    border: 1px solid #FFFFFF !important;
+    box-sizing: border-box !important;
+    border-radius: 18px !important;
+    white-space: nowrap !important;
+    text-transform: capitalize !important;
+
+}
+.connectButtonWeb{
+position: absolute !important;
+bottom: 5%;
+    right: 4%;
+margin-bottom: 12px !important;
+margin-top: 6px !important;
+color: rgb(255, 255, 255) !important;
+background-color: rgb(240, 139, 50) !important;
+align-self: self-end !important;
+height: min-content !important;
+padding-left: 2% !important;
+padding-right: 2% !important;
+font-weight: 500 !important;
+font-size: 14px !important;
+line-height: 18px !important;
+text-align: center !important;
+border: 1px solid #FFFFFF !important;
+box-sizing: border-box !important;
+border-radius: 18px !important;
+white-space: nowrap !important;
+text-transform: capitalize !important;
+}
+
+.drawerStack {
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    .heading {
+      font-weight: 600;
+      font-size: 13px;
+      color: black;
+    }
+    .selectBtn {
+      border: 1px solid #a0a4af;
+      color: #6e6e6e;
+      width: 90px;
+      height: 34px;
+      border-radius: 18px;
+    }
+    .selectBtnText {
+      font-weight: 1000;
+      font-size: 8.4px;
+    }
+    .proceedBtn,
+    .proceedBtn:hover {
+      width: 270px;
+      background-color: #f08b32;
+      border-radius: 18px;
+      height: 38px;
+      .proceedBtnText {
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 14px;
+      }
+    }
+    .textfield {
+      border: 1px solid #a0a4af;
+      min-height: 56px;
+      border-radius: 8px;
+      width: 80%;
+    }
+  }

@@ -1,0 +1,120 @@
+.recordAnExpenseContainer {
+    padding: 20px;
+    background-color: white;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.headerContainer {
+    position: relative;
+    .headerLabel {
+        font-weight: 400;
+        color: var(--colorTitle);
+        font-size: 16px;
+    }
+    .headerUnderline {
+        position: absolute;
+        width: 10px;
+        height: 2px;
+        margin-top: 4px;
+        margin-left: 2px;
+        background-color: var(--colorPrimaryButton);
+    }
+}
+
+.inputContainer {
+    margin-top: 24px;
+    display: grid;
+    gap: 24px;
+    width: 100%;
+    .greyBorder {
+        border-color: lightgrey;
+    }
+    & > * {
+        margin: 0 !important;
+        background-color: var(--colorInputBG);
+        & .MuiInputLabel-root {
+            color: red;
+        }
+    }
+}
+
+.uploadContainer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    justify-content: space-between;
+    height: 56px;
+    border: 1px solid;
+    border-radius: 8px;
+    border-color: var(--colorInputBorder);
+    align-items: center;
+    position: relative;
+    input {
+        display: none;
+    }
+    label {
+        position: absolute;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+    }
+    .label {
+        color: var(--colorInputLabel);
+        font-size: 16px;
+        font-weight: 500;
+        padding-left: 16px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 90%;
+        overflow: hidden;
+    }
+    .icon {
+        padding-right: 16px;
+        color: var(--colorInputLabel);
+    }
+}
+.actionContainer {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    align-items: center;
+    margin: 0 0 16px !important;
+    .outlineButton,
+    .submitButton,
+    .submitButton:hover {
+        border-radius: 18px;
+        padding: 6px 20px;
+        text-align: center;
+        text-transform: none !important;
+        font-size: 14px;
+        font-weight: 500;
+        box-shadow: none;
+    }
+    .outlineButton {
+        border-color: var(--colorPrimaryButton);
+        color: var(--colorPrimaryButton);
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .submitButton,
+    .submitButton:hover {
+        background-color: var(--colorPrimaryButton) !important;
+        color: var(--colorWhite);
+    }
+}
+
+.categoryOptions {
+    margin: 0 20px;
+    border-bottom: 1px solid var(--colorDivider);
+    padding: 16px 0;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.addBtn {
+    color: var(--colorPrimaryButton);
+    font-weight: 500;
+    height: 24px;
+}

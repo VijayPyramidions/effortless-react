@@ -1,0 +1,635 @@
+.accountedbill_desktop {
+  height: 100%;
+  width: 100%;
+  animation: fadeInUp;
+  animation-duration: 1s;
+
+  .leftcard {
+    width: 400px;
+    border-radius: 8px;
+    background: #fff;
+    .topcont {
+      padding: 22px 20px 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      .amountcont {
+        color: #f08b32;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      .descriptioncont {
+        color: #283049;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+      .filterbtn {
+        border-radius: 136px;
+        border: 1px solid #e4e4e4;
+        color: #283049;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 16px;
+        padding: 10px 12px;
+        text-transform: capitalize;
+        width: 174px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .midcont {
+      color: #283049;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding: 16px 20px;
+    }
+    .bottomcont {
+      height: calc(100vh - 300px);
+      overflow: auto;
+      .billlistbox {
+        padding: 8px 16px 8px 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        .categorytext {
+          color: #283049;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        .spendtext {
+          color: #a0a4af;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+        }
+        .amounttext {
+          color: #283049;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+        }
+      }
+    }
+  }
+  .rightcard {
+    border-radius: 8px;
+    background: #fff;
+    flex-grow: 1;
+    .topcont {
+      padding: 24px 24px 18px;
+      .titletext {
+        color: #283049;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      .totalspendtext {
+        color: #a0a4af;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        span {
+          color: #f08b32;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+    .maincont {
+      padding: 0 26px;
+      height: calc(100vh - 250px);
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      .month_text {
+        color: #283049;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      .boxcont {
+        border-radius: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        .categorydate {
+          color: #283049;
+          text-align: center;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          padding: 8px 0 8px 16px;
+          text-align: center;
+          width: 40px;
+          span {
+            color: #283049;
+            font-family: 'Lexend', sans-serif !important;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+        .categorylabel {
+          color: #6e6e6e;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 200;
+          line-height: normal;
+          text-transform: capitalize;
+        }
+        .categoryvalue {
+          color: #2e3a59;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+        }
+        .vendorname {
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          width: 21vw;
+          overflow: hidden;
+        }
+        .categoryamount {
+          color: #2e3a59;
+          text-align: right;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          white-space: nowrap;
+          text-align: right;
+          width: 150px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .categorymoreaction {
+          color: #3049bf;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          cursor: pointer;
+          white-space: nowrap;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+.moreactionbtn {
+  padding: 8px 12px !important;
+  border-bottom: 0.5px solid #c7c7c7 !important;
+  width: 100% !important;
+  color: #414141 !important;
+  font-family: 'Lexend', sans-serif !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  line-height: 16px !important;
+  text-transform: capitalize !important;
+  border-radius: 0 !important;
+  &:last-child {
+    border-bottom: none !important;
+    color: #f00 !important;
+  }
+}
+
+.accountedbill_mobile {
+  height: 100%;
+  width: 100%;
+  animation: fadeInUp;
+  animation-duration: 1s;
+
+  .leftcard {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: #fff;
+    .topcont {
+      padding: 20px 20px 16px;
+      // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      .amountcont {
+        color: #f08b32;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+      .descriptioncont {
+        color: #a0a4af;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+      .filterbtn {
+        border-radius: 136px;
+        border: 1px solid #e4e4e4;
+        color: #283049;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 16px;
+        padding: 10px 12px;
+        text-transform: capitalize;
+        width: 174px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .midcont {
+      color: #283049;
+      font-family: 'Lexend', sans-serif !important;
+      padding: 24px 20px 16px;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    .bottomcont {
+      height: calc(100vh - 320px);
+      overflow: auto;
+      animation: fadeInUp;
+      animation-duration: 1s;
+      .billlistbox {
+        padding: 12px 16px 12px 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        .categorytext {
+          color: #283049;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        .spendtext {
+          color: #a0a4af;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+        }
+        .amounttext {
+          color: #283049;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+        }
+      }
+    }
+  }
+  .rightcard {
+    border-radius: 8px;
+    background: #fff;
+    height: 100%;
+    .topcont {
+      padding: 24px 20px 16px;
+      // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      .titletext {
+        color: #283049;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        white-space: nowrap;
+        max-width: 280px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-align: center;
+      }
+      .totalspendtext {
+        color: #f08b32;
+        text-align: center;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    .maincont {
+      padding: 0 20px;
+      height: calc(100vh - 324px);
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      animation: fadeInUp;
+      animation-duration: 1s;
+      .date_box {
+        border-radius: 4px;
+        background: rgba(123, 200, 255, 0.1);
+        .date_text {
+          color: #283049;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          padding: 4px 8px;
+        }
+      }
+      .boxcont {
+        padding-bottom: 12px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        .accounted_bill_img {
+          width: 64px;
+          height: 64px;
+          border-radius: 4px;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          position: relative;
+          animation-name: scaleanimation;
+          animation-duration: 0.4s;
+          animation-timing-function: linear;
+          animation-direction: alternate;
+        }
+        @keyframes scaleanimation {
+          0% {
+            scale: 0.2;
+            opacity: 0.2;
+          }
+          25% {
+            scale: 0.4;
+            opacity: 0.4;
+          }
+          50% {
+            scale: 0.6;
+            opacity: 0.6;
+          }
+          75% {
+            scale: 0.8;
+            opacity: 0.8;
+          }
+          100% {
+            scale: 1;
+            opacity: 1;
+          }
+        }
+        .vendor_name {
+          color: #2e3a59;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+        .categorylabel {
+          color: #6e6e6e;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          text-transform: capitalize;
+        }
+        .categoryvalue {
+          color: #2e3a59;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+          width: 160px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+}
+.moreactionbtn {
+  padding: 8px 12px !important;
+  border-bottom: 0.5px solid #c7c7c7 !important;
+  width: 100% !important;
+  color: #414141 !important;
+  font-family: 'Lexend', sans-serif !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  line-height: 16px !important;
+  text-transform: capitalize !important;
+  border-radius: 0 !important;
+  &:last-child {
+    border-bottom: none !important;
+    color: #f00 !important;
+  }
+}
+
+.mobileaccountedcalander {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  .month {
+    color: #283049;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
+.datefiltersheet {
+  padding: 20px;
+  .datefilterhead {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    text-transform: capitalize;
+    padding: 12px 0px 4px;
+    margin-bottom: 12px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 2px;
+      bottom: 0;
+      background: #f08b32;
+      border-radius: 4px;
+    }
+  }
+  .filterbutton {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: capitalize;
+    padding: 4px 8px;
+    margin: 8px 0;
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+.accountedbilldetailscard {
+  padding: 32px 20px 0px;
+
+  .headertext {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    padding-bottom: 2px;
+    text-transform: capitalize;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 1px;
+      bottom: 0;
+      background: #f08b32;
+      border-radius: 6px;
+    }
+  }
+  .label {
+    color: #8f8f8f;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .value {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+}
+
+.deleteddialog {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .deletehead {
+    color: #f00;
+    margin: 0 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: normal;
+    position: relative;
+    text-transform: capitalize;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 26px;
+      height: 2px;
+      bottom: -4px;
+      background: #f00;
+      border-radius: 4px;
+    }
+  }
+  .descriptiontext {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .primaryButton,
+  .primaryButton:hover {
+    border-radius: 20px;
+    background: #f08b32;
+    color: #fff;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+    &:disabled {
+      opacity: 0.5 !important;
+    }
+  }
+  .secondarybutton,
+  .secondarybutton:hover {
+    border-radius: 20px;
+    background: #fff;
+    color: #f08b32;
+    border: 1px solid #f08b32;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+    border-radius: 20px;
+    gap: 4px;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10%, 0);
+    transform: translate3d(0, 10%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}

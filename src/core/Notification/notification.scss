@@ -1,0 +1,102 @@
+.maincontainer {
+  // display: flex;
+  width: 100%;
+  //   align-items: center;
+
+  .companylist {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+    padding: 24px 0;
+    margin-bottom: 16px;
+    min-width: 240px;
+    margin-right: 64px;
+
+    // @media only screen and (max-width: 426px) {
+    //   display: none;
+    // }
+  }
+
+  .companylisttitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    padding: 0 0 0 20px;
+    margin-bottom: 8px;
+  }
+
+  .listItem {
+    .listItemBtn {
+      padding: 0 20px;
+    }
+
+    .radiobtn {
+      min-width: 9px;
+    }
+    .listItemText {
+      span {
+        font-family: 'Lexend', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        color: #888888;
+      }
+    }
+  }
+
+  .notificationtabscontainer {
+    background: #ffffff;
+    border: 1px solid #ebebeb;
+    border-radius: 16px;
+    padding-top: 12px;
+    overflow: hidden;
+    // min-width: 560px;
+    max-width: 560px;
+    height: calc(100% - 12px);
+
+    @media only screen and (max-width: 426px) {
+      border-bottom-left-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+      border: none !important;
+      // width: 100%;
+    }
+    @media only screen and (min-width: 426px) {
+      min-width: 560px;
+    }
+
+    @media only screen and (min-width: 426px) and (max-width: 1399px) {
+      min-width: 480px;
+    }
+  }
+}
+
+.headerWrp {
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin-bottom: 8px;
+
+  .accpreftitle {
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    line-height: 16px !important;
+    color: #2e3a59;
+  }
+
+  .closeicon {
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.desc {
+  font-weight: 300 !important;
+  font-size: 12px !important;
+  line-height: 15px !important;
+  color: #a0a4af;
+  margin-bottom: 16px !important;
+}

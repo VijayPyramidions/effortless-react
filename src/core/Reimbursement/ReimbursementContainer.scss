@@ -1,0 +1,2245 @@
+.reimursementsheet {
+  width: 100%;
+  background: #ffffff;
+  overflow: auto;
+
+  .bottomsheetheaderwrapper {
+    padding: 16px 24px 0;
+
+    .bar {
+      top: 0;
+      width: 50px;
+      height: 4px;
+      flex-shrink: 0;
+      border-radius: 7px;
+      background: rgba(196, 196, 196, 0.51);
+      margin: 0 auto;
+    }
+    .bottomsheetheadtitle {
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row !important;
+      .headertext {
+        color: #2e3a59;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding-left: 0;
+        padding-top: 16px;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .categoryheader {
+    flex-direction: row !important;
+    padding: 24px 12px 0px;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .headerwrapper {
+    flex-direction: row !important;
+    align-items: center;
+    padding: 16px 16px 4px;
+  }
+
+  .headertext {
+    color: #283049;
+    margin: 0 !important;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: normal;
+    position: relative;
+    text-transform: capitalize;
+    padding: 24px 32px 4px;
+    letter-spacing: 0.374px;
+
+    @media screen and (max-width: 768px) {
+      padding: 24px 20px 2px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      border-radius: 4px;
+      background: #f08b32;
+      width: 17.317px;
+      height: 2px;
+      flex-shrink: 0;
+      bottom: 0;
+    }
+  }
+
+  .categorylist {
+    flex-direction: row !important;
+    align-items: center;
+    gap: 16px;
+
+    .categoryicon {
+      width: 32px;
+      height: 32px;
+      background: #f2f2f2;
+      padding: 8px;
+    }
+
+    .categoryname {
+    }
+  }
+
+  .selectcont {
+    padding: 24px 0;
+    .menutext {
+      display: flex;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      align-items: center;
+      padding: 12px 30px !important;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      color: #283049;
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: normal;
+    }
+
+    .categoryListMobile {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      justify-content: space-between;
+      border-bottom: none;
+      padding: 0 24px !important;
+      gap: 30px;
+
+      .menutext {
+        max-width: 100px;
+        overflow: hidden;
+        border-bottom: none !important;
+        padding: 0 !important;
+
+        .categorylist {
+          flex-direction: column !important;
+          max-width: 100px;
+        }
+
+        .categoryname {
+          width: 90px;
+          text-wrap: wrap;
+          text-align: center;
+          font-size: 13px;
+          white-space: normal;
+        }
+      }
+    }
+  }
+  .expensecont {
+    padding: 24px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .isthisbillable {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: calc(100% - 16px);
+      padding: 0 8px;
+      .texttag {
+        color: #6e6e6e;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0;
+        span {
+          color: #f00;
+          font-size: 14px;
+          margin-left: 2px;
+        }
+      }
+    }
+    .primaryButton,
+    .primaryButton:hover {
+      border-radius: 20px;
+      background: #f08b32;
+      color: #fff;
+      text-align: center;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      text-transform: capitalize;
+      padding: 12px 20px;
+      width: 80%;
+      margin: 0 10%;
+      &:disabled {
+        opacity: 0.5 !important;
+      }
+    }
+    .deleteButton,
+    .deleteButton:hover {
+      border-radius: 20px;
+      background: #fff;
+      color: #f00;
+      text-align: center;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      text-transform: capitalize;
+      padding: 12px 20px;
+      // width: 40%;
+      border-radius: 20px;
+      border: 1px solid #f00;
+      display: flex;
+      flex-direction: row;
+      gap: 4px;
+    }
+    .editButton,
+    .editButton:hover {
+      border-radius: 20px;
+      background: #f08b32;
+      color: #fff;
+      text-align: center;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      text-transform: capitalize;
+      padding: 12px;
+      width: 40%;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: row;
+      gap: 4px;
+    }
+    .secondRow {
+      width: 100%;
+      background: #f1f0f0;
+      border: 2px dashed #999ea587;
+      height: 160px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      padding: 20px 0;
+      flex-direction: column;
+
+      .uploadP {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 38px;
+        color: #000000;
+        margin: 0;
+        font-family: 'Lexend', sans-serif !important;
+      }
+      .typeP {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 31px;
+        color: rgba(0, 0, 0, 0.4);
+        margin: 0;
+        font-family: 'Lexend', sans-serif !important;
+      }
+
+      .browseCont {
+        background: #f08b32;
+        border-radius: 18px;
+        padding: 10px 50px;
+        cursor: pointer;
+      }
+      .browseP {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #ffffff;
+        margin: 0;
+        font-family: 'Lexend', sans-serif !important;
+      }
+    }
+    .thirdRow {
+      width: 100%;
+      background: #f1f0f0;
+      border: 2px dashed #999ea587;
+      height: 180px;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+      .imgtag {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.7;
+      }
+      .showimage {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+  .milagecont {
+    padding: 24px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media screen and (max-width: 768px) {
+      padding: 24px 20px;
+    }
+
+    .selectvehicle {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: calc(100% - 16px);
+      padding: 0 8px;
+      .texttag {
+        color: #6e6e6e;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0;
+        span {
+          color: #f00;
+          font-size: 14px;
+          margin-left: 2px;
+        }
+      }
+    }
+    .isthisbillable {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: calc(100% - 16px);
+      padding: 0 8px;
+      .texttag {
+        color: #6e6e6e;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0;
+        span {
+          color: #f00;
+          font-size: 14px;
+          margin-left: 2px;
+        }
+      }
+    }
+    .primaryButton,
+    .primaryButton:hover {
+      border-radius: 20px;
+      background: #f08b32;
+      color: #fff;
+      text-align: center;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      text-transform: capitalize;
+      padding: 8px 12px;
+
+      width: 80%;
+      margin: 0 10%;
+
+      &:disabled {
+        opacity: 0.5 !important;
+      }
+    }
+    .deleteButton,
+    .deleteButton:hover {
+      border-radius: 20px;
+      background: #fff;
+      color: #f00;
+      text-align: center;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      text-transform: capitalize;
+      padding: 12px 20px;
+      // width: 40%;
+      border-radius: 20px;
+      border: 1px solid #f00;
+      display: flex;
+      flex-direction: row;
+      gap: 4px;
+    }
+    .editButton,
+    .editButton:hover {
+      border-radius: 20px;
+      background: #f08b32;
+      color: #fff;
+      text-align: center;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      text-transform: capitalize;
+      padding: 12px;
+      width: 40%;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: row;
+      gap: 4px;
+    }
+  }
+  .addtripcont {
+    padding: 24px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .primaryButton,
+    .primaryButton:hover {
+      border-radius: 20px;
+      background: #f08b32;
+      color: #fff;
+      text-align: center;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      text-transform: capitalize;
+      padding: 10px 56px;
+      width: fit-content;
+
+      // width: 80%;
+      margin: 0 auto;
+    }
+    .deleteButton,
+    .deleteButton:hover {
+      border-radius: 20px;
+      background: #fff;
+      color: #f00;
+      text-align: center;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      text-transform: capitalize;
+      padding: 12px 20px;
+      // width: 40%;
+      border-radius: 20px;
+      border: 1px solid #f00;
+      display: flex;
+      flex-direction: row;
+      gap: 4px;
+    }
+    .editButton,
+    .editButton:hover {
+      border-radius: 20px;
+      background: #f08b32;
+      color: #fff;
+      text-align: center;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      text-transform: capitalize;
+      padding: 12px;
+      width: 40%;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: row;
+      gap: 4px;
+    }
+  }
+
+  .advancetrip {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .adtriplabel {
+      color: #000;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.374px;
+
+      @media screen and (max-width: 424px) {
+        font-size: 11px;
+      }
+    }
+
+    .radiobtn {
+      font-size: 11px;
+      .radiolabel {
+        span {
+          // padding: 4px;
+          @media screen and (max-width: 424px) {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+
+  .tripcont {
+    padding: 0px 32px 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #ffffff;
+    overflow: auto;
+
+    @media screen and (max-width: 568px) {
+      padding: 0px 20px 16px;
+    }
+    p {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      margin: 0;
+    }
+    .tripheadview {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 16px 0 0;
+      .headtext {
+        color: #283049;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 16px;
+      }
+
+      .primaryButton,
+      .primaryButton:hover {
+        border-radius: 6px;
+        // border: 1px solid #f08b32;
+        color: #f08b32;
+        text-align: center;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        text-transform: capitalize;
+        padding: 8px 12px;
+
+        // width: 45%;
+
+        &:disabled {
+          opacity: 0.5 !important;
+        }
+      }
+    }
+    .tripcard {
+      border-radius: 8px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 8px 12px;
+      cursor: pointer;
+      .datefield {
+        color: #3049bf;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 16px;
+      }
+      .cardtext {
+        color: #283049;
+        font-size: 12px;
+        line-height: 16px;
+      }
+      .amounttext {
+        color: #f08b32;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 16px;
+      }
+      .boxcontent {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 16px;
+        border-radius: 4px;
+        padding: 4px 8px;
+      }
+    }
+  }
+}
+
+.adjustbtn {
+  border-radius: 20px !important;
+  border: 1px solid #f08b32 !important;
+  background: #f08b32 !important;
+  width: 172px !important;
+  color: #fff !important;
+  font-family: 'Lexend', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 16px !important;
+  text-transform: capitalize !important;
+  margin: 0 auto !important;
+}
+
+.advancetable {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  padding-bottom: 20px;
+  .advancetext {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .viewall {
+    color: #3049bf;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    cursor: pointer;
+  }
+  .advancetextheader {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Lexend', sans-serif !important;
+    color: #283049;
+    padding-bottom: 2px;
+    position: relative;
+    &::before {
+      content: '';
+      width: 16px;
+      height: 2px;
+      background: #f08b32;
+      border-radius: 4px;
+      bottom: 0;
+      left: 0px;
+      position: absolute;
+    }
+  }
+  .table_container {
+    width: 100%;
+    // overflow: hidden;
+    max-height: 300px;
+    th {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      color: #283049;
+      background: #f7f7f7 !important;
+      border-bottom: none !important;
+      padding: 12px 8px;
+    }
+    td {
+      font-family: 'Lexend', sans-serif !important;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      color: #283049;
+      padding: 8px;
+    }
+    tbody {
+      tr {
+        &:last-child {
+          td {
+            border-bottom: none !important;
+          }
+        }
+      }
+    }
+  }
+
+  .primaryButton,
+  .primaryButton:hover {
+    border-radius: 20px;
+    background: #f08b32;
+    color: #fff;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 8px 12px;
+    width: 80%;
+    margin: 0 10%;
+
+    &:disabled {
+      opacity: 0.5 !important;
+    }
+  }
+}
+.tripdetailssheetmobile {
+  padding: 0 20px !important;
+}
+.tripdetailssheet {
+  padding: 0px 32px;
+  .detailsheader {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Lexend', sans-serif !important;
+    color: #283049;
+    padding-bottom: 2px;
+    position: relative;
+    &::before {
+      content: '';
+      width: 16px;
+      height: 2px;
+      background: #f08b32;
+      border-radius: 4px;
+      bottom: 0;
+      left: 0px;
+      position: absolute;
+    }
+  }
+  .tripdetailcardmobile {
+    border: none !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
+    padding: 0px 0px 16px !important;
+    border-radius: 0px !important;
+    margin: 16px 0px 0px !important;
+  }
+  .tripdetailcard {
+    border-radius: 8px !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    margin: 24px 0px 0px !important;
+    padding: 16px !important;
+    .titlehead {
+      color: #a0a4af;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 16px;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+    .placecont {
+      color: #283049;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 16px;
+      letter-spacing: 0.28px;
+    }
+    .bodycont {
+      color: #283049;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0.28px;
+    }
+    .amountcont {
+      color: #2f9682;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0.28px;
+    }
+  }
+  .addexpensebutton {
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    margin: 16px auto;
+    gap: 4px;
+    .addicon {
+      color: #f08b32;
+      border: 1px solid #f08b32;
+      font-size: 14px;
+    }
+    .tripicon {
+      color: #f08b32;
+      font-size: 14px;
+    }
+    .addexpense {
+      color: #f08b32;
+      text-align: center;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 16px;
+    }
+  }
+  .expenselist {
+    padding: 4px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    .listheader {
+      color: #283049;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      margin: 16px 0;
+    }
+    .billablebox {
+      border-radius: 4px;
+      background: var(--light-fill-green-main-green, rgba(32, 201, 172, 0.1));
+      color: var(--fill-green-main-green, #20c9ac);
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px;
+      padding: 4px 8px;
+    }
+    .tripexpensecard {
+      border-radius: 8px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 8px 12px;
+      position: relative;
+      .datefield {
+        color: #3049bf;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 16px;
+      }
+      .expensefiled {
+        color: #283049;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+      }
+      .lefttext {
+        color: #464646;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 16px;
+      }
+      .amounttext {
+        color: #f08b32;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+      }
+      .descriptiontext {
+        color: #283049;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 16px;
+      }
+      .cardaction {
+        position: absolute;
+        top: 2px;
+        right: 0px;
+        .viewbill {
+          text-transform: capitalize;
+          color: #3049bf;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 16px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.popoverelement {
+  border-bottom: 0.5px solid #c7c7c7 !important;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  cursor: pointer;
+  &:last-child {
+    border-bottom: none;
+  }
+  .popovertext {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #283049;
+  }
+}
+.mobiledate {
+  // width: calc(100% - 20px);
+  // padding: 10px 10px 0;
+  border-radius: 6px;
+  border: 1px solid #0000001a;
+  // background: rgb(242 242 240);
+  .mobiledatelabel {
+    font-size: 11px;
+    color: rgb(160, 164, 175) !important;
+    font-weight: 400;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  span {
+    color: #f00;
+    font-size: 14px;
+    margin-left: 2px;
+  }
+  .mobiledatefield {
+    margin: 0 6px 0 0;
+    font-size: 14px;
+    color: rgb(40, 48, 73);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .mobiledateinput {
+      pointer-events: none;
+      width: 90%;
+      border: none;
+      background: rgba(255, 255, 255, 0.026);
+    }
+  }
+}
+.amountdisable {
+  background: rgba(0, 0, 0, 0.05);
+  input {
+    color: #283049;
+  }
+}
+
+.input {
+  input {
+    color: #283049;
+  }
+}
+.deleteddialog {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .deletehead {
+    color: #f00;
+    margin: 0 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: normal;
+    position: relative;
+    text-transform: capitalize;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 26px;
+      height: 2px;
+      bottom: -4px;
+      background: #f00;
+      border-radius: 4px;
+    }
+  }
+  .descriptiontext {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .primaryButton,
+  .primaryButton:hover {
+    border-radius: 20px;
+    background: #f08b32;
+    color: #fff;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+    &:disabled {
+      opacity: 0.5 !important;
+    }
+  }
+  .secondarybutton,
+  .secondarybutton:hover {
+    border-radius: 20px;
+    background: #fff;
+    color: #f08b32;
+    border: 1px solid #f08b32;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+    border-radius: 20px;
+    gap: 4px;
+  }
+}
+.headsupdialog {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .headsuphead {
+    color: #000;
+    margin: 0 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: normal;
+    position: relative;
+    text-transform: capitalize;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 26px;
+      height: 2px;
+      bottom: -4px;
+      background: #000;
+      border-radius: 4px;
+    }
+  }
+  .descriptiontext {
+    color: #a0a4af;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    letter-spacing: 0.374px;
+  }
+
+  .primaryButton,
+  .primaryButton:hover {
+    border-radius: 20px;
+    background: #f08b32;
+    color: #fff;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+    &:disabled {
+      opacity: 0.5 !important;
+    }
+  }
+  .secondarybutton,
+  .secondarybutton:hover {
+    border-radius: 20px;
+    background: #fff;
+    color: #f08b32;
+    border: 1px solid #f08b32;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+    border-radius: 20px;
+    gap: 4px;
+  }
+}
+
+.warningdialog {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .warninghead {
+    color: #f00;
+    margin: 0 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: normal;
+    position: relative;
+    text-transform: capitalize;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 26px;
+      height: 2px;
+      bottom: -4px;
+      background: #f00;
+      border-radius: 4px;
+    }
+  }
+  .descriptiontext {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 24px;
+  }
+
+  .secondarybutton,
+  .secondarybutton:hover {
+    border-radius: 20px;
+    background: #fff;
+    color: #f08b32;
+    border: 1px solid #f08b32;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+    border-radius: 20px;
+    gap: 4px;
+    width: 60%;
+  }
+}
+.advancedialog {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .advancehead {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.374px;
+    margin: 0 !important;
+    font-family: 'Lexend', sans-serif !important;
+  }
+  .descriptiontext {
+    color: #283049;
+    font-family: Lexend;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .primaryButton,
+  .primaryButton:hover {
+    border-radius: 20px;
+    background: #f08b32;
+    color: #fff;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+    &:disabled {
+      opacity: 0.5 !important;
+    }
+  }
+  .approveButton,
+  .approveButton:hover {
+    border-radius: 20px;
+    background: #2f9682;
+    color: #fff;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+  }
+  .secondarybutton,
+  .secondarybutton:hover {
+    border-radius: 20px;
+    background: #fff;
+    color: #f08b32;
+    border: 1px solid #f08b32;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+  }
+}
+
+.requesttripadvanceform {
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: calc(100% - 64px);
+  background: #fff;
+  overflow: auto;
+
+  .header {
+    .nameContainer {
+      display: flex;
+      align-items: center;
+
+      .orgAvatar {
+        width: 40px;
+        height: 40px;
+        border: 0.5px solid #d8d8d8;
+        @media screen and (max-width: 768px) {
+          width: 32px;
+          height: 32px;
+        }
+      }
+
+      .nameContainerText {
+        margin-left: 12px;
+        color: #283049;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+      }
+    }
+  }
+
+  .headertext {
+    color: #283049;
+    margin: 0 !important;
+    font-family: 'Lexend', sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: normal;
+    position: relative;
+    text-transform: capitalize;
+    padding-bottom: 4px;
+
+    // @media screen and (max-width: 480px) {
+    //   padding-left: 20px;
+    // }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 2px;
+      bottom: 0;
+      background: #f08b32;
+      border-radius: 4px;
+    }
+  }
+  .pointerEventsEnable {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .selectfield {
+      // width: calc(100% - 20px);
+      // padding: 10px 10px 0;
+      border-radius: 6px;
+      border: 1px solid #0000001a;
+      cursor: pointer;
+      width: 100%;
+      position: relative;
+      // background: rgb(242 242 240);
+
+      // &::after {
+      //   content: '>';
+      //   width: 24px;
+      //   height: 24px;
+      //   position: absolute;
+      //   background: red;
+      //   bottom: 0;
+      // }
+      .selectfieldinput {
+        pointer-events: none;
+        width: 100%;
+        border: none;
+        background: rgba(255, 255, 255, 0.026);
+        position: relative;
+
+        &.selectarrow {
+          &::after {
+            content: '';
+            background-image: url('../../assets/chevron-right.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 8px 12px;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            right: 3px;
+            top: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+    .selectfielddisable {
+      pointer-events: none;
+      cursor: not-allowed;
+    }
+
+    .amountbutton,
+    .amountbutton:hover {
+      color: #283049 !important;
+      border-radius: 4px !important;
+      border: 0.8px solid #d9d9d9 !important;
+      background: #ffffff00 !important;
+      text-align: center !important;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px !important;
+      font-style: normal !important;
+      font-weight: 300 !important;
+      line-height: 16px !important;
+      text-transform: capitalize !important;
+      padding: 12px 30px !important;
+    }
+  }
+  .advancesubmitbutton {
+    width: 100%;
+    height: 64px;
+    border-radius: 16px;
+    background: #f08b32;
+    box-shadow: 4px 3px 8px 0px rgba(240, 139, 50, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    // cursor: pointer;
+    &.disable {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .advanceamountbox {
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 0px 4px 44px 0px rgba(114, 92, 193, 0.15);
+      width: 60%;
+      height: 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: start;
+      justify-content: center;
+      padding: 5px 12px;
+      .amounttext {
+        color: #283049;
+        text-align: right;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px; /* 114.286% */
+        letter-spacing: 0.28px;
+      }
+      .advancetext {
+        color: #a0a4af;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+    .submittext {
+      color: #fff;
+      width: 40%;
+      text-align: center;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      text-transform: capitalize;
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .rejectBtn {
+    border-radius: 20px;
+    border: 1px solid #de2f2f;
+    display: inline-flex;
+    padding: 10px 56px;
+    justify-content: center;
+    align-items: center;
+    color: #de2f2f;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    max-width: 172px;
+    margin: 0 auto;
+  }
+
+  .deleteButton,
+  .deleteButton:hover {
+    border-radius: 20px;
+    background: #fff;
+    color: #f00;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 12px 20px;
+    // width: 40%;
+    border-radius: 20px;
+    border: 1px solid #f00;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+  }
+  .editButton,
+  .editButton:hover {
+    border-radius: 20px;
+    background: #f08b32;
+    color: #fff;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 12px;
+    width: 40%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+  }
+}
+
+.menutext {
+  color: #283049 !important;
+  font-family: 'Lexend', sans-serif !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  line-height: normal !important;
+  border-bottom: 1px solid rgba(199, 199, 199, 0.5) !important;
+  text-transform: capitalize !important;
+  padding: 8px 16px !important;
+}
+
+.bottomSheetHeader {
+  color: #2e3a59;
+  font-family: 'Lexend', sans-serif !important;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.bottomSheetClose {
+  color: #6e6e6e;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.customisedstepper {
+  .labeltext {
+    color: #a0a4af;
+    font-family: Lexend;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+  }
+  .valuetext {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+
+    .rejectlable {
+      color: #a0a4af;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 16px;
+    }
+  }
+  .paymenttext {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    span {
+      color: #00a676;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.26px;
+    }
+  }
+
+  .paymenttextreject {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: normal;
+
+    .reasonlabel {
+      color: #f00;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 16px;
+    }
+  }
+  .partialvalue {
+    color: #000;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    display: flex;
+    gap: 4px;
+    span {
+      color: #ecba3a;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.28px;
+    }
+    section {
+      color: #6e6e6e;
+      font-family: 'Lexend', sans-serif !important;
+      margin: 0;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.28px;
+    }
+  }
+  .partialpaid {
+    color: #414141;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    span {
+      color: #2f9682;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  .partialbalance {
+    color: #414141;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    span {
+      color: #f00;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+.tripdetailmobile {
+  .categoryhead {
+    color: #838588;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 2px;
+  }
+  .categorytype {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.374px;
+  }
+  .categorystatus {
+    border-radius: 4px;
+    background: var(--light-fill-green-main-green, rgba(32, 201, 172, 0.1));
+    padding: 2px 8px 4px 8px;
+    color: var(--fill-green-main-green, #20c9ac);
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  .totalamt {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+  }
+  .viewbill {
+    color: #3049bf;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: capitalize;
+    width: fit-content;
+  }
+  .viewdesc {
+    color: #3049bf;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    width: fit-content;
+  }
+
+  .descwrapper {
+    gap: 8px;
+    .desclabel {
+      color: #6e6e6e;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.24px;
+    }
+    .desct {
+      color: #283049;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+    }
+  }
+  .triplabel {
+    color: #6e6e6e;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 16px;
+  }
+  .tripvalue {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  .secondarybutton,
+  .secondarybutton:hover {
+    border-radius: 20px;
+    background: #fff;
+    color: #f08b32;
+    border: 1px solid #f08b32;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 12px 30px;
+  }
+  .deleteButton,
+  .deleteButton:hover {
+    border-radius: 20px;
+    background: #fff;
+    color: #f00;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 12px 20px;
+    // width: 40%;
+    border-radius: 20px;
+    border: 1px solid #f00;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+  }
+  .editButton,
+  .editButton:hover {
+    border-radius: 20px;
+    background: #f08b32;
+    color: #fff;
+    text-align: center;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-transform: capitalize;
+    padding: 12px;
+    width: 40%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+  }
+}
+
+.amountbutton,
+.amountbutton:hover {
+  color: #283049 !important;
+  border-radius: 4px !important;
+  border: 0.8px solid #d9d9d9 !important;
+  background: #ffffff00 !important;
+  text-align: center !important;
+  font-family: 'Lexend', sans-serif !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  line-height: 16px !important;
+  text-transform: capitalize !important;
+  padding: 12px 30px !important;
+}
+
+.pdfStyle {
+  display: inline-block;
+  overflow: hidden;
+  background: #f1f0f0;
+  border: 1.82299px dashed rgba(153, 158, 165, 0.53);
+  border-radius: 10px;
+  margin: auto;
+
+  canvas {
+    max-width: 100% !important;
+  }
+}
+.page {
+  padding-bottom: 2rem;
+}
+.iframeViewDocument {
+  height: 100%;
+  width: 100%;
+}
+
+.reimbursementClaimContainerMobile {
+  width: 100%;
+  background: #fff;
+
+  .headertitle {
+    color: #283049;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.374px;
+    padding: 24px 32px 4px 32px;
+    position: relative;
+    margin-bottom: 24px;
+
+    &::before {
+      content: '';
+      border-radius: 4px;
+      background: #f08b32;
+      width: 17.317px;
+      height: 2px;
+      flex-shrink: 0;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  .orgAvatar {
+    width: 20px;
+    height: 20px;
+    border: 0.5px solid #d8d8d8;
+  }
+  .nameContainer {
+    display: flex;
+    align-items: center;
+    margin: 20px 20px 16px;
+    .nameContainerText {
+      margin-left: 12px;
+      color: #283049;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+    }
+  }
+  .tripCardDetails {
+    label {
+      color: #a0a4af;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 16px;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+    p {
+      color: #283049;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0.28px;
+      margin: 0;
+      margin-top: 8px;
+    }
+  }
+  .detailsCard {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0px 20px 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    .viewBills {
+      color: #2e56d2;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      text-align: right;
+      cursor: pointer;
+    }
+    .tripCardDetails {
+      margin-bottom: 16px;
+    }
+    .tripValue {
+      p {
+        font-weight: 600;
+      }
+    }
+    .advance {
+      p {
+        color: #2f9682;
+        font-weight: 500;
+      }
+    }
+    .toRecieve {
+      text-align: right;
+      p {
+        color: #f00;
+      }
+    }
+    .claimed {
+      text-align: center;
+    }
+    .submitDate {
+      text-align: right;
+    }
+  }
+  .reimbursementDetailsContainer {
+    margin: 0px 20px;
+    .reimbursementCard {
+      display: flex;
+      flex-flow: column;
+      border-radius: 8px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background: #fff;
+      margin: 16px 0px;
+      padding: 8px 12px;
+    }
+    .containerOne,
+    .containerTwo {
+      display: inline-flex;
+      p {
+        margin: 0px;
+      }
+    }
+    .containerOne {
+      margin-bottom: 12px;
+      p {
+        &:first-of-type {
+          color: #3049bf;
+          text-align: right;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 16px;
+        }
+        &:nth-child(2) {
+          color: #283049;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 16px;
+          margin-left: 12px;
+        }
+      }
+    }
+    .containerTwo {
+      margin-bottom: 12px;
+      p {
+        &:first-of-type {
+          color: #283049;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 16px;
+        }
+        &:nth-child(2) {
+          color: #f08b32;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 16px;
+          margin-left: 12px;
+        }
+      }
+    }
+    .vendorCard,
+    .clientCard {
+      p {
+        margin: 0px;
+        &:first-of-type {
+          color: #a0a4af;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: 16px;
+          letter-spacing: 1.4px;
+          text-transform: uppercase;
+          margin-bottom: 8px;
+        }
+        &:nth-child(2) {
+          color: #283049;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 16px;
+          letter-spacing: 0.32px;
+        }
+      }
+    }
+    .clientCard {
+      margin: 20px 0px;
+    }
+    .vendorCard {
+      display: flex;
+      .vendorCardRight {
+        margin-left: auto;
+        span {
+          margin-left: auto;
+          color: var(--fill-green-main-green, #20c9ac);
+          font-feature-settings: 'clig' off, 'liga' off;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 18px;
+          border-radius: 4px;
+          background: var(
+            --light-fill-green-main-green,
+            rgba(32, 201, 172, 0.1)
+          );
+          padding: 4px 8px;
+        }
+      }
+    }
+    .descCard {
+      p {
+        margin: 0;
+        &:first-of-type {
+          color: #6e6e6e;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-bottom: 8px;
+        }
+        &:nth-child(2) {
+          color: #283049;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+  .footerBtn {
+    margin: 20px;
+    .sectionOne {
+      justify-content: space-around;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .rejectBtn {
+        border-radius: 20px;
+        border: 1px solid #de2f2f;
+        display: inline-flex;
+        padding: 10px 56px;
+        justify-content: center;
+        align-items: center;
+        color: #de2f2f;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+      .approveBtn {
+        display: inline-flex;
+        padding: 10px 42px;
+        justify-content: center;
+        border-radius: 20px;
+        background: #2f9682;
+        align-items: center;
+        padding: 10px 56px;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+    }
+    .sectionTwo {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      .payBtn {
+        display: inline-flex;
+        padding: 10px 42px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        background: #f08b32;
+        color: #fff;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+.rejectReasonBtn {
+  border-radius: 20px !important;
+  background: #f08b32 !important;
+  color: #fff !important;
+  text-align: center !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 18px !important;
+  padding: 8px 20px !important;
+  cursor: pointer !important;
+  text-transform: capitalize !important;
+  width: 160px;
+}
+
+.selectfield {
+  width: 100%;
+}
+
+.selectfieldinput {
+  pointer-events: none;
+  width: 100%;
+  border: none;
+  background: rgba(255, 255, 255, 0.026);
+  position: relative;
+
+  &.selectarrow {
+    &::after {
+      content: '';
+      background-image: url('../../assets/chevron-right.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 8px 12px;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      right: 3px;
+      top: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.actioncontainer {
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.05),
+    0px 9px 42px 0px rgba(0, 0, 0, 0.1);
+  padding: 4px 0;
+
+  .actionitem {
+    flex-direction: row !important;
+    gap: 12px;
+    padding: 8px 16px;
+    margin-bottom: 8px;
+    text-transform: capitalize !important;
+
+    .actionicon {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+
+    .actionlabel {
+      color: #414141;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 16px;
+    }
+  }
+}
+.payadvtitle {
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'Lexend', sans-serif !important;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.374px;
+}
+
+.staticcontent {
+  color: #f08b32 !important;
+  font-family: 'Lexend', sans-serif !important;
+  font-size: 14px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  line-height: 16px !important;
+  gap: 4px !important;
+  padding-left: 10px !important;
+  display: none;
+
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.filenameContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .fileNameLabel {
+    color: #3049bf;
+    font-family: Lexend;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}

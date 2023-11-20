@@ -1,0 +1,47 @@
+.notificationListContainer {
+  .itemWrapper {
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    padding: 10px 15px;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--colorDarkLight);
+
+    .itemInfo {
+      color: var(--colorMain);
+      font-size: 14px;
+      width: 80%;
+    }
+
+    .icon {
+      font-size: 3rem;
+    }
+  }
+}
+
+.notificationheader {
+  font-weight: 500 !important;
+  font-size: 24px !important;
+  line-height: 30px !important;
+  color: #000000;
+  padding: 24px 24px 12px 24px;
+  position: relative;
+}
+
+.viewAllbtn {
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  color: #f08b32 !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  text-transform: capitalize !important;
+  position: absolute !important;
+  bottom: 0;
+  background-color: #ffffff !important;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  z-index: 100;
+  border-bottom-left-radius: 16px !important;
+  border-bottom-right-radius: 16px !important;
+}

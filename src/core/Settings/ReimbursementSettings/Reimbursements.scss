@@ -1,0 +1,372 @@
+.reimbursecontainer {
+  //   background: #f5f5f5;
+  //   padding: 24px 32px;
+  .headertitle {
+    color: #283049;
+    font-family: 'Lexend', sans-serif !important;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 4px;
+    position: relative;
+    margin-bottom: 24px;
+    &::before {
+      content: '';
+      border-radius: 4px;
+      background: #f08b32;
+      width: 24px;
+      height: 4px;
+      flex-shrink: 0;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  .policyrules {
+    align-items: center;
+    flex-direction: row !important;
+    gap: 24px 14px;
+    flex-wrap: wrap;
+    animation: fadeInUp 1s;
+
+    .cardcontainer {
+      width: 239px;
+      // height: 138px;
+      flex-shrink: 0;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.1);
+      padding: 8px 12px 24px 12px;
+      cursor: pointer;
+      transition: all 0.2s;
+      animation: fadeInUp 2s;
+
+      &:hover {
+        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+          rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+      }
+
+      .cardicon {
+        width: 40.615px;
+        height: 40px;
+        flex-shrink: 0;
+        margin-bottom: 8px;
+      }
+      .cardtitle {
+        color: #283049;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 8px;
+      }
+      .carddesc {
+        color: #a0a4af;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+    }
+  }
+
+  .policyrulesmobile {
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    animation: fadeInUp 1s;
+
+    .cardcontainermobile {
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+      width: 100px;
+      height: 100px;
+      flex-shrink: 0;
+      position: relative;
+      padding: 6px 0 0 0px;
+      cursor: pointer;
+      display: grid;
+      place-content: center;
+      animation: fadeInUp 2s;
+
+      &::before {
+        content: '';
+        background: #fce8d6;
+        filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.1));
+        width: 91.5px;
+        height: 67.5px;
+        flex-shrink: 0;
+        border-radius: 10rem 0 0 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+
+      &:nth-child(4) {
+        .cardtitlemobile {
+          margin-bottom: 6px;
+        }
+      }
+      .cardelementwrapper {
+        position: absolute;
+        z-index: 1001;
+
+        .cardtitlemobile {
+          color: #283049;
+          text-align: center;
+          font-family: 'Lexend', sans-serif !important;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-bottom: 14px;
+          padding: 4px 4px 0 4px;
+        }
+
+        .cardiconmobile {
+          width: 50.769px;
+          height: 50px;
+          flex-shrink: 0;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+.expencecontainer {
+  padding: 24px 32px;
+
+  .headerwrapper {
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    .headertitle {
+      color: #283049;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 20px;
+      line-height: normal;
+      padding-bottom: 4px;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 17.317px;
+        height: 2px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        background: #f08b32;
+      }
+    }
+
+    .viewhistory {
+      color: #f08b32;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 16px;
+      text-transform: capitalize;
+    }
+  }
+
+  .rulesswitchwrapper {
+    margin-bottom: 24px;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between;
+
+    .rulesLabel {
+      color: #283049;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 16px;
+      position: relative;
+
+      &::after {
+        content: '*';
+        color: #ff0000;
+        margin-left: 2px;
+      }
+    }
+  }
+
+  .expenceformcontainer {
+    .textFieldSize {
+      margin-bottom: 20px !important;
+      font-size: 12px;
+      &.disabled {
+        background: rgba(0, 0, 0, 0.05);
+      }
+    }
+    .marginbottom {
+      margin-bottom: 32px !important;
+    }
+
+    .vehicletypewrapper {
+      flex-direction: row !important;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+
+      .vehicletypelabel {
+        color: #283049;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 14px;
+
+        font-weight: 300;
+        line-height: 16px;
+        position: relative;
+
+        &::after {
+          content: '*';
+          margin-left: 2px;
+          position: absolute;
+          color: #f00;
+        }
+      }
+
+      .radiolablel {
+        &:last-child {
+          margin-right: 0 !important;
+        }
+        span {
+          &:last-child {
+            // color: #6e6e6e;
+            font-family: 'Lexend', sans-serif !important;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+
+    .datepicker {
+      flex-direction: row !important;
+      margin-bottom: 14px;
+      gap: 16px;
+    }
+    .mileagedesc {
+      color: #283049;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 11px;
+      font-weight: 300;
+      line-height: 16px;
+      margin-bottom: 24px;
+    }
+
+    .descswitchwrapper {
+      flex-direction: row !important;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 32px;
+
+      .desclabel {
+        color: #283049;
+        font-family: 'Lexend', sans-serif !important;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 16px;
+      }
+    }
+
+    .submitBtn {
+      border-radius: 20px;
+      background: #f08b32;
+      padding: 12px 40px;
+      color: #fff;
+      text-align: center;
+      font-family: 'Lexend', sans-serif !important;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      margin: 0 auto;
+      text-transform: capitalize;
+      &:disabled {
+        // background: rgba(240, 139, 50, 0.5);
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reimbursecontainer {
+    background: #fff;
+    padding: 20px;
+    flex: 1;
+    overflow: auto;
+
+    .headertitle {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: normal;
+      margin-bottom: 28px;
+
+      &::before {
+        width: 12px;
+        height: 2px;
+      }
+    }
+  }
+
+  .expencecontainer {
+    padding: 16px 20px;
+
+    .linebar {
+      border-radius: 7px;
+      background: rgba(196, 196, 196, 0.51);
+      width: 50px;
+      height: 4px;
+      flex-shrink: 0;
+      margin: 0 auto;
+    }
+
+    .headercontainer {
+      border-bottom: 1px solid #ececec;
+      margin: 0 -20px 20px -20px;
+      padding: 0 20px;
+      .headerwrapper {
+        margin-top: 16px;
+        margin-bottom: 20px;
+
+        .headertitle {
+          font-size: 16px;
+          letter-spacing: 0.374px;
+        }
+      }
+
+      .rulesswitchwrapper {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 3%, 0);
+    transform: translate3d(0, 3%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}

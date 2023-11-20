@@ -1,0 +1,96 @@
+.report {
+  // height: ;
+  background-color: rgb(255, 255, 255);
+  height:100%;
+  width:100%;
+  .div {
+    position: relative;
+    height: 270px;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 5rem;
+
+    .div3 {
+      position: absolute;
+      transform-style: preserve-3d;
+      transform: rotateX(0deg);
+      height: 250;
+      width: 100%;
+      top: -3%;
+      /* left: 25%; */
+      transform: scale(0.8);
+      background-color: rgb(255, 255, 255);
+    }
+    .div33 {
+      position: absolute;
+      transform-style: preserve-3d;
+      transform: rotateX(0deg);
+      height: 250px;
+      width: 100%;
+      top: -3%;
+      /* left: 25%; */
+      transform: scale(0.8);
+      background-color: rgb(255, 255, 255);
+      animation: scaleUp 500ms ease-in-out forwards;
+    }
+    .div2 {
+      position: absolute;
+      transform-style: preserve-3d;
+      transform: rotateX(0deg);
+      height: 250px;
+      width: 100%;
+      top: 6%;
+      /* left: 25%; */
+      transform: scale(0.9);
+      background-color: rgb(255, 255, 255);
+    }
+    .div1 {
+      position: absolute;
+      transform-style: preserve-3d;
+      transform: rotateX(0deg);
+      height: 350px;
+      width: 100%;
+      top: 15%;
+      /* left: 25%; */
+      transform: scale(1);
+      background-color: rgb(250, 250, 250);
+      // align-items: center;
+      justify-content: center;
+    }
+    .div11 {
+      position: absolute;
+      transform-style: preserve-3d;
+      transform: rotateX(0deg);
+      height: 350px;
+      width: 100%;
+      top: 15%;
+      /* left: 25%; */
+      transform: scale(1);
+      animation: scaleDown 1000ms ease-in-out forwards;
+      background-color: rgb(250, 250, 250);
+      // align-items: center;
+      // justify-content: center;
+    }
+    @keyframes scaleUp {
+      0% {
+        opacity: 0;
+      }
+      // 50% {opacity: 1;}
+      100% {
+        opacity: 1;
+      }
+    }
+    @keyframes scaleDown {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}

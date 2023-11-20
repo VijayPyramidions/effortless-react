@@ -1,0 +1,156 @@
+.settingsContainer {
+  margin: 20px;
+  width: 100%;
+  .cardContainer {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    .cardTitle {
+      margin-bottom: 20px;
+    }
+  }
+  .spacing {
+    height: 20px;
+  }
+}
+.companyInfoCardContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  .companyInfoCardWrapper {
+    .spacing {
+      height: 10px;
+    }
+    .updateDetails {
+      color: #f08b32;
+      text-decoration-line: underline;
+      font-family: 'Lexend' !important;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      color: #283049b3;
+    }
+    .organizationName {
+      text-transform: capitalize;
+      font-family: 'Lexend' !important;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      color: #283049;
+    }
+  }
+}
+
+.dashboardBodyContainer {
+  background-color: var(--colorGreyBg);
+  border-radius: 25px 25px 0 0;
+  height: calc(100% - 170px);
+  overflow: auto;
+  display: flex;
+}
+.settingsContainerDesktop {
+  // height: 100%;
+  padding: 0px 20px;
+  .stack1 {
+    width: 94%;
+    // padding: 0px 15px;
+    .profileStack {
+      background: #ffffff;
+      box-shadow: 0px 2px 12px 1px rgba(0, 0, 0, 0.09);
+      border-radius: 20px;
+      display: flex;
+      flex-flow: column;
+      // width: 24.33vw;
+      padding: 25px 20px 15px 20px;
+      align-items: center;
+      justify-content: center;
+      height: 30vh;
+      .profileStackH1 {
+        font-weight: 400;
+        font-size: 22.3617px;
+        line-height: 29px;
+        align-items: center;
+        text-transform: capitalize;
+        color: #283049;
+        padding: 10px 0px;
+      }
+      .profileStackimg {
+        width: 100px;
+        // height: 100px;
+      }
+      .profileStackH2stack {
+        width: 100%;
+        .profileStackH2 {
+          font-weight: 500;
+          width: 99px;
+          font-size: 13.1702px;
+          line-height: 23px;
+          text-align: center;
+          text-decoration-line: underline;
+          color: #f08b32;
+          flex: none;
+          order: 1;
+          flex-grow: 0;
+          float: right;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .general {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 45px;
+    color: #283049;
+    padding: 30px 15px 8px 15px;
+  }
+  .stack2 {
+    // padding: 0px 15px;
+    // height: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    // justify-content: space-evenly;
+    .generalStack {
+      // background-color: white;
+      width: 21.9vw;
+      justify-items: center;
+      display: flex;
+      flex-flow: column;
+      height: 25vh;
+      margin: 10px 10px;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+
+      .generalStackText {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 30px;
+        color: #283049;
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        padding: 10px;
+      }
+    }
+  }
+}
+.forLogoCont {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  border-radius: 50%;
+  border: 1px solid #ededed;
+  overflow: hidden;
+  .forLogo {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit: contain;
+  }
+}
